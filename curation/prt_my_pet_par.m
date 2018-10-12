@@ -5,7 +5,7 @@
 function prt_my_pet_par(metaData, metaPar, par, txtPar, destinationFolder)
 % created 2015/04/11 by Starrlight Augustine
 % modified 2015/07/27 Starrlight Augustin; 2015/08/06 Dina Lika; 2016/03/30 Starrlight Augustine;
-% 2016/11/05; 2017/09/29; 2017/10/13 Bas Kooijman
+% 2016/11/05; 2017/09/29; 2017/10/13, 2018/04/28 Bas Kooijman
 
 
 %% Syntax
@@ -79,25 +79,8 @@ fprintf(oid, '<BODY>\n\n');
 
 fprintf(oid, '<div w3-include-html="../../sys/wallpaper_entry.html"></div>\n');
 fprintf(oid, '<div w3-include-html="../../sys/toolbar_entry.html"></div>\n');
+fprintf(oid,['<div id="top2" w3-include-html="', metaData.species, '_toolbar.html"></div>\n']);
 fprintf(oid, '<script>w3IncludeHTML();</script>\n\n');
-
-fprintf(oid, '<!--------------------------------------------------------------->\n');
-fprintf(oid, '<!--  PART MenuBar                                             -->\n');
-fprintf(oid, '<!--  TOP PART OF WEBPAGE IS FIXED                             -->\n');
-fprintf(oid, '<!--  It has the logo and the menu with Javascript             -->\n');
-fprintf(oid, '<!--  dropdown menus                                           -->\n');
-fprintf(oid, '<!--  Please put in bold and in fancy the right links          -->\n');
-fprintf(oid, '<!--------------------------------------------------------------->\n\n');
-
-fprintf(oid, '<div id="top2">\n');
-fprintf(oid, '  <h1 class="alignleft2"> &nbsp; &nbsp;\n');
-fprintf(oid,['    <a href = "../../species_list.html#', metaData.species, '">', speciesprintnm, '</A>(', speciesprintnm_en, '): &nbsp;\n']);
-fprintf(oid, '  </h1>\n\n');
-
-fprintf(oid, '  <div id="navwrapper">\n');
-prt_toolbar_species(oid, metaData.species, metaData.date_acc)
-fprintf(oid, '  </div><!-- end navwrapper -->\n');
-fprintf(oid, '</div><!-- end top2 -->\n\n');
 
 fprintf(oid, '<!--------------------------------------------------------------->\n');
 fprintf(oid, '<!--   PART main                                               -->\n');
@@ -192,7 +175,7 @@ fprintf(oid, '        <TR BGCOLOR = "%s"><TD BGCOLOR = "#FFE7C6">%s</TD> <TD>%g<
 fprintf(oid, '        <TR BGCOLOR = "%s"><TD BGCOLOR = "#FFE7C6">%s</TD> <TD>%g</TD> <TD>%g</TD><TD>%g</TD><TD>%g</TD></TR>\n\n',...
   '#FFFFFF','Nitrogen', par.n_NX, par.n_NV, par.n_NE, par.n_NP);
 % --------------- mineral chemical indices --------------------------------
-fprintf(oid, '        <TR BGCOLOR = "#FFE7C6"><TH></TH><TH></TH><TH>CO<sub>2</sub></TH><TH> H<sub>2</sub>O</TH><TH>O<sub>2</sub></TH><TH> NH<sub>3</sub></TH></TR>\n');
+fprintf(oid, '        <TR BGCOLOR = "#FFE7C6"><TH></TH><TH></TH><TH>CO<sub>2</sub></TH><TH> H<sub>2</sub>O</TH><TH>O<sub>2</sub></TH><TH> N-waste</TH></TR>\n');
 fprintf(oid, '        <TR BGCOLOR = "%s"> <TD rowspan="4">%s</TD><TD BGCOLOR = "#FFE7C6">%s</TD> <TD>%g</TD> <TD>%g</TD><TD>%g</TD><TD>%g</TD></TR>\n',...
   '#FFFFFF','Chemical indices for minerals', 'Carbon', par.n_CC, par.n_CH, par.n_CO, par.n_CN);
 fprintf(oid, '        <TR BGCOLOR = "%s"><TD BGCOLOR = "#FFE7C6">%s</TD> <TD>%g</TD> <TD>%g</TD><TD>%g</TD><TD>%g</TD></TR>\n',...

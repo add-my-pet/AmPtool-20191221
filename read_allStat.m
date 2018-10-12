@@ -2,7 +2,7 @@
 % read statistics and/or parameters in allStat.mat
 
 %%
-function [var entries units label] = read_allStat(varargin)
+function [var, entries, units, label] = read_allStat(varargin)
 % created 2016/04/24 by Bas Kooijman
 
 %% Syntax
@@ -13,7 +13,7 @@ function [var entries units label] = read_allStat(varargin)
 %
 % Input:
 %
-% * vararg: names of variables or cell-string with names of variables
+% * varargin: names of variables or cell-string with names of variables
 %
 % Output
 %
@@ -32,8 +32,13 @@ function [var entries units label] = read_allStat(varargin)
 %% Example of use
 % complete_mre = read_allStat('COMPLETE', 'MRE'); 
   
-  load('allStat')        % get all parameters and statistics in structure allStat
-  entries = fieldnames(allStat); n = length(entries); 
+  persistent allStat
+  
+  if ~exist('allStat','var') || length(allStat) == 0
+    load('allStat')        % get all parameters and statistics in structure allStat
+  end
+  
+  entries = fieldnames(allStat); n = length(entries);
   if iscell(varargin{1})    
     varargin = varargin{:}; % unpack cell string
   end

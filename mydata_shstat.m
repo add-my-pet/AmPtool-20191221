@@ -12,7 +12,7 @@
 
 close all    % remove any existing figure
 
-example = 3; % edit this number to see the various examples
+example = 14; % edit this number to see the various examples
 switch example
   case 1 % 2D: use default settings
     shstat_options('default');
@@ -159,5 +159,25 @@ switch example
     figure(Hfig) % add labels to figure, because this is not done by shstat in numerical mode
     xlabel('kappa, -')      
     ylabel('_{10}log [E_m]/d_V , J/g')
+
+  case 13 % 3D/2D
+    shstat_options('default'); % log10 transform for all 3 variables
+    pM_pAm_Li = read_allStat('p_M', 'p_Am', 'L_i', 's_M'); p_M = pM_pAm_Li(:,1); p_Am = pM_pAm_Li(:,2) .* pM_pAm_Li(:,4); L_i = pM_pAm_Li(:,3);
+    [Hfig, Hleg] = shstat([p_M, p_Am, L_i], {{'^', 7, 2}, 'Sauropsida'; {'v', 7, 2}, 'Mammalia'; {'o', 7, 2}, 'Chordata'}); % define colorless legend on the fly
+    figure(Hfig) % add labels to figure, because this is not done by shstat in numerical mode
+    xlabel('_{10}log [p_M], J/d.cm^3')      
+    ylabel('_{10}log \{p_{Am}\}, J/d.cm^2')  
+    zlabel('_{10}log L_\infty , cm')         
+    
+   case 14 % 2D for eco-codes
+    shstat_options('default');
+    legend_eco = {...
+    {'o', 8, 3, [0 1 0], [0 1 0]}, {'B.Tnp','B.Tnw'}; ....
+    {'o', 8, 3, [1 0 0], [1 0 0]}, {'B.Tnc'}; ...
+    {'o', 8, 3, [0 0 1], [0 0 1]}, {'B.Tnf'}; ...
+    {'o', 8, 3, [0 0 0], [0 0 0]}, {'B.Tnt','B.Tns','B.Tl'}; ...
+    };
+
+    [Hfig, Hleg, val, entries, missing] = shstat({'a_p','s_Hbp'}, legend_eco, 'Aves'); 
 
 end

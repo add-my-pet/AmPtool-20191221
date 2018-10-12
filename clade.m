@@ -3,17 +3,18 @@
 
 %%
 function [members, taxon] = clade(taxa, level)
-% created 2015/09/18 by Bas Kooijman; modified 2017/12/23
+% created 2015/09/18 by Bas Kooijman; modified 2017/12/23, 2018/01/05, 2018/01/30
 
 %% Syntax
 % [members, taxon] = <../clade.m *clade*> (taxa, level) 
 
 %% Description
-% gets all species in the add_my_pet collection that belong to the lowest common taxon of a group of taxa.
+% If taxa contains several members, clade gets all species in the add_my_pet collection that belong to the lowest common taxon of a group of taxa.
 % To find this taxon, the lineages of all members of input taxa are obtained, 
-% then the taxon of lowest rank is found that is shared by all members of input taxa 
-% and all members of this taxon in the add_my_pet collection are selected.
-% If a single taxon is specified, members are selected from a taxon that is a number of levels up in the classification.
+%   then the taxon of lowest rank is found that is shared by all members of input taxa 
+%   and all members of this taxon in the add_my_pet collection are selected.
+% If a single taxon is specified, members are selected from a taxon that is a number of levels up in the classification, including the single taxon.
+% If this single taxon is not present in AmP, it is searched in Catalog of Life and Taxonomicon, and the lowest taxon in these lineages that is present in AmP is selected as clade
 %
 % Input:
 %
@@ -36,6 +37,8 @@ function [members, taxon] = clade(taxa, level)
 % clade('Daphnia_magna')
 % or
 % clade('Homarus_gammarus',4)
+% or
+% clade('Daphnia_galeata') % while 'Daphnia_galeata' was not present in AmP at 2018/01/05 
 
 
   n = length(taxa);
@@ -52,8 +55,55 @@ function [members, taxon] = clade(taxa, level)
     list = lineage(taxa);
     
     if length(list) == 1
-      fprintf('Taxon is not recognized\n')
-      members = list; taxon = list;
+      fprintf([taxa, ' is not recognized in AmP\n'])
+
+      % proceed by finding lineage in Col and Taxo
+      ol = list_taxa; % ordered list of all taxa
+      % CoL
+      list_CoL = lineage_CoL(taxa);
+      n_CoL = length(list_CoL);
+      if n_CoL > 0 % species found in CoL
+        ol = list_taxa; % ordered list of all taxa
+        for i = 1:n_CoL % find lowest rank that is present in AmP
+          if ~isempty(list_CoL{n_CoL - i}) && ismember(list_CoL{n_CoL - i}, ol)
+            taxon_CoL = list_CoL{n_CoL - i}; members_CoL = select(taxon_CoL); 
+            n_members_CoL = length(members_CoL);
+            break
+          end
+        end
+      else
+        n_members_CoL = 0;
+      end
+      % Taxo
+      list_Taxo = lineage_Taxo(taxa);
+      n_Taxo = length(list_Taxo);
+      if n_Taxo > 0 % species found in Taxo
+        for i = 1:n_Taxo % find lowest rank that is present in AmP
+          if ~isempty(list_Taxo{n_Taxo - i}) && ismember(list_Taxo{n_Taxo - i}, ol)
+            taxon_Taxo = list_Taxo{n_Taxo - i}; members_Taxo = select(taxon_Taxo); 
+            n_members_Taxo = length(members_Taxo);
+            break
+          end
+        end
+      else
+        n_members_Taxo = 0;
+      end
+
+      % choose between CoL or Taxo on the basis of smallest number of members
+      if n_members_CoL == 0 && n_members_Taxo == 0
+        members = []; taxon = [];
+      elseif n_members_CoL == 0
+        members = members_Taxo; taxon = taxon_Taxo;
+      elseif n_members_Taxo == 0
+        members = members_CoL; taxon = taxon_CoL;
+      elseif n_members_Taxo < n_members_CoL 
+        members = members_Taxo; taxon = taxon_Taxo;
+        fprintf(['CoL gives ', num2str(n_members_CoL), ' members, Taxo gives ', num2str(n_members_Taxo), ' members\n'])
+      else
+        members = members_CoL; taxon = taxon_CoL;
+        fprintf(['CoL gives ', num2str(n_members_CoL), ' members, Taxo gives ', num2str(n_members_Taxo), ' members\n'])
+      end
+      
     else
       taxon = list{end-level};
       members = select(taxon);

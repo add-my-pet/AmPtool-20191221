@@ -1,4 +1,3 @@
-Odocoileus
-Cervus
-Rangifer
-Alces
+Cervinae
+Capreolinae
+Hydropotinae

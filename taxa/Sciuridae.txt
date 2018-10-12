@@ -1,4 +1,2 @@
-Marmota
-Cynomys
-Tamias
-Sciurus
+Sciurinae
+Xerinae

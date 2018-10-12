@@ -3,14 +3,14 @@
 
 %%
 function prt_my_pet_stat(metaData, metaPar, par, destinationFolder)
-% created 2016/03/30 Starrlight; modified 2016/09/23 Starrlight Augustine; 2016/11/05, 2017/05/18 2017/09/29, 2017/10/13 Bas Kooijman
+% created 2016/03/30 Starrlight; modified 2016/09/23 Starrlight Augustine; 2016/11/05, 2017/05/18 2017/09/29, 2017/10/13, 2018/04/28, 2018/06/25 Bas Kooijman
 
 %% Syntax
 % <../prt_my_pet_stat.m *prt_my_pet_stat*> (metaData, metaPar, par, destinationFolder) 
 
 %% Description
 % Read and writes my_pet_stat.html and write png files in current folder (irrespective of destinationFolder). 
-% This pages contains a list of implied model properties of my_pet. 
+% This page contains a list of implied model properties of my_pet. 
 % It calls AmPtool/curation/get_statfields to see what statistics are printed in which order on the web.
 %
 % Input:
@@ -24,13 +24,12 @@ function prt_my_pet_stat(metaData, metaPar, par, destinationFolder)
 % load('results_my_pet.mat');
 % prt_my_pet_stat(metaData, metaPar, par, destinationFolder)
 
-% Removes underscores and makes first letter of english name be
-% in capital:
-speciesprintnm = [strrep(metaData.species, '_', ' '), ' '];
-speciesprintnm_en = strrep(metaData.species_en, '_', ' ');
-if speciesprintnm_en(1)>='a' && speciesprintnm_en(1)<='z'
-  speciesprintnm_en(1)=char(speciesprintnm_en(1)-32);
-end
+% % Removes underscores and makes first letter of english name be in capital:
+% speciesprintnm = [strrep(metaData.species, '_', ' '), ' '];
+% speciesprintnm_en = strrep(metaData.species_en, '_', ' ');
+% if speciesprintnm_en(1)>='a' && speciesprintnm_en(1)<='z'
+%   speciesprintnm_en(1)=char(speciesprintnm_en(1)-32);
+% end
 
 f = 1; % ad libitum feeding
 [stat, txtStat] = statistics_st(metaPar.model, par, metaData.T_typical, f);
@@ -60,25 +59,8 @@ fprintf(oid, '<BODY>\n\n');
 
 fprintf(oid, '<div w3-include-html="../../sys/wallpaper_entry.html"></div>\n');
 fprintf(oid, '<div w3-include-html="../../sys/toolbar_entry.html"></div>\n');
+fprintf(oid,['<div id="top2" w3-include-html="', metaData.species, '_toolbar.html"></div>\n']);
 fprintf(oid, '<script>w3IncludeHTML();</script>\n\n');
-
-fprintf(oid, '<!--------------------------------------------------------------->\n');
-fprintf(oid, '<!-- PART menuBar                                              -->\n');
-fprintf(oid, '<!-- TOP PART OF WEBPAGE IS FIXED                              -->\n');
-fprintf(oid, '<!-- It has the logo and the menu with Javascript              -->\n');
-fprintf(oid, '<!--   dropdown menus                                          -->\n');
-fprintf(oid, '<!-- Please put in bold and in fancy the right links           -->\n');
-fprintf(oid, '<!--------------------------------------------------------------->\n\n');
-
-fprintf(oid, '<div id="top2">\n');
-fprintf(oid, '  <h1 class="alignleft2"> &nbsp; &nbsp;\n');
-fprintf(oid,['    <a href = "../../species_list.html#', metaData.species, '">', speciesprintnm, '</A>(', speciesprintnm_en, '): &nbsp;\n']);
-fprintf(oid, '  </h1>\n\n');
-
-fprintf(oid, '  <div id="navwrapper">\n');
-prt_toolbar_species(oid, metaData.species, metaData.date_acc)
-fprintf(oid, '  </div><!-- end of navwrapper -->\n');
-fprintf(oid, '</div><!-- end of top2 -->\n\n');
 
 fprintf(oid, '<!--------------------------------------------------------------->\n');
 fprintf(oid, '<!--   PART main                                               -->\n');
@@ -112,7 +94,7 @@ fprintf(oid, '      <div class = "caption">   \n');
 fprintf(oid, '        Exploding sectors mean dissipation; numbers denote fractions of mobilized reserve.\n');
 fprintf(oid, '        Endpoints are somatic maintenance S, growth G, maturity maintenance J, maturity or reproduction R.\n'); 
 fprintf(oid, '        Growth is splitted into overhead and flux fixed in tissue.\n'); 
-fprintf(oid, '        Reproduction overhead is not idicated, since it is pays at conversion of buffer to eggs/foetuses.\n'); 
+fprintf(oid, '        Reproduction overhead is not idicated, since it is payed at conversion of buffer to eggs/foetuses.\n'); 
 fprintf(oid, '        The change in reserve equals assimilation p_A minus mobilization p_C.\n');
 fprintf(oid, '        Wet weight W_w and total energy E_W exclude the reproduction buffer in adults.\n');
 fprintf(oid, '        Pies link to budget pages.\n');
@@ -142,5 +124,3 @@ fprintf(oid, '</BODY>\n');
 fprintf(oid, '</HTML>\n');
 
 fclose(oid);
-
-

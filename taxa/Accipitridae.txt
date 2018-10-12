@@ -1,2 +1,4 @@
 Aquila
+Haliaeetus
+Gyps
 Circus

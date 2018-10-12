@@ -3,13 +3,15 @@
 
 %%
 function allStat = get_allStat(T, f)
-% created 2016/04/22 by Bas Kooijman
+% created 2016/04/22 by Bas Kooijman, modified 2018/01/23
 
 %% Syntax
 % allStat = <get_allStat *get_allStat*> (T, f)
 
 %% Description
-% gets model, MRE, SMSE, CLOMPLETE, author, date_subm, date_acc, all parameters and statistics of all entries.
+% Gets lineage, model, MRE, SMSE, CLOMPLETE, author, date_subm, date_acc, all parameters and statistics and biblist of all entries.
+% It does so by directory-hopping using ../../entries, which must contain all entries, and visiting the results_my_pet.mat files.
+% This assumes that the content of this .mat file is consistent with the mydata_my_pet and the pars_init_my_pet files.
 % Parameters are always expressed at T_ref, i.e. C2K(20), irrespective of input T.
 %
 % Input:
@@ -52,13 +54,18 @@ function allStat = get_allStat(T, f)
       load (['results_', entries{i}])
       
       % metaData
-      allStat.(entries{i}).species = metaData.species; allStat.(entries{i}).units.species = '-'; allStat.(entries{i}).label.species = 'scientific name';
+      allStat.(entries{i}).species = metaData.species; allStat.(entries{i}).units.species = '-'; allStat.(entries{i}).label.species = 'taxon';
       allStat.(entries{i}).species_en = metaData.species_en; allStat.(entries{i}).units.species_en = '-'; allStat.(entries{i}).label.species_en = 'common name';
-      % model
+      allStat.(entries{i}).family  = metaData.family;  allStat.(entries{i}).units.family = '-';  allStat.(entries{i}).label.family = 'taxon';
+      allStat.(entries{i}).order   = metaData.order;   allStat.(entries{i}).units.order = '-';   allStat.(entries{i}).label.order = 'taxon';
+      allStat.(entries{i}).class   = metaData.class;   allStat.(entries{i}).units.class = '-';   allStat.(entries{i}).label.class = 'taxon';
+      allStat.(entries{i}).phylum  = metaData.phylum;  allStat.(entries{i}).units.phylum = '-';  allStat.(entries{i}).label.phylum = 'taxon';
+      % data/model
       allStat.(entries{i}).model = metaPar.model; allStat.(entries{i}).units.model = '-'; allStat.(entries{i}).label.model = 'DEB model';
       allStat.(entries{i}).MRE = metaPar.MRE; allStat.(entries{i}).units.MRE = '-'; allStat.(entries{i}).label.MRE = 'Mean Relative Error';
       allStat.(entries{i}).SMSE = metaPar.SMSE; allStat.(entries{i}).units.SMSE = '-'; allStat.(entries{i}).label.SMSE = 'Symmetric Mean Squared Error';
       allStat.(entries{i}).COMPLETE = metaData.COMPLETE; allStat.(entries{i}).units.COMPLETE = '-'; allStat.(entries{i}).label.COMPLETE = 'completeness';
+      allStat.(entries{i}).data = [metaData.data_0(:); metaData.data_1(:)]; allStat.(entries{i}).units.data = '-'; allStat.(entries{i}).label.data = 'data types';
       % submission
       allStat.(entries{i}).author = metaData.author(:)'; allStat.(entries{i}).units.author = '-'; allStat.(entries{i}).label.author = 'submitting author';
       allStat.(entries{i}).date_subm = metaData.date_subm; allStat.(entries{i}).units.date_subm = '-'; allStat.(entries{i}).label.date_subm = 'submitting date';
@@ -103,19 +110,3 @@ function allStat = get_allStat(T, f)
   cd(WD)                   % goto original path
 end
 
-
-%% subfunction
-function author_date_mod = get_author_date_mod(metaData)
-% gets (n,2)-cell array with authors and dates of modifications.
-
-  author_date_mod = cell(0,2); % initiate (n,2) array with modication author(s), date(s)
-  [nm nr] = fieldnmnst_st(metaData); 
-  n = strfind(nm, 'author_mod');
-  for i = 1:nr
-    if ~isempty(n{i})
-      author = metaData.(nm{i});
-      date = {metaData.(strrep(nm{i}, 'author', 'date'))};
-      author_date_mod = [author_date_mod; {author(:)', date}];
-    end
-  end
-end

@@ -3,7 +3,7 @@
 
 %%
 function allStat = write_allStat(T, f)
-% created 2016/04/24 by Bas Kooijman, modified 2017/08/16
+% created 2016/04/24 by Bas Kooijman, modified 2017/08/16, 2018/08/16
 
 %% Syntax
 % allStat = <write_allStat *write_allStat*> (T, f)
@@ -38,11 +38,27 @@ function allStat = write_allStat(T, f)
     allStat = get_allStat(T, f);
   end
   
+  % check if allStat and local dir ../../entries have the same entries
+  entries_local = cellstr(ls('../../entries')); entries_local(1:2) = []; % remove '.' and '..'
+  entries_allStat = fieldnames(allStat); 
+  diff = setdiff(entries_allStat, entries_local);
+  if ~isempty(diff)
+    fprintf('warning from write_allStat: present in allStat, but not in debtool/entries\n');
+    diff
+  end
+  %
+  diff = setdiff(entries_local, entries_allStat);
+  if ~isempty(diff)
+    fprintf('warning from write_allStat: present in debtool/entries, but not in allStat\n');
+    diff
+  end
+
+
   WD = pwd;                        % store current path
   curation = which('write_allStat');   
   curation = curation(1:end - 15);         
-  cd(curation)                         % goto taxa
+  cd(curation)                     % goto taxa
 
-  save('../allStat')
+  save('../allStat.mat','allStat')
   
   cd(WD);

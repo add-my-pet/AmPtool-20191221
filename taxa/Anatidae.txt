@@ -1,5 +1,7 @@
-Anas
-Aythya
-Mergus
-Melanitta
-Somateria
+Dendrocygninae
+Anatinae
+Anserinae
+Merginae
+Aythyinae
+Tadorninae
+
