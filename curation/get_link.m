@@ -4725,6 +4725,14 @@ function links = get_link(taxon, open)
       id_avibase = 'B8CA2EEB4E7E0CA3';
       id_birdlife = 'hazel-grouse-bonasa-bonasia';
 
+    case 'Dendragapus_obscurus'
+      id_CoL = 'eb714e41b187b71a43032fcf8e28e830';
+      id_Taxo = '52942';        
+      id_EoL = '1049186';
+      id_AnAge = taxon;       
+      id_avibase = 'A55D83A9520AA6DA';
+      id_birdlife = 'dusky-grouse-dendragapus-obscurus';
+
     case 'Tympanuchus_pallidicinctus'
       id_CoL = '3123bfee017d2a744e0f11759e0b2c90';
       id_Taxo = '52978';        
@@ -4973,6 +4981,14 @@ function links = get_link(taxon, open)
       id_avibase = 'BBA263C235B15B88';
       id_birdlife = 'rock-dove-columba-livia';
 
+    case 'Columba_palumbus'
+      id_CoL = '1804a584e2abad22cb877a39f00bb1d6';
+      id_Taxo = '53978';        
+      id_EoL = '1049693';
+      id_AnAge = taxon;       
+      id_avibase = '760F307A30689D66';
+      id_birdlife = 'common-woodpigeon-columba-palumbus';
+
     case 'Patagioenas_fasciata'
       id_CoL = '0b47943f1e932f8673021f8eb9ac0771';
       id_Taxo = ''; % not present 2018/08/03       
@@ -4989,6 +5005,14 @@ function links = get_link(taxon, open)
       id_avibase = '0FFC77EF1BC55357';
       id_birdlife = 'nicobar-pigeon-caloenas-nicobarica';
       id_ADW = ''; % not present at 2018/08/31
+
+    case 'Streptopelia_decaocto'
+      id_CoL = 'be859a5ea349fa8486b88d34163c83d1';
+      id_Taxo = '54033';        
+      id_EoL = '915275';
+      id_AnAge = taxon;       
+      id_avibase = '41FACE6330A2F073';
+      id_birdlife = 'eurasian-collared-dove-streptopelia-decaocto';
 
     case 'Mesitornis_variegatus'
       id_CoL = 'a990bffed92b9b55d3f6cfb8572597e8';
@@ -5013,6 +5037,14 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;      
       id_avibase = '4E6EF3F983079D73';
       id_birdlife = 'common-swift-apus-apus';
+
+    case 'Aerodramus_fuciphagus'
+      id_CoL = 'e28105e25649dc3ac43a4ce3ff4dee2b';
+      id_Taxo = '72156';        
+      id_EoL = '1048602';
+      id_AnAge = ''; % not present 2018/10/05      
+      id_avibase = '711541ED8D72AB0F';
+      id_birdlife = 'edible-nest-swiftlet-aerodramus-fuciphagus';
 
     case 'Archilochus_alexandri'
       id_CoL = '6b01e05030a20cc0e9fb9e44afb24ea0';
@@ -5539,6 +5571,15 @@ function links = get_link(taxon, open)
       id_avibase = '7D1A9D5CCCDC597C';
       id_birdlife = 'south-polar-skua-catharacta-maccormicki';
       
+    case 'Dromas_ardeola'
+      id_CoL = 'f9363934762b33e323d2debe6472575b';
+      id_WoRMS = '212718';
+      id_Taxo = '53499';        
+      id_EoL = '1049245';
+      id_AnAge = ''; % not present 2018/10/08     
+      id_avibase = 'C3E33FEBDE75219B';
+      id_birdlife = 'crab-plover-dromas-ardeola';
+      
    case 'Turnix_sylvaticus'
       id_CoL = '8e5d61de7b34711df8fb0d91fabb2b7e';
       id_WoRMS = '';
@@ -5657,6 +5698,15 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_avibase = 'BCF9A19AFE372627';
       id_birdlife = 'killdeer-charadrius-vociferus';
+      
+    case 'Charadrius_hiaticula'
+      id_CoL = '3fa0912eeaf500c3b405edfce0a336ad';
+      id_WoRMS = '212619';
+      id_Taxo = '53597';        
+      id_EoL = '1049341';
+      id_AnAge = taxon;
+      id_avibase = 'EDA37B7C5D4A25ED';
+      id_birdlife = 'common-ringed-plover-charadrius-hiaticula';
       
     case 'Pluvialis_dominica'
       id_CoL = 'aa24423d09987a0d571d2e28180b1960';
@@ -6515,6 +6565,15 @@ function links = get_link(taxon, open)
       id_avibase = '5EC21767FC58DB7D';
       id_birdlife = 'brown-booby-sula-leucogaster';
       
+    case 'Papasula_abbotti'
+      id_CoL = '97ec679bb0dfb2dba2efea2c498ffedf';
+      id_WoRMS = '344099';
+      id_Taxo = '51658';        
+      id_EoL = '1049633';
+      id_AnAge = ''; % not present 2018/10/07       
+      id_avibase = '92A2CCFC06063A60';
+      id_birdlife = 'abbotts-booby-papasula-abbotti';
+      
     case 'Balaeniceps_rex'
       id_CoL = '16bde12b82a99c26cf61f1229cd3f41a';
       id_Taxo = '51842';  
@@ -6608,6 +6667,22 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;       
       id_avibase = 'E2A19474E62F83E1';
       id_birdlife = 'western-marsh-harrier-circus-aeruginosus';
+      
+    case 'Circus_cyaneus'
+      id_CoL = '2b4a6431dc9c5fc6b1c51cebdd705da9';
+      id_Taxo = '52512';        
+      id_EoL = '1049123';
+      id_AnAge = taxon;       
+      id_avibase = 'F558C7F96E40C134';
+      id_birdlife = 'hen-harrier-circus-cyaneus';
+      
+    case 'Milvus_milvus'
+      id_CoL = 'd5a14a9a82d09e99a21b03ffe7528d0e';
+      id_Taxo = '52442';        
+      id_EoL = '914570';
+      id_AnAge = taxon;       
+      id_avibase = '4E76C8C0085794FE';
+      id_birdlife = 'red-kite-milvus-milvus';
       
     case 'Sagittarius_serpentarius'
       id_CoL = 'ec311a0d228794fde1b568883133f0ac';
@@ -6722,6 +6797,14 @@ function links = get_link(taxon, open)
       id_avibase = 'C0BD105FF3017FFC';
       id_birdlife = 'sulawesi-hornbill-rhabdotorrhinus-exarhatus';
       
+    case 'Tockus_monteiri'
+      id_CoL = 'f6af371eceef6d176816e122ba494466';
+      id_Taxo = '72957';        
+      id_EoL = '914497';
+      id_AnAge = ''; % not present 2018/10/106        
+      id_avibase = 'C8898E88839C3CA2';
+      id_birdlife = 'monteiros-hornbill-tockus-monteiri';
+      
     case 'Bucorvus_leadbeateri'
       id_CoL = 'c37431d15839c9b467569ad3045869be';
       id_Taxo = '105636';        
@@ -6786,6 +6869,14 @@ function links = get_link(taxon, open)
       id_avibase = 'DCDDC20BDA55E5D3';
       id_birdlife = 'common-kestrel-falco-tinnunculus';
       
+    case 'Falco_columbarius'
+      id_CoL = '75ecdeb482ff861644679d1cf4236827';
+      id_Taxo = '52817';        
+      id_EoL = '1049166';
+      id_AnAge = taxon;       
+      id_avibase = 'F3DA111CC8A6841B';
+      id_birdlife = 'merlin-falco-columbarius';
+      
     case 'Strigops_habroptila'
       id_CoL = '20a82a91a368244a12ed957c64f608cd';
       id_Taxo = '1125230';        
@@ -6834,6 +6925,14 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;       
       id_avibase = 'ADC0F2618675AC3B';
       id_birdlife = '22684723';
+      
+    case 'Zanda_funerea'
+      id_CoL = '7a47e67a03092b7e9be4de5b1b6df5ea'; % present as Calyptorhynchus funereus 2018/10/09
+      id_Taxo = '54189'; % present as Calyptorhynchus funereus 2018/10/09       
+      id_EoL = '1177830'; % present as Calyptorhynchus funereus 2018/10/09
+      id_AnAge = 'Calyptorhynchus_funereus';       
+      id_avibase = 'E6DFA7077084129A';
+      id_birdlife = 'yellow-tailed-black-cockatoo-zanda-funerea';
       
     case 'Forpus_passerinus'
       id_CoL = '9dde78344c3ce809f5af4d35947c6ae0';
@@ -6933,6 +7032,22 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;       
       id_avibase = '66AC2F1833D93970';
       id_birdlife = 'salvadoris-fig-parrot-psittaculirostris-salvadorii';
+      
+    case 'Prosopeia_tabuensis'
+      id_CoL = '87acc58bee3ad5aa750b76f0f6ef7728';
+      id_Taxo = '70587';        
+      id_EoL = '1177847';
+      id_AnAge = taxon;       
+      id_avibase = '66AC2F1833D93970';
+      id_birdlife = 'salvadoris-fig-parrot-psittaculirostris-salvadorii';
+      
+    case 'Eunymphicus_cornutus'
+      id_CoL = '441c13783d18f589b4dfec3a94ec5c7b';
+      id_Taxo = '54293';        
+      id_EoL = '1177900';
+      id_AnAge = taxon;       
+      id_avibase = 'FC7AB945C8292D66';
+      id_birdlife = 'horned-parakeet-eunymphicus-cornutus';
       
     case 'Acanthisitta_chloris'
       id_CoL = '5b8863030a8922433d7393bcad9b9192';
@@ -7199,6 +7314,22 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;       
       id_avibase = 'E4BB82F50C488B8B';
       id_birdlife = 'northern-house-martin-delichon-urbicum';
+      
+    case 'Tachycineta_leucorrhoa'
+      id_CoL = 'add025935759ec84ff690fc0cc8d8393';
+      id_Taxo = '56442';        
+      id_EoL = '1050737';
+      id_AnAge = ''; % not present 2018/10/06       
+      id_avibase = 'B9861E4A3002BEE4';
+      id_birdlife = 'white-rumped-swallow-tachycineta-leucorrhoa';
+      
+    case 'Tachycineta_albilinea'
+      id_CoL = '05c5fa92f49dec6fda577a28b82ded63';
+      id_Taxo = '56437';        
+      id_EoL = '1050734';
+      id_AnAge = ''; % not present 2018/10/08       
+      id_avibase = 'DBF8F78C668FEDF8';
+      id_birdlife = 'mangrove-swallow-tachycineta-albilinea';
       
     case 'Hirundo_tahitica'
       id_CoL = '7904554037aab6bd85484fad221e9ab7';
@@ -7478,6 +7609,14 @@ function links = get_link(taxon, open)
       id_avibase = '9A87EBB0B75C410B';
       id_birdlife = 'corn-bunting-emberiza-calandra';
       id_ADW = ''; % not present 2018/10/04
+      
+    case 'Emberiza_citrinella'
+      id_CoL = '2fae186795fa76651dba5efa031cbbd4';
+      id_Taxo = '58057';        
+      id_EoL = '1046716';
+      id_AnAge = taxon;    
+      id_avibase = '56FB47C05CB7275F';
+      id_birdlife = 'yellowhammer-emberiza-citrinella';
       
     case 'Passerculus_sandwichensis'
       id_CoL = 'a40e57e0efe04426fca93156aee1edf4';
