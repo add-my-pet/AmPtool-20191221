@@ -3,3 +3,6 @@ Passerella
 Zonotrichia
 Spizelloides
 Spizella
+Atlapetes
+Chlorospingus
+Melospiza

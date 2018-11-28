@@ -1,2 +1,4 @@
 Sarcophilus
 Dasyurus
+Phascogale
+Planigale
