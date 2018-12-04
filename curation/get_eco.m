@@ -3477,6 +3477,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       food    = {'bjCi','jiCic','jiCvf'};
       gender  = {'D'};
       reprod  = {'O'};
+          
+    case 'Oncorhynchus_clarkii_stomias'
+      climate = {'MC'};
+      ecozone = {'MPN'};
+      habitat = {'0jFr','jiMpe'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
+      food    = {'bjCi','jiCic','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
 
     case 'Salmo_trutta'
       climate = {'MC'};

@@ -1,2 +1,3 @@
 Oncorhynchus_tshawytscha
 Oncorhynchus_mykiss
+Oncorhynchus_clarkii_stomias

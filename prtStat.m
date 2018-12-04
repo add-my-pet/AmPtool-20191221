@@ -35,7 +35,7 @@ function [nm, val, units, label] = prtStat(taxa, var, in)
   sel = select_01(taxa); 
 
   if ~(length(val) == length(sel))
-    fprintf('Warning from prtStat: entries in allStart do not correspond with select\n');  
+    fprintf('Warning from prtStat: entries in allStat.mat do not correspond with those in returned by select \n');  
   end
       
   nm = nm(sel); val = val(sel);

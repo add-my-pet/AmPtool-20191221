@@ -85,6 +85,7 @@ CD = { ...
  2.2 {'ab'; 'am'; 'Lp'; 'Li'; 'Wwb'; 'Wwi'; 'GSI'} 
  2.2 {'ah'; 'ab'; 'ap'; 'am'; 'Lh'; 'Lp'; 'Li'; 'Wwi'; 'Ri'} 
  2.2 {'ab'; 'ap'; 'am'; 'Lb'; 'Lp'; 'Li'; 'L_t'; 'Ww0'; 'Wwb'; 'Wwp'; 'Wwi'; 'R_L'} 
+ 2.2 {'ah'; 'ab'; 'ap'; 'am'; 'Lb'; 'Lp'; 'Li'; 'Wwb'; 'Wwp'; 'Wwi'; 'Ri'; 't-L_T'; 't-Ww_T' } 
  2.3 {'tg'; 'ax'; 'ap'; 'am'; 'Li'; 'Wwb'; 'Wwp'; 'Wwi'; 'Ri'} 
  2.3 {'tg'; 'ax'; 'ap'; 'am'; 'Wwb'; 'Wwx'; 'Wwp'; 'Wwi'; 'Ri'} 
  2.3 {'tg'; 'ax'; 'ap'; 'am'; 'Lx'; 'Lp'; 'Li'; 'Wwb'; 'Wwx'; 'Wwp'; 'Wwi'; 'Ri'; 'JLi'} 

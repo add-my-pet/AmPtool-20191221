@@ -152,7 +152,7 @@ function [Hfig, Hleg, val, entries, missing] = shstat(vars, legend, label_title,
     else                   % taxa legend
       n_taxa = size(legend, 1); % number of taxa to be plotted
       sel = zeros(n_entries, n_taxa);
-      [sel(:,1) entries_sel] = select_01('Animalia', legend{1,2});
+      [sel(:,1), entries_sel] = select_01('Animalia', legend{1,2});
       if ~isempty(setdiff(entries_sel, entries))
         fprintf('Error in shstat: entries in allStat do not correspond with entries in select(''Animalia'')\n')
         Hfig = []; missing = []; return
@@ -181,14 +181,14 @@ function [Hfig, Hleg, val, entries, missing] = shstat(vars, legend, label_title,
     end
     if n_vars > 1
       symbol_y = vars{2};
-      [nm1 nm2] = strtok(symbol_y,'_');
+      [nm1, nm2] = strtok(symbol_y,'_');
       if ~isempty(nm2)
         symbol_y = [nm1, '_{', nm2(2:end), '}'];
       end  
     end
     if n_vars > 2
       symbol_z = vars{3};
-      [nm1 nm2] = strtok(symbol_z,'_');
+      [nm1, nm2] = strtok(symbol_z,'_');
       if ~isempty(nm2)
         symbol_z = [nm1, '_{', nm2(2:end), '}'];
       end  

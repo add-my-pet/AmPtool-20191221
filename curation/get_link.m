@@ -2472,6 +2472,13 @@ function links = get_link(taxon, open)
       id_Taxo = '42808'; 
       id_EoL = '205250';
       id_fishbase = taxon_fish;
+                 
+    case 'Oncorhynchus_clarkii_stomias'
+      id_CoL = 'f921d676328601571e8e89817cc11abe';
+      id_WoRMS = '274347';
+      id_Taxo = ''; 
+      id_EoL = '2777842';
+      id_fishbase = 'Oncorhynchus-clarkii';
        
     case 'Salmo_trutta'
       id_CoL = '0909d84d2750016742284669abf8341f';
