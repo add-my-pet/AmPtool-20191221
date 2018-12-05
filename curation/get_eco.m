@@ -3479,12 +3479,12 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       reprod  = {'O'};
           
     case 'Oncorhynchus_clarkii_stomias'
-      climate = {'MC'};
-      ecozone = {'MPN'};
-      habitat = {'0jFr','jiMpe'};
+      climate = {'BSk'};
+      ecozone = {'THn'};
+      habitat = {'0iFc','oiFr','oiFl'};
       embryo  = {'Fg'};
-      migrate = {'Mda'};
-      food    = {'bjCi','jiCic','jiCvf'};
+      migrate = {'Mp'};
+      food    = {'bjCi','jiCii','jiCvf'};
       gender  = {'D'};
       reprod  = {'O'};
 
