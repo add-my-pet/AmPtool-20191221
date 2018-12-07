@@ -24,8 +24,8 @@ function dates = get_date_DEB(sourcefile)
 
 bib = fileread(sourcefile);
 bib = strrep(bib, 'urldate', 'url'); % avoid confusion between urldate and date
-index = 7 + strfind(bib, 'year = {');
-n = length(index); 
+index = 7 + strfind(bib, 'date = {');
+n = length(index'); 
 dates = zeros(n,1);
 for  i = 1:n
    date_i = bib;
