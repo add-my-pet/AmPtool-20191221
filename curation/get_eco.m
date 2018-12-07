@@ -2458,6 +2458,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Aspostichopus_japonicus'
+      climate = {'MA'};
+      ecozone = {'MINE'};
+      habitat = {'0jMcp','jiMb'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biP','bjHa'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Branchiostoma_floridae'
       climate = {'MA'};
       ecozone = {'MAW'};

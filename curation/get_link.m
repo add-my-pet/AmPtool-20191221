@@ -1745,6 +1745,12 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present at 2017/09/21
       id_Wiki = 'Stichopus'; % only present at genus level 2018/05/05 
       
+    case 'Aspostichopus_japonicus'
+      id_CoL = 'f0b36c16aa005e3018d4b53b4854f4e5';
+      id_WoRMS = '241776';
+      id_Taxo = ''; % not present 2018/12/07    
+      id_EoL = '3067730';
+      
     case 'Branchiostoma_floridae'
       id_CoL = '56b084fe5a8af1fb6b065bd2b921487b';
       id_WoRMS = '266208';

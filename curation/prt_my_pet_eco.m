@@ -3,7 +3,7 @@
 
 %%
 function prt_my_pet_eco(metaData, metaPar, destinationFolder)
-% created 2018/05/05 by Bas Kooijman, modified 2018/06/21
+% created 2018/05/05 by Bas Kooijman, modified 2018/06/21, 2018/12/05
 
 %% Syntax
 % <prt_my_pet_eco *prt_my_pet_eco*>(metaData, metaPar, destinationFolder)
@@ -105,7 +105,12 @@ fprintf(oid,['          <td><a class="link" target = "_blank" href="http://www.d
 fprintf(oid,['          <td><a href="../../AmPeco.html#E" target="_blank">ecozone: </a></td> <td>', code_E, '</td>\n']);
 fprintf(oid,['          <td><a href="../../AmPeco.html#F" target="_blank">food:    </a></td> <td>', code_F, '</td>\n']);
 if strcmp(class, 'Reptilia')
-fprintf(oid,['          <td>class: Reptilia</td>\n']);
+  switch order
+    case {'Rhynchocephalia','Squamata'}
+fprintf(oid, '          <td>class: <button id="class" onclick="OpenTreeAtTaxon(''Lepidosauria'')">Reptilia</button></td>\n');
+    otherwise
+fprintf(oid, '          <td>class: <button id="class" onclick="OpenTreeAtTaxon(''Archelosauria'')">Reptilia</button></td>\n');
+  end
 else
 fprintf(oid,['          <td>class: <button id="class" onclick="OpenTreeAtTaxon(''', class, ''')">', class, '</button></td>\n']);
 end
