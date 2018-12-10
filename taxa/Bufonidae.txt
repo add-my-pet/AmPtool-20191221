@@ -1,4 +1,5 @@
 Bufo
+Rhinella
 Peltophryne
 Anaxyrus
 Rhaebo

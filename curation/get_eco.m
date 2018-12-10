@@ -2738,6 +2738,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Squalus_blainville'
+      climate = {'MB','MC'};
+      ecozone = {'MAm','MAE'};
+      habitat = {'0iMcd'};
+      embryo  = {'Mv'};
+      migrate = {'Mo'};
+      food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Somniosus_microcephalus'
       climate = {'ME'};
       ecozone = {'MN','MAN'};
@@ -4178,6 +4188,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Lepidorhombus_whiffiagonis'
+      climate = {'MC'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMcd'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Bothus_podas'
       climate = {'MB'};
       ecozone = {'MAE'};
@@ -5068,6 +5088,26 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Lethrinus_lentjan'
+      climate = {'MA'};
+      ecozone = {'MINE'};
+      habitat = {'0iMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Hsf'};
+      reprod  = {'O'};
+
+    case 'Lethrinus_mahsena'
+      climate = {'MA'};
+      ecozone = {'MINE'};
+      habitat = {'0iMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Hsf'};
+      reprod  = {'O'};
+
     case 'Notothenia_coriiceps'
       climate = {'EF'};
       ecozone = {'MS'};
@@ -5531,6 +5571,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Bufo_bufo'
       climate = {'Cfb','Dfb','Dfc'};
       ecozone = {'THp'};
+      habitat = {'0jFp','jiTf','jiTg'};
+      embryo  = {'Fh'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Rhinella_arenarum'
+      climate = {'Am','Cfa','Cfb'};
+      ecozone = {'TN'};
       habitat = {'0jFp','jiTf','jiTg'};
       embryo  = {'Fh'};
       migrate = {};

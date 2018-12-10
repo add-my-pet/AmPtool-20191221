@@ -70,7 +70,7 @@ for i = 1:nargin
   prt_my_pet_toolbar(metaData.species,metaData.species_en,metaData.date_acc, destinationFolder) % my_pet_toolbar.html
   prt_my_pet_bib(metaData.species, metaData.biblist, destinationFolder)                         % my_pet_bib.bib 
   bib2html([metaData.species, '_bib'], destinationFolder)                                       % my_pet_bib.html 
-  prt_my_pet_cit(metaData, doi, destinationFolder)                                              % citation.html
+  prt_my_pet_cit(metaData, doi, destinationFolder)                                              % my_pet_cit.html
   prt_my_pet_res(data, prdData, auxData, metaData, txtData, metaPar, destinationFolder)         % my_pet_res.html
   prt_my_pet_par(metaData, metaPar, par, txtPar, destinationFolder)                             % my_pet_par.html
   prt_my_pet_stat(metaData, metaPar, par, destinationFolder)                                    % my_pet_stat.html, including pie-png's

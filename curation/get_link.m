@@ -1943,6 +1943,13 @@ function links = get_link(taxon, open)
       id_EoL = '206805';
       id_fishbase = taxon_fish;
        
+    case 'Squalus_blainville'
+      id_CoL = 'f0c6f96622c4d8d39a36dd0209c54cc6';
+      id_WoRMS = '105924';
+      id_Taxo = '188005';        
+      id_EoL = '46560202';
+      id_fishbase = taxon_fish;
+       
     case 'Somniosus_microcephalus'
       id_CoL = '31935504b8da5b895f90bcf5c73f221c';
       id_WoRMS = '105919';
@@ -2974,6 +2981,13 @@ function links = get_link(taxon, open)
       id_EoL = '46324769';
       id_fishbase = taxon_fish;
        
+    case 'Lepidorhombus_whiffiagonis'
+      id_CoL = 'e28a9f4258cb2ab66c286b56500b1b65';
+      id_WoRMS = '127146'; 
+      id_Taxo = '178404';        
+      id_EoL = '46570241';
+      id_fishbase = taxon_fish;
+       
     case 'Bothus_podas'
       id_CoL = 'bdfad96d05a57e67153ca800c8dcbbb2';
       id_WoRMS = '127129';
@@ -3614,6 +3628,20 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/08/17
 
+    case 'Lethrinus_lentjan'
+      id_CoL = '3203631074908d9a527ba77431fa9ccb';
+      id_WoRMS = '212061';
+      id_Taxo = '178742';        
+      id_EoL = '46580938';
+      id_fishbase = taxon_fish;
+
+    case 'Lethrinus_mahsena'
+      id_CoL = '7c78a6683a8f0d94551a65ffaf318f4a';
+      id_WoRMS = '212075';
+      id_Taxo = '178743';        
+      id_EoL = '46580948';
+      id_fishbase = taxon_fish;
+
     case 'Notothenia_coriiceps'
       id_CoL = '0d2d14ff0bfeed9cef3cd477df4e2afd';
       id_WoRMS = '234679';
@@ -3947,6 +3975,13 @@ function links = get_link(taxon, open)
       id_CoL = 'e53ae9ac85ef2c141a509f6405bc98f7';
       id_Taxo = '47784';        
       id_EoL = '333310';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Rhinella_arenarum'
+      id_CoL = 'f5b5c2f753e8519b3245bd8c671584c6';
+      id_Taxo = '1395841';        
+      id_EoL = '1019163';
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
