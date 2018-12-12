@@ -543,6 +543,14 @@ function links = get_link(taxon, open)
       id_EoL = '468743';
       id_molluscabase = '541374';
       
+    case 'Perna_canaliculus'
+      id_CoL = '3d69fa2bde15669f202d0e77b251ab67';
+      id_WoRMS = '397169';
+      id_Taxo = ''; % not present at 2018/12/11       
+      id_EoL = '46466851';
+      id_molluscabase = '397169';
+      id_ADW = ''; % not present at 2018/12/11    
+      
     case 'Mytilus_edulis'
       id_CoL = 'fd90faaa60b00c787b864db5935122a0';
       id_WoRMS = '140480';
@@ -2196,6 +2204,34 @@ function links = get_link(taxon, open)
       id_WoRMS = '126422';
       id_Taxo = '42665';        
       id_EoL = '1000279';
+      id_fishbase = taxon_fish;
+       
+    case 'Sardinella_albella'
+      id_CoL = 'a85cf2e6aba7c9d5e1764d3722c86a28';
+      id_WoRMS = '212268';
+      id_Taxo = '186537';        
+      id_EoL = '46562415';
+      id_fishbase = taxon_fish;
+       
+    case 'Sardinella_gibbosa'
+      id_CoL = '48f17fea5c4bac75b64c3f072d06d14c';
+      id_WoRMS = '212277';
+      id_Taxo = '186543';        
+      id_EoL = '46562421';
+      id_fishbase = taxon_fish;
+       
+    case 'Sardinella_longiceps'
+      id_CoL = '1adda82292d0cd950fda60c824ec3ab7';
+      id_WoRMS = '212269';
+      id_Taxo = '186547';        
+      id_EoL = '46562416';
+      id_fishbase = taxon_fish;
+       
+    case 'Amblygaster_sirm'
+      id_CoL = '6dcb657dbcc8a398fd7abb4d11c6ea8c';
+      id_WoRMS = '217439';
+      id_Taxo = '160578';        
+      id_EoL = '46562494';
       id_fishbase = taxon_fish;
        
     case 'Sprattus_sprattus'

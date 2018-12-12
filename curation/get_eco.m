@@ -698,6 +698,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Perna_canaliculus'
+      climate = {'MC'};
+      ecozone = {'MPSW'}; 
+      habitat = {'0jMp','jiMb','jiMi'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biPp'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Mytilus_edulis'
       climate = {'MC','ME'};
       ecozone = {'MAN','MPN','MN'}; 
@@ -3091,6 +3101,46 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Sardinella_aurita'
       climate = {'MB'};
       ecozone = {'MAW','MAE'};
+      habitat = {'0iMpe','0iMr'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Sardinella_albella'
+      climate = {'MA'};
+      ecozone = {'MI','MPSW'};
+      habitat = {'0iMpe','0iMr'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Sardinella_gibbosa'
+      climate = {'MA'};
+      ecozone = {'MI','MPSW'};
+      habitat = {'0iMpe','0iMr'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Sardinella_longiceps'
+      climate = {'MA'};
+      ecozone = {'MI','MPSW'};
+      habitat = {'0iMpe','0iMr'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Amblygaster_sirm'
+      climate = {'MA'};
+      ecozone = {'MI','MPSW'};
       habitat = {'0iMpe','0iMr'};
       embryo  = {'Mpe'};
       migrate = {'Mo'};
