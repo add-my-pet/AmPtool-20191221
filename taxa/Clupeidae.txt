@@ -4,3 +4,4 @@ Amblygaster
 Sprattus
 Clupea
 Alosa
+Ethmalosa

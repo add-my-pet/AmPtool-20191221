@@ -655,6 +655,14 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present at 2017/08/09
       id_molluscabase = '759016';
       
+    case 'Lobatus_gigas'
+      id_CoL = 'e9cd75257b06d72b4c56c8d5c7070010';
+      id_WoRMS = '564730';
+      id_Taxo = '35586'; % present as Strombus gigas 2018/12/14      
+      id_EoL = '455238';       
+      id_molluscabase = '564730';
+      id_ADW = 'Strombus_gigas'; % present as Strombus gigas 2018/12/14  
+      
     case 'Littorina_littorea'
       id_CoL = '8937d1f10190ce22541aa498ba4773c6';
       id_WoRMS = '140262';
@@ -2263,6 +2271,13 @@ function links = get_link(taxon, open)
       id_EoL = '205467';
       id_fishbase = taxon_fish;
 
+    case 'Ethmalosa_fimbriata'
+      id_CoL = '077a1dad56e2468065240f193d34b596';
+      id_WoRMS = '280725';
+      id_Taxo = '174176';        
+      id_EoL = '46562516';
+      id_fishbase = taxon_fish;
+
     case 'Engraulis_encrasicolus'
       id_CoL = '2abe41c8ee39bb550534f328bf4717a3';
       id_WoRMS = '126426';
@@ -2757,6 +2772,14 @@ function links = get_link(taxon, open)
       id_Taxo = '92960';        
       id_EoL = '206692';
       id_fishbase = taxon_fish;
+       
+    case 'Gadus_chalcogrammus'
+      id_CoL = '0cc6ba2f7301e1a9e54c106af796cd96';
+      id_WoRMS = '300735';
+      id_Taxo = '44355';  % present as Theragra chalcogramma 2018/12/14      
+      id_EoL = '216657';
+      id_fishbase = taxon_fish;
+      id_ADW = 'Theragra_chalcogramma'; % present as Theragra chalcogramma 2018/12/14 
        
     case 'Boreogadus_saida'
       id_CoL = '74b88f2be1326b10f683981eb180ba11';
@@ -3545,6 +3568,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '218588';
       id_Taxo = '159910';        
       id_EoL = '220571';
+      id_fishbase = taxon_fish;
+       
+    case 'Spicara_smaris'
+      id_CoL = '53c2f9408b4c34eda0a739e9a9430f93';
+      id_WoRMS = '126830';
+      id_Taxo = '187957';        
+      id_EoL = '46578160';
       id_fishbase = taxon_fish;
        
     case 'Siganus_sutor'

@@ -5,4 +5,5 @@ Diplodus
 Lithognathus
 Boops
 Acanthopagrus
+Spicara
 
