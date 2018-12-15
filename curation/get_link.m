@@ -1265,6 +1265,13 @@ function links = get_link(taxon, open)
       id_Taxo = '33780';        
       id_EoL = '509431';
        
+    case 'Aristeus_antennatus'
+      id_CoL = 'd8b8be09331d3ea62c0d6c1d2a9024e0';
+      id_WoRMS = '107083';
+      id_Taxo = '204281'; % only present at genus level at 2018/12/15       
+      id_EoL = '46501823';
+      id_Wiki = 'Aristeidae'; % only present at family level at 2018/12/15  
+
     case 'Chorismus_antarcticus'
       id_CoL = '55a06e6ea2678476bb19440fe7007ace';
       id_WoRMS = '369214';
@@ -2235,6 +2242,13 @@ function links = get_link(taxon, open)
       id_EoL = '46562416';
       id_fishbase = taxon_fish;
        
+    case 'Sardinops_sagax'
+      id_CoL = '50999ef5259ef866261859afc093acbe';
+      id_WoRMS = '217452';
+      id_Taxo = '42672';        
+      id_EoL = '46562463';
+      id_fishbase = taxon_fish;
+      
     case 'Amblygaster_sirm'
       id_CoL = '6dcb657dbcc8a398fd7abb4d11c6ea8c';
       id_WoRMS = '217439';
@@ -2330,13 +2344,20 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present 2017/08/12
 
     case 'Enteromius_liberiensis'
-      id_CoL = '6eb324d8e9ec0ee0a49781d04d76d2ee';
+      id_CoL = '8d2f0628b6606e74ec68d0b7266b836c';
       id_WoRMS = ''; % not present 2018/11/04
       id_Taxo = '163116'; % present as Barbus liberiensis 2018/11/04
       id_EoL = '211844'; % present as Barbus liberiensis 2018/11/04
       id_fishbase = taxon_fish;
       id_ADW = 'Barbus_liberiensis';
 
+    case 'Schizothorax_richardsonii'
+      id_CoL = '963f554b3482a7f3ea34bc8a5fdf4253';
+      id_WoRMS = ''; % not present 2018/12/15 
+      id_Taxo = '186977';
+      id_EoL = '205334';
+      id_fishbase = taxon_fish;
+      
     case 'Luciobarbus_sclateri'
       id_CoL = '9c12f86d9e0181905f22e2497dc4f741';
       id_WoRMS = '474116'; 
@@ -2942,6 +2963,13 @@ function links = get_link(taxon, open)
       id_EoL = '221078';
       id_fishbase = taxon_fish;
        
+    case 'Aphanopus_carbo'
+      id_CoL = '0a49e7c45d77cb0727a237885297be00';
+      id_WoRMS = '127085';
+      id_Taxo = '161103';  
+      id_EoL = '46577356';
+      id_fishbase = taxon_fish;
+       
     case 'Mastacembelus_erythrotaenia'
       id_CoL = '9f4397e88523d3980ca643eb8822e6fc';
       id_WoRMS = ''; % not present 2017/06/16
@@ -2975,6 +3003,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126822';
       id_Taxo = '45255';        
       id_EoL = '206048';
+      id_fishbase = taxon_fish;
+       
+    case 'Trachurus_mediterraneus'
+      id_CoL = '80408e449ad327b7d6cda3878f5d59d2';
+      id_WoRMS = '126820';
+      id_Taxo = '189253';        
+      id_EoL = '46578052';
       id_fishbase = taxon_fish;
        
     case 'Seriola_dumerili'

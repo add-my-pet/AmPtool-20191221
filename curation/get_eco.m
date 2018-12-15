@@ -1718,6 +1718,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Aristeus_antennatus'
+      climate = {'MB'};
+      ecozone = {'MAm'};
+      habitat = {'0bMb','bjMpe','jiMb'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'bjP','jiD','jiS'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Chorismus_antarcticus'
       climate = {'ME'};
       ecozone = {'MS'};
@@ -3148,6 +3158,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Sardinops_sagax'
+      climate = {'MB'};
+      ecozone = {'MI','MP'};
+      habitat = {'0iMpe','0iMr'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Amblygaster_sirm'
       climate = {'MA'};
       ecozone = {'MI','MPSW'};
@@ -3288,6 +3308,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Schizothorax_richardsonii'
+      climate = {'Cwa'};
+      ecozone = {'THp'};
+      habitat = {'0iFr'};
+      embryo  = {'Fg'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+      
     case 'Luciobarbus_sclateri'
       climate = {'Csb'};
       ecozone = {'THp'};
@@ -4128,6 +4158,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Aphanopus_carbo'
+      climate = {'MB','MC'};
+      ecozone = {'MANE'};
+      habitat = {'0iMp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Mastacembelus_erythrotaenia'
       climate = {'Am'};
       ecozone = {'TPi'};
@@ -4170,6 +4210,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
 
     case 'Trachurus_trachurus'
       climate = {'MC'};
+      ecozone = {'MAE'};
+      habitat = {'0jMp','jiMcp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Trachurus_mediterraneus'
+      climate = {'MB'};
       ecozone = {'MAE'};
       habitat = {'0jMp','jiMcp'};
       embryo  = {'Mp'};
