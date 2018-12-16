@@ -1088,6 +1088,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Dosidicus_gigas'
+      climate = {'MC'};
+      ecozone = {'MPE'};
+      habitat = {'0iMp'};
+      embryo  = {'Mc'};      
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Octopus_cyanea'
       climate = {'MA'};
       ecozone = {'MI','MPSW'};
@@ -3968,6 +3978,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Beryx_splendens'
+      climate = {'MB'};
+      ecozone = {'MC'};
+      habitat = {'0jMp','jiMpb'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Holocentrus_adscensionis'
       climate = {'MA'};
       ecozone = {'MA'};
@@ -4708,6 +4728,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Mugil_liza'
+      climate = {'MA'};
+      ecozone = {'MAW'};
+      habitat = {'jiFm','0iMm'};
+      embryo  = {'Mp'};
+      migrate = {'Mdc'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Pseudochromis_flavivertex'
       climate = {'MA'};
       ecozone = {'MINW'};
@@ -5198,6 +5228,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Hh'};
       reprod  = {'O'};
 
+    case 'Serranus_cabrilla'
+      climate = {'MB','MC'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMcd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'Hh'};
+      reprod  = {'O'};
+
     case 'Perca_fluviatilis'
       climate = {'Cfa','Dfc','Dfc'};
       ecozone = {'THp'};
@@ -5321,6 +5361,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Sebastes_capensis'
       climate = {'MB'};
       ecozone = {'MAS'};
+      habitat = {'0jMp','jiMdb'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Scorpaena_maderensis'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
       habitat = {'0jMp','jiMdb'};
       embryo  = {'Mv'};
       migrate = {};

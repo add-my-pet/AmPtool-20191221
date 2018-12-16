@@ -833,6 +833,13 @@ function links = get_link(taxon, open)
       id_ADW = 'Loligo_pealeii'; 
       id_molluscabase = '574541';
       
+    case 'Dosidicus_gigas'
+      id_CoL = 'f8d0240ab22bfbd59daabaf513d2c90f';
+      id_WoRMS = '342291';
+      id_Taxo = '158112';  
+      id_EoL = '403181';
+      id_molluscabase = '342291';
+      
    case 'Octopus_cyanea'
       id_CoL = '8e622e1b7f9777d3f33c42f52836d21a';
       id_WoRMS = '210788';
@@ -2824,6 +2831,13 @@ function links = get_link(taxon, open)
       id_EoL = '206716';
       id_fishbase = taxon_fish;
        
+    case 'Beryx_splendens'
+      id_CoL = '8953e6e3718493eae59680ca376ef244';
+      id_WoRMS = '126395';
+      id_Taxo = '44739';        
+      id_EoL = '46567186';
+      id_fishbase = taxon_fish;
+       
     case 'Holocentrus_adscensionis'
       id_CoL = '09be05d2d25f1e7254c0380f441b7fa3';
       id_WoRMS = '159378';
@@ -3356,7 +3370,14 @@ function links = get_link(taxon, open)
       id_Taxo = '46293';        
       id_EoL = '994736';
       id_fishbase = taxon_fish;
-       
+      
+    case 'Mugil_liza'
+      id_CoL = 'c2ffb086cc717f96d1e9052b93ccf03d';
+      id_WoRMS = '273655';
+      id_Taxo = '180429'; 
+      id_EoL = '46571524';
+      id_fishbase = taxon_fish;
+     
     case 'Pseudochromis_flavivertex'
       id_CoL = 'b697a0538b3401dbaae2a64b561eb983';
       id_WoRMS = '218331';
@@ -3707,6 +3728,13 @@ function links = get_link(taxon, open)
       id_EoL = '215470';
       id_fishbase = taxon_fish;
        
+    case 'Serranus_cabrilla'
+      id_CoL = '45132b4ce679695b0f33e093c4611d44';
+      id_WoRMS = '127041';
+      id_Taxo = '187452';        
+      id_EoL = '46579257';
+      id_fishbase = taxon_fish;
+       
     case 'Perca_fluviatilis'
       id_CoL = '593aaa7c79677b093fe94582a14d3f94';
       id_WoRMS = '151353';
@@ -3798,6 +3826,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '221446';
       id_Taxo = '187257';        
       id_EoL = '994487';
+      id_fishbase = taxon_fish;
+       
+    case 'Scorpaena_maderensis'
+      id_CoL = 'c99cbc6eeb4411b9abf2e5919660975a';
+      id_WoRMS = '274721';
+      id_Taxo = '187153';        
+      id_EoL = '46567904';
       id_fishbase = taxon_fish;
        
     case 'Anarhichas_denticulatus'
@@ -4617,7 +4652,7 @@ function links = get_link(taxon, open)
       id_Taxo = '48475'; 
       id_EoL = '454546';
       id_AnAge = taxon;
-      id_ReptileDB = taxon_rep;
+      id_ReptileDB = taxon_rep;       
        
     case 'Platysternon_megacephalum'
       id_CoL = '9e3d4546e9f1e79be8b7e03d1ec7752a';
