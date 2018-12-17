@@ -2961,6 +2961,28 @@ function links = get_link(taxon, open)
       id_EoL = '223943';
       id_fishbase = taxon_fish;
        
+    case 'Thunnus_obesus'
+      id_CoL = '18f3951d92c9d9afa06f9d5785306b06';
+      id_WoRMS = '127028';
+      id_Taxo = '46702';        
+      id_EoL = '46577335';
+      id_fishbase = taxon_fish;
+       
+    case 'Thunnus_albacares'
+      id_CoL = '3014fa864f503e9b61ac1b523c577ae5';
+      id_WoRMS = '127027';
+      id_Taxo = '189034';        
+      id_EoL = '205934';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2018/12/17
+       
+    case 'Katsuwonus_pelamis'
+      id_CoL = '74a1965ab1023269280bedebb9a09a51';
+      id_WoRMS = '127018';
+      id_Taxo = '46680';        
+      id_EoL = '46577294';
+      id_fishbase = taxon_fish;
+       
     case 'Scomber_scombrus'
       id_CoL = 'f656631fc42068100e2330c40c8fda18';
       id_WoRMS = '127023';
@@ -3848,6 +3870,14 @@ function links = get_link(taxon, open)
       id_Taxo = '46468';        
       id_EoL = '222376';
       id_fishbase = taxon_fish;
+       
+    case 'Anoplopoma_fimbria'
+      id_CoL = '3de38185591bbc2b5e02b8477dcd55ff';
+      id_WoRMS = '159463';
+      id_Taxo = '44957';        
+      id_EoL = '46569739';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2018/12/17
        
     case 'Zoarces_viviparus'
       id_CoL = 'b17c8f2af4a90b649ca031af1d8ae0fa';

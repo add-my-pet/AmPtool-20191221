@@ -4158,6 +4158,36 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Thunnus_obesus'
+      climate = {'MA','MB'};
+      ecozone = {'MC'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'biPz','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Thunnus_albacares'
+      climate = {'MA','MB'};
+      ecozone = {'MC'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'biPz','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Katsuwonus_pelamis'
+      climate = {'MA','MB'};
+      ecozone = {'MC'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'biPz','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Scomber_scombrus'
       climate = {'MC'};
       ecozone = {'MAN'};
@@ -5398,6 +5428,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Anoplopoma_fimbria'
+      climate = {'MC'};
+      ecozone = {'MPN'};
+      habitat = {'0iMcd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Zoarces_viviparus'
       climate = {'MC'};
       ecozone = {'MAE'};
@@ -5407,7 +5447,7 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       food    = {'biCi'};
       gender  = {'D'};
       reprod  = {'O'};
-
+      
     case 'Gasterosteus_aculeatus'
       climate = {'MC'};
       ecozone = {'MA','MP','TH'};

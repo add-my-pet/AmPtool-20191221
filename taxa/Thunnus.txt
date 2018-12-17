@@ -1,2 +1,4 @@
 Thunnus_orientalis
 Thunnus_thynnus
+Thunnus_obesus
+Thunnus_albacares
