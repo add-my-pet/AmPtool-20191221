@@ -2672,6 +2672,14 @@ function links = get_link(taxon, open)
       id_EoL = '208465';
       id_fishbase = taxon_fish;
        
+    case 'Macruronus_novaezelandiae'
+      id_CoL = '0c9ebd10671215be47b201d4a8070db6';
+      id_WoRMS = '272450';
+      id_Taxo = '179492';        
+      id_EoL = '46564933';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2018/12/18
+       
     case 'Raniceps_raninus'
       id_CoL = 'bde2dc26759b5a5d568a3b000a7d0ed6';
       id_WoRMS = '126442';

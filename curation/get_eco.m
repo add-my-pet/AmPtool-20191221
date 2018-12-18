@@ -3758,6 +3758,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Macruronus_novaezelandiae'
+      climate = {'MC'};
+      ecozone = {'MPSW'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jpCi','piCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Raniceps_raninus'
       climate = {'MC'};
       ecozone = {'MAE'};
