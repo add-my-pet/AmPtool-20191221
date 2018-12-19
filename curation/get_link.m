@@ -381,6 +381,14 @@ function links = get_link(taxon, open)
       id_EoL = '448794';
       id_molluscabase = '156996';
       
+    case 'Donax_trunculus'
+      id_CoL = 'af623992e61fc9ab63a2248b744325a7';
+      id_WoRMS = '139602'; 
+      id_Taxo = '39569';        
+      id_EoL = '46474538';      
+      id_molluscabase = '139602';
+      id_ADW = ''; % not present at 2018/12/19
+      
     case 'Macoma_balthica'
       id_CoL = '7752e8e469ee3f69471f23a73bb94786';
       id_WoRMS = '141579'; % unaccepeted, to Limecola balthica (Linnaeus, 1758)
@@ -1278,6 +1286,19 @@ function links = get_link(taxon, open)
       id_Taxo = '204281'; % only present at genus level at 2018/12/15       
       id_EoL = '46501823';
       id_Wiki = 'Aristeidae'; % only present at family level at 2018/12/15  
+
+    case 'Xiphopenaeus_kroyeri'
+      id_CoL = 'ea0aa1fa454c3722239daaeffa927af1';
+      id_WoRMS = '377690';
+      id_Taxo = '222495'; % only present at genus level at 2018/12/19       
+      id_EoL = '46502158';
+
+    case 'Haliporoides_sibogae'
+      id_CoL = '9a6257efddb14f2617b7237d54e5eba0';
+      id_WoRMS = '220285';
+      id_Taxo = '145064'; % present at geneus level only 2018/12/19    
+      id_EoL = '1040006';
+      id_Wiki = 'Penaeoidea'; % only present at superfamily level at 2018/12/19  
 
     case 'Chorismus_antarcticus'
       id_CoL = '55a06e6ea2678476bb19440fe7007ace';
@@ -2753,6 +2774,14 @@ function links = get_link(taxon, open)
       id_EoL = '213429';
       id_fishbase = taxon_fish;
        
+    case 'Phycis_blennoides'
+      id_CoL = 'f898d7e1d04d01621a5fccb488d55932';
+      id_WoRMS = '126501';
+      id_Taxo = '44347';        
+      id_EoL = '46565095';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Phycis'; % prsent at genus level only 2018/12/19
+       
     case 'Trisopterus_luscus'
       id_CoL = 'cd5e7b2693846a253c3422d6fe98ae1a';
       id_WoRMS = '126445';
@@ -3633,6 +3662,28 @@ function links = get_link(taxon, open)
       id_Taxo = '173233';  
       id_EoL = '205144';
       id_Wiki = 'Diplodus';
+      id_fishbase = taxon_fish;
+       
+    case 'Diplodus_sargus'
+      id_CoL = 'd7c82b110a4ddb3f3ec6a7876662f354';
+      id_WoRMS = '127053';
+      id_Taxo = '192585';  
+      id_EoL = '205145';
+      id_fishbase = taxon_fish;
+       
+    case 'Diplodus_annularis'
+      id_CoL = 'adc5fcec221232e4c03fb415e027699d';
+      id_WoRMS = '127049';
+      id_Taxo = '173221';  
+      id_EoL = '46579944';
+      id_Wiki = 'Diplodus';
+      id_fishbase = taxon_fish;
+       
+    case 'Diplodus_vulgaris'
+      id_CoL = '67692e777d71e07afdf2b4974392c989';
+      id_WoRMS = '127054';
+      id_Taxo = '173241';  
+      id_EoL = '46579947';
       id_fishbase = taxon_fish;
        
     case 'Lithognathus_mormyrus'

@@ -488,6 +488,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Donax_trunculus'
+      climate = {'MC'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMb','jiMi'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPp','jiD'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Macoma_balthica'
       climate = {'MC'};
       ecozone = {'MAE'};
@@ -1731,6 +1741,26 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Aristeus_antennatus'
       climate = {'MB'};
       ecozone = {'MAm'};
+      habitat = {'0bMb','bjMpe','jiMb'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'bjP','jiD','jiS'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Xiphopenaeus_kroyeri'
+      climate = {'MA','MB'};
+      ecozone = {'MAW'};
+      habitat = {'0bMb','bjMpe','jiMb'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'bjP','jiD','jiS'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Haliporoides_sibogae'
+      climate = {'MB'};
+      ecozone = {'MPW'};
       habitat = {'0bMb','bjMpe','jiMb'};
       embryo  = {'Mbf'};
       migrate = {};
@@ -3868,6 +3898,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Phycis_blennoides'
+      climate = {'MB','MC'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Trisopterus_luscus'
       climate = {'MC'};
       ecozone = {'MANE'};
@@ -5091,6 +5131,36 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Diplodus_puntazzo'
       climate = {'MB'};
       ecozone = {'MAE'};
+      habitat = {'0iMp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'biCi','jiHa'};
+      gender  = {'Hsm'};
+      reprod  = {'O'};
+
+    case 'Diplodus_sargus'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0iMp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'biCi','jiHa'};
+      gender  = {'Hsm'};
+      reprod  = {'O'};
+
+    case 'Diplodus_annularis'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0iMp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'biCi','jiHa'};
+      gender  = {'Hsm'};
+      reprod  = {'O'};
+
+    case 'Diplodus_vulgaris'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
       habitat = {'0iMp'};
       embryo  = {'Mp'};
       migrate = {'Mo'};
