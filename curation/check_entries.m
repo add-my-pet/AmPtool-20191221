@@ -36,6 +36,7 @@ for i = 1:n_server
   kill = strfind(txt,'href="'); txt(1:kill(1) + 5)= [];
   server{i} = txt(1:strfind(txt,'/"') - 1);
 end
+
 % cell string with server entries_web stored on server
 txt = urlread('https://www.bio.vu.nl/thb/deb/deblab/add_my_pet/entries_web/');
 head = strfind(txt,'folder.gif'); txt(1:head(1)) = []; 
@@ -44,6 +45,7 @@ for i = 1:n_server_web
   kill = strfind(txt,'href="'); txt(1:kill(1) + 5)= [];
   server_web{i} = txt(1:strfind(txt,'/"') - 1);
 end
+
 % cell string with server entries_zip stored on server
 txt = urlread('https://www.bio.vu.nl/thb/deb/deblab/add_my_pet/entries_zip/');
 n_zip = strfind(txt,'/icons/compressed.gif'); 
@@ -53,7 +55,11 @@ for i = 1:n_server_zip
   txt_0 = strfind(txt_i,'href="'); 
   txt_1 = strfind(txt_i,'_2');
   server_zip{i} = txt_i(txt_0+6:txt_1-1);
+  if i > 1 && strcmp(server_zip{i},server_zip{i-1})
+    fprintf(['warning from check_entries: double zip for ', server_zip{i}, '\n']);
+  end
 end
+server_zip = unique(server_zip);
 
 diff = setdiff(stat, local);
 if ~isempty(diff)
