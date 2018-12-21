@@ -6,3 +6,4 @@ Sprattus
 Clupea
 Alosa
 Ethmalosa
+Tenualosa

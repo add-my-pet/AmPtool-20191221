@@ -2320,6 +2320,13 @@ function links = get_link(taxon, open)
       id_EoL = '46562516';
       id_fishbase = taxon_fish;
 
+    case 'Tenualosa_ilisha'
+      id_CoL = '1eb60cae8624307444d95b2f781562e0';
+      id_WoRMS = '278568';
+      id_Taxo = '188874';        
+      id_EoL = '46562485';
+      id_fishbase = taxon_fish;
+
     case 'Engraulis_encrasicolus'
       id_CoL = '2abe41c8ee39bb550534f328bf4717a3';
       id_WoRMS = '126426';
@@ -2651,6 +2658,13 @@ function links = get_link(taxon, open)
       id_EoL = '994979';
       id_fishbase = taxon_fish;
        
+    case 'Vinciguerria_nimbaria'
+      id_CoL = 'c7cd0d6dc1b280950efadc37c9752996';
+      id_WoRMS = '127303';
+      id_Taxo = '190017';        
+      id_EoL = '46563253';
+      id_fishbase = taxon_fish;
+       
     case 'Harpadon_nehereus'
       id_CoL = '20bdc080c3d6f6e9ec19d35a7a538828';
       id_WoRMS = '217661';
@@ -2721,6 +2735,22 @@ function links = get_link(taxon, open)
       id_Taxo = '171920';  
       id_Wiki = 'Coryphaenoides';
       id_EoL = '218274';
+      id_fishbase = taxon_fish;
+       
+    case 'Coelorinchus_caelorhincus'
+      id_CoL = 'e34f6ba8afda162d8af55de36af104b4';
+      id_WoRMS = '398381';
+      id_Taxo = '115044'; % present at genus level only 2018/12/21
+      id_Wiki = 'Coelorinchus'; % present at genus level only 2018/12/21
+      id_EoL = '46564880';
+      id_fishbase = taxon_fish;
+       
+    case 'Nezumia_sclerorhynchus'
+      id_CoL = '42e5104f31d6fcab75804fab5467a010';
+      id_WoRMS = '126475';
+      id_Taxo = '181312';  
+      id_Wiki = 'Nezumia';
+      id_EoL = '46564628';
       id_fishbase = taxon_fish;
        
     case 'Trachyrincus_scabrus'
@@ -3621,6 +3651,41 @@ function links = get_link(taxon, open)
       id_EoL = '212586';
       id_fishbase = taxon_fish;
        
+    case 'Lutjanus_erythropterus'
+      id_CoL = '716ae6a1a5da632263a3c0d53c2235a7';
+      id_WoRMS = '276534';
+      id_Taxo = '179219'; 
+      id_EoL = '46580769';
+      id_fishbase = taxon_fish;
+       
+    case 'Lutjanus_malabaricus'
+      id_CoL = '422bf7d1572b34f7446104ceb12e6ab6';
+      id_WoRMS = '218481';
+      id_Taxo = '106184'; 
+      id_EoL = '46580738';
+      id_fishbase = taxon_fish;
+       
+    case 'Lutjanus_sebae'
+      id_CoL = '3cbd773f6585ec11cab26d0006e098e0';
+      id_WoRMS = '218499';
+      id_Taxo = '106182'; 
+      id_EoL = '46580753';
+      id_fishbase = taxon_fish;
+       
+    case 'Lutjanus_carponotatus'
+      id_CoL = '2f9ca6ea7842044ea7876e43966fe886';
+      id_WoRMS = '276528';
+      id_Taxo = '179212'; 
+      id_EoL = '46580763';
+      id_fishbase = taxon_fish;
+       
+    case 'Lutjanus_vitta'
+      id_CoL = '6296559cca2244e0abed0807f1eb0a73';
+      id_WoRMS = '218483';
+      id_Taxo = '106211'; 
+      id_EoL = '46580740';
+      id_fishbase = taxon_fish;
+       
     case 'Lobotes_surinamensis'
       id_CoL = '4d5106709e150cd3aa658259a8fd12b6';
       id_WoRMS = '126973';
@@ -3802,6 +3867,13 @@ function links = get_link(taxon, open)
       id_EoL = '206618';
       id_fishbase = taxon_fish;
        
+    case 'Epinephelus_morio'
+      id_CoL = '677a265846eeb172848cc85fe790d17b';
+      id_WoRMS = '159354';
+      id_Taxo = '45076';        
+      id_EoL = '46579618';
+      id_fishbase = taxon_fish;
+       
     case 'Serranus_scriba'
       id_CoL = '477173bdd7c8e27ad4631a347f8fd45b';
       id_WoRMS = '127043';
@@ -3879,6 +3951,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '274658';
       id_Taxo = '183991';        
       id_EoL = '1157162';
+      id_fishbase = taxon_fish;
+       
+    case 'Platycephalus_indicus'
+      id_CoL = '2574f36364423658842f266629b2fd69';
+      id_WoRMS = '127234';
+      id_Taxo = '44962';        
+      id_EoL = '46568548';
       id_fishbase = taxon_fish;
        
     case 'Chelidonichthys_lucerna'
