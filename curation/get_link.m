@@ -841,6 +841,14 @@ function links = get_link(taxon, open)
       id_ADW = 'Loligo_pealeii'; 
       id_molluscabase = '574541';
       
+    case 'Doryteuthis_gahi'
+      id_CoL = '49222604ed9848e4e149c623ff16c2c9';
+      id_WoRMS = '410351';
+      id_Taxo = '157868'; % present as Loligo gahi 
+      id_EoL = '592758';
+      id_ADW = 'Loligo_gahi'; 
+      id_molluscabase = '341880';
+      
     case 'Dosidicus_gigas'
       id_CoL = 'f8d0240ab22bfbd59daabaf513d2c90f';
       id_WoRMS = '342291';
@@ -1987,6 +1995,13 @@ function links = get_link(taxon, open)
       id_EoL = '204500';
       id_fishbase = taxon_fish;
        
+    case 'Deania_calcea'
+      id_CoL = '9ef858e0ac1c915964ed8ace94581c68';
+      id_WoRMS = '105903';
+      id_Taxo = '41817';        
+      id_EoL = '46560171';
+      id_fishbase = taxon_fish;
+       
     case 'Squalus_acanthias'
       id_CoL = 'b141071e3edeab5432a46ce9d8dac40c';
       id_WoRMS = '105923';
@@ -2422,6 +2437,13 @@ function links = get_link(taxon, open)
       id_EoL = '46324948';
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/08/14
+      
+    case 'Capoeta_capoeta'
+      id_CoL = 'd5bd75ebf2473d7081dedd4db26cc46c';
+      id_WoRMS = ''; % not present 2018/12/22 
+      id_Taxo = '43827';
+      id_EoL = '1156460';
+      id_fishbase = taxon_fish;
       
     case 'Danio_rerio'
       id_CoL = 'ae6d1ad09071086da0498b39630b01f8';
@@ -3073,6 +3095,13 @@ function links = get_link(taxon, open)
       id_EoL = '46577356';
       id_fishbase = taxon_fish;
        
+    case 'Brama_brama'
+      id_CoL = 'd2de41551c8f3bf33a85cf1fd8481c2a';
+      id_WoRMS = '126783';
+      id_Taxo = '45040';  
+      id_EoL = '46577908';
+      id_fishbase = taxon_fish;
+       
     case 'Mastacembelus_erythrotaenia'
       id_CoL = '9f4397e88523d3980ca643eb8822e6fc';
       id_WoRMS = ''; % not present 2017/06/16
@@ -3183,6 +3212,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '127146'; 
       id_Taxo = '178404';        
       id_EoL = '46570241';
+      id_fishbase = taxon_fish;
+       
+    case 'Lepidorhombus_boscii'
+      id_CoL = '45a09c532181c7d4f3447e73d03d0c11';
+      id_WoRMS = '127145'; 
+      id_Taxo = '178403';        
+      id_EoL = '46570240';
       id_fishbase = taxon_fish;
        
     case 'Bothus_podas'
@@ -3401,7 +3437,7 @@ function links = get_link(taxon, open)
       id_Taxo = '44467';        
       id_EoL = '223483';
       id_fishbase = taxon_fish;
-       
+              
     case 'Nothobranchius_furzeri'
       id_CoL = '122b5c294fd8d0d77e50831f6c089e15';
       id_WoRMS = '1013134'; 
@@ -3508,6 +3544,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '127093';
       id_Taxo = '46399';        
       id_EoL = '210202';
+      id_fishbase = taxon_fish;
+       
+    case 'Ammodytes_marinus'
+      id_CoL = '758e987be94f3dece0f59cbfc8de1256';
+      id_WoRMS = '126751';
+      id_Taxo = '160649';        
+      id_EoL = '46573103';
       id_fishbase = taxon_fish;
        
     case 'Achoerodus_viridis'
@@ -3636,6 +3679,13 @@ function links = get_link(taxon, open)
       id_EoL = '205824';
       id_fishbase = taxon_fish;
        
+    case 'Pomadasys_kaakan'
+      id_CoL = 'e6586b781394752bbe31e3b18d3f1625';
+      id_WoRMS = '218566';
+      id_Taxo = '184494';        
+      id_EoL = '46578439';
+      id_fishbase = taxon_fish;
+       
     case 'Lutjanus_fulviflamma'
       id_CoL = '4014e54315e91f4329bbdd5601dd1b9f';
       id_WoRMS = '218490';
@@ -3721,6 +3771,13 @@ function links = get_link(taxon, open)
       id_EoL = '587825';
       id_fishbase = taxon_fish;
        
+    case 'Rhabdosargus_sarba'
+      id_CoL = '45f97694d4d683203a2672eba321d406';
+      id_WoRMS = '218621';
+      id_Taxo = '185878';        
+      id_EoL = '46580010';
+      id_fishbase = taxon_fish;
+       
     case 'Diplodus_puntazzo'
       id_CoL = '7be95da2081d27bd05a0d13a5a9ba2f2';
       id_WoRMS = '127052';
@@ -3783,13 +3840,19 @@ function links = get_link(taxon, open)
       id_CoL = 'b95005208d28f9fbdc4c90a74e502fae';
       id_WoRMS = '219688';
       id_Taxo = '187610';   
-      id_Wiki = 'Siganus';
       id_EoL = '214690';
+      id_fishbase = taxon_fish;
+       
+    case 'Siganus_rivulatus'
+      id_CoL = 'fea6b49867b16f780abfbee94b4c55a2';
+      id_WoRMS = '219688';
+      id_Taxo = '46750';   
+      id_EoL = '46577144';
       id_fishbase = taxon_fish;
        
     case 'Scatophagus_argus'
       id_CoL = 'ff1b84d7b315c0069609d5e1b7d2b37c';
-      id_WoRMS = '276970';
+      id_WoRMS = '127045';
       id_Taxo = '45387';        
       id_EoL = '206741';
       id_fishbase = taxon_fish;
@@ -3814,6 +3877,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126555';
       id_Taxo = '44235';        
       id_EoL = '206728';
+      id_fishbase = taxon_fish;
+       
+    case 'Lophius_budegassa'
+      id_CoL = 'df7f154bea778d0e8d2947f93d849f53';
+      id_WoRMS = '126554';
+      id_Taxo = '125346';        
+      id_EoL = '46566105';
       id_fishbase = taxon_fish;
        
     case 'Balistes_vetula'
@@ -3937,6 +4007,20 @@ function links = get_link(taxon, open)
       id_WoRMS = '234721';
       id_Taxo = '184146'; 
       id_EoL = '223358';
+      id_fishbase = taxon_fish;
+       
+    case 'Dissostichus_eleginoides'
+      id_CoL = '154e66881d80370ccd181ec51687a41d';
+      id_WoRMS = '234700';
+      id_Taxo = '146673'; 
+      id_EoL = '46573002';
+      id_fishbase = taxon_fish;
+       
+    case 'Dissostichus_mawsoni'
+      id_CoL = 'b73b22f988b3ff66f4913cd2de44784a';
+      id_WoRMS = '234836';
+      id_Taxo = '173319'; 
+      id_EoL = '46573003';
       id_fishbase = taxon_fish;
        
     case 'Chaenocephalus_aceratus'

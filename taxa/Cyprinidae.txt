@@ -5,7 +5,4 @@ Cyprininae
 Danioninae
 Leuciscinae
 Tincinae
-
-Rutilus
-Alburnoides
-Blicca
+Alburninae

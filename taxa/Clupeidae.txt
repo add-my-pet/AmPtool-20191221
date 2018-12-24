@@ -1,9 +1,3 @@
-Sardina
-Sardinella
-Sardinops
-Amblygaster
-Sprattus
-Clupea
-Alosa
-Ethmalosa
-Tenualosa
+Clupeinae
+Alosinae
+Dorosomatinae
