@@ -2222,6 +2222,13 @@ function links = get_link(taxon, open)
       id_EoL = '356349';
       id_fishbase = taxon_fish;
        
+    case 'Conger_conger'
+      id_CoL = '2b75a24a28225141eb6db5b4dd2a5ee4';
+      id_WoRMS = '126285';
+      id_Taxo = '42568';        
+      id_EoL = '46561395';
+      id_fishbase = taxon_fish;
+       
     case 'Hiodon_tergisus'
       id_CoL = '9847fa5ddb60890788abf8bc9ce686a5';
       id_WoRMS = ''; % not present 2017/06/16
@@ -2348,6 +2355,14 @@ function links = get_link(taxon, open)
       id_Taxo = '173703';        
       id_EoL = '223061';
       id_fishbase = taxon_fish;
+       
+    case 'Engraulis_anchoita'
+      id_CoL = '20a04344f8439205370c8ac3c7216857';
+      id_WoRMS = '272284';
+      id_Taxo = '173701';        
+      id_EoL = '46562563';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2018/12/26
        
     case 'Chirocentrus_dorab'
       id_CoL = 'e6e028c4da3f6801e1e7b01fa7098bf8';
@@ -3686,6 +3701,13 @@ function links = get_link(taxon, open)
       id_EoL = '46578439';
       id_fishbase = taxon_fish;
        
+    case 'Lutjanus_analis'
+      id_CoL = 'b908bf992e3582b57d6916c6535cb463';
+      id_WoRMS = '159792';
+      id_Taxo = '179207';        
+      id_EoL = '46580720';
+      id_fishbase = taxon_fish;
+       
     case 'Lutjanus_fulviflamma'
       id_CoL = '4014e54315e91f4329bbdd5601dd1b9f';
       id_WoRMS = '218490';
@@ -3808,6 +3830,13 @@ function links = get_link(taxon, open)
       id_EoL = '46579947';
       id_fishbase = taxon_fish;
        
+    case 'Diplodus_cervinus'
+      id_CoL = '9ead387265ac34179f4c9a11225fe7d9';
+      id_WoRMS = '127051';
+      id_Taxo = '192584';  
+      id_EoL = '994779';
+      id_fishbase = taxon_fish;
+       
     case 'Lithognathus_mormyrus'
       id_CoL = '047182f721da243ddbd80be9f0ecba41';
       id_WoRMS = '127055';
@@ -3916,6 +3945,13 @@ function links = get_link(taxon, open)
       id_EoL = '213029';
       id_fishbase = taxon_fish;
        
+    case 'Polyprion_americanus'
+      id_CoL = 'ea1a9f20125ee6e71171e5704fd0ddef';
+      id_WoRMS = '126998';
+      id_Taxo = '184389';        
+      id_EoL = '46578882';
+      id_fishbase = taxon_fish;
+       
     case 'Lepomis_cyanellus'
       id_CoL = 'cc83144368365e74204374b9f7db5de9';
       id_WoRMS = ''; % not present 2017/06/16
@@ -3957,6 +3993,14 @@ function links = get_link(taxon, open)
       id_Taxo = '187452';        
       id_EoL = '46579257';
       id_fishbase = taxon_fish;
+       
+    case 'Mycteroperca_microlepis'
+      id_CoL = '81eab4fd4863aa66aec5d1c51502e361';
+      id_WoRMS = '273880';
+      id_Taxo = '180508';        
+      id_EoL = '46579706';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2018/12/26
        
     case 'Perca_fluviatilis'
       id_CoL = '593aaa7c79677b093fe94582a14d3f94';
