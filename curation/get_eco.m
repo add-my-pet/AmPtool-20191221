@@ -418,6 +418,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Panopea_abbreviata'
+      climate = {'MB'};
+      ecozone = {'MASW'};
+      habitat = {'0jMp','jiMb','jiMi'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPp','jiHa'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Arctica_islandica'
       climate = {'MC','ME'};
       ecozone = {'MAN','MN'};
@@ -1761,6 +1771,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Xiphopenaeus_kroyeri'
       climate = {'MA','MB'};
       ecozone = {'MAW'};
+      habitat = {'0bMb','bjMpe','jiMb'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'bjP','jiD','jiS'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Litopenaeus_stylirostris'
+      climate = {'MA'};
+      ecozone = {'MPE'};
       habitat = {'0bMb','bjMpe','jiMb'};
       embryo  = {'Mbf'};
       migrate = {};
@@ -5328,6 +5348,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Hsm'};
       reprod  = {'O'};
 
+    case 'Argyrozona_argyrozona'
+      climate = {'MB'};
+      ecozone = {'MIS'};
+      habitat = {'bjMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'Hsm'};
+      reprod  = {'O'};
+
     case 'Diplodus_puntazzo'
       climate = {'MB'};
       ecozone = {'MAE'};
@@ -5491,6 +5521,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Balistes_vetula'
       climate = {'MA'};
       ecozone = {'MAW'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'jiCie'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Stephanolepis_hispidus'
+      climate = {'MA','MB'};
+      ecozone = {'MA'};
       habitat = {'0jMp','jiMr'};
       embryo  = {'Mp'};
       migrate = {};

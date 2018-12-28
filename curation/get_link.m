@@ -331,6 +331,15 @@ function links = get_link(taxon, open)
       id_EoL = '492903';      
       id_molluscabase = '140430';
       
+    case 'Panopea_abbreviata'
+      id_CoL = '312cd47922d448cf8a1c72fd83a01ad7';
+      id_WoRMS = '505404';
+      id_Taxo = '39968';        
+      id_EoL = '46473283';      
+      id_molluscabase = '505404';
+      id_Wiki = 'Panopea (bivalve)';
+      id_ADW = ''; % not present 2018/12/28
+      
     case 'Arctica_islandica'
       id_CoL = '5c0583f70d0785993185a7411b8a4cae';
       id_WoRMS = '138802';
@@ -1301,10 +1310,17 @@ function links = get_link(taxon, open)
       id_Taxo = '222495'; % only present at genus level at 2018/12/19       
       id_EoL = '46502158';
 
+    case 'Litopenaeus_stylirostris'
+      id_CoL = 'b3ac8546dc90caf61f668ce287a4f8fd';
+      id_WoRMS = '377458';
+      id_Taxo = '222495'; % only present at genus level at 2018/12/19       
+      id_EoL = '1021452';
+      id_Wiki = 'Litopenaeus';
+
     case 'Haliporoides_sibogae'
       id_CoL = '9a6257efddb14f2617b7237d54e5eba0';
       id_WoRMS = '220285';
-      id_Taxo = '145064'; % present at geneus level only 2018/12/19    
+      id_Taxo = '222478'; % present at geneus level only 2018/12/28    
       id_EoL = '1040006';
       id_Wiki = 'Penaeoidea'; % only present at superfamily level at 2018/12/19  
 
@@ -3800,6 +3816,14 @@ function links = get_link(taxon, open)
       id_EoL = '46580010';
       id_fishbase = taxon_fish;
        
+    case 'Argyrozona_argyrozona'
+      id_CoL = '45f97694d4d683203a2672eba321d406';
+      id_WoRMS = '218621';
+      id_Taxo = '185878';        
+      id_EoL = '46580010';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Sparidae';
+       
     case 'Diplodus_puntazzo'
       id_CoL = '7be95da2081d27bd05a0d13a5a9ba2f2';
       id_WoRMS = '127052';
@@ -3920,6 +3944,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '127397';
       id_Taxo = '47004';        
       id_EoL = '217410';
+      id_fishbase = taxon_fish;
+       
+    case 'Stephanolepis_hispidus'
+      id_CoL = '4c58e5ea46c3be50d6fb9248acad9887';
+      id_WoRMS = '127409';
+      id_Taxo = '188197';        
+      id_EoL = '46570755';
       id_fishbase = taxon_fish;
        
     case 'Mola_mola'

@@ -2,6 +2,7 @@ Dentex
 Pagellus
 Sparus
 Rhabdosargus
+Argyrozona
 Diplodus
 Lithognathus
 Boops
