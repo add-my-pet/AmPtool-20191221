@@ -4268,6 +4268,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Boleophthalmus_pectinirostris'
+      climate = {'MA'};
+      ecozone = {'MPW'};
+      habitat = {'0iMm'};
+      embryo  = {'Ms'};
+      migrate = {};
+      food    = {'biCi','biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Hippocampus_whitei'
       climate = {'MA'};
       ecozone = {'MPSW'};
@@ -4358,6 +4368,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Scomberomorus_commerson'
+      climate = {'MA','MB'};
+      ecozone = {'MIN','MPSW'};
+      habitat = {'0jMp','jiMcp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Trichiurus_nanhaiensis'
       climate = {'MA'};
       ecozone = {'MPW'};
@@ -4415,6 +4435,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mp'};
       migrate = {'Ma'};
       food    = {'bjPz','jiCi','piCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Filimanus_heptadactyla'
+      climate = {'MA'};
+      ecozone = {'MPW'};
+      habitat = {'0jMp','jiMcd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
       gender  = {'D'};
       reprod  = {'O'};
 
@@ -5084,6 +5114,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0iMp'};
       embryo  = {'Mp'};
       migrate = {'Mo'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Umbrina_canariensis'
+      climate = {'MA','MB'};
+      ecozone = {'MAE'};
+      habitat = {'0iMp'};
+      embryo  = {'Mp'};
+      migrate = {};
       food    = {'bjPz','jiCi'};
       gender  = {'D'};
       reprod  = {'O'};

@@ -3046,6 +3046,13 @@ function links = get_link(taxon, open)
       id_EoL = '2802153';
       id_fishbase = taxon_fish;
       
+    case 'Boleophthalmus_pectinirostris'
+      id_CoL = '9ce392a55b69c4e9421f8c2b99628ff5';
+      id_WoRMS = '279926';
+      id_Taxo = '46564';      
+      id_EoL = '46576719';
+      id_fishbase = taxon_fish;
+      
     case 'Hippocampus_whitei'
       id_CoL = '34e00e147e87daed81ad04fe6747aa6f';
       id_WoRMS = '212235';
@@ -3109,7 +3116,13 @@ function links = get_link(taxon, open)
       id_Taxo = '46695';        
       id_EoL = '46324676';
       id_fishbase = taxon_fish;
-      id_ADW = ''; % not present at 2017/08/09 
+      
+    case 'Scomberomorus_commerson'
+      id_CoL = '4770697536915029b1d865a3d67def03';
+      id_WoRMS = '127024';
+      id_Taxo = '187066';        
+      id_EoL = '46577312';
+      id_fishbase = taxon_fish;
       
     case 'Trichiurus_nanhaiensis'
       id_CoL = '555222cee2c6984ba598f0c688c28475';
@@ -3153,6 +3166,14 @@ function links = get_link(taxon, open)
       id_Taxo = '691213';        
       id_EoL = '208264';
       id_fishbase = taxon_fish;
+       
+    case 'Filimanus_heptadactyla'
+      id_CoL = '514571dabdd17409220988c855b486cd';
+      id_WoRMS = '280780';
+      id_Taxo = '383108';        
+      id_EoL = '46578868';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Threadfin';
        
     case 'Coryphaena_hippurus'
       id_CoL = 'c1a7f3fb0a8ad67293953bcc7595b9b1';
@@ -3631,6 +3652,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '127007';
       id_Taxo = '161639';        
       id_EoL = '203937';
+      id_fishbase = taxon_fish;
+       
+    case 'Umbrina_canariensis'
+      id_CoL = 'cb0b0011f11279685bf5052380e12c70';
+      id_WoRMS = '127011';
+      id_Taxo = '189713';        
+      id_EoL = '46578942';
       id_fishbase = taxon_fish;
        
     case 'Acanthurus_lineatus'
