@@ -858,6 +858,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Hh'};
       reprod  = {'O'};
 
+    case 'Buccinanops_deformis'
+      climate = {'MC'};
+      ecozone = {'MASW'};
+      habitat = {'0jMp','jiMb','jiMi'};
+      embryo  = {'Mp'};      
+      migrate = {};
+      food    = {'bjPz','jiCim'};
+      gender  = {'Hh'};
+      reprod  = {'O'};
+
     case 'Adelomelon_brasiliana'
       climate = {'MC'};
       ecozone = {'MASW'};

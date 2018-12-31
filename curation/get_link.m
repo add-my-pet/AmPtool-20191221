@@ -664,6 +664,14 @@ function links = get_link(taxon, open)
       id_EoL = '595071';       
       id_molluscabase = '138878';
       
+    case 'Buccinanops_deformis'
+      id_CoL = '293b32d0eb4cf49787a11217ed558f61';
+      id_WoRMS = '532464';
+      id_Taxo = '133946'; % present at genus level only 2018/12/31       
+      id_EoL = '46461832';       
+      id_molluscabase = '532464';
+      id_ADW = ''; % not present 2018/12/31 
+      
     case 'Adelomelon_brasiliana'
       id_CoL = 'db2a0271d654038c6f5c9c5108c38d23';
       id_WoRMS = '759016';
