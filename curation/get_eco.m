@@ -1138,6 +1138,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Thysanoteuthis_rhombus'
+      climate = {'MA'};
+      ecozone = {'MC'};
+      habitat = {'0iMp'};
+      embryo  = {'Mc'};      
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Octopus_cyanea'
       climate = {'MA'};
       ecozone = {'MI','MPSW'};
@@ -4528,6 +4538,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Istiophorus_platypterus'
+      climate = {'MA','MB'};
+      ecozone = {'MP'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCvf','jiCic'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Centropomus_undecimalis'
       climate = {'MA'};
       ecozone = {'MAW'};
@@ -5055,6 +5075,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mp'};
       migrate = {};
       food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Pseudopercis_semifasciata'
+      climate = {'MC'};
+      ecozone = {'MASW'};
+      habitat = {'0jMp','jiMcd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
       gender  = {'D'};
       reprod  = {'O'};
 
@@ -5851,6 +5881,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Sebastes_capensis'
       climate = {'MB'};
       ecozone = {'MAS'};
+      habitat = {'0jMp','jiMdb'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Sebastes_rufus'
+      climate = {'MB'};
+      ecozone = {'MPE'};
       habitat = {'0jMp','jiMdb'};
       embryo  = {'Mv'};
       migrate = {};

@@ -873,6 +873,13 @@ function links = get_link(taxon, open)
       id_EoL = '403181';
       id_molluscabase = '342291';
       
+    case 'Thysanoteuthis_rhombus'
+      id_CoL = '6bc5c5000ac2a2e7eadc64341ccdbdd3';
+      id_WoRMS = '141680';
+      id_Taxo = '136624';  
+      id_EoL = '453261';
+      id_molluscabase = '141680';
+      
    case 'Octopus_cyanea'
       id_CoL = '8e622e1b7f9777d3f33c42f52836d21a';
       id_WoRMS = '210788';
@@ -3232,6 +3239,13 @@ function links = get_link(taxon, open)
       id_EoL = '338211';
       id_fishbase = taxon_fish;
        
+    case 'Istiophorus_platypterus'
+      id_CoL = '225af87531350c3fd28cd8902ccde41b'; % present at Istiophorus albicans 2019/01/01
+      id_WoRMS = '158812';
+      id_Taxo = '46717';        
+      id_EoL = '46581444';
+      id_fishbase = taxon_fish;
+       
     case 'Centropomus_undecimalis'
       id_CoL = '3301ce508f4609a51e8f9e149960e264';
       id_WoRMS = '280068';
@@ -3611,6 +3625,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126751';
       id_Taxo = '160649';        
       id_EoL = '46573103';
+      id_fishbase = taxon_fish;
+       
+    case 'Pseudopercis_semifasciata'
+      id_CoL = 'd3a78f0f1b21a55c1c5bde9cfd340746';
+      id_WoRMS = '282463';
+      id_Taxo = '185249';        
+      id_EoL = '46573471';
       id_fishbase = taxon_fish;
        
     case 'Achoerodus_viridis'
@@ -4182,6 +4203,14 @@ function links = get_link(taxon, open)
       id_Taxo = '187257';        
       id_EoL = '994487';
       id_fishbase = taxon_fish;
+       
+    case 'Sebastes_rufus'
+      id_CoL = '7ed046b51a65f4788cbf76ac78bcf10a';
+      id_WoRMS = '274847';
+      id_Taxo = '187329';        
+      id_EoL = '46568190';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Sebastes';
        
     case 'Scorpaena_maderensis'
       id_CoL = 'c99cbc6eeb4411b9abf2e5919660975a';
