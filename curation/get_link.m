@@ -2041,6 +2041,13 @@ function links = get_link(taxon, open)
       id_EoL = '206814';
       id_fishbase = taxon_fish;
        
+    case 'Squatina_dumeril'
+      id_CoL = '9eb8f7e8276d790a7350bdc4101f84f5';
+      id_WoRMS = '158510';
+      id_Taxo = '106305';        
+      id_EoL = '46560324';
+      id_fishbase = taxon_fish;
+       
     case 'Pristiophorus_cirratus'
       id_CoL = '791c66b1d7d17796ec389eefcf0e7cdb';
       id_WoRMS = '282352';
@@ -2167,6 +2174,13 @@ function links = get_link(taxon, open)
       id_EoL = '46559780';
       id_fishbase = taxon_fish;
        
+    case 'Carcharhinus_obscurus'
+      id_CoL = 'ee1204ca613aabacb7a7f5d083afff7b';
+      id_WoRMS = '218633';
+      id_Taxo = '41982';        
+      id_EoL = '46559787';
+      id_fishbase = taxon_fish;
+       
     case 'Galeocerdo_cuvier'
       id_CoL = 'a1d45c8bf2076f511f940b6317ddab6c';
       id_WoRMS = '105799';
@@ -2180,6 +2194,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '105802';
       id_Taxo = '41999';        
       id_EoL = '205713';
+      id_fishbase = taxon_fish;
+       
+    case 'Rhizoprionodon_terraenovae'
+      id_CoL = 'b1ef1838c1d95c2ff1ec315008742125';
+      id_WoRMS = '158510';
+      id_Taxo = '106463';        
+      id_EoL = '46559819';
       id_fishbase = taxon_fish;
        
     case 'Prionace_glauca'
@@ -3733,6 +3754,13 @@ function links = get_link(taxon, open)
       id_EoL = '203937';
       id_fishbase = taxon_fish;
        
+    case 'Argyrosomus_japonicus'
+      id_CoL = 'a378907f00e22aede10dc131fc61b387';
+      id_WoRMS = '218633';
+      id_Taxo = '161638';        
+      id_EoL = '46578924';
+      id_fishbase = taxon_fish;
+       
     case 'Umbrina_canariensis'
       id_CoL = 'cb0b0011f11279685bf5052380e12c70';
       id_WoRMS = '127011';
@@ -4082,6 +4110,13 @@ function links = get_link(taxon, open)
       id_EoL = '213810';
       id_fishbase = taxon_fish;
        
+    case 'Masturus_lanceolatus'
+      id_CoL = 'db579e2a600935651d7dcab3fbdca00d';
+      id_WoRMS = '127404';
+      id_Taxo = '47095';        
+      id_EoL = '46570740';
+      id_fishbase = taxon_fish;
+       
     case 'Pempheris_adusta'
       id_CoL = 'c50e0567968f7bba0e705a8a7b5a6cc5'; % unaccepted, to Pempheris malabarica
       id_WoRMS = '218704';
@@ -4260,6 +4295,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '127251';
       id_Taxo = '192869';        
       id_EoL = '581139';
+      id_fishbase = taxon_fish;
+       
+    case 'Helicolenus_percoides'
+      id_CoL = 'bff7063ab0df8e6d3a4a3a075b3081bc';
+      id_WoRMS = '274770';
+      id_Taxo = '176199';        
+      id_EoL = '46568108';
       id_fishbase = taxon_fish;
        
     case 'Sebastes_capensis'
