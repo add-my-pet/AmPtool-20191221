@@ -506,6 +506,15 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present at 2018/01/23
       id_molluscabase = '156972';
       
+    case 'Zygochlamys_patagonica'
+      id_CoL = 'f1ee5ce84fa89ac778dd0da85ed9f3ac';
+      id_WoRMS = '236717';
+      id_Taxo = ''; % not present at 2019/01/04        
+      id_EoL = '46467774';
+      id_ADW = ''; % not present at 2019/01/04
+      id_molluscabase = '236717';
+      id_Wiki = 'Pectinidae';
+      
     case 'Pecten_maximus'
       id_CoL = 'cfba025bc7568aa8054058b764da5484';
       id_WoRMS = '140712';
@@ -1411,6 +1420,12 @@ function links = get_link(taxon, open)
       id_Taxo = '33905';
       id_EoL = '318853';
 
+    case 'Panulirus_versicolor'
+      id_CoL = '7da46e363e4260dc412e62e38c935747';
+      id_WoRMS = '127061';
+      id_Taxo = '507331';      
+      id_EoL = '46516747';
+
     case 'Paralithodes_camtschaticus'
       id_CoL = '4fe446d0accc8a50d042976741fae83e';
       id_WoRMS = '233889';
@@ -1976,6 +1991,13 @@ function links = get_link(taxon, open)
       id_EoL = '216469';
       id_fishbase = taxon_fish;
        
+    case 'Rhinobatos_rhinobatos'
+      id_CoL = '8a0bf369e30780f40e5f490c711b20dd';
+      id_WoRMS = '105898';
+      id_Taxo = '42034';        
+      id_EoL = '46560660';
+      id_fishbase = taxon_fish;
+       
     case 'Trygonoptera_personata'
       id_CoL = '739fdc4060e8c6a65d8025878bac5d8b';
       id_WoRMS = '283062';
@@ -2138,6 +2160,13 @@ function links = get_link(taxon, open)
       id_EoL = '218733';
       id_fishbase = taxon_fish;
        
+    case 'Carcharhinus_falciformis'
+      id_CoL = '22b28f018918aca530f5562a2845d321';
+      id_WoRMS = '105789';
+      id_Taxo = '41976';        
+      id_EoL = '46559780';
+      id_fishbase = taxon_fish;
+       
     case 'Galeocerdo_cuvier'
       id_CoL = 'a1d45c8bf2076f511f940b6317ddab6c';
       id_WoRMS = '105799';
@@ -2279,6 +2308,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '281795';
       id_Taxo = '42730';        
       id_EoL = '222969';
+      id_fishbase = taxon_fish;
+       
+    case 'Chitala_chitala'
+      id_CoL = '34a3d65c55f656cb69a4473cbd15d6a9';
+      id_WoRMS = ''; % not present 2019/01/05
+      id_Taxo = '170881';        
+      id_EoL = '1004327';
       id_fishbase = taxon_fish;
        
     case 'Arapaima_gigas'
@@ -3103,6 +3139,13 @@ function links = get_link(taxon, open)
       id_EoL = '223943';
       id_fishbase = taxon_fish;
        
+    case 'Thunnus_maccoyii'
+      id_CoL = '5a70f397f1d6c11fea7d7cb69a82a165';
+      id_WoRMS = '219720';
+      id_Taxo = '189036';        
+      id_EoL = '46577338';
+      id_fishbase = taxon_fish;
+       
     case 'Thunnus_obesus'
       id_CoL = '18f3951d92c9d9afa06f9d5785306b06';
       id_WoRMS = '127028';
@@ -3159,6 +3202,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126783';
       id_Taxo = '45040';  
       id_EoL = '46577908';
+      id_fishbase = taxon_fish;
+       
+    case 'Pomatomus_saltatrix'
+      id_CoL = 'd9ac988f149a3d2822d71c673be09317';
+      id_WoRMS = '151482';
+      id_Taxo = '45220';  
+      id_EoL = '46578890';
       id_fishbase = taxon_fish;
        
     case 'Mastacembelus_erythrotaenia'
@@ -3774,6 +3824,13 @@ function links = get_link(taxon, open)
       id_EoL = '46578439';
       id_fishbase = taxon_fish;
        
+    case 'Rhomboplites_aurorubens'
+      id_CoL = 'b9d5b0f6c64a46e37447d7931d5ff0b0';
+      id_WoRMS = '159807';
+      id_Taxo = '186083';        
+      id_EoL = '46580805';
+      id_fishbase = taxon_fish;
+       
     case 'Lutjanus_analis'
       id_CoL = 'b908bf992e3582b57d6916c6535cb463';
       id_WoRMS = '159792';
@@ -3917,6 +3974,14 @@ function links = get_link(taxon, open)
       id_Taxo = '192584';  
       id_EoL = '994779';
       id_fishbase = taxon_fish;
+       
+    case 'Pagrus_auriga'
+      id_CoL = '54bfa9f0864bd23c264ea70785be1d0a';
+      id_WoRMS = '127061';
+      id_Taxo = '182494';  
+      id_EoL = '46579970';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Pagrus';
        
     case 'Lithognathus_mormyrus'
       id_CoL = '047182f721da243ddbd80be9f0ecba41';
@@ -4246,6 +4311,21 @@ function links = get_link(taxon, open)
       id_WoRMS = '127123';
       id_Taxo = '44406';        
       id_EoL = '220012';
+      id_fishbase = taxon_fish;
+       
+    case 'Pholis_fangi'
+      id_CoL = 'dfd5e2854d9a5d659ade52be070e5a23';
+      id_WoRMS = '273688';
+      id_Taxo = '691582';        
+      id_EoL = '46574589';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Pholidae';
+       
+    case 'Pholis_gunnellus'
+      id_CoL = 'ec7a73e2544f27d592aadd1e7c5898dd';
+      id_WoRMS = '126996';
+      id_Taxo = '46516';        
+      id_EoL = '46574584';
       id_fishbase = taxon_fish;
        
     case 'Gasterosteus_aculeatus'
