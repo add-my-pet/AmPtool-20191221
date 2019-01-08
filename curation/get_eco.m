@@ -1148,6 +1148,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Illex_argentinus'
+      climate = {'MC'};
+      ecozone = {'MASW'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};      
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Thysanoteuthis_rhombus'
       climate = {'MA'};
       ecozone = {'MC'};
@@ -2788,6 +2798,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Okamejei_acutispina'
+      climate = {'MB'};
+      ecozone = {'MPW'};
+      habitat = {'0iMcd'};
+      embryo  = {'Ms'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Rhinobatos_productus'
       climate = {'MB'};
       ecozone = {'MPE'};
@@ -3381,6 +3401,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Clupea_harengus'
       climate = {'MC'};
       ecozone = {'MAN'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Clupea_bentincki'
+      climate = {'MC'};
+      ecozone = {'MPSE'};
       habitat = {'0iMpe'};
       embryo  = {'Mpe'};
       migrate = {'Mo'};

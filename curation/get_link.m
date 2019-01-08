@@ -882,6 +882,13 @@ function links = get_link(taxon, open)
       id_EoL = '403181';
       id_molluscabase = '342291';
       
+    case 'Illex_argentinus'
+      id_CoL = '0dc9984fa55cf3bd35381122b0023d8a';
+      id_WoRMS = '342064';
+      id_Taxo = '158097';  
+      id_EoL = '591440';
+      id_molluscabase = '342064';
+      
     case 'Thysanoteuthis_rhombus'
       id_CoL = '6bc5c5000ac2a2e7eadc64341ccdbdd3';
       id_WoRMS = '141680';
@@ -1984,6 +1991,13 @@ function links = get_link(taxon, open)
       id_EoL = '345058';
       id_fishbase = taxon_fish;
        
+    case 'Okamejei_acutispina'
+      id_CoL = 'f89e52703c8b764cff73e3d8655c9336';
+      id_WoRMS = '279178';
+      id_Taxo = '181706';        
+      id_EoL = '46560613';
+      id_fishbase = taxon_fish;
+       
     case 'Rhinobatos_productus'
       id_CoL = '8691a825ec34f8adcda1539f3d0babc0';
       id_WoRMS = '271608';
@@ -2407,6 +2421,14 @@ function links = get_link(taxon, open)
       id_Taxo = '42634';        
       id_EoL = '847095';
       id_fishbase = taxon_fish;
+       
+    case 'Clupea_bentincki'
+      id_CoL = '845458ad1941d9566e40bcb0d86ada25'; % present as Strangomera bentincki  2019/01/08   
+      id_WoRMS = '300368';    
+      id_Taxo = '188341'; % present as Strangomera bentincki  2019/01/08      
+      id_EoL = '46562391';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present at 2019/01/08
        
     case 'Alosa_alosa'
       id_CoL = '85368f18336645854725c8f8210a151f';
