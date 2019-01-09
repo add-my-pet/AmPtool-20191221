@@ -838,6 +838,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Haliotis_rubra'
+      climate = {'MC'};
+      ecozone = {'MIS'};
+      habitat = {'0jMp','jiMb'};
+      embryo  = {'Mp'};      
+      migrate = {};
+      food    = {'bjPp','jiHa'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Phorcus_lineatus'
       climate = {'MB','MC'};
       ecozone = {'MANE'};
@@ -3088,6 +3098,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Carcharhinus_acronotus'
+      climate = {'MA'};
+      ecozone = {'MAW'};
+      habitat = {'0iMcp'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Galeocerdo_cuvier'
       climate = {'MA','MB'};
       ecozone = {'MC'};
@@ -5302,6 +5322,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'MA','MB'};
       ecozone = {'MAE'};
       habitat = {'0iMp'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Macrodon_atricauda'
+      climate = {'MB'};
+      ecozone = {'MASW'};
+      habitat = {'0jMp','0jMd'};
       embryo  = {'Mp'};
       migrate = {};
       food    = {'bjPz','jiCi'};

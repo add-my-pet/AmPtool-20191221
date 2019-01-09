@@ -651,6 +651,14 @@ function links = get_link(taxon, open)
       id_EoL = '619551';       
       id_molluscabase = '141801';
       
+    case 'Haliotis_rubra'
+      id_CoL = 'c22996fd304bf07d34e1702ffa16ff17';
+      id_WoRMS = '445354';
+      id_Taxo = '34615'; % present at genus level only 2019/01/09        
+      id_EoL = '4792496';       
+      id_molluscabase = '445354';
+      id_ADW = 'Haliotus';
+      
     case 'Phorcus_lineatus'
       id_CoL = '5d915d529f45e7c60979e383f2ef5333';
       id_WoRMS = '689176';
@@ -1997,6 +2005,7 @@ function links = get_link(taxon, open)
       id_Taxo = '181706';        
       id_EoL = '46560613';
       id_fishbase = taxon_fish;
+      id_Wiki = 'Okamejei';
        
     case 'Rhinobatos_productus'
       id_CoL = '8691a825ec34f8adcda1539f3d0babc0';
@@ -2193,6 +2202,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '218633';
       id_Taxo = '41982';        
       id_EoL = '46559787';
+      id_fishbase = taxon_fish;
+       
+    case 'Carcharhinus_acronotus'
+      id_CoL = 'e4299ed9d802a3515b530e58cf9c164c';
+      id_WoRMS = '158508';
+      id_Taxo = '106442';        
+      id_EoL = '46559790';
       id_fishbase = taxon_fish;
        
     case 'Galeocerdo_cuvier'
@@ -3789,6 +3805,15 @@ function links = get_link(taxon, open)
       id_Taxo = '189713';        
       id_EoL = '46578942';
       id_fishbase = taxon_fish;
+       
+    case 'Macrodon_atricauda'
+      id_CoL = '8425b4f144f715084e4c2bf8816adeb1';
+      id_WoRMS = '712737';
+      id_Taxo = '191221'; % present at genus level 2019/01/09       
+      id_EoL = '46579152';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Sciaenidae';
+      id_ADW = 'Macrodon';
        
     case 'Acanthurus_lineatus'
       id_CoL = '72076057c0ddd13f26566ef47ca0f806';
