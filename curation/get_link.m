@@ -2967,6 +2967,13 @@ function links = get_link(taxon, open)
       id_EoL = '213429';
       id_fishbase = taxon_fish;
        
+    case 'Phycis_phycis'
+      id_CoL = 'afcf3eaa4aff382202f7bea658903ca3';
+      id_WoRMS = '126502';
+      id_Taxo = '44348';        
+      id_EoL = '994629';
+      id_fishbase = taxon_fish;
+       
     case 'Phycis_blennoides'
       id_CoL = 'f898d7e1d04d01621a5fccb488d55932';
       id_WoRMS = '126501';
@@ -3298,6 +3305,21 @@ function links = get_link(taxon, open)
       id_EoL = '46578868';
       id_fishbase = taxon_fish;
       id_Wiki = 'Threadfin';
+       
+    case 'Eleutheronema_tetradactylum'
+      id_CoL = '0ad1766b62e5241fed1605a65edc14a5'; % accepted as Eleutheronema rhadinum 2019/01/10
+      id_WoRMS = '280639';
+      id_Taxo = '153679';        
+      id_EoL = '220322';
+      id_fishbase = taxon_fish;
+       
+    case 'Polydactylus_macrochir'
+      id_CoL = '4db3622f52191896564bee31eb873b5a';
+      id_WoRMS = '276590';
+      id_Taxo = '184318';        
+      id_EoL = '207636';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Polydactylus';
        
     case 'Coryphaena_hippurus'
       id_CoL = 'c1a7f3fb0a8ad67293953bcc7595b9b1';

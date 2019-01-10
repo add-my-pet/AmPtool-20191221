@@ -4158,6 +4158,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Phycis_phycis'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Phycis_blennoides'
       climate = {'MB','MC'};
       ecozone = {'MAE','MAm'};
@@ -4605,7 +4615,7 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mp'};
       migrate = {'Ma'};
       food    = {'bjPz','jiCi','piCvf'};
-      gender  = {'D'};
+      gender  = {'Hsm'};
       reprod  = {'O'};
 
     case 'Filimanus_heptadactyla'
@@ -4615,7 +4625,27 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mp'};
       migrate = {};
       food    = {'bjPz','jiCi'};
-      gender  = {'D'};
+      gender  = {'Hsm'};
+      reprod  = {'O'};
+
+    case 'Eleutheronema_tetradactylum'
+      climate = {'MA'};
+      ecozone = {'MPSW','MINE'};
+      habitat = {'0jMp','jiMcd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'Hsm'};
+      reprod  = {'O'};
+
+    case 'Polydactylus_macrochir'
+      climate = {'MA','Aw','Cfa'};
+      ecozone = {'MPSW','MIN','TA'};
+      habitat = {'0jMp','jiMcd','jiFr'};
+      embryo  = {'Mp'};
+      migrate = {'Mdc'};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'Hsm'};
       reprod  = {'O'};
 
     case 'Coryphaena_hippurus'
