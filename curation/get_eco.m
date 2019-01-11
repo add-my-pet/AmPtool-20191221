@@ -3028,6 +3028,36 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Orectolobus_ornatus'
+      climate = {'MA','MB'};
+      ecozone = {'MISE','MPSW'};
+      habitat = {'0iMpb'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'biCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Orectolobus_halei'
+      climate = {'MA','MB'};
+      ecozone = {'MISE'};
+      habitat = {'0iMpb'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'biCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Orectolobus_maculatus'
+      climate = {'MA','MB'};
+      ecozone = {'MISE'};
+      habitat = {'0iMpb'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'biCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Sphyrna_lewini'
       climate = {'MA'};
       ecozone = {'MC'};
@@ -3874,6 +3904,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0iFc','oiFr','oiFl'};
       embryo  = {'Fg'};
       migrate = {'Mp'};
+      food    = {'bjCi','jiCii','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Oncorhynchus_keta'
+      climate = {'MC'};
+      ecozone = {'MPN'};
+      habitat = {'0jFr','jiMpe'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
       food    = {'bjCi','jiCii','jiCvf'};
       gender  = {'D'};
       reprod  = {'O'};
@@ -4948,6 +4988,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Scomberesox_saurus'
+      climate = {'MB';'MC'};
+      ecozone = {'MA'};
+      habitat = {'biMp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Hirundichthys_affinis'
       climate = {'MA'};
       ecozone = {'MAW'};
@@ -5885,6 +5935,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mp'};
       migrate = {};
       food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Scorpis_aequipinnis'
+      climate = {'MB'};
+      ecozone = {'MISE','MPSW'};
+      habitat = {'0iMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biPz'};
       gender  = {'D'};
       reprod  = {'O'};
 

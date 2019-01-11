@@ -2155,6 +2155,27 @@ function links = get_link(taxon, open)
       id_EoL = '28519';
       id_fishbase = taxon_fish;
        
+    case 'Orectolobus_ornatus'
+      id_CoL = '093cef8ed981470b54bc2171ffcf41e0';
+      id_WoRMS = '281932';
+      id_Taxo = '94268';        
+      id_EoL = '994853';
+      id_fishbase = taxon_fish;
+       
+    case 'Orectolobus_halei'
+      id_CoL = '48fce3a2fda71ecc7654a103e57b4944';
+      id_WoRMS = '398229';
+      id_Taxo = '1683996';        
+      id_EoL = '4534269';
+      id_fishbase = taxon_fish;
+       
+    case 'Orectolobus_maculatus'
+      id_CoL = '8a233ea95dcfe3f7bb698a60a067f610';
+      id_WoRMS = '281931';
+      id_Taxo = '41875';        
+      id_EoL = '994852';
+      id_fishbase = taxon_fish;
+       
     case 'Sphyrna_lewini'
       id_CoL = '350243ccc762d3c4ac03d1b35bd6ff9d';
       id_WoRMS = '105816';
@@ -2762,6 +2783,13 @@ function links = get_link(taxon, open)
       id_Taxo = ''; 
       id_EoL = '2777842';
       id_fishbase = 'Oncorhynchus-clarkii';
+       
+    case 'Oncorhynchus_keta'
+      id_CoL = 'cdd2d1e0c5119c3d5350542356db8ca6';
+      id_WoRMS = '127183';
+      id_Taxo = '42805'; 
+      id_EoL = '205247';
+      id_fishbase = taxon_fish;
        
     case 'Salmo_trutta'
       id_CoL = '0909d84d2750016742284669abf8341f';
@@ -3531,6 +3559,13 @@ function links = get_link(taxon, open)
       id_EoL = '212567';
       id_fishbase = taxon_fish;
        
+    case 'Scomberesox_saurus'
+      id_CoL = '04e30099e2a918306db15251f0d23554';
+      id_WoRMS = '236461';
+      id_Taxo = '44428';        
+      id_EoL = '2457297';
+      id_fishbase = taxon_fish;
+       
     case 'Hirundichthys_affinis'
       id_CoL = 'dcc59c1ff44e5086c007ead8f39618f7';
       id_WoRMS = '159265';
@@ -4208,6 +4243,14 @@ function links = get_link(taxon, open)
       id_Taxo = '184389';        
       id_EoL = '46578882';
       id_fishbase = taxon_fish;
+       
+    case 'Scorpis_aequipinnis'
+      id_CoL = '669e2d4a2ee936eceae367af494af269';
+      id_WoRMS = '282728';
+      id_Taxo = '187227';   
+      id_EoL = '212881';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Scorpis';
        
     case 'Lepomis_cyanellus'
       id_CoL = 'cc83144368365e74204374b9f7db5de9';
