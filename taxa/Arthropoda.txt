@@ -1,5 +1,4 @@
 Chelicerata
-Crustacea
-Hexapoda
+Mandibulata
 
 

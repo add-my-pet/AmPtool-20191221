@@ -2007,6 +2007,14 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_Wiki = 'Okamejei';
        
+    case 'Bathyraja_interrupta'
+      id_CoL = '05d11296b0660c39acaf019a2c718459';
+      id_WoRMS = '271515';
+      id_Taxo = '163712';        
+      id_EoL = '213240';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Bathyraja';
+      
     case 'Rhinobatos_productus'
       id_CoL = '8691a825ec34f8adcda1539f3d0babc0';
       id_WoRMS = '271608';
@@ -2898,6 +2906,13 @@ function links = get_link(taxon, open)
       id_EoL = '208465';
       id_fishbase = taxon_fish;
        
+    case 'Merluccius_hubbsi'
+      id_CoL = 'b9edf9dcaee819bc4cd02db91f5c71e3';
+      id_WoRMS = '272455';
+      id_Taxo = '44370';        
+      id_EoL = '589820';
+      id_fishbase = taxon_fish;
+       
     case 'Macruronus_novaezelandiae'
       id_CoL = '0c9ebd10671215be47b201d4a8070db6';
       id_WoRMS = '272450';
@@ -3036,6 +3051,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126439';
       id_Taxo = '44338';        
       id_EoL = '211404';
+      id_fishbase = taxon_fish;
+       
+    case 'Micromesistius_australis'
+      id_CoL = 'dad111de92ea50e1caa8b3d1a1661b0f';
+      id_WoRMS = '234781';
+      id_Taxo = '44337';
+      id_EoL = '46564425';
       id_fishbase = taxon_fish;
        
     case 'Pollachius_virens'
@@ -4219,6 +4241,14 @@ function links = get_link(taxon, open)
       id_WoRMS = '127404';
       id_Taxo = '47095';        
       id_EoL = '46570740';
+      id_fishbase = taxon_fish;
+       
+    case 'Epigonus_crassicaudus'
+      id_CoL = '4ddc755e19a25cf6599609bdba72b6c5'; % unaccepted, to Epigonus chilensis 2019/01/12
+      id_WoRMS = '273404';
+      id_Taxo = '173853';
+      id_Wiki = 'Epigonus';
+      id_EoL = '223710';
       id_fishbase = taxon_fish;
        
     case 'Pempheris_adusta'

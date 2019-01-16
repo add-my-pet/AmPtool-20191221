@@ -1,4 +1,3 @@
 Chaetognatha
-Tardigrada
 Nematoda
-Arthropoda
+Tactopoda

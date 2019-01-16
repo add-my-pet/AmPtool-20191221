@@ -2818,6 +2818,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Bathyraja_interrupta'
+      climate = {'ME'};
+      ecozone = {'MPN'};
+      habitat = {'0iMcd'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Rhinobatos_productus'
       climate = {'MB'};
       ecozone = {'MPE'};
@@ -4068,6 +4078,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Merluccius_hubbsi'
+      climate = {'MC'};
+      ecozone = {'MASW'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jpCi','piCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Macruronus_novaezelandiae'
       climate = {'MC'};
       ecozone = {'MPSW'};
@@ -4255,6 +4275,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mp'};
       migrate = {'Mo'};
       food    = {'bjPz','jiCic','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Micromesistius_australis'
+      climate = {'MC'};
+      ecozone = {'MASW','MPSE'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi','jiCvf'};
       gender  = {'D'};
       reprod  = {'O'};
 
@@ -5905,6 +5935,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mp'};
       migrate = {'Mo'};
       food    = {'bjPz','jiCi','biCij'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Epigonus_crassicaudus'
+      climate = {'MC'};
+      ecozone = {'MPSE'};
+      habitat = {'0jMp','jiMdb'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
       gender  = {'D'};
       reprod  = {'O'};
 

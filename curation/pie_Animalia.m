@@ -59,30 +59,30 @@ function [x taxa] = pie_Animalia (n)
       x(3) = y(5); taxa{3} = 'Ecdysozoa';
       x(4) = y(6); taxa{4} = 'Deuterostomata';
     case 5
-      taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Protostomata'; 'Echinodermata'; 'Cephalochordata'; 'Tunicata'; 'Myxini'; 'Agnatha'; 'Chondrichthyes'; 'Actinopterygii'; 'Actinistia'; 'Dipnoi'; 'Amphibia'; 'Sauropsida'; 'Aves'; 'Mammalia'};    
+      taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Protostomata'; 'Echinodermata'; 'Cephalochordata'; 'Tunicata'; 'Cyclostomata'; 'Chondrichthyes'; 'Actinopterygii'; 'Actinistia'; 'Dipnoi'; 'Amphibia'; 'Sauropsida'; 'Aves'; 'Mammalia'};    
       n = length(taxa); y = zeros(n, 1);
       for i = 1:n
         y(i) = length(select(taxa{i}));
       end
       x(1) = sum(y(1:7)); taxa{1} = 'acraniates';
-      x(2) = sum(y(8:13)); taxa{2} = 'fish';
-      x(3) = sum(y(14:15)) - y(16); taxa{3} = 'amph + rept';
-      x(4) = y(16); taxa{4} = 'birds';
-      x(5) = y(17); taxa{5} = 'mammals';
+      x(2) = sum(y(8:12)); taxa{2} = 'fish';
+      x(3) = sum(y(13:14)) - y(15); taxa{3} = 'amph + rept';
+      x(4) = y(15); taxa{4} = 'birds';
+      x(5) = y(16); taxa{5} = 'mammals';
     case 6
-      taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Protostomata'; 'Echinodermata'; 'Cephalochordata'; 'Tunicata'; 'Myxini'; 'Agnatha'; 'Chondrichthyes'; 'Actinopterygii'; 'Actinistia'; 'Dipnoi'; 'Amphibia'; 'Sauropsida'; 'Aves'; 'Mammalia'};    
+      taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Protostomata'; 'Echinodermata'; 'Cephalochordata'; 'Tunicata'; 'Cyclostomata'; 'Chondrichthyes'; 'Actinopterygii'; 'Actinistia'; 'Dipnoi'; 'Amphibia'; 'Sauropsida'; 'Aves'; 'Mammalia'};    
       n = length(taxa); y = zeros(n, 1);
       for i = 1:n
         y(i) = length(select(taxa{i}));
       end
       x(1) = sum(y(1:4)); taxa{1} = 'para + rad + proto';
       x(2) = sum(y(5:7));  taxa{2} = 'acraniate deut';
-      x(3) = sum(y(8:13)); taxa{3} = 'fish';
-      x(4) = sum(y(14:15)) - y(16); taxa{4} = 'amph + rept';
-      x(5) = y(16); taxa{5} = 'birds';
-      x(6) = y(17); taxa{6} = 'mammals';
+      x(3) = sum(y(8:12)); taxa{3} = 'fish';
+      x(4) = sum(y(13:14)) - y(15); taxa{4} = 'amph + rept';
+      x(5) = y(15); taxa{5} = 'birds';
+      x(6) = y(16); taxa{6} = 'mammals';
    case 7
-      taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Protostomata'; 'Echinodermata'; 'Cephalochordata'; 'Tunicata'; 'Myxini'; 'Agnatha'; 'Chondrichthyes'; 'Actinopterygii'; 'Actinistia'; 'Dipnoi'; 'Amphibia'; 'Sauropsida'; 'Aves'; 'Mammalia'};    
+      taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Protostomata'; 'Echinodermata'; 'Cephalochordata'; 'Tunicata'; 'Cyclostomata'; 'Chondrichthyes'; 'Actinopterygii'; 'Actinistia'; 'Dipnoi'; 'Amphibia'; 'Sauropsida'; 'Aves'; 'Mammalia'};    
       n = length(taxa); y = zeros(n, 1);
       for i = 1:n
         y(i) = length(select(taxa{i}));
@@ -90,12 +90,12 @@ function [x taxa] = pie_Animalia (n)
       x(1) = sum(y(1:2));  taxa{1} = 'Parazoa + Radiata';
       x(2) = sum(y(3:4));  taxa{2} = 'Protostomata';
       x(3) = sum(y(5:7));  taxa{3} = 'acraniate deut';
-      x(4) = sum(y(8:13)); taxa{4} = 'fish';
-      x(5) = sum(y(14:15)) - y(16); taxa{5} = 'amph + rept';
-      x(6) = y(16); taxa{6} = 'birds';
-      x(7) = y(17); taxa{7} = 'mammals';
+      x(4) = sum(y(8:12)); taxa{4} = 'fish';
+      x(5) = sum(y(13:14)) - y(15); taxa{5} = 'amph + rept';
+      x(6) = y(15); taxa{6} = 'birds';
+      x(7) = y(16); taxa{7} = 'mammals';
     case 8
-      taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Spiralia'; 'Ecdysozoa'; 'Echinodermata'; 'Cephalochordata'; 'Tunicata'; 'Myxini'; 'Agnatha'; 'Chondrichthyes'; 'Actinopterygii'; 'Actinistia'; 'Dipnoi'; 'Amphibia'; 'Sauropsida'; 'Aves'; 'Mammalia'};    
+      taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Spiralia'; 'Ecdysozoa'; 'Echinodermata'; 'Cephalochordata'; 'Tunicata'; 'Cyclostomata'; 'Chondrichthyes'; 'Actinopterygii'; 'Actinistia'; 'Dipnoi'; 'Amphibia'; 'Sauropsida'; 'Aves'; 'Mammalia'};    
       n = length(taxa); y = zeros(n, 1);
       for i = 1:n
         y(i) = length(select(taxa{i}));
@@ -104,10 +104,10 @@ function [x taxa] = pie_Animalia (n)
       x(2) = sum(y(3:4));  taxa{2} = 'acoela + spiralia';
       x(3) = sum(y(5));    taxa{3} = 'ecdysozoa';
       x(4) = sum(y(6:8));  taxa{4} = 'acraniate deut';
-      x(5) = sum(y(9:14)); taxa{5} = 'fish';
-      x(6) = sum(y(15:16)) - y(17); taxa{6} = 'amph + rept';
-      x(7) = y(17); taxa{7} = 'birds';
-      x(8) = y(18); taxa{8} = 'mammals';
+      x(5) = sum(y(9:13)); taxa{5} = 'fish';
+      x(6) = sum(y(14:15)) - y(16); taxa{6} = 'amph + rept';
+      x(7) = y(16); taxa{7} = 'birds';
+      x(8) = y(17); taxa{8} = 'mammals';
     otherwise
       taxa = {'Parazoa'; 'Radiata'; 'Xenacoelomorpha'; 'Gnathifera'; 'Platytrochozoa'; 'Ecdysozoa'; 'Deuterostomata'};    
       n = length(taxa); x = zeros(n, 1);

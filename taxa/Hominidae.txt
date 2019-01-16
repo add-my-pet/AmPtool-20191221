@@ -1,4 +1,2 @@
-Pongo
-Gorilla
-Pan
-Homo
+Ponginae
+Homininae
