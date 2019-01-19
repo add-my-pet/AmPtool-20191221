@@ -940,6 +940,13 @@ function links = get_link(taxon, open)
       id_EoL = '492283';       
       id_molluscabase = '341985';
       
+    case 'Octopus_tetricus'
+      id_CoL = 'df879d469e52800adaad62997cb7c25c';
+      id_WoRMS = '342036';
+      id_Taxo = '158299';        
+      id_EoL = '491760';       
+      id_molluscabase = '342036';
+      
     case 'Ferosagitta_hispida'
       id_CoL = '5fa5c1982af0297dfe25875928c2570c';
       id_WoRMS = '105454'; 
@@ -1383,6 +1390,12 @@ function links = get_link(taxon, open)
       id_EoL = '342557';
       id_Wiki = 'Pandalidae';
        
+    case 'Heterocarpus_reedi'
+      id_CoL = 'a652722cd68079afb453f3f7ae5d7854';
+      id_WoRMS = '241283';
+      id_Taxo = '222216'; % present at genus level only 2017/09/19        
+      id_EoL = '46516047';
+       
     case 'Palaemonetes_pugio'
       id_CoL = '56cf1eeaf3d2f8441b8c41906c4c1ab1';
       id_WoRMS = '158370';
@@ -1440,6 +1453,20 @@ function links = get_link(taxon, open)
       id_WoRMS = '127061';
       id_Taxo = '507331';      
       id_EoL = '46516747';
+
+    case 'Pleuroncodes_monodon'
+      id_CoL = '3c06e91277c704e367dfca04b98b860c'; % present at genus level only 2019/01/19
+      id_WoRMS = '127061';
+      id_Taxo = '33945';  % present at genus level only 2019/01/19    
+      id_EoL = '46503748';
+      id_ADW = 'Pleuroncodes';
+
+    case 'Cervimunida_johni'
+      id_CoL = '6241cdc386e0a836bb3ef9d179cdbeb0'; % present at genus level only 2019/01/19
+      id_WoRMS = '392199';
+      id_Taxo = '1165187';  % present at genus level only 2019/01/19    
+      id_EoL = '46503677';
+      id_ADW = ''; % not present at 2019/01/19 
 
     case 'Paralithodes_camtschaticus'
       id_CoL = '4fe446d0accc8a50d042976741fae83e';
@@ -1784,6 +1811,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '124392'; 
       id_Taxo = '41169'; 
       id_EoL = '598133';
+
+    case 'Abatus_cordatus'
+      id_CoL = '7c234e01691af18d542f0da28618f533'; 
+      id_WoRMS = '160763'; 
+      id_Taxo = '152711'; % present at genus level only 2019/01/19
+      id_EoL = '3039339';
+      id_ADW = ''; % not present at 2019/01/19
 
     case 'Clypeaster_subdepressus'
       id_CoL = 'a5e5fc38367a1168a3e799e37dd3de23'; 
@@ -2608,6 +2642,13 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/08/14
       
+    case 'Carassius_gibelio'
+      id_CoL = '251ca6ec22e7de890c29a8e4ed62e337';
+      id_WoRMS = '234033'; 
+      id_Taxo = '165448';
+      id_EoL = '215509';
+      id_fishbase = taxon_fish;
+      
     case 'Capoeta_capoeta'
       id_CoL = 'd5bd75ebf2473d7081dedd4db26cc46c';
       id_WoRMS = ''; % not present 2018/12/22 
@@ -3420,6 +3461,14 @@ function links = get_link(taxon, open)
       id_EoL = '338211';
       id_fishbase = taxon_fish;
        
+    case 'Istiompax_indica'
+      id_CoL = '987fdff3014deca15f3bcf4493d2774d';
+      id_WoRMS = '712905';
+      id_Taxo = '46711'; % present as Istiompax, unacceped, 2019/01/16       
+      id_EoL = '46581454';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2019/01/16
+       
     case 'Istiophorus_platypterus'
       id_CoL = '225af87531350c3fd28cd8902ccde41b'; % present at Istiophorus albicans 2019/01/01
       id_WoRMS = '158812';
@@ -3893,6 +3942,13 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_Wiki = 'Sciaenidae';
       id_ADW = 'Macrodon';
+       
+    case 'Atractoscion_nobilis'
+      id_CoL = '0fb458c98184e0325f005638b22fe2c3';
+      id_WoRMS = '234781';
+      id_Taxo = '162587';      
+      id_EoL = '46579091';
+      id_fishbase = taxon_fish;
        
     case 'Acanthurus_lineatus'
       id_CoL = '72076057c0ddd13f26566ef47ca0f806';
@@ -6636,6 +6692,15 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;      
       id_avibase = 'F002188E226DF09C';
       id_birdlife = 'european-herring-gull-larus-argentatus';
+      
+    case 'Larus_fuscus'
+      id_CoL = '4fdb38d6220462049eab9e3f285144e0';
+      id_WoRMS = '137142';
+      id_Taxo = '53805';        
+      id_EoL = '45509305';
+      id_AnAge = taxon;      
+      id_avibase = '49025D8B171EFAD7';
+      id_birdlife = 'lesser-black-backed-gull-larus-fuscus';
       
     case 'Larus_dominicanus'
       id_CoL = '6498deca624b16a592410799f4ebfa66';

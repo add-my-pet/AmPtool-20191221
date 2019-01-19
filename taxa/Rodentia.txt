@@ -1,5 +1,5 @@
 Anomaluromorpha
-Castorimorpha
 Hystricomorpha
-Myomorpha
 Sciuromorpha
+Castorimorpha
+Myomorpha

@@ -3,3 +3,4 @@ Octopus_maya
 Octopus_vulgaris
 Octopus_mimus
 Octopus_joubini
+Octopus_tetricus
