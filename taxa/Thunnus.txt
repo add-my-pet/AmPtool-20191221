@@ -3,3 +3,4 @@ Thunnus_thynnus
 Thunnus_maccoyii
 Thunnus_obesus
 Thunnus_albacares
+Thunnus_alalunga

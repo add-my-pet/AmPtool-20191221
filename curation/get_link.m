@@ -1363,6 +1363,12 @@ function links = get_link(taxon, open)
       id_EoL = '1021452';
       id_Wiki = 'Litopenaeus';
 
+    case 'Penaeus_semisulcatus'
+      id_CoL = '6c59fdf9bc7efddbb1987f39e28229ca';
+      id_WoRMS = '107112';
+      id_Taxo = '33814'; % only present at genus level at 2019/01/21       
+      id_EoL = '46502055';
+
     case 'Haliporoides_sibogae'
       id_CoL = '9a6257efddb14f2617b7237d54e5eba0';
       id_WoRMS = '220285';
@@ -2954,6 +2960,27 @@ function links = get_link(taxon, open)
       id_EoL = '589820';
       id_fishbase = taxon_fish;
        
+    case 'Merluccius_polli'
+      id_CoL = '065efdf9d8bf765a7f21b7add1214eab';
+      id_WoRMS = '272457';
+      id_Taxo = '179870';        
+      id_EoL = '46564950';
+      id_fishbase = taxon_fish;
+       
+    case 'Merluccius_senegalensis'
+      id_CoL = '80246b064b2df8821a037538614e1f4c';
+      id_WoRMS = '126485';
+      id_Taxo = '179871';        
+      id_EoL = '46564940';
+      id_fishbase = taxon_fish;
+       
+    case 'Merluccius_capensis'
+      id_CoL = '5fb0455cfce6257a7d76804a61037ad1';
+      id_WoRMS = '217746';
+      id_Taxo = '44368';        
+      id_EoL = '46564944';
+      id_fishbase = taxon_fish;
+       
     case 'Macruronus_novaezelandiae'
       id_CoL = '0c9ebd10671215be47b201d4a8070db6';
       id_WoRMS = '272450';
@@ -3317,6 +3344,13 @@ function links = get_link(taxon, open)
       id_EoL = '205934';
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2018/12/17
+       
+    case 'Thunnus_alalunga'
+      id_CoL = '54eb9f8647f6f0945d5c74e453de4d68';
+      id_WoRMS = '127026';
+      id_Taxo = '46700';        
+      id_EoL = '46577333';
+      id_fishbase = taxon_fish;
        
     case 'Katsuwonus_pelamis'
       id_CoL = '74a1965ab1023269280bedebb9a09a51';
@@ -4098,6 +4132,13 @@ function links = get_link(taxon, open)
       id_EoL = '46580740';
       id_fishbase = taxon_fish;
        
+    case 'Lutjanus_synagris'
+      id_CoL = '0d52f277956a6c7dbfdd4e57c4d83a1c';
+      id_WoRMS = '159800';
+      id_Taxo = '106201'; 
+      id_EoL = '46580728';
+      id_fishbase = taxon_fish;
+       
     case 'Lobotes_surinamensis'
       id_CoL = '4d5106709e150cd3aa658259a8fd12b6';
       id_WoRMS = '126973';
@@ -4365,6 +4406,14 @@ function links = get_link(taxon, open)
       id_Taxo = '45076';        
       id_EoL = '46579618';
       id_fishbase = taxon_fish;
+       
+    case 'Hyporthodus_octofasciatus'
+      id_CoL = 'e80400b0745ddabd6857eb3c44292c05';
+      id_WoRMS = '475079';
+      id_Taxo = '173917'; % present as Epinephelus octofasciatus 2019/01/20       
+      id_EoL = '46579820';
+      id_fishbase = taxon_fish;
+      id_ADW = 'Epinephelus_octofasciatus';
        
     case 'Serranus_scriba'
       id_CoL = '477173bdd7c8e27ad4631a347f8fd45b';

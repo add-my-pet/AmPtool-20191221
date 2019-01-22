@@ -6,3 +6,4 @@ Lutjanus_malabaricus
 Lutjanus_sebae
 Lutjanus_carponotatus
 Lutjanus_vitta
+Lutjanus_synagris
