@@ -2628,6 +2628,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Loxechinus_albus'
+      climate = {'MC'};
+      ecozone = {'MPE'};
+      habitat = {'0jMcp','jiMb','jiMi'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biP','bjHa','bjCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Echinocardium_cordatum'
       climate = {'MC'};
       ecozone = {'MC'};
@@ -4113,6 +4123,46 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       ecozone = {'MAS','MPS','MIS'};
       habitat = {'0iMm'};
       embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Notoscopelus_resplendens'
+      climate = {'MA','MC','MC'};
+      ecozone = {'MC'};
+      habitat = {'0iMm'};
+      embryo  = {'Mpb'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Benthosema_suborbitale'
+      climate = {'MA','MC','MC'};
+      ecozone = {'MC'};
+      habitat = {'0iMm'};
+      embryo  = {'Mpb'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Diaphus_dumerilii'
+      climate = {'MA','MC','MC'};
+      ecozone = {'MA'};
+      habitat = {'0iMm'};
+      embryo  = {'Mpb'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Lepidophanes_guentheri'
+      climate = {'MA','MC'};
+      ecozone = {'MA'};
+      habitat = {'0iMm'};
+      embryo  = {'Mpb'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};

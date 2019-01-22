@@ -1891,6 +1891,13 @@ function links = get_link(taxon, open)
       id_Taxo = '41139';        
       id_EoL = '599663';
        
+    case 'Loxechinus_albus'
+      id_CoL = '4a68f09affd45ceac1fab1516c12a35a';
+      id_WoRMS = '160809';
+      id_Taxo = '152649';        
+      id_EoL = '3039402';
+      id_ADW = ''; % not present 2019/01/22
+       
     case 'Holothuria_scabra'
       id_CoL = '814d1ea7cec08f5897ebe68e024442f4';
       id_WoRMS = '210813';
@@ -2930,6 +2937,36 @@ function links = get_link(taxon, open)
       id_WoRMS = '217704';
       id_Taxo = '153098';        
       id_EoL = '204765';
+      id_fishbase = taxon_fish;
+       
+    case 'Notoscopelus_resplendens'
+      id_CoL = 'f9fff8aa5f58ba5b1fec8d363735154e';
+      id_WoRMS = '158916';
+      id_Taxo = '181459';        
+      id_EoL = '46564221';
+      id_fishbase = taxon_fish;
+       
+    case 'Benthosema_suborbitale'
+      id_CoL = '83a3118c7789277b7c66112ed9aac497';
+      id_WoRMS = '126581';
+      id_Taxo = '164102';        
+      id_EoL = '46564029';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Benthosema';
+       
+    case 'Diaphus_dumerilii'
+      id_CoL = '659d65eb252a97ffd1519ec979356327';
+      id_WoRMS = '126590';
+      id_Taxo = '173054';        
+      id_EoL = '46564054';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Diaphus';
+       
+    case 'Lepidophanes_guentheri'
+      id_CoL = '698339a45a5663922c02fd7e569877af';
+      id_WoRMS = '126621';
+      id_Taxo = '178393';        
+      id_EoL = '46564188';
       id_fishbase = taxon_fish;
        
     case 'Percopsis_omiscomaycus'
