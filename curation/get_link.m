@@ -2581,6 +2581,14 @@ function links = get_link(taxon, open)
       id_EoL = '224139';
       id_fishbase = taxon_fish;
        
+    case 'Bajacalifornia_burragei'
+      id_CoL = '10773fc12eae53a36b1701129c69139b';
+      id_WoRMS = '162837';
+      id_Taxo = '160348';   
+      id_Wiki = 'Bajacalifornia';     
+      id_EoL = '46562798';
+      id_fishbase = taxon_fish;
+       
     case 'Chanos_chanos'
       id_CoL = '4d9c6e7dced48df2f32ab635d64864ea';
       id_WoRMS = '217625';
@@ -2797,6 +2805,20 @@ function links = get_link(taxon, open)
       id_EoL = '994700';
       id_fishbase = taxon_fish;
        
+    case 'Pseudobathylagus_milleri'
+      id_CoL = '77ea7c845d958083cca547111a56ee1d';
+      id_WoRMS = '282406';
+      id_Taxo = '185054';        
+      id_EoL = '46562946';
+      id_fishbase = taxon_fish;
+       
+    case 'Leuroglossus_stilbius'
+      id_CoL = 'f09944f516f1136b439e1d1bd11d809a'; % accepted as Leuroglossus schmidti 2019/01/23
+      id_WoRMS = '313514';
+      id_Taxo = '276286';  % accepted as Bathylagus stilbius 2019/01/23      
+      id_EoL = '46562937';
+      id_fishbase = taxon_fish;
+       
     case 'Galaxias_paucispondylus'
       id_CoL = '97ac829e366aa23775953a31b00ae1e5';
       id_WoRMS = ''; % not present 2017/06/16
@@ -2918,6 +2940,14 @@ function links = get_link(taxon, open)
       id_EoL = '46563253';
       id_fishbase = taxon_fish;
        
+    case 'Borostomias_panamensis'
+      id_CoL = '96803edd66dd7a56cd8638dbcbfa0d22';
+      id_WoRMS = '275052';
+      id_Taxo = '164396';        
+      id_EoL = '46563430';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Borostomias';
+       
     case 'Harpadon_nehereus'
       id_CoL = '20bdc080c3d6f6e9ec19d35a7a538828';
       id_WoRMS = '217661';
@@ -2967,6 +2997,44 @@ function links = get_link(taxon, open)
       id_WoRMS = '126621';
       id_Taxo = '178393';        
       id_EoL = '46564188';
+      id_fishbase = taxon_fish;
+       
+    case 'Electrona_antarctica'
+      id_CoL = '2fee3958598d311c279fec4fe48aefa8';
+      id_WoRMS = '217697';
+      id_Taxo = '173594';        
+      id_EoL = '46564135';
+      id_fishbase = taxon_fish;
+       
+    case 'Nannobrachium_ritteri'
+      id_CoL = '9fe8d04d62241d5082e6283bedd29b02';
+      id_WoRMS = '275870';
+      id_Taxo = '180708';        
+      id_EoL = '46564274';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Nannobrachium';
+       
+    case 'Nannobrachium_regale'
+      id_CoL = 'd22e2c059eb800c814b3bdb94d04fbe1';
+      id_WoRMS = '275869';
+      id_Taxo = '691373';        
+      id_EoL = '46564273';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Nannobrachium';
+       
+    case 'Triphoturus_mexicanus'
+      id_CoL = 'c28de56d0789aa4d3bbacd7c06bbe6f8';
+      id_WoRMS = '278566';
+      id_Taxo = '189516';        
+      id_EoL = '46564295';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Triphoturus';
+       
+    case 'Stenobrachius_leucopsarus'
+      id_CoL = '55b77982249dac51e586c8e04e1e52e4';
+      id_WoRMS = '254363';
+      id_Taxo = '188162';        
+      id_EoL = '46564306';
       id_fishbase = taxon_fish;
        
     case 'Percopsis_omiscomaycus'
@@ -3228,6 +3296,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126395';
       id_Taxo = '44739';        
       id_EoL = '46567186';
+      id_fishbase = taxon_fish;
+       
+    case 'Poromitra_crassiceps'
+      id_CoL = '91a14196d435b3dc5509afd62b58ad00';
+      id_WoRMS = '127273';
+      id_Taxo = '184588';        
+      id_EoL = '46567130';
       id_fishbase = taxon_fish;
        
     case 'Holocentrus_adscensionis'
