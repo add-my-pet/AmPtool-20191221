@@ -2984,11 +2984,34 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_Wiki = 'Benthosema';
        
+    case 'Benthosema_pterotum'
+      id_CoL = 'dfddfcaa38675799d8db7a2c1d99b9f9';
+      id_WoRMS = '217680';
+      id_Taxo = '164101';        
+      id_EoL = '46564030';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Benthosema';
+       
+    case 'Benthosema_glaciale'
+      id_CoL = 'dbea00b771faa63d968cbf8583fc32b1';
+      id_WoRMS = '126580';
+      id_Taxo = '164099';        
+      id_EoL = '46564028';
+      id_fishbase = taxon_fish;
+       
     case 'Diaphus_dumerilii'
       id_CoL = '659d65eb252a97ffd1519ec979356327';
       id_WoRMS = '126590';
       id_Taxo = '173054';        
       id_EoL = '46564054';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Diaphus';
+       
+    case 'Diaphus_theta'
+      id_CoL = '713bc4987d994398ec522f2203d3880d';
+      id_WoRMS = '272694';
+      id_Taxo = '173098';        
+      id_EoL = '46564122';
       id_fishbase = taxon_fish;
       id_Wiki = 'Diaphus';
        
@@ -3035,6 +3058,34 @@ function links = get_link(taxon, open)
       id_WoRMS = '254363';
       id_Taxo = '188162';        
       id_EoL = '46564306';
+      id_fishbase = taxon_fish;
+       
+    case 'Tarletonbeania_crenularis'
+      id_CoL = '99d14cbcd866d3ffa93b429ef0b5dcaf';
+      id_WoRMS = '282927';
+      id_Taxo = '188818';        
+      id_EoL = '46564312';
+      id_fishbase = taxon_fish;
+       
+    case 'Symbolophorus_californiensis'
+      id_CoL = '3c60c8824c575eaeaac52a01bea9cde3';
+      id_WoRMS = '272733';
+      id_Taxo = '188427';        
+      id_EoL = '46564248';
+      id_fishbase = taxon_fish;
+       
+    case 'Ceratoscopelus_warmingii'
+      id_CoL = '8e0eb741ef0128590832cc90b3aa325a';
+      id_WoRMS = '126586';
+      id_Taxo = '166830';        
+      id_EoL = '46564048';
+      id_fishbase = taxon_fish;
+       
+    case 'Myctophum_asperum'
+      id_CoL = '11e943c751c7c4000faa442fe0996377';
+      id_WoRMS = '158903';
+      id_Taxo = '180517';        
+      id_EoL = '46564198';
       id_fishbase = taxon_fish;
        
     case 'Percopsis_omiscomaycus'
@@ -3512,6 +3563,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '151482';
       id_Taxo = '45220';  
       id_EoL = '46578890';
+      id_fishbase = taxon_fish;
+       
+    case 'Promethichthys_prometheus'
+      id_CoL = 'ed6a7d09e327349c91ca7e3da41fdb4c';
+      id_WoRMS = '126866';
+      id_Taxo = '184821';  
+      id_EoL = '46577254';
       id_fishbase = taxon_fish;
        
     case 'Mastacembelus_erythrotaenia'

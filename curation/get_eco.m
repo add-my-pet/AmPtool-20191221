@@ -3941,7 +3941,7 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Pseudobathylagus_milleri'
       climate = {'MA','MB','MC'};
       ecozone = {'MPN'};
-      habitat = {'0iMdb'};
+      habitat = {'0iMpb'};
       embryo  = {'Mpm'};
       migrate = {'Mo'};
       food    = {'biPz'};
@@ -3951,7 +3951,7 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Leuroglossus_stilbius'
       climate = {'MC'};
       ecozone = {'MC'};
-      habitat = {'0iMdb'};
+      habitat = {'0iMpm'};
       embryo  = {'Mpm'};
       migrate = {'Mo'};
       food    = {'biPz'};
@@ -4161,7 +4161,7 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Lampanyctodes_hectoris'
       climate = {'MC'};
       ecozone = {'MAS','MPS','MIS'};
-      habitat = {'0iMp'};
+      habitat = {'0jMpe','jiMp'};
       embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
@@ -4171,28 +4171,58 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Notoscopelus_resplendens'
       climate = {'MA','MC','MC'};
       ecozone = {'MC'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
       reprod  = {'O'};
 
     case 'Benthosema_suborbitale'
-      climate = {'MA','MC','MC'};
+      climate = {'MA','MB','MC'};
       ecozone = {'MC'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Benthosema_pterotum'
+      climate = {'MA','MB'};
+      ecozone = {'MC'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Benthosema_glaciale'
+      climate = {'MA','MB','MC','ME'};
+      ecozone = {'MAN','MN'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
       reprod  = {'O'};
 
     case 'Diaphus_dumerilii'
-      climate = {'MA','MC','MC'};
+      climate = {'MA','MB','MC'};
       ecozone = {'MA'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Diaphus_theta'
+      climate = {'MA','MB','MC'};
+      ecozone = {'MP'};
+      habitat = {'0jMpe','jiMpb'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
@@ -4201,8 +4231,8 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Lepidophanes_guentheri'
       climate = {'MA','MC'};
       ecozone = {'MA'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
@@ -4211,8 +4241,8 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Electrona_antarctica'
       climate = {'ME'};
       ecozone = {'MS'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
@@ -4221,8 +4251,8 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Nannobrachium_ritteri'
       climate = {'MC'};
       ecozone = {'MPNE'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
@@ -4231,8 +4261,8 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Nannobrachium_regale'
       climate = {'MC'};
       ecozone = {'MPN'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
@@ -4241,8 +4271,8 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Triphoturus_mexicanus'
       climate = {'MA','MB'};
       ecozone = {'MPE'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMpm'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
@@ -4251,8 +4281,48 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Stenobrachius_leucopsarus'
       climate = {'MC'};
       ecozone = {'MPN'};
-      habitat = {'0iMp'};
-      embryo  = {'Mpb'};
+      habitat = {'0jMpe','jiMpm'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Tarletonbeania_crenularis'
+      climate = {'MC'};
+      ecozone = {'MPN'};
+      habitat = {'0jMpe','jiMpm'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Symbolophorus_californiensis'
+      climate = {'MB','MC'};
+      ecozone = {'MPN'};
+      habitat = {'0jMpe','jiMpm'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Ceratoscopelus_warmingii'
+      climate = {'MA','MB','MC'};
+      ecozone = {'MC'};
+      habitat = {'0jMpe','jiMpb'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Myctophum_asperum'
+      climate = {'MA','MB','MC'};
+      ecozone = {'MC'};
+      habitat = {'0jMpe','jiMpb'};
+      embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
       gender  = {'D'};
@@ -4622,7 +4692,7 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'MA','MB','MC'};
       ecozone = {'MPNE','MAS','MANE'};
       habitat = {'0jMp','jiMpb'};
-      embryo  = {'Mp'};
+      embryo  = {'Mpb'};
       migrate = {'Mo'};
       food    = {'bjPz','jiCi','jiCvf'};
       gender  = {'D'};
@@ -4911,6 +4981,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Pomatomus_saltatrix'
       climate = {'MA','MB'};
       ecozone = {'MA','MI','MPS'};
+      habitat = {'0iMp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Promethichthys_prometheus'
+      climate = {'MA','MB'};
+      ecozone = {'MC'};
       habitat = {'0iMp'};
       embryo  = {'Mp'};
       migrate = {'Mo'};
