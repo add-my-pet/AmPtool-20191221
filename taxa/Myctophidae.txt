@@ -1,13 +1,2 @@
-Lampanyctodes
-Notoscopelus
-Benthosema
-Diaphus
-Lepidophanes
-Electrona
-Nannobrachium
-Triphoturus
-Stenobrachius
-Tarletonbeania
-Symbolophorus
-Ceratoscopelus
-Myctophum
+Myctophinae
+Lampanyctinae

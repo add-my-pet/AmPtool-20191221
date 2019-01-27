@@ -1998,6 +1998,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Jasus_lalandii'
+      climate = {'MB'};
+      ecozone = {'MASE','MISW'}; 
+      habitat = {'0bMb','bjMp','jiMb'};
+      embryo  = {'Mbf'};
+      migrate = {'Mo'};
+      food    = {'bjP','biD','jiCi','jiS'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Pleuroncodes_monodon'
       climate = {'MC'};
       ecozone = {'MPSE'}; 
@@ -4169,8 +4179,18 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       reprod  = {'O'};
 
     case 'Notoscopelus_resplendens'
-      climate = {'MA','MC','MC'};
+      climate = {'MA','MB','MC'};
       ecozone = {'MC'};
+      habitat = {'0jMpe','jiMp'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Notoscopelus_elongatus'
+      climate = {'MB'};
+      ecozone = {'MAm'};
       habitat = {'0jMpe','jiMp'};
       embryo  = {'Mpe'};
       migrate = {'Mo'};
@@ -5388,6 +5408,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Hyporhamphus_picarti'
+      climate = {'MA','MB'};
+      ecozone = {'MAE'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Oryzias_latipes'
       climate = {'Aw','Cfa'};
       ecozone = {'TPi','THp'};
@@ -5804,6 +5834,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0jMp','0jMd'};
       embryo  = {'Mp'};
       migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Pogonias_cromis'
+      climate = {'MB'};
+      ecozone = {'MAW'};
+      habitat = {'0jMp','0jMd'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
       food    = {'bjPz','jiCi'};
       gender  = {'D'};
       reprod  = {'O'};

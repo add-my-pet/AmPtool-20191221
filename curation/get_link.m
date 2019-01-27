@@ -1460,6 +1460,12 @@ function links = get_link(taxon, open)
       id_Taxo = '507331';      
       id_EoL = '46516747';
 
+    case 'Jasus_lalandii'
+      id_CoL = '072be6fcdf8bd143c80925e0d0bef638';
+      id_WoRMS = '246322';
+      id_Taxo = '427795';      
+      id_EoL = '46516788';
+
     case 'Pleuroncodes_monodon'
       id_CoL = '3c06e91277c704e367dfca04b98b860c'; % present at genus level only 2019/01/19
       id_WoRMS = '127061';
@@ -2976,6 +2982,13 @@ function links = get_link(taxon, open)
       id_EoL = '46564221';
       id_fishbase = taxon_fish;
        
+    case 'Notoscopelus_elongatus'
+      id_CoL = 'e39202980f3982e62476093803ca1f25';
+      id_WoRMS = '158915';
+      id_Taxo = '181456';        
+      id_EoL = '46564219';
+      id_fishbase = taxon_fish;
+       
     case 'Benthosema_suborbitale'
       id_CoL = '83a3118c7789277b7c66112ed9aac497';
       id_WoRMS = '126581';
@@ -3849,6 +3862,14 @@ function links = get_link(taxon, open)
       id_Wiki = 'Hirundichthys';
       id_fishbase = taxon_fish;
        
+    case 'Hyporhamphus_picarti'
+      id_CoL = '99f59f1b71c2a9e91d3ab227b0275748';
+      id_WoRMS = '126390';
+      id_Taxo = '177191';   
+      id_EoL = '46566999';
+      id_Wiki = 'Hyporhamphus';
+      id_fishbase = taxon_fish;
+       
     case 'Oryzias_latipes'
       id_CoL = '481dc2e4f470b63f53970ca5815f9c4e';
       id_WoRMS = '281941';
@@ -4152,6 +4173,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '234781';
       id_Taxo = '162587';      
       id_EoL = '46579091';
+      id_fishbase = taxon_fish;
+       
+    case 'Pogonias_cromis'
+      id_CoL = 'bd7875015156e33be949008a8c4c1afa';
+      id_WoRMS = '159333';
+      id_Taxo = '184254';      
+      id_EoL = '46579058';
       id_fishbase = taxon_fish;
        
     case 'Acanthurus_lineatus'
