@@ -897,6 +897,13 @@ function links = get_link(taxon, open)
       id_EoL = '591440';
       id_molluscabase = '342064';
       
+    case 'Ommastrephes_bartramii'
+      id_CoL = '81be79f1d783888289906282cbedd81d';
+      id_WoRMS = '181382';
+      id_Taxo = '158110';  
+      id_EoL = '453373';
+      id_molluscabase = '181382';
+      
     case 'Thysanoteuthis_rhombus'
       id_CoL = '6bc5c5000ac2a2e7eadc64341ccdbdd3';
       id_WoRMS = '141680';
@@ -2490,6 +2497,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '212269';
       id_Taxo = '186547';        
       id_EoL = '46562416';
+      id_fishbase = taxon_fish;
+       
+    case 'Opisthonema_oglinum'
+      id_CoL = '3e1f89166040fdcbc59d0bc82f1eb602';
+      id_WoRMS = '158695';
+      id_Taxo = '182010';        
+      id_EoL = '46562453';
       id_fishbase = taxon_fish;
        
     case 'Sardinops_sagax'
@@ -4458,6 +4472,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126830';
       id_Taxo = '187957';        
       id_EoL = '46578160';
+      id_fishbase = taxon_fish;
+       
+    case 'Sarpa_salpa'
+      id_CoL = '05b554ca1fa7f7b2f64aff585f3dcfa2';
+      id_WoRMS = '127064';
+      id_Taxo = '186591';        
+      id_EoL = '46579976';
       id_fishbase = taxon_fish;
        
     case 'Siganus_sutor'

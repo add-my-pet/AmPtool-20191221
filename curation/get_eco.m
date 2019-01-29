@@ -1168,6 +1168,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Ommastrephes_bartramii'
+      climate = {'MB'};
+      ecozone = {'MC'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};      
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Thysanoteuthis_rhombus'
       climate = {'MA'};
       ecozone = {'MC'};
@@ -3504,6 +3514,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0iMpe','0iMr'};
       embryo  = {'Mpe'};
       migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Opisthonema_oglinum'
+      climate = {'MA'};
+      ecozone = {'MAW'};
+      habitat = {'0iMpe','0iMr'};
+      embryo  = {'Mpe'};
+      migrate = {};
       food    = {'biPz'};
       gender  = {'D'};
       reprod  = {'O'};
@@ -6231,6 +6251,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Spicara_smaris'
       climate = {'MB'};
       ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'Hsf'};
+      reprod  = {'O'};
+
+    case 'Sarpa_salpa'
+      climate = {'MB'};
+      ecozone = {'MAE'};
       habitat = {'0jMp','jiMd'};
       embryo  = {'Mp'};
       migrate = {'Mo'};
