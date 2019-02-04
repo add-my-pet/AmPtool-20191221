@@ -105,7 +105,7 @@ dates = get_date_DEB('../../DEB Library.bib'); % requires update via Zotero
 dates = [dates; (datenum(date) - datenum('01-Jan-000'))/365.25];
 surv_dates = surv(dates, 1979); 
 surv_dates([1; end - 1; end],:) = [];    
-n = size(surv_dates, 1)/2;
+n = 1 + size(surv_dates, 1)/2;
     
 plot(surv_dates(:,1), n * (1 - surv_dates(:,2)), 'b', 'Linewidth', 2)
 set(gca, 'FontSize', 15, 'Box', 'on')

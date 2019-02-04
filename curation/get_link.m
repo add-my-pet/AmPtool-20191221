@@ -9726,6 +9726,14 @@ function links = get_link(taxon, open)
       id_avibase = '3E2D0C9BADB782DB';
       id_birdlife = 'yellow-headed-blackbird-xanthocephalus-xanthocephalus';
 
+    case 'Molothrus_bonariensis'
+      id_CoL = '381b48dcbe9fd51aac196e1393c9a2e5';
+      id_Taxo = '58465';    
+      id_EoL = '45511157'; 
+      id_AnAge = ''; % not present 2019/01/30       
+      id_avibase = 'AA7798040CC37113';
+      id_birdlife = 'shiny-cowbird-molothrus-bonariensis';
+
     case 'Ornithorhynchus_anatinus'
       id_CoL = '3bc186304963c8d2e15564c630a7021e';
       id_Taxo = '59646';        
