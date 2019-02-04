@@ -10564,7 +10564,7 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0iMc'};
       embryo  = {'Tntfm'};
       migrate = {'Ml'};
-      food    = {'biCvc'};
+      food    = {'biCic'};
       gender  = {'Dg'};
       reprod  = {'O'};
       
@@ -12675,6 +12675,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Tnpf'};
       migrate = {'Ml'};
       food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Molothrus_bonariensis'
+      climate = {'A','Cfa','D'};
+      ecozone = {'TN'};
+      habitat = {'0iTh','0iTi','0iTg'};
+      embryo  = {'Tnpo'};
+      migrate = {};
+      food    = {'biCi','xiHs'};
       gender  = {'Dg'};
       reprod  = {'O'};
 
