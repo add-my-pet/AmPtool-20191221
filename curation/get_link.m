@@ -659,6 +659,14 @@ function links = get_link(taxon, open)
       id_molluscabase = '445354';
       id_ADW = 'Haliotus';
       
+    case 'Haliotis_mariae'
+      id_CoL = '7decb5b611cb75f535b7e6e4aaa54f02';
+      id_WoRMS = '207664';
+      id_Taxo = '34615'; % present at genus level only 2019/01/09        
+      id_EoL = '3049002';       
+      id_molluscabase = '207664';
+      id_ADW = 'Haliotus';
+      
     case 'Phorcus_lineatus'
       id_CoL = '5d915d529f45e7c60979e383f2ef5333';
       id_WoRMS = '689176';
@@ -1427,6 +1435,13 @@ function links = get_link(taxon, open)
       id_Taxo = '33864';
       id_EoL = '1021076';
       id_ADW = ''; % not present at 2017/08/25
+       
+    case 'Macrobrachium_vollenhoveni'
+      id_CoL = '91198384937e708f4cc1dbb08a6efd20'; % present as Macrobrachium vollenhovenii 20190208
+      id_WoRMS = '240834';
+      id_Taxo = '33830'; % present at genus level only 2019/02/08
+      id_EoL = '46515424';
+      id_ADW = ''; % not present at 2019/02/08
        
     case 'Crangon_crangon'
       id_CoL = '58d00d89008c1ec63431fabcc112c6bb';
@@ -2298,6 +2313,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '158508';
       id_Taxo = '106442';        
       id_EoL = '46559790';
+      id_fishbase = taxon_fish;
+       
+    case 'Carcharhinus_longimanus'
+      id_CoL = '30fc3fc26a00209a37d86b22c16f3ad4';
+      id_WoRMS = '105794';
+      id_Taxo = '41979';        
+      id_EoL = '46559785';
       id_fishbase = taxon_fish;
        
     case 'Galeocerdo_cuvier'
@@ -3499,6 +3521,13 @@ function links = get_link(taxon, open)
       id_EoL = '995152';
       id_fishbase = taxon_fish;
        
+    case 'Upeneus_moluccensis'
+      id_CoL = 'c6c8920562bbaca3a734f38d5d361a4a';
+      id_WoRMS = '126989';
+      id_Taxo = '189739';        
+      id_EoL = '46578741';
+      id_fishbase = taxon_fish;
+       
     case 'Thunnus_orientalis'
       id_CoL = '243ba5718af1ebd2306782107e21e150';
       id_WoRMS = '273823';
@@ -3561,6 +3590,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '127024';
       id_Taxo = '187066';        
       id_EoL = '46577312';
+      id_fishbase = taxon_fish;
+      
+    case 'Scomberomorus_plurilineatus'
+      id_CoL = 'd5e9fb57d2eb8f3f80252de4f40d9912';
+      id_WoRMS = '219719';
+      id_Taxo = '187075';        
+      id_EoL = '46577319';
       id_fishbase = taxon_fish;
       
     case 'Trichiurus_nanhaiensis'
@@ -4529,6 +4565,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126554';
       id_Taxo = '125346';        
       id_EoL = '46566105';
+      id_fishbase = taxon_fish;
+       
+    case 'Lophius_vomerinus'
+      id_CoL = '501a33b1435989e22d3c947e932c045e';
+      id_WoRMS = '217839';
+      id_Taxo = '179106';        
+      id_EoL = '46566109';
       id_fishbase = taxon_fish;
        
     case 'Balistes_vetula'
