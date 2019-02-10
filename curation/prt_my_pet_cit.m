@@ -59,7 +59,7 @@ for i = 2:n_author
 end
 fprintf(oid, ['. ', num2str(date(1)), '. \n']);
 fprintf(oid, ['AmP <i>', txt_species, '</i>, version ', txt_date_acc, ', \n']);
-fprintf(oid, ['<a href="http://www.doi.org/', doi, '">doi: ', doi, '</a>\n']);
+%fprintf(oid, ['<a href="http://www.doi.org/', doi, '">doi: ', doi, '</a>\n']);
 
 fclose(oid);
 

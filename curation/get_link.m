@@ -2798,6 +2798,13 @@ function links = get_link(taxon, open)
       id_EoL = '219060';
       id_fishbase = taxon_fish;
 
+    case 'Brycon_moorei'
+      id_CoL = 'af72e1d7561394cf26eab282aed2b077';
+      id_WoRMS = ''; % nor present 2019/02/10
+      id_Taxo = '164721';  
+      id_EoL = '211943';
+      id_fishbase = taxon_fish;
+
     case 'Electrophorus_electricus'
       id_CoL = '3cef65beebb836d276014fb79322b074';
       id_WoRMS = ''; % not present 2017/06/16
@@ -3707,6 +3714,13 @@ function links = get_link(taxon, open)
       id_EoL = '993271';
       id_fishbase = taxon_fish;
        
+    case 'Echeneis_naucrates'
+      id_CoL = '1ffeaa71f93f2edeb5d6bfb080b8de8b';
+      id_WoRMS = '126848';
+      id_Taxo = '45226';        
+      id_EoL = '46578345';
+      id_fishbase = taxon_fish;
+       
     case 'Sphyraena_barracuda'
       id_CoL = '15ca7deef951e4af6ad43248c2ba9525';
       id_WoRMS = '345843';
@@ -4054,6 +4068,13 @@ function links = get_link(taxon, open)
       id_EoL = '46324757';
       id_fishbase = taxon_fish;
        
+    case 'Atherina_boyeri'
+      id_CoL = '34b3983742d71490711145acab03c685';
+      id_WoRMS = '272027';
+      id_Taxo = '44694';        
+      id_EoL = '46566595';
+      id_fishbase = taxon_fish;
+       
     case 'Chromis_chromis'
       id_CoL = '3ea36d06fa4400de11f0f6fbaf5c7bde';
       id_WoRMS = '127000';
@@ -4158,6 +4179,34 @@ function links = get_link(taxon, open)
       id_WoRMS = '282753';
       id_Taxo = '187392';        
       id_EoL = '218416';
+      id_fishbase = taxon_fish;
+       
+    case 'Labrus_merula'
+      id_CoL = 'dfb19f6cf2b4978be3673a8e893e08a7';
+      id_WoRMS = '126967';
+      id_Taxo = '178026';        
+      id_EoL = '46571664';
+      id_fishbase = taxon_fish;
+       
+    case 'Coris_julis'
+      id_CoL = '11766e5b02992c2d10fd9790d91f1b25';
+      id_WoRMS = '126963';
+      id_Taxo = '46338';        
+      id_EoL = '46571633';
+      id_fishbase = taxon_fish;
+       
+    case 'Symphodus_roissali'
+      id_CoL = '24c14aee206f924ba341e886ffa64c6e';
+      id_WoRMS = '273573';
+      id_Taxo = '188438';        
+      id_EoL = '46571684';
+      id_fishbase = taxon_fish;
+       
+    case 'Symphodus_tinca'
+      id_CoL = '8c6c24b74dfd8de31c404d04113a3a34';
+      id_WoRMS = '273575';
+      id_Taxo = '188440';        
+      id_EoL = '46571686';
       id_fishbase = taxon_fish;
        
     case 'Dicentrarchus_labrax'

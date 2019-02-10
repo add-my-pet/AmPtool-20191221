@@ -3928,6 +3928,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Brycon_moorei'
+      climate = {'Af'};
+      ecozone = {'TN'};
+      habitat = {'0iFr'};
+      embryo  = {'Fh'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Electrophorus_electricus'
       climate = {'Af','Am'};
       ecozone = {'TN'};
@@ -5188,6 +5198,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Echeneis_naucrates'
+      climate = {'MA','MB'};
+      ecozone = {'MC'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCvf','jiSvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Sphyraena_barracuda'
       climate = {'MA'};
       ecozone = {'MC'};
@@ -5668,6 +5688,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Atherina_boyeri'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0iMcp'};
+      embryo  = {'Fc','Fh'};
+      migrate = {'Ma'};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Chromis_chromis'
       climate = {'MB'};
       ecozone = {'MAE'};
@@ -5811,6 +5841,46 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Semicossyphus_pulcher'
       climate = {'MB'};
       ecozone = {'MPE'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'Hsff'};
+      reprod  = {'O'};
+
+    case 'Labrus_merula'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'Hsff'};
+      reprod  = {'O'};
+
+    case 'Coris_julis'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'Hsff'};
+      reprod  = {'O'};
+
+    case 'Symphodus_roissali'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'Hsff'};
+      reprod  = {'O'};
+
+    case 'Symphodus_tinca'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
       habitat = {'0jMp','jiMr'};
       embryo  = {'Mp'};
       migrate = {};
