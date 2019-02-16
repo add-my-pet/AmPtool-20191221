@@ -2351,6 +2351,13 @@ function links = get_link(taxon, open)
       id_EoL = '206724';
       id_fishbase = taxon_fish;
        
+    case 'Galeorhinus_galeus'
+      id_CoL = '8c1dae5e27950351d18cfcea0c60c518';
+      id_WoRMS = '105820';
+      id_Taxo = '41946';        
+      id_EoL = '46559964';
+      id_fishbase = taxon_fish;
+       
     case 'Carcharias_taurus'
       id_CoL = '2d7e5479972d3735b029784cf7b2347a';
       id_WoRMS = '105843';
@@ -2740,6 +2747,13 @@ function links = get_link(taxon, open)
       id_EoL = '28754994';
       id_fishbase = taxon_fish;
        
+    case 'Phoxinus_phoxinus'
+      id_CoL = 'ed3d685f3ab3a03eece392d00a616473';
+      id_WoRMS = '154326';
+      id_Taxo = '43660';   
+      id_EoL = '46581654';
+      id_fishbase = taxon_fish;
+       
     case 'Chondrostoma_nasus'
       id_CoL = '603cb21d9946407088321fa22f46ff2a';
       id_WoRMS = '154585'; 
@@ -2800,9 +2814,16 @@ function links = get_link(taxon, open)
 
     case 'Brycon_moorei'
       id_CoL = 'af72e1d7561394cf26eab282aed2b077';
-      id_WoRMS = ''; % nor present 2019/02/10
+      id_WoRMS = ''; % not present 2019/02/10
       id_Taxo = '164721';  
       id_EoL = '211943';
+      id_fishbase = taxon_fish;
+
+    case 'Leporinus_friderici'
+      id_CoL = 'b620b5993d74fc3c0a94c93ee7bb1584';
+      id_WoRMS = ''; % not present 2019/02/11
+      id_Taxo = '437085';  
+      id_EoL = '205923';
       id_fishbase = taxon_fish;
 
     case 'Electrophorus_electricus'
@@ -3239,6 +3260,14 @@ function links = get_link(taxon, open)
       id_EoL = '46564628';
       id_fishbase = taxon_fish;
        
+    case 'Hymenocephalus_italicus'
+      id_CoL = 'a0c3ceea351a35da398000d52d35399e';
+      id_WoRMS = '158961';
+      id_Taxo = '176992';  
+      id_Wiki = 'Hymenocephalus';
+      id_EoL = '46564583';
+      id_fishbase = taxon_fish;
+       
     case 'Trachyrincus_scabrus'
       id_CoL = 'd00f2ecf91149861613bf860026db2f5';
       id_WoRMS = '126482';
@@ -3514,6 +3543,20 @@ function links = get_link(taxon, open)
       id_EoL = '224695';
       id_fishbase = taxon_fish;
        
+    case 'Hippocampus_kuda'
+      id_CoL = 'fc051550fcac5676c322340670130c0d';
+      id_WoRMS = '212237';
+      id_Taxo = '44857';        
+      id_EoL = '46567778';
+      id_fishbase = taxon_fish;
+       
+    case 'Hippocampus_guttulatus'
+      id_CoL = 'c4df4f5b8128b74be89eeced1d86015e';
+      id_WoRMS = '154776';
+      id_Taxo = '44855';        
+      id_EoL = '46567768';
+      id_fishbase = taxon_fish;
+       
     case 'Macroramphosus_scolopax'
       id_CoL = '770932aafd5b74016b79ed7295764b9b';
       id_WoRMS = '127378';
@@ -3785,6 +3828,13 @@ function links = get_link(taxon, open)
       id_EoL = '221509';
       id_fishbase = taxon_fish;
        
+    case 'Microchirus_variegatus'
+      id_CoL = 'f5932898eb9a8a2c2b493a9aa4f15fa9';
+      id_WoRMS = '274304';
+      id_Taxo = '179970';        
+      id_EoL = '46570271';
+      id_fishbase = taxon_fish;
+       
     case 'Psetta_maxima'
       id_CoL = '614b30fcca5c61b82a3d7b6cbad26210';
       id_WoRMS = '154473'; % unaccepted, to Scophthalmus maximus (Linnaeus, 1758)
@@ -3818,6 +3868,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '127126';
       id_Taxo = '46908';        
       id_EoL = '212566';
+      id_fishbase = taxon_fish;
+       
+    case 'Arnoglossus_thori'
+      id_CoL = '2ffa2a9621811ca8ce68410db51f058e';
+      id_WoRMS = '127128';
+      id_Taxo = '161791';        
+      id_EoL = '46569750';
       id_fishbase = taxon_fish;
        
     case 'Paralichthys_californicus'
@@ -3860,6 +3917,28 @@ function links = get_link(taxon, open)
       id_WoRMS = '127140';
       id_Taxo = '46954';        
       id_EoL = '208740';
+      id_fishbase = taxon_fish;
+       
+    case 'Pegusa_lascaris'
+      id_CoL = '0cf7bb5a26a2c568aadf954ee9ae680f';
+      id_WoRMS = '127156';
+      id_Taxo = '513562';        
+      id_EoL = '46570277';
+      id_fishbase = taxon_fish;
+       
+    case 'Pegusa_impar'
+      id_CoL = 'ee54e66055d52dab828b53485f987471';
+      id_WoRMS = '236490';
+      id_Taxo = '513559';        
+      id_EoL = '46570279';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Pegusa'; % not present at species level 2019/02/14
+       
+    case 'Buglossidium_luteum'
+      id_CoL = 'ed32a73a852661be0064fdcbcb0df544';
+      id_WoRMS = '127153';
+      id_Taxo = '46988';        
+      id_EoL = '46570259';
       id_fishbase = taxon_fish;
        
     case 'Hypsopsetta_guttulata'
@@ -3985,6 +4064,13 @@ function links = get_link(taxon, open)
       id_Taxo = '174700';        
       id_fishbase = taxon_fish;
  
+    case 'Gambusia_holbrooki'
+      id_CoL = 'aba63b0655fd06bdbeb4ff233f307ce0';
+      id_WoRMS = '276134';
+      id_EoL = '46566800';
+      id_Taxo = '174687';        
+      id_fishbase = taxon_fish;
+ 
     case 'Girardinus_metallicus'
       id_CoL = '2be6eac6f0550837097a82c9c89c211e';
       id_WoRMS = ''; % not present 2018/08/02
@@ -4036,6 +4122,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126428';
       id_Taxo = '44467';        
       id_EoL = '223483';
+      id_fishbase = taxon_fish;
+              
+    case 'Cyprinodon_variegatus'
+      id_CoL = '9455eb6733d792fa7da1732b9fe90df4';
+      id_WoRMS = '159285';
+      id_Taxo = '44509';        
+      id_EoL = '47062390';
       id_fishbase = taxon_fish;
               
     case 'Nothobranchius_furzeri'
@@ -4186,6 +4279,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126967';
       id_Taxo = '178026';        
       id_EoL = '46571664';
+      id_fishbase = taxon_fish;
+       
+    case 'Bodianus_frenchii'
+      id_CoL = 'b70550ceac79f927e53216c5c8d9fc63';
+      id_WoRMS = '273531';
+      id_Taxo = '164322';        
+      id_EoL = '46571603';
       id_fishbase = taxon_fish;
        
     case 'Coris_julis'
@@ -4770,10 +4870,17 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/08/17
 
+    case 'Zingel_asper'
+      id_CoL = '928237a536b61521db1f60ac7b151e4b';
+      id_WoRMS = ''; % not present 2019/02/11
+      id_Taxo = '45187';        
+      id_EoL = '994525';
+      id_fishbase = taxon_fish;
+
     case 'Lethrinus_lentjan'
       id_CoL = '3203631074908d9a527ba77431fa9ccb';
       id_WoRMS = '212061';
-      id_Taxo = '178742';        
+      id_Taxo = '45205';        
       id_EoL = '46580938';
       id_fishbase = taxon_fish;
 
@@ -4790,6 +4897,14 @@ function links = get_link(taxon, open)
       id_Taxo = '181460'; 
       id_Wiki = 'Notothenia';
       id_EoL = '204661';
+      id_fishbase = taxon_fish;
+       
+    case 'Patagonotothen_guntheri'
+      id_CoL = '2a472a069a11ae0ba30b73b09426ec28';
+      id_WoRMS = '234738';
+      id_Taxo = '183319'; 
+      id_Wiki = 'Patagonotothen';
+      id_EoL = '46572959';
       id_fishbase = taxon_fish;
        
     case 'Pleuragramma_antarcticum'
@@ -4975,6 +5090,13 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2017/06/16
       id_Taxo = '42340';    
       id_EoL = '339109';
+      id_fishbase = taxon_fish;
+       
+    case 'Protopterus_aethiopicus'
+      id_CoL = '4c7d11064f11d04a7f95ebe1f9464276';
+      id_WoRMS = ''; % not present 2019/02/16
+      id_Taxo = '42346';    
+      id_EoL = '214853';
       id_fishbase = taxon_fish;
        
     case 'Ichthyophis_kohtaoensis'
