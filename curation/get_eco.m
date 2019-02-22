@@ -3388,6 +3388,56 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Acipenser_gueldenstaedtii'
+      climate = {'MB'};
+      ecozone = {'MAm'};
+      habitat = {'0iMcd','0iFr'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
+      food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Acipenser_nudiventris'
+      climate = {'MB'};
+      ecozone = {'MAm'};
+      habitat = {'0iMcd','0iFr'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
+      food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Acipenser_persicus'
+      climate = {'MB'};
+      ecozone = {'MAm'};
+      habitat = {'0iMcd','0iFr'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
+      food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Acipenser_stellatus'
+      climate = {'MB'};
+      ecozone = {'MAm'};
+      habitat = {'0iMcd','0iFr'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
+      food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Huso_huso'
+      climate = {'MB'};
+      ecozone = {'MAm'};
+      habitat = {'0iMcd','0iFr'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
+      food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Amia_calva'
       climate = {'Dfa','Cfb'};
       ecozone = {'THn'};

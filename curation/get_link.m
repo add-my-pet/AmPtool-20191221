@@ -2409,6 +2409,41 @@ function links = get_link(taxon, open)
       id_EoL = '206890';
       id_fishbase = taxon_fish;
        
+    case 'Acipenser_gueldenstaedtii'
+      id_CoL = 'c981d85630745cd067f75c46a48f89dd';
+      id_WoRMS = '126275';
+      id_Taxo = '107316';        
+      id_EoL = '46561166';
+      id_fishbase = taxon_fish;
+       
+    case 'Acipenser_nudiventris'
+      id_CoL = 'a75d8e1e4ebe7a9bcbd8e4b6d62da7ac';
+      id_WoRMS = '126277';
+      id_Taxo = '42438';        
+      id_EoL = '46561168';
+      id_fishbase = taxon_fish;
+       
+    case 'Acipenser_persicus'
+      id_CoL = '4c093bd7a7fdc72dae662afc8b55f103';
+      id_WoRMS = '238344';
+      id_Taxo = '107325';        
+      id_EoL = '46561175';
+      id_fishbase = taxon_fish;
+       
+    case 'Acipenser_stellatus'
+      id_CoL = 'be02b051667cf7afe63a025d62b8d991';
+      id_WoRMS = '126278';
+      id_Taxo = '42444';        
+      id_EoL = '46561169';
+      id_fishbase = taxon_fish;
+       
+    case 'Huso_huso'
+      id_CoL = 'c80d1d52b8ce33862eb3ccd2e8c1effd';
+      id_WoRMS = '126280';
+      id_Taxo = '42449';        
+      id_EoL = '46561184';
+      id_fishbase = taxon_fish;
+       
     case 'Amia_calva'
       id_CoL = 'd526fe4bb2cd5cf0d8edcbee9b0a07c4';
       id_WoRMS = ''; % not present 2017/06/16
