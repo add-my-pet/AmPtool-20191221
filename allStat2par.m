@@ -6,7 +6,7 @@ function [par, metaPar, txtPar, metaData] = allStat2par(my_pet)
 % created 2019/02/20 by Bas Kooijman
 
 %% Syntax
-% [par, txtPar, metaPar, metaData] = <allStat2par *allStat2par*> (my_pet)
+% [par, metaPar, txtPar, metaData] = <allStat2par *allStat2par*> (my_pet)
 
 %% Description
 % Read par, metaPar and metaData from allStat for entry my_pet
@@ -37,20 +37,7 @@ function [par, metaPar, txtPar, metaData] = allStat2par(my_pet)
   end
 
   % par, txtPar
-  parFields = get_parfields(allStat.(my_pet).model); 
-  chem = { ...
-    'd_X'; 'd_V'; 'd_E'; 'd_P';
-    'mu_X'; 'mu_V'; 'mu_E'; 'mu_P'; 
-    'mu_C'; 'mu_H'; 'mu_O'; 'mu_N';
-    'n_CX'; 'n_HX'; 'n_OX'; 'n_NX';
-    'n_CV'; 'n_HV'; 'n_OV'; 'n_NV';
-    'n_CE'; 'n_HE'; 'n_OE'; 'n_NE';
-    'n_CP'; 'n_HP'; 'n_OP'; 'n_NP';
-    'n_CC'; 'n_HC'; 'n_OC'; 'n_NC';
-    'n_CH'; 'n_HH'; 'n_OH'; 'n_NH';
-    'n_CO'; 'n_HO'; 'n_OO'; 'n_NO';
-    'n_CN'; 'n_HN'; 'n_ON'; 'n_NN'};
-  parFields = [parFields'; chem];
+  parFields = get_parfields(allStat.(my_pet).model, 1)'; % include chemical parameters
   n_parFields = length(parFields);
   for i = 1:n_parFields
     par.(parFields{i}) = allStat.(my_pet).(parFields{i});
