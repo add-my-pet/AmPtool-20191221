@@ -3,7 +3,7 @@
 
 %%
 function [members, taxon] = clade(taxa, level)
-% created 2015/09/18 by Bas Kooijman; modified 2017/12/23, 2018/01/05, 2018/01/30
+% created 2015/09/18 by Bas Kooijman; modified 2017/12/23, 2018/01/05, 2018/01/30, 2019/02/25
 
 %% Syntax
 % [members, taxon] = <../clade.m *clade*> (taxa, level) 
@@ -19,7 +19,7 @@ function [members, taxon] = clade(taxa, level)
 % Input:
 %
 % * taxa: cell string with names of taxa or character string with a single name
-% * level: optional integer with number of nodes up, in the case of a single taxon (default: 3)
+% * level: optional integer with number of nodes up, in the case of a single taxon (default: such that more than 2 members result with smallest number)
 %
 % Output:
 % 
@@ -48,9 +48,6 @@ function [members, taxon] = clade(taxa, level)
       taxa = taxa{1};
     end
     
-    if ~exist('level', 'var')
-      level = 3;
-    end
   
     list = lineage(taxa);
     
@@ -105,8 +102,18 @@ function [members, taxon] = clade(taxa, level)
       end
       
     else
-      taxon = list{end-level};
-      members = select(taxon);
+      if ~exist('level', 'var')
+        n = 1; i = 1;
+        while n < 3
+          taxon = list{end - i}; 
+          members = select(taxon);
+          n = length(members);
+          i = 1 + i;
+        end
+      else
+        taxon = list{end - level};
+        members = select(taxon);
+      end
     end
   
     return
