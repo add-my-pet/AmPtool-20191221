@@ -2812,6 +2812,13 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/08/13
 
+    case 'Squalius_cii'
+      id_CoL = 'd982e963750eac8e55ff1c6c7300597c';
+      id_WoRMS = '1021373'; 
+      id_Taxo = '1682883';
+      id_EoL = '221014';
+      id_fishbase = taxon_fish;
+
     case 'Alburnoides_bipunctatus'
       id_CoL = '85a8443cf8643e8dc6c1083e0f3b734b';
       id_WoRMS = '154288'; 

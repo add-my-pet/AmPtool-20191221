@@ -3948,6 +3948,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Squalius_cii'
+      climate = {'Csa'};
+      ecozone = {'THp'};
+      habitat = {'0iFp','0iFm'};
+      embryo  = {'Fh'};
+      migrate = {};
+      food    = {'biCi','jiHl','jiD'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Alburnoides_bipunctatus'
       climate = {'Cfb','Dfb'};
       ecozone = {'THp'};
