@@ -3728,6 +3728,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Engraulis_japonicus'
+      climate = {'MB'};
+      ecozone = {'MPW'};
+      habitat = {'0iMcp'};
+      embryo  = {'Fpe'};
+      migrate = {'Mo'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Chirocentrus_dorab'
       climate = {'MA'};
       ecozone = {'MIE','MPW'};
@@ -3950,6 +3960,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
 
     case 'Squalius_cii'
       climate = {'Csa'};
+      ecozone = {'THp'};
+      habitat = {'0iFp','0iFm'};
+      embryo  = {'Fh'};
+      migrate = {};
+      food    = {'biCi','jiHl','jiD'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Squalius_pyrenaicus'
+      climate = {'BSk','Csa'};
       ecozone = {'THp'};
       habitat = {'0iFp','0iFm'};
       embryo  = {'Fh'};
@@ -4218,6 +4238,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Salvelinus_willoughbii'
+      climate = {'Cfb'};
+      ecozone = {'THp'};
+      habitat = {'0jFr','jiMpe'};
+      embryo  = {'Fg'};
+      migrate = {};
+      food    = {'biCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Coregonus_albula'
       climate = {'Dfc'};
       ecozone = {'MAb'};
@@ -4233,7 +4263,17 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       ecozone = {'MAE'};
       habitat = {'0jFr','jiMpe'};
       embryo  = {'Fg'};
-      migrate = {'Ma'};
+      migrate = {'Mda'};
+      food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Coregonus_autumnalis'
+      climate = {'ME','ET'};
+      ecozone = {'MN'};
+      habitat = {'0jFr','jiMpe'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
       food    = {'biPz'};
       gender  = {'D'};
       reprod  = {'O'};

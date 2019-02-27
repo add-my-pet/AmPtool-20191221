@@ -2650,6 +2650,13 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2018/12/26
        
+    case 'Engraulis_japonicus'
+      id_CoL = 'c8c10a1c14ab21459eb2f38d4bf851ad';
+      id_WoRMS = '219984';
+      id_Taxo = '42686';        
+      id_EoL = '46562562';
+      id_fishbase = taxon_fish;
+       
     case 'Chirocentrus_dorab'
       id_CoL = 'e6e028c4da3f6801e1e7b01fa7098bf8';
       id_WoRMS = '212257';
@@ -2817,6 +2824,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '1021373'; 
       id_Taxo = '1682883';
       id_EoL = '221014';
+      id_fishbase = taxon_fish;
+
+    case 'Squalius_pyrenaicus'
+      id_CoL = 'e0775548b0f71a49d4ac881fd9793f4a';
+      id_WoRMS = ''; % not present 2019-02-25 
+      id_Taxo = '2711042';
+      id_EoL = '224880';
       id_fishbase = taxon_fish;
 
     case 'Alburnoides_bipunctatus'
@@ -3001,6 +3015,14 @@ function links = get_link(taxon, open)
       id_EoL = '1156463';
       id_fishbase = taxon_fish;
        
+    case 'Salvelinus_willoughbii'
+      id_CoL = 'e326b80964929e91f5c4a6e408b55f2c';
+      id_WoRMS = ''; % not present 2019/02/26
+      id_Taxo = '186489';        
+      id_EoL = '1156861';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Salvelinus_willughbii';
+       
     case 'Coregonus_albula'
       id_CoL = 'cb380684d38085d21164d9d0327fb629';
       id_WoRMS = '127178';
@@ -3016,6 +3038,13 @@ function links = get_link(taxon, open)
       id_EoL = '267571';
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/08/19
+ 
+    case 'Coregonus_autumnalis'
+      id_CoL = 'ec73a5fe25d386013c33f44423a83fdb';
+      id_WoRMS = '127179';
+      id_Taxo = '192548';        
+      id_EoL = '46563165';
+      id_fishbase = taxon_fish;
  
     case 'Esox_lucius'
       id_CoL = 'c828ed0d18644bc9e3cfe4b9507f3247';
