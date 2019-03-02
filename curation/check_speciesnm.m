@@ -31,7 +31,7 @@ if ~strcmp(my_pet, metaData.species)
   if ~isempty(strfind(metaData.species, ' '))
     fprintf('The species name in input should not have spaces.\n');
     fprintf('The standard species name follow the form ''Genus_species''.\n');
-  end;
+  end
 elseif ismember(my_pet, entries)
   fprintf([my_pet, ' is already in AmP\n'])
   if ~strcmp(allStat.(my_pet).family, metaData.family)
