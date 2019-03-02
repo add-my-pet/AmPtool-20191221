@@ -2111,6 +2111,13 @@ function links = get_link(taxon, open)
       id_EoL = '582429';
       id_fishbase = taxon_fish;
        
+    case 'Urolophus_halleri'
+      id_CoL = '278a6ef0aae88fab7425bba9724bd921';
+      id_WoRMS = '315896';
+      id_Taxo = '189775';        
+      id_EoL = '47364941';
+      id_fishbase = taxon_fish;
+       
     case 'Manta_birostris'
       id_CoL = 'a8df6db60161ecbce7691570e5ce3b33';
       id_WoRMS = '105857';
@@ -2484,6 +2491,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126281';
       id_Taxo = '42526';        
       id_EoL = '356349';
+      id_fishbase = taxon_fish;
+       
+    case 'Anguilla_japonica'
+      id_CoL = '82d254fc10ec94f0c028c5e57c433b28';
+      id_WoRMS = '271705';
+      id_Taxo = '42527';        
+      id_EoL = '46561258';
       id_fishbase = taxon_fish;
        
     case 'Conger_conger'

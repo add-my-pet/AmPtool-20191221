@@ -180,7 +180,7 @@ fprintf(fid_about, '      Comparison is the most useful asset of this collection
 fprintf(fid_about, '      <p>\n');
 fprintf(fid_about, '      At 2018/01/01, when the collection had 1000 entries, there were \n');
 fprintf(fid_about, '      112 <a href="http://www.debtheory.org/wiki/index.php?title=Zero-variate_data" TARGET="_blank">zero-variate data types</a>, and \n');
-fprintf(fid_about, '      153 <a href="http://www.debtheory.org/wiki/index.php?title=Zero-variate_data" TARGET="_blank">univariate data types</a>, in \n');
+fprintf(fid_about, '      153 <a href="http://www.debtheory.org/wiki/index.php?title=Uni-variate_data" TARGET="_blank">univariate data types</a>, in \n');
 fprintf(fid_about, '      588 combinations, written by 125 <a href = "authors.html">authors</a>. \n');
 fprintf(fid_about, '      So, few entries share the same data type combination and the number of data types is very much larger than the number of parameters. \n');
 fprintf(fid_about, '      This argues for comparison on the basis of parameters, since all parameters were estimated for all species. \n');

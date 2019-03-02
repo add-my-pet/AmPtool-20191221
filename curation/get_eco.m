@@ -2960,6 +2960,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
 
     case 'Trygonoptera_personata'
       climate = {'MB'};
+      ecozone = {'MPE'};
+      habitat = {'0iMcd'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Urolophus_halleri'
+      climate = {'MB'};
       ecozone = {'MIE'};
       habitat = {'0iMcd'};
       embryo  = {'Mv'};
@@ -3491,6 +3501,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Anguilla_anguilla'
       climate = {'MB','MC','Cfb'};
       ecozone = {'MAN','THp'};
+      habitat = {'0jMpe','jpFl','jpFp','jpFr','piMd'};
+      embryo  = {'Mpe'};
+      migrate = {'Mdc'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Anguilla_japonica'
+      climate = {'MB','Cfb'};
+      ecozone = {'MPW','THp'};
       habitat = {'0jMpe','jpFl','jpFp','jpFr','piMd'};
       embryo  = {'Mpe'};
       migrate = {'Mdc'};
