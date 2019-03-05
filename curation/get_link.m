@@ -4947,6 +4947,13 @@ function links = get_link(taxon, open)
       id_EoL = '222787';
       id_fishbase = taxon_fish;
 
+    case 'Sander_vitreus'
+      id_CoL = 'ebc6c3686e0e1e26d0d48746d2e2310c'; 
+      id_WoRMS = '275311';
+      id_Taxo = '';  % cannot access 2019/03/05      
+      id_EoL = '46580136';
+      id_fishbase = taxon_fish;
+
     case 'Gymnocephalus_cernuus'
       id_CoL = '349c65df03755f01c50de8bc74868fd5';
       id_WoRMS = '151302';

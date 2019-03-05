@@ -6918,6 +6918,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Sander_vitreus'
+      climate = {'Dwa','Dfa'};
+      ecozone = {'THn'};
+      habitat = {'0iFr','0iFl','0iFe'};
+      embryo  = {'Fnm'};
+      migrate = {'Mp'};
+      food    = {'biCi','piCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Gymnocephalus_cernuus'
       climate = {'Cfa','Dfc','Dfc'};
       ecozone = {'THp'};

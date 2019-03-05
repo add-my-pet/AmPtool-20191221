@@ -69,13 +69,15 @@ bbl = strrep(bbl,'\','\\'); % replace \ by \\ else fprintf will protest
 for i = 1:n
   % find index ind of insertion of doi i
   ind0 = strfind(bbl, [doi{i,1},'}']); ind1 = strfind(bbl, '\bibitem'); 
-  ind1 = ind1(ind1 > ind0); ind0 = strfind(bbl, '.');
-  if ~isempty(ind1) % not last \bibitem
-    ind1 = ind1(1); ind0 = ind0(ind0 < ind1); 
+  if ~isempty(ind0)
+    ind1 = ind1(ind1 > ind0); ind0 = strfind(bbl, '.');
+    if ~isempty(ind1) % not last \bibitem
+      ind1 = ind1(1); ind0 = ind0(ind0 < ind1); 
+    end
+    ind = 1 + ind0(end);
+    % insert
+    bbl = [bbl(1:ind), '<a href="http://www.doi.org/', doi{i,2}, '"  target="_blanc"> doi:', doi{i,2}, '</a>.', bbl(ind+1:end)];
   end
-  ind = 1 + ind0(end);
-  % insert
-  bbl = [bbl(1:ind), '<a href="http://www.doi.org/', doi{i,2}, '"  target="_blanc"> doi:', doi{i,2}, '</a>.', bbl(ind+1:end)];
 end
 
 % overwrite bbl file
