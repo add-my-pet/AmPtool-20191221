@@ -50,7 +50,7 @@ for i = 1:n
       ylabel('_{10}log max growth, g/d')
 
       saveas(Hfig, '../../img/patterns/logW-logdW.png')
-     saveas(Hleg, '../../img/patterns/legends_logW-logdW.png')
+      saveas(Hleg, '../../img/patterns/legends_logW-logdW.png')
 
     case 2 % Fig 2: log W-log J_O
       shstat_options('default');

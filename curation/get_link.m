@@ -2642,6 +2642,20 @@ function links = get_link(taxon, open)
       id_EoL = '46562516';
       id_fishbase = taxon_fish;
 
+    case 'Limnothrissa_miodon'
+      id_CoL = '1eb60cae8624307444d95b2f781562e0';
+      id_WoRMS = ''; % not present 2019/03/06
+      id_Taxo = '188874';        
+      id_EoL = '46562485';
+      id_fishbase = taxon_fish;
+
+    case 'Stolothrissa_tanganicae'
+      id_CoL = '6110311f4596635d7df4a387b5cb4de3';
+      id_WoRMS = ''; % not present 2019/03/06
+      id_Taxo = '188307';        
+      id_EoL = '209699';
+      id_fishbase = taxon_fish;
+
     case 'Tenualosa_ilisha'
       id_CoL = '1eb60cae8624307444d95b2f781562e0';
       id_WoRMS = '278568';
@@ -2782,6 +2796,13 @@ function links = get_link(taxon, open)
       id_EoL = '1156460';
       id_fishbase = taxon_fish;
       
+    case 'Semotilus_atromaculatus'
+      id_CoL = '8bc8e428fba5c0019fad295ef694a4a6';
+      id_WoRMS = ''; % not present 2019/03/05 
+      id_Taxo = '42292';
+      id_EoL = '136002';
+      id_fishbase = taxon_fish;
+      
     case 'Danio_rerio'
       id_CoL = 'ae6d1ad09071086da0498b39630b01f8';
       id_WoRMS = '172875';  % not present 2017/06/16
@@ -2815,6 +2836,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '154585'; 
       id_Taxo = '43623';
       id_EoL = '339806';
+      id_fishbase = taxon_fish;
+
+    case 'Pseudochondrostoma_polylepis'
+      id_CoL = '8812d316d42988c0db7f145d651565a1';
+      id_WoRMS = ''; % not present 2019/03/06 
+      id_Taxo = '1008263';
+      id_EoL = '218477';
       id_fishbase = taxon_fish;
 
     case 'Tinca_tinca'
@@ -2915,6 +2943,20 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2017/06/16
       id_Taxo = '182534'; % present as Pangasius_hypophthalmus        
       id_EoL = '570181';
+      id_fishbase = taxon_fish;
+       
+    case {'Clarias_gariepinus', 'Clarias_gariepinus_x_Heterobranchus_longifilis'}
+      id_CoL = '877822d367984db80a636f73c0b57f33';
+      id_WoRMS = ''; % not present 2019/03/07
+      id_Taxo = '171397';    
+      id_EoL = '205045';
+      id_fishbase = taxon_fish;
+       
+    case {'Heterobranchus_longifilis', 'Heterobranchus_longifilis_x_Clarius_gariepinus'}
+      id_CoL = 'd4f6dc827e3ed46534f6a6fd5ecbbff3';
+      id_WoRMS = ''; % not present 2019/03/07
+      id_Taxo = '176567';   
+      id_EoL = ''; % not present 2019/03/07
       id_fishbase = taxon_fish;
        
     case 'Ictalurus_punctatus'
@@ -4393,6 +4435,20 @@ function links = get_link(taxon, open)
       id_Taxo = '188440';        
       id_EoL = '46571686';
       id_fishbase = taxon_fish;
+      
+    case 'Sillago_robusta'
+      id_CoL = 'ccf1319f9ed562822d9c53a2a2655dec';
+      id_WoRMS = '273952';
+      id_Taxo = '187658';        
+      id_EoL = '46579909';
+      id_fishbase = taxon_fish;
+       
+    case 'Sillago_bassensis'
+      id_CoL = 'c3372da51069d6728e93a5ec6c453cae';
+      id_WoRMS = '273936';
+      id_Taxo = '187642';        
+      id_EoL = '46579893';
+      id_fishbase = taxon_fish;
        
     case 'Dicentrarchus_labrax'
       id_CoL = '9d082a4d12bd05ee5b2050d56a4d052d';
@@ -4950,7 +5006,7 @@ function links = get_link(taxon, open)
     case 'Sander_vitreus'
       id_CoL = 'ebc6c3686e0e1e26d0d48746d2e2310c'; 
       id_WoRMS = '275311';
-      id_Taxo = '';  % cannot access 2019/03/05      
+      id_Taxo = '691816';  
       id_EoL = '46580136';
       id_fishbase = taxon_fish;
 
@@ -5103,6 +5159,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126758';
       id_Taxo = '46468';        
       id_EoL = '222376';
+      id_fishbase = taxon_fish;
+       
+    case 'Anarhichas_minor'
+      id_CoL = '60f6e3c76d764ab2021b16fbdcb9a6cc';
+      id_WoRMS = '126759';
+      id_Taxo = '46469';        
+      id_EoL = '46574578';
       id_fishbase = taxon_fish;
        
     case 'Anoplopoma_fimbria'

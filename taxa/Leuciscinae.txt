@@ -2,6 +2,7 @@ Abramis
 Pimephales
 Phoxinus
 Chondrostoma
+Pseudochondrostoma
 Rutilus
 Squalius
 Blicca

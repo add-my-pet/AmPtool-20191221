@@ -37,7 +37,7 @@ function [par, metaPar, txtPar, metaData] = allStat2par(my_pet)
   end
 
   % par, txtPar
-  parFields = get_parfields(allStat.(my_pet).model, 1)'; % include chemical parameters
+  parFields = ['T_ref'; get_parfields(allStat.(my_pet).model, 1)']; % include chemical parameters and T_ref
   n_parFields = length(parFields);
   for i = 1:n_parFields
     par.(parFields{i}) = allStat.(my_pet).(parFields{i});
