@@ -10,7 +10,8 @@
 % make sure to export bibtex from Zotero to debtool/DEB library.bib
 
 WD = pwd;
-cd(which('run_collection intro'));
+path = which('run_collection'); ind = strfind(path,'\');
+cd(path(1:ind(end)));
 
 clear all; % allStat is persistent in read_allStat and read_stat
 
@@ -25,7 +26,6 @@ prt_patterns;
 prt_pie_SGGJR;
 prt_about;
 
-cd(WD);
 
 %% cp files to server after running this script
 

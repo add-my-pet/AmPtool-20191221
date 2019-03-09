@@ -43,7 +43,8 @@ end
 
 nargin = length(varargin); % number of entries to scan    
 WD = pwd; % store current path
-cd(which('run_collection'));
+path = which('run_collection'); ind = strfind(path,'\');
+cd(path(1:ind(end)));
 
 for i = 1:nargin 
   destinationFolder = ['../../entries_web/', varargin{i},'/']; % target for html and png files

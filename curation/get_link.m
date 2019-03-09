@@ -1346,6 +1346,12 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present at 2018/10/30
       id_Wiki = 'Arcitalitrus';
       
+    case 'Hyalella_azteca' 
+      id_CoL = '5a122dd8635d37d33e5612143276ffb1';
+      id_WoRMS = ''; % not present 2019/03/07 
+      id_Taxo = '132618';   
+      id_EoL = '342551';
+      
     case 'Euphausia_superba'
       id_CoL = '9b5816e13fe1783d6d65f7075aba514f';
       id_WoRMS = '236217';
@@ -2082,6 +2088,14 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_Wiki = 'Okamejei';
        
+    case 'Zearaja_chilensis'
+      id_CoL = 'e9289a81b2994b9bb8494b38096fac16';
+      id_WoRMS = '315953';
+      id_Taxo = '1684069';        
+      id_EoL = '46560637';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Zearaja';
+       
     case 'Bathyraja_interrupta'
       id_CoL = '05d11296b0660c39acaf019a2c718459';
       id_WoRMS = '271515';
@@ -2393,6 +2407,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '105838';
       id_Taxo = '41903';        
       id_EoL = '213726';
+      id_fishbase = taxon_fish;
+       
+    case 'Pseudocarcharias_kamoharai'
+      id_CoL = 'c92763d01702b1ace7a064fc55243324';
+      id_WoRMS = '217632';
+      id_Taxo = '41887';        
+      id_EoL = '46559771';
       id_fishbase = taxon_fish;
        
     case 'Erpetoichthys_calabaricus'
@@ -2956,7 +2977,7 @@ function links = get_link(taxon, open)
       id_CoL = 'd4f6dc827e3ed46534f6a6fd5ecbbff3';
       id_WoRMS = ''; % not present 2019/03/07
       id_Taxo = '176567';   
-      id_EoL = ''; % not present 2019/03/07
+      id_EoL = '207387';
       id_fishbase = taxon_fish;
        
     case 'Ictalurus_punctatus'
@@ -3757,10 +3778,18 @@ function links = get_link(taxon, open)
        
     case 'Scomber_scombrus'
       id_CoL = 'f656631fc42068100e2330c40c8fda18';
-      id_WoRMS = '127023';
+      id_WoRMS = '127022';
       id_Taxo = '46695';        
       id_EoL = '46324676';
       id_fishbase = taxon_fish;
+      
+    case 'Scomber_japonicus'
+      id_CoL = '87614b9e925273642b31a38676716a83';
+      id_WoRMS = '127023';
+      id_Taxo = '187060';        
+      id_EoL = '46577306';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2019/03/09
       
     case 'Scomberomorus_commerson'
       id_CoL = '4770697536915029b1d865a3d67def03';
@@ -3824,6 +3853,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '280129';
       id_Taxo = '189326';        
       id_EoL = '204174';
+      id_fishbase = taxon_fish;
+       
+    case 'Channa_argus'
+      id_CoL = 'a36128d046eddeb8a877c33efce307e5';
+      id_WoRMS = ''; % not present 2019/03/09
+      id_Taxo = '192521';        
+      id_EoL = '204003';
       id_fishbase = taxon_fish;
        
     case 'Leptomelanosoma_indicum'
@@ -4295,6 +4331,21 @@ function links = get_link(taxon, open)
       id_EoL = '46566595';
       id_fishbase = taxon_fish;
        
+    case 'Menidia_beryllina'
+      id_CoL = '8343a66e0b2f4b2a580dbda16dd0670e';
+      id_WoRMS = '159227';
+      id_Taxo = '44708';        
+      id_EoL = '46566700';
+      id_fishbase = taxon_fish;
+       
+    case 'Odontesthes_argentinensis'
+      id_CoL = '0db3b2961f497af320f9c0e715bba7c6';
+      id_WoRMS = '281824';
+      id_Taxo = '181637';        
+      id_EoL = '46566583';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Odontesthes';
+       
     case 'Chromis_chromis'
       id_CoL = '3ea36d06fa4400de11f0f6fbaf5c7bde';
       id_WoRMS = '127000';
@@ -4413,6 +4464,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '273531';
       id_Taxo = '164322';        
       id_EoL = '46571603';
+      id_fishbase = taxon_fish;
+       
+    case 'Scarus_rivulatus'
+      id_CoL = 'a24e12b8849c60c6bae0e11830e8933d';
+      id_WoRMS = '127045';
+      id_Taxo = '186707';        
+      id_EoL = '46572675';
       id_fishbase = taxon_fish;
        
     case 'Coris_julis'
@@ -4543,6 +4601,14 @@ function links = get_link(taxon, open)
       id_EoL = '208556';
       id_fishbase = taxon_fish;
        
+    case 'Ctenochaetus_binotatus'
+      id_CoL = '60fcbde4e9f5e42c8ea170aa94d7c03a';
+      id_WoRMS = '219655';
+      id_Taxo = '172377';        
+      id_EoL = '46577093';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2019/03/09
+
     case 'Zebrasoma_scopas'
       id_CoL = '4120d1be7736b044565798994f885c30';
       id_WoRMS = '219679';
@@ -4943,6 +5009,13 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2018/11/06
       id_Taxo = '45141';   
       id_EoL = '207898';
+      id_fishbase = taxon_fish;
+       
+    case 'Siniperca_chuatsi'
+      id_CoL = 'a36128d046eddeb8a877c33efce307e5';
+      id_WoRMS = ''; % not present 2019/03/09
+      id_Taxo = '187742';   
+      id_EoL = '613258';
       id_fishbase = taxon_fish;
        
     case 'Epinephelus_marginatus'
