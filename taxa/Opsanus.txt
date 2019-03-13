@@ -1,1 +1,2 @@
 Opsanus_tau
+Opsanus_beta

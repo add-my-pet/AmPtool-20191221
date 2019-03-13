@@ -2663,6 +2663,13 @@ function links = get_link(taxon, open)
       id_EoL = '46562516';
       id_fishbase = taxon_fish;
 
+    case 'Herklotsichthys_quadrimaculatus'
+      id_CoL = 'c9cb38e7404a8d7adfcec3c29f2cc5fb';
+      id_WoRMS = '212264';
+      id_Taxo = '94362';        
+      id_EoL = '46562399';
+      id_fishbase = taxon_fish;
+
     case 'Limnothrissa_miodon'
       id_CoL = '1eb60cae8624307444d95b2f781562e0';
       id_WoRMS = ''; % not present 2019/03/06
@@ -2705,6 +2712,28 @@ function links = get_link(taxon, open)
       id_Taxo = '42686';        
       id_EoL = '46562562';
       id_fishbase = taxon_fish;
+       
+    case 'Spratelloides_delicatulus'
+      id_CoL = '6c08e6756da63351badafc922c39244e';
+      id_WoRMS = '126424';
+      id_Taxo = '94360';        
+      id_EoL = '46562434';
+      id_fishbase = taxon_fish;
+       
+    case 'Spratelloides_gracilis'
+      id_CoL = 'dca454ca2b6a4047b5ff9292178bb63b';
+      id_WoRMS = '212263';
+      id_Taxo = '187975';        
+      id_EoL = '46562435';
+      id_fishbase = taxon_fish;
+       
+    case 'Spratelloides_lewisi'
+      id_CoL = 'fefc299b3497fa2d9ac3ae51f4eaec90';
+      id_WoRMS = '272278';
+      id_Taxo = '187976';        
+      id_EoL = '46562436';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Spratelloides';
        
     case 'Chirocentrus_dorab'
       id_CoL = 'e6e028c4da3f6801e1e7b01fa7098bf8';
@@ -3100,6 +3129,20 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_Wiki = 'Salvelinus_willughbii';
        
+    case 'Salvelinus_namaycush'
+      id_CoL = '670d4affc27383225df22b517c1eb654';
+      id_WoRMS = ''; % not present 2019/03/13
+      id_Taxo = '42837';        
+      id_EoL = '205277';
+      id_fishbase = taxon_fish;
+       
+    case 'Salvelinus_leucomaenis'
+      id_CoL = '1be092952a2556df7e0cfa92fbaa99f2';
+      id_WoRMS = '274353';
+      id_Taxo = '569902';        
+      id_EoL = '204578';
+      id_fishbase = taxon_fish;
+       
     case 'Coregonus_albula'
       id_CoL = 'cb380684d38085d21164d9d0327fb629';
       id_WoRMS = '127178';
@@ -3178,6 +3221,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '126371';
       id_Taxo = '154128';        
       id_EoL = '993261';
+      id_fishbase = taxon_fish;
+       
+    case 'Bathypterois_dubius'
+      id_CoL = 'aa5e45d496db393d9beb53277513a2b7';
+      id_WoRMS = '126342';
+      id_Taxo = '163684';        
+      id_EoL = '46563762';
       id_fishbase = taxon_fish;
        
     case 'Lampanyctodes_hectoris'
@@ -3416,6 +3466,13 @@ function links = get_link(taxon, open)
       id_EoL = '46564583';
       id_fishbase = taxon_fish;
        
+    case 'Macrourus_berglax'
+      id_CoL = '5c129aaf328e6c2c681bbdd241f31865';
+      id_WoRMS = '126472';
+      id_Taxo = '44414';  
+      id_EoL = '46564611';
+      id_fishbase = taxon_fish;
+       
     case 'Trachyrincus_scabrus'
       id_CoL = 'd00f2ecf91149861613bf860026db2f5';
       id_WoRMS = '126482';
@@ -3616,6 +3673,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '158782';
       id_Taxo = '44212';        
       id_EoL = '225201';
+      id_fishbase = taxon_fish;
+       
+    case 'Opsanus_beta'
+      id_CoL = '5c3aa151f6a0423669238d96cc55ba8c';
+      id_WoRMS = '275645';
+      id_Taxo = '182070';        
+      id_EoL = '46565873';
       id_fishbase = taxon_fish;
        
     case 'Halobatrachus_didactylus'
@@ -4743,6 +4807,13 @@ function links = get_link(taxon, open)
       id_EoL = '46580728';
       id_fishbase = taxon_fish;
        
+    case 'Lutjanus_kasmira'
+      id_CoL = '9217dc7aa96a036421ad10e2add9cada';
+      id_WoRMS = '218482';
+      id_Taxo = '106186'; 
+      id_EoL = '46580739';
+      id_fishbase = taxon_fish;
+       
     case 'Lobotes_surinamensis'
       id_CoL = '4d5106709e150cd3aa658259a8fd12b6';
       id_WoRMS = '126973';
@@ -5030,6 +5101,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '159354';
       id_Taxo = '45076';        
       id_EoL = '46579618';
+      id_fishbase = taxon_fish;
+       
+    case 'Epinephelides_armatus'
+      id_CoL = '28ffae40f24d18b32842754d8ded2954';
+      id_WoRMS = '280694';
+      id_Taxo = '173875';        
+      id_EoL = '46579558';
       id_fishbase = taxon_fish;
        
     case 'Hyporthodus_octofasciatus'
