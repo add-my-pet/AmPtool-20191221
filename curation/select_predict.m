@@ -31,7 +31,11 @@ function species = select_predict(varargin)
     species = select('Animalia');
     str = varargin{1};
   else
-    species = select(varargin{1});
+    if iscell(varargin{1})
+      species = (varargin{1});
+    else
+      species = select(varargin{1});
+    end
     str = varargin{2};
   end
   
