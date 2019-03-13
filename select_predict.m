@@ -21,8 +21,7 @@ function species = select_predict(varargin)
 % * cell string with all species in the add_my_pet collection that belong to that taxon and have a predict-file that contains str
 
 %% Remarks
-% This function requires local presence of all AmP species in directory ../../entries.
-% It assumes that the current directory is AmPtool/curation
+% This function can take a few minutes if 'Animalia' is specified (so all entries are searched), since all predict-files are read from the web
 
 %% Example of use
 % nm = select_predict('get_tx_old')
@@ -35,17 +34,15 @@ function species = select_predict(varargin)
     str = varargin{2};
   end
   
-  WD = pwd;                % store current path
-  cd('../../entries/homo_sapiens'); % goto a random species
+  path = 'https://www.bio.vu.nl/thb/deb/deblab/add_my_pet/entries/';
   n_spec = length(species); sel = false(n_spec,1);
   for i = 1:n_spec
-    cd(['../', species{i}]);
-    predict = fileread(['predict_', species{i}, '.m']);
+    predict = urlread([path, species{i}, '/predict_', species{i}, '.m']);
     if ~isempty(strfind(predict, str))
       sel(i) = true;
     end
   end
-  cd(WD)                   % goto original path
+
   species = species(sel);
 
   
