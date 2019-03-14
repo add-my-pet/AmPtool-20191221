@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>select_predict</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-03-13"><meta name="DC.source" content="select_predict.m"><style type="text/css">
+      --><title>select_predict</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-03-14"><meta name="DC.source" content="select_predict.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,24 +66,24 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>select_predict</h1><!--introduction--><p>gets list of species that belongs to a taxon and has a specified string in its predict-file</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#3">Syntax</a></li><li><a href="#4">Description</a></li><li><a href="#5">Remarks</a></li><li><a href="#6">Example of use</a></li></ul></div><h2 id="3">Syntax</h2><p>[species nm sel]  = <a href="../select_predict.m"><b>select_predict</b></a> (varargin)</p><h2 id="4">Description</h2><p>gets all species in the add_my_pet collection with predict files that contain a character string.</p><p>Input:</p><div><ul><li>taxon: optional character string with name of taxon (default: 'Animalia')</li><li>str: character string</li></ul></div><p>Output:</p><div><ul><li>cell string with all species in the add_my_pet collection that belong to that taxon and have a predict-file that contains str</li><li>nm string with names of entries that were subjected to selection</li><li>sel vector of bouleans, which entries are selected or not</li></ul></div><h2 id="5">Remarks</h2><p>This function can take a few minutes if 'Animalia' is specified (so all entries are searched), since all predict-files are read from the web</p><h2 id="6">Example of use</h2><p>nm = select_predict('get_tx_old')</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+  </style></head><body><div class="content"><h1>select_predict</h1><!--introduction--><p>gets list of species that belongs to a taxon and has a specified string in its predict-file</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#3">Syntax</a></li><li><a href="#4">Description</a></li><li><a href="#5">Remarks</a></li><li><a href="#6">Example of use</a></li></ul></div><h2 id="3">Syntax</h2><p>[species, nm, sel]  = <a href="../select_predict.m"><b>select_predict</b></a> (varargin)</p><h2 id="4">Description</h2><p>gets all species in the add_my_pet collection with predict files that contain a character string.</p><p>Input:</p><div><ul><li>taxon: optional character string with name of taxon or cell string with names of species (default: 'Animalia')</li><li>str: character string</li></ul></div><p>Output:</p><div><ul><li>cell string with all species in the add_my_pet collection that belong to that taxon and have a predict-file that contains str</li><li>nm string with names of entries that were subjected to selection</li><li>sel vector of bouleans, which entries are selected or not</li></ul></div><h2 id="5">Remarks</h2><p>This function can take a few minutes if 'Animalia' is specified (so all entries are searched), since all predict-files are read from the web</p><h2 id="6">Example of use</h2><p>nm = select_predict('get_tx_old')</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% select_predict
 % gets list of species that belongs to a taxon and has a specified string in its predict-file
 
 %%
-function [species nm sel] = select_predict(varargin)
+function [species, nm, sel] = select_predict(varargin)
 % created 2019/03/13 by  Bas Kooijman
 
 %% Syntax
-% [species nm sel]  = <../select_predict.m *select_predict*> (varargin) 
+% [species, nm, sel]  = <../select_predict.m *select_predict*> (varargin) 
 
 %% Description
 % gets all species in the add_my_pet collection with predict files that contain a character string.
 %
 % Input:
 %
-% * taxon: optional character string with name of taxon (default: 'Animalia')
+% * taxon: optional character string with name of taxon or cell string with names of species (default: 'Animalia')
 % * str: character string
 %
 % Output:
