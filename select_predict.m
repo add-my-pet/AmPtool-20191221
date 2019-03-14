@@ -2,18 +2,18 @@
 % gets list of species that belongs to a taxon and has a specified string in its predict-file
 
 %%
-function [species nm sel] = select_predict(varargin)
+function [species, nm, sel] = select_predict(varargin)
 % created 2019/03/13 by  Bas Kooijman
 
 %% Syntax
-% [species nm sel]  = <../select_predict.m *select_predict*> (varargin) 
+% [species, nm, sel]  = <../select_predict.m *select_predict*> (varargin) 
 
 %% Description
 % gets all species in the add_my_pet collection with predict files that contain a character string.
 %
 % Input:
 %
-% * taxon: optional character string with name of taxon (default: 'Animalia')
+% * taxon: optional character string with name of taxon or cell string with names of species (default: 'Animalia')
 % * str: character string
 %
 % Output:
