@@ -2772,6 +2772,13 @@ function links = get_link(taxon, open)
       id_EoL = '212556';
       id_fishbase = taxon_fish;
 
+    case 'Cobitis_paludica'
+      id_CoL = '2bcc59bae2bc24208f6ed714d9d355f3';
+      id_WoRMS = ''; % not present 2019/03/14
+      id_Taxo = '171517';
+      id_EoL = '213690';
+      id_fishbase = taxon_fish;
+
     case 'Rhodeus_amarus'
       id_CoL = '383389bc215371c6bf7b0cf460aff92e';
       id_WoRMS = ''; % not present 2017/06/16
@@ -2938,6 +2945,14 @@ function links = get_link(taxon, open)
       id_Taxo = '43617';
       id_EoL = '46324661';
       id_fishbase = taxon_fish;
+
+    case 'Mirogrex_terraesanctae'
+      id_CoL = '73ebd500d84e0d066c3d603a2d234eaf';
+      id_WoRMS = ''; % not present 2019/03/14
+      id_Taxo = '469554';
+      id_EoL = '49803409';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Acanthobrama_terraesanctae';
 
     case 'Hydrocynus_vittatus'
       id_CoL = 'ed61d5b61ce91a6d34fbca8211ce5a9c';
@@ -3769,6 +3784,13 @@ function links = get_link(taxon, open)
       id_EoL = '46567768';
       id_fishbase = taxon_fish;
        
+    case 'Phyllopteryx_taeniolatus'
+      id_CoL = '79809fb906f31d0f94b966ad87607bbb';
+      id_WoRMS = '282254';
+      id_Taxo = '183763';        
+      id_EoL = '46567739';
+      id_fishbase = taxon_fish;
+       
     case 'Macroramphosus_scolopax'
       id_CoL = '770932aafd5b74016b79ed7295764b9b';
       id_WoRMS = '127378';
@@ -4351,6 +4373,13 @@ function links = get_link(taxon, open)
       id_EoL = '223483';
       id_fishbase = taxon_fish;
               
+    case 'Fundulus_parvipinnis'
+      id_CoL = '82819be2c39fe801b954e6db2c2102bf';
+      id_WoRMS = '276032';
+      id_Taxo = '44519';        
+      id_EoL = '46566780';
+      id_fishbase = taxon_fish;
+              
     case 'Cyprinodon_variegatus'
       id_CoL = '9455eb6733d792fa7da1732b9fe90df4';
       id_WoRMS = '159285';
@@ -4530,11 +4559,19 @@ function links = get_link(taxon, open)
       id_EoL = '46571603';
       id_fishbase = taxon_fish;
        
-    case 'Scarus_rivulatus'
-      id_CoL = 'a24e12b8849c60c6bae0e11830e8933d';
-      id_WoRMS = '127045';
-      id_Taxo = '186707';        
-      id_EoL = '46572675';
+    case 'Centrolabrus_exoletus'
+      id_CoL = '4769e547b6100cd1a0eb0e4d77b330a2';
+      id_WoRMS = '126961';
+      id_Taxo = '166711';        
+      id_EoL = '46571630';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Centrolabrus';
+       
+    case 'Ctenolabrus_rupestris'
+      id_CoL = '7b6b584b7972c33302b71be19e24f5f3';
+      id_WoRMS = '126964';
+      id_Taxo = '46343';        
+      id_EoL = '46571661';
       id_fishbase = taxon_fish;
        
     case 'Coris_julis'
@@ -4558,6 +4595,20 @@ function links = get_link(taxon, open)
       id_EoL = '46571686';
       id_fishbase = taxon_fish;
       
+    case 'Symphodus_melops'
+      id_CoL = '4cf7b67b3929f7ae74e7ea0cd5276a0b';
+      id_WoRMS = '273571';
+      id_Taxo = '169984';        
+      id_EoL = '46571682';
+      id_fishbase = taxon_fish;
+      
+    case 'Scarus_rivulatus'
+      id_CoL = 'a24e12b8849c60c6bae0e11830e8933d';
+      id_WoRMS = '127045';
+      id_Taxo = '186707';        
+      id_EoL = '46572675';
+      id_fishbase = taxon_fish;
+       
     case 'Sillago_robusta'
       id_CoL = 'ccf1319f9ed562822d9c53a2a2655dec';
       id_WoRMS = '273952';
@@ -4623,12 +4674,19 @@ function links = get_link(taxon, open)
        
     case 'Macrodon_atricauda'
       id_CoL = '8425b4f144f715084e4c2bf8816adeb1';
-      id_WoRMS = '712737';
+      id_WoRMS = '159312';
       id_Taxo = '191221'; % present at genus level 2019/01/09       
       id_EoL = '46579152';
       id_fishbase = taxon_fish;
       id_Wiki = 'Sciaenidae';
       id_ADW = 'Macrodon';
+       
+    case 'Cynoscion_nebulosus'
+      id_CoL = '9fe808c1240cff056a1743bbf74b1cd1';
+      id_WoRMS = '712737';
+      id_Taxo = '172632';    
+      id_EoL = '46578976';
+      id_fishbase = taxon_fish;
        
     case 'Atractoscion_nobilis'
       id_CoL = '0fb458c98184e0325f005638b22fe2c3';

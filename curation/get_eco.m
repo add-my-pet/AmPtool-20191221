@@ -3898,6 +3898,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Cobitis_paludica'
+      climate = {'Csa'};
+      ecozone = {'THp'};
+      habitat = {'0iFm','0iFp'};
+      embryo  = {'Fh'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Rhodeus_amarus'
       climate = {'Cfb','Dfb'};
       ecozone = {'THp'};
@@ -4124,6 +4134,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0iFl','0iFr','0iFm'};
       embryo  = {'Fh'};
       migrate = {'Mp'};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Mirogrex_terraesanctae'
+      climate = {'Csa'};
+      ecozone = {'THp'};
+      habitat = {'0iFl'};
+      embryo  = {'Fh'};
+      migrate = {};
       food    = {'biCi'};
       gender  = {'D'};
       reprod  = {'O'};
@@ -5278,6 +5298,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Phyllopteryx_taeniolatus'
+      climate = {'MC'};
+      ecozone = {'MIE'};
+      habitat = {'0iMcd','0iMr'};
+      embryo  = {'Mbm'};
+      migrate = {};
+      food    = {'biCi','biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Macroramphosus_scolopax'
       climate = {'MC'};
       ecozone = {'MC'};
@@ -6088,6 +6118,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Fundulus_parvipinnis'
+      climate = {'MB'};
+      ecozone = {'MPE'};
+      habitat = {'0iMm'};
+      embryo  = {'Mc'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Cyprinodon_variegatus'
       climate = {'Aw';'Cfa'};
       ecozone = {'THn','TN'};
@@ -6338,14 +6378,24 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Hsff'};
       reprod  = {'O'};
 
-    case 'Scarus_rivulatus'
-      climate = {'MA'};
-      ecozone = {'MPW'};
+    case 'Centrolabrus_exoletus'
+      climate = {'MC'};
+      ecozone = {'MAE'};
       habitat = {'0jMp','jiMr'};
       embryo  = {'Mp'};
       migrate = {};
       food    = {'bjPz','jiCi'};
-      gender  = {'Hsff'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Ctenolabrus_rupestris'
+      climate = {'MB','MC'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
       reprod  = {'O'};
 
     case 'Coris_julis'
@@ -6377,6 +6427,27 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       food    = {'bjPz','jiCi'};
       gender  = {'Hsff'};
       reprod  = {'O'};
+
+    case 'Symphodus_melops'
+      climate = {'MB','MC'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Scarus_rivulatus'
+      climate = {'MA'};
+      ecozone = {'MPW'};
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'Hsff'};
+      reprod  = {'O'};
+
 
     case 'Sillago_robusta'
       climate = {'MB'};
@@ -6471,6 +6542,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Macrodon_atricauda'
       climate = {'MB'};
       ecozone = {'MASW'};
+      habitat = {'0jMp','0jMd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Cynoscion_nebulosus'
+      climate = {'MB','MC'};
+      ecozone = {'MAW'};
       habitat = {'0jMp','0jMd'};
       embryo  = {'Mp'};
       migrate = {};

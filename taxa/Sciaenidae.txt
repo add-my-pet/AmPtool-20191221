@@ -2,5 +2,6 @@ Sciaena
 Argyrosomus
 Umbrina
 Macrodon
+Cynoscion
 Atractoscion
 Pogonias

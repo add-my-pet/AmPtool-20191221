@@ -4,3 +4,5 @@ Symphodus
 Coris
 Labrus
 Bodianus
+Centrolabrus
+Ctenolabrus
