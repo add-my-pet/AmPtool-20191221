@@ -1,12 +1,12 @@
-%% select_predict
-% gets list of species that belongs to a taxon and has a specified string in its predict-file
+%% select_mydata
+% gets list of species that belongs to a taxon and has a specified string in its mydata-file
 
 %%
 function [species, nm, sel] = select_mydata(varargin)
 % created 2019/03/14 by  Bas Kooijman
 
 %% Syntax
-% [species, nm, sel]  = <../select_mydata.m *select_predict*> (varargin) 
+% [species, nm, sel]  = <../select_mydata.m *select_mydata*> (varargin) 
 
 %% Description
 % gets all species in the add_my_pet collection with mydata files that contain a character string.
