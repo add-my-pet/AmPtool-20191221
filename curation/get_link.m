@@ -4197,6 +4197,20 @@ function links = get_link(taxon, open)
       id_EoL = '995096';
       id_fishbase = taxon_fish;
               
+    case 'Lepidopsetta_polyxystra'
+      id_CoL = 'bf120c77afc6ed8b3cc3d9cc0356cd91';
+      id_WoRMS = '281307';
+      id_Taxo = ''; % no access 2019/03/16       
+      id_EoL = '46570162';
+      id_fishbase = taxon_fish;
+              
+    case 'Lepidopsetta_bilineata'
+      id_CoL = 'c0ce843618e932cdfeeab45274ff655b';
+      id_WoRMS = '281305';
+      id_Taxo = '';  % no access 2019/03/16        
+      id_EoL = '46570160';
+      id_fishbase = taxon_fish;
+              
     case 'Pleuronectes_platessa'
       id_CoL = '27a6782add287c044111388cc4996f04';
       id_WoRMS = '127143';

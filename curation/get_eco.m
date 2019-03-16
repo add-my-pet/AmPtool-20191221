@@ -5878,6 +5878,26 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Lepidopsetta_polyxystra'
+      climate = {'MC'};
+      ecozone = {'MPN'};
+      habitat = {'0jMp','jiMcd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Lepidopsetta_bilineata'
+      climate = {'MB','MC'};
+      ecozone = {'MPN'};
+      habitat = {'0jMp','jiMcd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Pleuronectes_platessa'
       climate = {'MC'};
       ecozone = {'MAE'};
