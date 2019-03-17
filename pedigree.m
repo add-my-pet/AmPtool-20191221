@@ -49,7 +49,7 @@ function [tree, nm, val, units, label] = pedigree(taxon, var)
   try
     tree = perl('pedigree.pl', taxon); 
   catch
-    disp('Name of taxon is not recognized')
+    disp(['Warning from pedigree: Name ', taxon, ' is not recognized as taxon'])
   end
   
   cd(WD)                    % goto original path

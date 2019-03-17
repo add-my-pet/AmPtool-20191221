@@ -122,7 +122,7 @@ function [members, taxon] = clade(taxa, level)
   for i = 1:n % obtain lineages for all taxa called lin1, lin2, ..
     lin = lineage(taxa{i});
     if ~isequal('Animalia', lin{1})
-      fprintf([taxa{i}, ' is not recognized \n']);
+      fprintf(['Warning from clade: ', taxa{i}, ' is not recognized \n']);
       members = []; taxon = []; return
     end
     eval(['lin', num2str(i), ' = lin;']);

@@ -46,7 +46,7 @@ function species = select(taxon)
       species = {taxon};
     else
       species = {};
-      disp('Name of taxon is not recognized')
+      disp(['Warning from select: Name ', taxon, ' is not recognized as taxon'])
     end
     cd(WD);
     return
@@ -57,7 +57,7 @@ function species = select(taxon)
     species = species{1};
   catch
     species = {};
-    disp('Name of taxon is not recognized')
+    disp(['Warning from select: Name ', taxon, ' is not recognized as taxon'])
   end
   
   cd(WD)                   % goto original path

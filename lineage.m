@@ -35,7 +35,7 @@ function classification = lineage(taxon)
     classification = textscan(perl('lineage.pl', taxon), '%s'); 
     classification = classification{1};
   catch
-    disp('Name of taxon is not recognized')
+    disp(['Warning from lineage: Name ', taxon, ' is not recognized as taxon'])
   end
   
   cd(WD)                           % goto original path
