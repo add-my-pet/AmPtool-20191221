@@ -4154,6 +4154,13 @@ function links = get_link(taxon, open)
       id_EoL = '223542';
       id_fishbase = taxon_fish;
        
+    case 'Hippoglossoides_elassodon'
+      id_CoL = '9c358cae75ba9dbe90de2174e63fc164';
+      id_WoRMS = '274289';
+      id_Taxo = ''; % no access 2019/03/16      
+      id_EoL = '46570098';
+      id_fishbase = taxon_fish;
+       
     case 'Glyptocephalus_cynoglossus'
       id_CoL = 'bdb069c61c221a0f307446fb7b95af91';
       id_WoRMS = '127136';
@@ -4274,6 +4281,29 @@ function links = get_link(taxon, open)
       id_Taxo = '177191';   
       id_EoL = '46566999';
       id_Wiki = 'Hyporhamphus';
+      id_fishbase = taxon_fish;
+       
+    case 'Hyporhamphus_australis'
+      id_CoL = '690bde96c719bd6e35e3c981b31b0196';
+      id_WoRMS = '272179';
+      id_Taxo = ''; % no access 2019/03/17  
+      id_EoL = '46567009';
+      id_Wiki = 'Hyporhamphus';
+      id_fishbase = taxon_fish;
+       
+    case 'Hyporhamphus_regularis'
+      id_CoL = '7b791ec9b61e99213a93f4ed928bd23b';
+      id_WoRMS = '293615';
+      id_Taxo = ''; % no access 2019/03/17  
+      id_EoL = '46567030';
+      id_Wiki = 'Hyporhamphus';
+      id_fishbase = taxon_fish;
+       
+    case 'Arrhamphus_sclerolepis'
+      id_CoL = '47d002b2a5a8318dc2d9d79e98e53b22';
+      id_WoRMS = '293547';
+      id_Taxo = ''; % no access 2019/03/17  
+      id_EoL = '356954';
       id_fishbase = taxon_fish;
        
     case 'Oryzias_latipes'
@@ -5043,6 +5073,13 @@ function links = get_link(taxon, open)
       id_Taxo = '45154'; 
       id_Wiki = 'Priacanthus';
       id_EoL = '223361';
+      id_fishbase = taxon_fish;
+       
+    case 'Cepola_macrophthalma'
+      id_CoL = '4003b910e51d1b2a457cf9411ecb6f06';
+      id_WoRMS = '126835';
+      id_Taxo = ''; % no acces 2019/03/17
+      id_EoL = '46578168';
       id_fishbase = taxon_fish;
        
     case 'Capros_aper'

@@ -5818,6 +5818,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Hippoglossoides_elassodon'
+      climate = {'MC'};
+      ecozone = {'MPN'};
+      habitat = {'0iMp'};
+      embryo  = {'Mp'};
+      migrate = {'Mo'};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Glyptocephalus_cynoglossus'
       climate = {'MC'};
       ecozone = {'MAN'};
@@ -5985,6 +5995,36 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mpe'};
       migrate = {'Mo'};
       food    = {'biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Hyporhamphus_australis'
+      climate = {'MB'};
+      ecozone = {'MPSW'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mpe'};
+      migrate = {};
+      food    = {'biPz','biHl'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Hyporhamphus_regularis'
+      climate = {'BWh','BSh'};
+      ecozone = {'TA','TO'};
+      habitat = {'0jFr','0iMm'};
+      embryo  = {'Fp'};
+      migrate = {};
+      food    = {'biPz','biHl'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Arrhamphus_sclerolepis'
+      climate = {'MA'};
+      ecozone = {'MPSW'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mpe'};
+      migrate = {};
+      food    = {'biPz','biHl'};
       gender  = {'D'};
       reprod  = {'O'};
 
@@ -7055,6 +7095,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0jMp','jiMr'};
       embryo  = {'Mp'};
       migrate = {'Mo'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Cepola_macrophthalma'
+      climate = {'MB'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {};
       food    = {'bjPz','jiCi'};
       gender  = {'D'};
       reprod  = {'O'};
