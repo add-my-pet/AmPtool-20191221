@@ -2118,6 +2118,20 @@ function links = get_link(taxon, open)
       id_EoL = '46560660';
       id_fishbase = taxon_fish;
        
+    case 'Rhynchobatus_laevis'
+      id_CoL = 'af66aec4fb8bcb34fe7ab42c9d8b747e';
+      id_WoRMS = '278218';
+      id_Taxo = '186095';        
+      id_EoL = '46560718';
+      id_fishbase = taxon_fish;
+       
+    case 'Glaucostegus_typus'
+      id_CoL = 'c6872529b8670bf23a04117af86c40a5';
+      id_WoRMS = '280875';
+      id_Taxo = '1684076';        
+      id_EoL = '46560704';
+      id_fishbase = taxon_fish;
+       
     case 'Trygonoptera_personata'
       id_CoL = '739fdc4060e8c6a65d8025878bac5d8b';
       id_WoRMS = '283062';
@@ -2824,6 +2838,13 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/08/15
 
+    case 'Romanogobio_albipinnatus'
+      id_CoL = '6f7b65b58bfc37b05e428ad77ef2c5ae';
+      id_WoRMS = ''; % not present 2019/03/17
+      id_Taxo = '567493'; 
+      id_EoL = '209781';
+      id_fishbase = taxon_fish;
+
     case 'Cyprinus_carpio'
       id_CoL = 'c6beac15d18bf1d88bab194fe597f1c7';
       id_WoRMS = '154582'; 
@@ -2900,6 +2921,13 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2019/03/06 
       id_Taxo = '1008263';
       id_EoL = '218477';
+      id_fishbase = taxon_fish;
+
+    case 'Iberochondrostoma_lemmingii'
+      id_CoL = 'ca4a1e9aa6c9e326e89a44192bddd434';
+      id_WoRMS = ''; % not present 2019/03/17 
+      id_Taxo = '1008271'; 
+      id_EoL = '225238';
       id_fishbase = taxon_fish;
 
     case 'Tinca_tinca'
@@ -3383,6 +3411,13 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2017/06/16
       id_Taxo = '44208';     
       id_EoL = '212344';
+      id_fishbase = taxon_fish;
+       
+    case 'Lampris_guttatus'
+      id_CoL = '7bd6bfb1cf1351534d9a2117cb913e97';
+      id_WoRMS = '126522';
+      id_Taxo = '153323';        
+      id_EoL = '46564331';
       id_fishbase = taxon_fish;
        
     case 'Zeus_faber'
@@ -3899,6 +3934,13 @@ function links = get_link(taxon, open)
       id_EoL = '221078';
       id_fishbase = taxon_fish;
        
+    case 'Trichiurus_lepturus'
+      id_CoL = '4a36bde2ebd4e4e7ec0deaad650f648b';
+      id_WoRMS = '127089';
+      id_Taxo = '46670';  
+      id_EoL = '46577378';
+      id_fishbase = taxon_fish;
+       
     case 'Aphanopus_carbo'
       id_CoL = '0a49e7c45d77cb0727a237885297be00';
       id_WoRMS = '127085';
@@ -4157,7 +4199,7 @@ function links = get_link(taxon, open)
     case 'Hippoglossoides_elassodon'
       id_CoL = '9c358cae75ba9dbe90de2174e63fc164';
       id_WoRMS = '274289';
-      id_Taxo = ''; % no access 2019/03/16      
+      id_Taxo = '46940';
       id_EoL = '46570098';
       id_fishbase = taxon_fish;
        
@@ -4207,14 +4249,14 @@ function links = get_link(taxon, open)
     case 'Lepidopsetta_polyxystra'
       id_CoL = 'bf120c77afc6ed8b3cc3d9cc0356cd91';
       id_WoRMS = '281307';
-      id_Taxo = ''; % no access 2019/03/16       
+      id_Taxo = '178396'; 
       id_EoL = '46570162';
       id_fishbase = taxon_fish;
               
     case 'Lepidopsetta_bilineata'
       id_CoL = 'c0ce843618e932cdfeeab45274ff655b';
       id_WoRMS = '281305';
-      id_Taxo = '';  % no access 2019/03/16        
+      id_Taxo = '178394'; 
       id_EoL = '46570160';
       id_fishbase = taxon_fish;
               
@@ -4286,7 +4328,7 @@ function links = get_link(taxon, open)
     case 'Hyporhamphus_australis'
       id_CoL = '690bde96c719bd6e35e3c981b31b0196';
       id_WoRMS = '272179';
-      id_Taxo = ''; % no access 2019/03/17  
+      id_Taxo = '177171'; 
       id_EoL = '46567009';
       id_Wiki = 'Hyporhamphus';
       id_fishbase = taxon_fish;
@@ -4294,7 +4336,7 @@ function links = get_link(taxon, open)
     case 'Hyporhamphus_regularis'
       id_CoL = '7b791ec9b61e99213a93f4ed928bd23b';
       id_WoRMS = '293615';
-      id_Taxo = ''; % no access 2019/03/17  
+      id_Taxo = '192875';
       id_EoL = '46567030';
       id_Wiki = 'Hyporhamphus';
       id_fishbase = taxon_fish;
@@ -4302,7 +4344,7 @@ function links = get_link(taxon, open)
     case 'Arrhamphus_sclerolepis'
       id_CoL = '47d002b2a5a8318dc2d9d79e98e53b22';
       id_WoRMS = '293547';
-      id_Taxo = ''; % no access 2019/03/17  
+      id_Taxo = '161810'; 
       id_EoL = '356954';
       id_fishbase = taxon_fish;
        
@@ -5190,12 +5232,19 @@ function links = get_link(taxon, open)
       id_Taxo = '45141';   
       id_EoL = '207898';
       id_fishbase = taxon_fish;
-       
+
     case 'Siniperca_chuatsi'
       id_CoL = 'a36128d046eddeb8a877c33efce307e5';
       id_WoRMS = ''; % not present 2019/03/09
       id_Taxo = '187742';   
       id_EoL = '613258';
+      id_fishbase = taxon_fish;
+       
+    case 'Amniataba_caudavittata'
+      id_CoL = 'cb63a7cfb1e1534bc235e6780ada2967';
+      id_WoRMS = '279585'; 
+      id_Taxo = '160683';   
+      id_EoL = '46580106';
       id_fishbase = taxon_fish;
        
     case 'Epinephelus_marginatus'
