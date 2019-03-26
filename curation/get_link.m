@@ -213,6 +213,14 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present 2017/09/17
       id_Wiki = 'Tricladia';
 
+    case 'Branchotenthes_octohamatus'
+      id_CoL = '02a31521f1c305dfb2439e649587bd9b'; 
+      id_WoRMS = '396288';
+      id_Taxo = '117415';  % present at family level 2019/03/21
+      id_EoL = '46484942'; 
+      id_ADW = ''; % not present 2019/03/21
+      id_Wiki = 'Hexabothriidae';
+
     case 'Magellania_fragilis'
       id_CoL = '397256b281a713c08dd827ce925a4418';
       id_WoRMS = '235668';
@@ -2655,6 +2663,13 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present at 2019/01/08
        
+    case 'Clupea_pallasii'
+      id_CoL = '08d04d87c6f0db50ea181c4bc645a47a'; 
+      id_WoRMS = '293568';    
+      id_Taxo = '42637'; 
+      id_EoL = '1156440';
+      id_fishbase = taxon_fish;
+       
     case 'Alosa_alosa'
       id_CoL = '85368f18336645854725c8f8210a151f';
       id_WoRMS = '126413';
@@ -3667,6 +3682,13 @@ function links = get_link(taxon, open)
       id_EoL = '203867';
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/09/02
+       
+    case 'Eleginus_gracilis'
+      id_CoL = 'fbc33683b3466651574e87b326a3a21e';
+      id_WoRMS = '254537';
+      id_Taxo = '44304';
+      id_EoL = '46564409';
+      id_fishbase = taxon_fish;
        
     case 'Polymixia_nobilis'
       id_CoL = '70e2266b2d2a3c0706512274d0d36766';
@@ -5449,6 +5471,13 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_Wiki = 'Sebastes';
        
+    case 'Sebastes_mentella'
+      id_CoL = '098ed2020be5cb4129b22933a6acfaad';
+      id_WoRMS = '127254';
+      id_Taxo = '187298';        
+      id_EoL = '46568111';
+      id_fishbase = taxon_fish;
+       
     case 'Scorpaena_maderensis'
       id_CoL = 'c99cbc6eeb4411b9abf2e5919660975a';
       id_WoRMS = '274721';
@@ -5491,6 +5520,30 @@ function links = get_link(taxon, open)
       id_Taxo = '44406';        
       id_EoL = '220012';
       id_fishbase = taxon_fish;
+       
+    case 'Lycodes_raridens'
+      id_CoL = 'e0f10ae7edd9fc53094fa31660d37660';
+      id_WoRMS = '254598';
+      id_Taxo = '179366';        
+      id_EoL = '46574882';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Lycodes';
+       
+    case 'Gymnelus_viridis'
+      id_CoL = '4be9fb48a258c87731457b893248656d';
+      id_WoRMS = '127096';
+      id_Taxo = '175531';        
+      id_EoL = '46574735';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Gymnelus';
+       
+    case 'Stichaeus_punctatus'
+      id_CoL = '24ad4f5e0192ab7a0d43614b10a92a59';
+      id_WoRMS = '293745';
+      id_Taxo = '596144';        
+      id_EoL = '217553';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Stichaeidae';
        
     case 'Pholis_fangi'
       id_CoL = 'dfd5e2854d9a5d659ade52be070e5a23';
