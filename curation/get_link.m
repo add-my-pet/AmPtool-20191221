@@ -2648,6 +2648,14 @@ function links = get_link(taxon, open)
       id_EoL = '607993';
       id_fishbase = taxon_fish;
        
+    case 'Clupeonella_cultriventris'
+      id_CoL = 'dd1bff1a7ab7aa90f5f5fe192637e018';
+      id_WoRMS = '126418';
+      id_Taxo = '171479';        
+      id_EoL = '224305';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2019/03/26
+       
     case 'Clupea_harengus'
       id_CoL = '7adc35bdac2019989efa025ca00ccd5c';
       id_WoRMS = '126417';
@@ -2898,10 +2906,18 @@ function links = get_link(taxon, open)
       
     case 'Danio_rerio'
       id_CoL = 'ae6d1ad09071086da0498b39630b01f8';
-      id_WoRMS = '172875';  % not present 2017/06/16
+      id_WoRMS = '172875'; 
       id_Taxo = '172875';        
       id_EoL = '204011';
       id_fishbase = taxon_fish;
+       
+    case 'Hypophthalmichthys_molitrix'
+      id_CoL = 'cc64dcf9b5d181fde1235e0607376a1b';
+      id_WoRMS = '';  % not present 2019/03/26
+      id_Taxo = '43906';        
+      id_EoL = '220327';
+      id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2019/03/26
        
     case 'Abramis_brama'
       id_CoL = 'a0b8ed2779121cee709ec4b1b05b6a30';
@@ -2943,6 +2959,13 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2019/03/17 
       id_Taxo = '1008271'; 
       id_EoL = '225238';
+      id_fishbase = taxon_fish;
+
+    case 'Vimba_vimba'
+      id_CoL = '89c5b2f126446373f1b5c7116142ba6a';
+      id_WoRMS = '283150';
+      id_Taxo = '43687'; 
+      id_EoL = '994546';
       id_fishbase = taxon_fish;
 
     case 'Tinca_tinca'
@@ -3199,6 +3222,20 @@ function links = get_link(taxon, open)
       id_WoRMS = '274353';
       id_Taxo = '569902';        
       id_EoL = '204578';
+      id_fishbase = taxon_fish;
+       
+    case 'Salvelinus_malma'
+      id_CoL = '131fdba59c6574c07d330888f09380e3';
+      id_WoRMS = '254570';
+      id_Taxo = '42836';        
+      id_EoL = '1287453';
+      id_fishbase = taxon_fish;
+       
+    case 'Salvelinus_curilus'
+      id_CoL = '835c48922fa18cf793b7339ea20dc6a0';
+      id_WoRMS = '1026965';
+      id_Taxo = '42830'; % present at genus level only 2019/03/27     
+      id_EoL = '212741';
       id_fishbase = taxon_fish;
        
     case 'Coregonus_albula'
@@ -3818,6 +3855,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '279926';
       id_Taxo = '46564';      
       id_EoL = '46576719';
+      id_fishbase = taxon_fish;
+      
+    case 'Gymnogobius_urotaenia'
+      id_CoL = '486a1a9995ee8ed5a871f940d7f6fc9d';
+      id_WoRMS = '280967';
+      id_Taxo = '175586';      
+      id_EoL = '46576579';
       id_fishbase = taxon_fish;
       
     case 'Hippocampus_whitei'
@@ -5478,6 +5522,20 @@ function links = get_link(taxon, open)
       id_EoL = '46568111';
       id_fishbase = taxon_fish;
        
+    case 'Sebastes_minor'
+      id_CoL = 'ef96471f05febff80bc2a43d148dfdff';
+      id_WoRMS = '274821';
+      id_Taxo = '187300';        
+      id_EoL = '225643';
+      id_fishbase = taxon_fish;
+       
+    case 'Sebastes_taczanowskii'
+      id_CoL = 'b25fc6807f7b532f94877a365a34f317';
+      id_WoRMS = '274859';
+      id_Taxo = '187341';        
+      id_EoL = '46568202';
+      id_fishbase = taxon_fish;
+       
     case 'Scorpaena_maderensis'
       id_CoL = 'c99cbc6eeb4411b9abf2e5919660975a';
       id_WoRMS = '274721';
@@ -5545,6 +5603,14 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_Wiki = 'Stichaeidae';
        
+    case 'Alectrias_alectrolophus'
+      id_CoL = 'b480c435ee157258370aa225765b5049';
+      id_WoRMS = '279547';
+      id_Taxo = '160326';        
+      id_EoL = '46574626';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Stichaeidae';
+       
     case 'Pholis_fangi'
       id_CoL = 'dfd5e2854d9a5d659ade52be070e5a23';
       id_WoRMS = '273688';
@@ -5593,6 +5659,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '127203';
       id_Taxo = '44979';        
       id_EoL = '207351';
+      id_fishbase = taxon_fish;
+       
+    case 'Cottus_volki'
+      id_CoL = 'df0a6a717e914ac6a9646a8d4b0b7be9';
+      id_WoRMS = ''; % not present 2019/03/27
+      id_Taxo = '44970'; % present at genus level only      
+      id_EoL = '212111';
       id_fishbase = taxon_fish;
        
     case 'Latimeria_chalumnae'

@@ -1,10 +1,4 @@
-Abramis
-Pimephales
-Phoxinus
-Chondrostoma
-Pseudochondrostoma
-Iberochondrostoma
-Rutilus
-Squalius
-Blicca
-Mirogrex
+Phoxinini
+Leuciscini
+Plagiopterini
+Pogonichthyini

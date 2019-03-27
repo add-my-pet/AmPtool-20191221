@@ -1,8 +1,2 @@
-Acheilognathinae
-Barbinae
-Gobioninae
+Smiliogastrinae
 Cyprininae
-Danioninae
-Leuciscinae
-Tincinae
-Alburninae

@@ -1,4 +1,5 @@
 Sebastes_capensis
 Sebastes_rufus
 Sebastes_mentella
-
+Sebastes_minor
+Sebastes_taczanowskii
