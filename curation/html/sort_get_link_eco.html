@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>sort_get_link_eco</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-03-28"><meta name="DC.source" content="sort_get_link_eco.m"><style type="text/css">
+      --><title>sort_get_link_eco</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-03-29"><meta name="DC.source" content="sort_get_link_eco.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>sort_get_link_eco</h1><!--introduction--><p>sorts cases in functions get_link and get_eco, according to select</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#3">Syntax</a></li><li><a href="#4">Description</a></li><li><a href="#5">Remarks</a></li><li><a href="#6">get_link</a></li><li><a href="#7">get_eco</a></li><li><a href="#8">return to WD</a></li></ul></div><h2 id="3">Syntax</h2><p><a href="sort_get_link_eco"><b>sort_get_link_eco</b></a></p><h2 id="4">Description</h2><p>sorts casea in functions get_link and get_eco, according to select, overwriting the existinf functions</p><h2 id="5">Remarks</h2><p>checks the equality of cases and entries; no overwrite while failing</p><h2 id="6">get_link</h2><h2 id="7">get_eco</h2><h2 id="8">return to WD</h2><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+  </style></head><body><div class="content"><h1>sort_get_link_eco</h1><!--introduction--><p>sorts cases in functions get_link and get_eco, according to select</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#3">Syntax</a></li><li><a href="#4">Description</a></li><li><a href="#5">Remarks</a></li></ul></div><h2 id="3">Syntax</h2><p><a href="sort_get_link_eco"><b>sort_get_link_eco</b></a></p><h2 id="4">Description</h2><p>sorts casea in functions get_link and get_eco, according to select, overwriting the existinf functions</p><h2 id="5">Remarks</h2><p>checks the equality of cases and entries; no overwrite while failing</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% sort_get_link_eco
 % sorts cases in functions get_link and get_eco, according to select
@@ -88,19 +88,29 @@ WD = pwd; % store current path
 path = which('get_link'); ind = strfind(path,'\');
 cd(path(1:ind(end)));
 
-entries = select; 
+entries = select; % species names in sequence that they have to be
 
-%% get_link
+sort_entries(entries, 'get_link.m')
+sort_entries(entries, 'get_eco.m')
 
-body = fileread('get_link.m');
-ind = strfind(body,' case '); ind = [ind, strfind(body,'    otherwise')]; n_ind = length(ind) - 1;
+% return to WD
+cd(WD)
+
+end 
+function sort_entries(entries, fnNm)
+
+body = fileread(fnNm);
+
+% split the text of fnNm in head, tail and structure txt
+ind = [strfind(body,' case '), strfind(body,' otherwise ')]; n_ind = length(ind) - 1;
 head = body(1:ind(1)-1); tail = body(ind(end):end);
 for i = 1:n_ind
   case_i = body(ind(i):ind(i+1)); nm_i = strfind(case_i,''''); nm_i = case_i(nm_i(1)+1:nm_i(2)-1);
   txt.(nm_i) = case_i;
 end
-nm = fieldnames(txt);
+nm = fieldnames(txt); % species-name as they occur in fnNm
 
+% check for differences
 diff = setdiff(entries, nm);
 if ~isempty(diff)
   fprintf('warning from sort_get_link_eco: present in select, but not in get_link\n');
@@ -114,49 +124,14 @@ if ~isempty(diff)
   return
 end
 
-fid = fopen('get_link.m','w+');
+% write file
+fid = fopen(fnNm,'w+');
 fprintf(fid, '%s', head);
 for i = 1:n_ind
   fprintf(fid, '%s', txt.(entries{i}));
 end
 fprintf(fid, '%s', tail);
 fclose(fid);
-
-%% get_eco
-
-body = fileread('get_eco.m');
-ind = strfind(body,' case '); ind = [ind, strfind(body,'    otherwise')]; n_ind = length(ind) - 1;
-head = body(1:ind(1)-1); tail = body(ind(end):end);
-for i = 1:n_ind
-  case_i = body(ind(i):ind(i+1)); nm_i = strfind(case_i,''''); nm_i = case_i(nm_i(1)+1:nm_i(2)-1);
-  txt.(nm_i) = case_i;
 end
-nm = fieldnames(txt);
-
-diff = setdiff(entries, nm);
-if ~isempty(diff)
-  fprintf('warning from sort_get_link_eco: present in select, but not in get_eco\n');
-  diff
-  return
-end
-diff = setdiff(nm, entries);
-if ~isempty(diff)
-  fprintf('warning from sort_get_link_eco: present in get_eco, but not in select\n');
-  diff
-  return
-end
-
-fid = fopen('get_eco.m','w+');
-fprintf(fid, '%s', head);
-for i = 1:n_ind
-  fprintf(fid, '%s', txt.(entries{i}));
-end
-fprintf(fid, '%s', tail);
-fclose(fid);
-
-%% return to WD
-
-cd(WD)
-
 ##### SOURCE END #####
 --></body></html>
