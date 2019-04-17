@@ -333,6 +333,13 @@ function links = get_link(taxon, open)
       id_EoL = '492903';      
       id_molluscabase = '140430';
       
+    case 'Xylophaga_atlantica'
+      id_CoL = '9d70e14ce54714518caa46b9a3f12755';
+      id_WoRMS = '156497';
+      id_Taxo = '39930'; % present at genus level only 2019/04/16      
+      id_EoL = '46470872';      
+      id_molluscabase = '156497';
+      
     case 'Panopea_abbreviata'
       id_CoL = '312cd47922d448cf8a1c72fd83a01ad7';
       id_WoRMS = '505404';
@@ -1117,6 +1124,12 @@ function links = get_link(taxon, open)
       id_Wiki = 'Temoridae';
       id_EoL = '1020941';
        
+   case 'Temora_longicornis'
+      id_CoL = '14a364abe865cd072d80625e0f366108';
+      id_WoRMS = '104878';
+      id_Taxo = '71029';             
+      id_EoL = '46534191';
+       
    case 'Lepeophtheirus_salmonis'
       id_CoL = '6df2ffbaf945346ec014bded8680bb67';
       id_WoRMS = '135782';
@@ -1129,6 +1142,12 @@ function links = get_link(taxon, open)
       id_Taxo = '33032';  % only present at genus level 2017/09/28              
       id_EoL = '1018151';
       id_Wiki = 'Mysidae';
+       
+    case 'Americamysis_bahia'
+      id_CoL = '0b592a7d53255a98c000aa7588064b40';
+      id_WoRMS = '226286';
+      id_Taxo = '3464443';         
+      id_EoL = '1040545';
        
     case 'Hemimysis_speluncola'
       id_CoL = 'db7ac8c44d87726097820b9eac516128';
@@ -1242,6 +1261,12 @@ function links = get_link(taxon, open)
       id_WoRMS = '110690';
       id_Taxo = '33780';        
       id_EoL = '509431';
+       
+    case 'Nyctiphanes_australis'
+      id_CoL = '9854c46c1e62f43827f210d65373a6ec';
+      id_WoRMS = '237863';
+      id_Taxo = '33773'; % only present at genus level at 2019/04/14        
+      id_EoL = '509443';
        
     case 'Aristeus_antennatus'
       id_CoL = 'd8b8be09331d3ea62c0d6c1d2a9024e0';
@@ -1683,6 +1708,12 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2017/06/15
       id_Taxo = '18150';
       id_EoL = '494417';
+       
+    case 'Extatosoma_tiaratum'
+      id_CoL = '65ef43e152fec002f9559d6f7074c43f';
+      id_WoRMS = ''; % not present 2019/04/17
+      id_Taxo = '18284';
+      id_EoL = '1078018';
        
     case 'Acyrthosiphon_pisum'
       id_CoL = '56d87c2d5ce3acb4f039fbc181b69355';
@@ -3222,6 +3253,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '223866';
       id_Taxo = '42823';        
       id_EoL = '206777';
+      id_fishbase = taxon_fish;
+       
+    case 'Salmo_salar'
+      id_CoL = '3266ba091601ba86cd408decf2706b85';
+      id_WoRMS = '127186';
+      id_Taxo = '42821';        
+      id_EoL = '46563143';
       id_fishbase = taxon_fish;
        
     case 'Salvelinus_alpinus'

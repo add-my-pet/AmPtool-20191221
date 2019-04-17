@@ -428,6 +428,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Xylophaga_atlantica'
+      climate = {'MC'};
+      ecozone = {'MA'};
+      habitat = {'0jMp','jiMb'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPp','jiHw'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Panopea_abbreviata'
       climate = {'MB'};
       ecozone = {'MASW'};
@@ -1488,6 +1498,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Temora_longicornis'
+      climate = {'MB','MC'};
+      ecozone = {'MA'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'biPp'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Lepeophtheirus_salmonis'
       climate = {'MC'};
       ecozone = {'MAN','MPN'};
@@ -1505,6 +1525,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mbf'};
       migrate = {};
       food    = {'biPp'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Americamysis_bahia'
+      climate = {'MA','MB'};
+      ecozone = {'MAW'};
+      habitat = {'0iMpe','0iMi'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'biPp','biPz'};
       gender  = {'D'};
       reprod  = {'O'};
 
@@ -1671,6 +1701,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Meganyctiphanes_norvegica'
       climate = {'MC','ME'};
       ecozone = {'MAN','MN'};
+      habitat = {'0iMpe'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'biP'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Nyctiphanes_australis'
+      climate = {'MC'};
+      ecozone = {'MPSW'};
       habitat = {'0iMpe'};
       embryo  = {'Mbf'};
       migrate = {};
@@ -2334,6 +2374,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0iTg','0iTs','0iTa','0iTd'};
       embryo  = {'Th'};
       migrate = {'Ms'};
+      food    = {'biH'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Extatosoma_tiaratum'
+      climate = {'Cfa','Cfb'};
+      ecozone = {'TA'};
+      habitat = {'0iTh','0iTf'};
+      embryo  = {'Tnp'};
+      migrate = {};
       food    = {'biH'};
       gender  = {'D'};
       reprod  = {'O'};
@@ -4531,6 +4581,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Salmo_trutta'
       climate = {'MC'};
       ecozone = {'MAE'};
+      habitat = {'0jFr','jiMpe'};
+      embryo  = {'Fg'};
+      migrate = {'Mda'};
+      food    = {'bjCi','jiCic','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Salmo_salar'
+      climate = {'MC'};
+      ecozone = {'MAN'};
       habitat = {'0jFr','jiMpe'};
       embryo  = {'Fg'};
       migrate = {'Mda'};
