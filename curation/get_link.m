@@ -491,6 +491,14 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present at 2017/08/09
       id_molluscabase = '234103';
       
+    case 'Actinonaias_ligamentina'
+      id_CoL = 'b62686da9bf81fbac2c1c28a28e7c658';  
+      id_WoRMS = ''; % not present 2019/04/18
+      id_Taxo = '235338';   
+      id_EoL = '449465';
+      id_Wiki = 'Actinonaias'; 
+      id_molluscabase = '861809';
+      
     case 'Westralunio_carteri'
       id_CoL = '';   % not present 2017/06/15 
       id_WoRMS = ''; % not present 2017/06/15 
@@ -1790,6 +1798,12 @@ function links = get_link(taxon, open)
       id_Taxo = '26390';
       id_EoL = '46325834';
        
+    case 'Onthophagus_binodis'
+      id_CoL = 'c62b93112a8af8559efafa56a33cd008';
+      id_WoRMS = ''; % not present 2019/04/18
+      id_Taxo = '495382';
+      id_EoL = '142738';
+       
     case 'Ophiura_ophiura'
       id_CoL = '51533cab6a045e41ca2485a45486d0f5';
       id_WoRMS = '124929';
@@ -2767,6 +2781,13 @@ function links = get_link(taxon, open)
       id_EoL = '46562453';
       id_fishbase = taxon_fish;
        
+    case 'Hilsa_kelee'
+      id_CoL = 'dd507919120885df774ffda7f8c3469d';
+      id_WoRMS = '212278';
+      id_Taxo = '176640';        
+      id_EoL = '46562467';
+      id_fishbase = taxon_fish;
+       
     case 'Engraulis_encrasicolus'
       id_CoL = '2abe41c8ee39bb550534f328bf4717a3';
       id_WoRMS = '126426';
@@ -3009,6 +3030,13 @@ function links = get_link(taxon, open)
       id_EoL = '205274';
       id_fishbase = taxon_fish;
       id_ADW = ''; % not present 2017/08/13
+
+    case 'Scardinius_erythrophthalmus'
+      id_CoL = '4bea1a3cb34fe72520eedcad421977f7';
+      id_WoRMS = '154165'; 
+      id_Taxo = '43682';
+      id_EoL = '46581637';
+      id_fishbase = taxon_fish;
 
     case 'Squalius_cii'
       id_CoL = 'd982e963750eac8e55ff1c6c7300597c';
@@ -4001,6 +4029,20 @@ function links = get_link(taxon, open)
       id_WoRMS = '126989';
       id_Taxo = '189739';        
       id_EoL = '46578741';
+      id_fishbase = taxon_fish;
+       
+    case 'Upeneus_tragula'
+      id_CoL = 'a34c6e8969ed09c8e191745a921c36a9';
+      id_WoRMS = '218689';
+      id_Taxo = '189747';        
+      id_EoL = '46578745';
+      id_fishbase = taxon_fish;
+       
+    case 'Parupeneus_multifasciatus'
+      id_CoL = 'e27ce7d6ff6fa6ef789a4a4dfd28016e';
+      id_WoRMS = '277820';
+      id_Taxo = '183301';        
+      id_EoL = '46578793';
       id_fishbase = taxon_fish;
        
     case 'Thunnus_orientalis'
@@ -5791,6 +5833,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '274373';
       id_Taxo = '175537'; 
       id_EoL = '46568959';
+      id_fishbase = taxon_fish;
+       
+    case 'Taurocottus_bergii'
+      id_CoL = 'b883345f926e07e4eaf52b2e3111415b';
+      id_WoRMS = '282937';
+      id_Taxo = '605506'; 
+      id_EoL = '46569170';
       id_fishbase = taxon_fish;
        
     case 'Latimeria_chalumnae'
