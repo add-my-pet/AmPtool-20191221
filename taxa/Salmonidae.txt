@@ -1,6 +1,3 @@
-Thymallus
-Oncorhynchus
-Salmo
-Salvelinus
-Coregonus
-
+Coregoninae
+Thymallinae
+Salmoninae

@@ -3356,6 +3356,13 @@ function links = get_link(taxon, open)
       id_EoL = '46563165';
       id_fishbase = taxon_fish;
  
+    case 'Prosopium_cylindraceum'
+      id_CoL = '349508979aea0a32463749629ab90387';
+      id_WoRMS = '282373';
+      id_Taxo = '184830';        
+      id_EoL = '46563191';
+      id_fishbase = taxon_fish;
+ 
     case 'Esox_lucius'
       id_CoL = 'c828ed0d18644bc9e3cfe4b9507f3247';
       id_WoRMS = '154210';
@@ -3390,6 +3397,14 @@ function links = get_link(taxon, open)
       id_Taxo = '42941';        
       id_EoL = '994979';
       id_fishbase = taxon_fish;
+       
+    case 'Maurolicus_imperatorius'
+      id_CoL = 'ff1b4ebe577d7501e7dc18b3253d31a0';
+      id_WoRMS = '274970';
+      id_Taxo = '179646';        
+      id_EoL = '46563282';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Maurolicus';
        
     case 'Vinciguerria_nimbaria'
       id_CoL = 'c7cd0d6dc1b280950efadc37c9752996';
@@ -3967,6 +3982,13 @@ function links = get_link(taxon, open)
       id_fishbase = taxon_fish;
       id_Wiki = 'Ponticola';
       id_ADW = ''; % not present 2019/03/20
+      
+    case 'Neogobius_melanostomus'
+      id_CoL = '177d4e4157da3f0fc812bbfad62354e6';
+      id_WoRMS = '126916'; 
+      id_Taxo = '181098';     
+      id_EoL = '46575276';
+      id_fishbase = taxon_fish;
       
     case 'Boleophthalmus_pectinirostris'
       id_CoL = '9ce392a55b69c4e9421f8c2b99628ff5';
@@ -5718,6 +5740,13 @@ function links = get_link(taxon, open)
       id_EoL = '220012';
       id_fishbase = taxon_fish;
        
+    case 'Zoarces_elongatus'
+      id_CoL = '684b1f9f3f50bdbd8d75a07392857553';
+      id_WoRMS = '274153';
+      id_Taxo = '190281';        
+      id_EoL = '46575085';
+      id_fishbase = taxon_fish;
+       
     case 'Lycodes_raridens'
       id_CoL = 'e0f10ae7edd9fc53094fa31660d37660';
       id_WoRMS = '254598';
@@ -5733,6 +5762,14 @@ function links = get_link(taxon, open)
       id_EoL = '46574735';
       id_fishbase = taxon_fish;
       id_Wiki = 'Gymnelus';
+       
+    case 'Hadropareia_middendorffii'
+      id_CoL = '9ad64b260fd0798daf4620922e3c2b02';
+      id_WoRMS = '280970';
+      id_Taxo = '691029';        
+      id_EoL = '46574781';
+      id_fishbase = taxon_fish;
+      id_Wiki = 'Zoarcidae';
        
     case 'Stichaeus_punctatus'
       id_CoL = '24ad4f5e0192ab7a0d43614b10a92a59';
@@ -5786,11 +5823,18 @@ function links = get_link(taxon, open)
       id_EoL = '1011820';
       id_fishbase = taxon_fish;
        
-    case 'Scorpaenichthys_marmoratus'
-      id_CoL = '397958a0d9074889461f137e4f7e7afc';
-      id_WoRMS = '282726';
-      id_Taxo = '153452';        
-      id_EoL = '212214';
+    case 'Hexagrammos_stelleri'
+      id_CoL = 'a271bef107ca1c7469adf20324568753';
+      id_WoRMS = '254545';
+      id_Taxo = '176624';        
+      id_EoL = '46568828';
+      id_fishbase = taxon_fish;
+       
+    case 'Hexagrammos_octogrammus'
+      id_CoL = '201646c709a2f9096e752b201820818c';
+      id_WoRMS = '254544';
+      id_Taxo = '176622';        
+      id_EoL = '46568827';
       id_fishbase = taxon_fish;
        
     case 'Myoxocephalus_scorpius'
@@ -5800,7 +5844,14 @@ function links = get_link(taxon, open)
       id_EoL = '207351';
       id_fishbase = taxon_fish;
        
-    case 'Cottus_volki'
+     case 'Scorpaenichthys_marmoratus'
+      id_CoL = '397958a0d9074889461f137e4f7e7afc';
+      id_WoRMS = '282726';
+      id_Taxo = '153452';        
+      id_EoL = '212214';
+      id_fishbase = taxon_fish;
+       
+   case 'Cottus_volki'
       id_CoL = 'df0a6a717e914ac6a9646a8d4b0b7be9';
       id_WoRMS = ''; % not present 2019/03/27
       id_Taxo = '44970'; % present at genus level only      
