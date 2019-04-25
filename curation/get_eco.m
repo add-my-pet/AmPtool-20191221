@@ -428,15 +428,15 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
-    case 'Xylophaga_atlantica'
-      climate = {'MC'};
-      ecozone = {'MA'};
-      habitat = {'0jMp','jiMb'};
-      embryo  = {'Mp'};
-      migrate = {};
-      food    = {'bjPp','jiHw'};
-      gender  = {'D'};
-      reprod  = {'O'};
+%     case 'Xylophaga_atlantica'
+%       climate = {'MC'};
+%       ecozone = {'MA'};
+%       habitat = {'0jMp','jiMb'};
+%       embryo  = {'Mp'};
+%       migrate = {};
+%       food    = {'bjPp','jiHw'};
+%       gender  = {'D'};
+%       reprod  = {'O'};
 
     case 'Panopea_abbreviata'
       climate = {'MB'};
@@ -6322,7 +6322,17 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'MC'};
       ecozone = {'MPN'};
       habitat = {'0jFe','jiMcd'};
-      embryo  = {'Fp'};
+      embryo  = {'Mp'};
+      migrate = {'Mdc'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Liopsetta_pinnifasciata'
+      climate = {'MC'};
+      ecozone = {'MPN'};
+      habitat = {'0jFe','jiMcd'};
+      embryo  = {'Mp'};
       migrate = {'Mdc'};
       food    = {'bjPz','jiCi'};
       gender  = {'D'};
@@ -8186,6 +8196,26 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mnm'};
       migrate = {};
       food    = {'biCi','biCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Batrachocottus_baicalensis'
+      climate = {'Dfb'};
+      ecozone = {'THp'};
+      habitat = {'0iFr'};
+      embryo  = {'Fnm'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Paracottus_knerii'
+      climate = {'Dfb'};
+      ecozone = {'THp'};
+      habitat = {'0iFr'};
+      embryo  = {'Fnm'};
+      migrate = {};
+      food    = {'biCi'};
       gender  = {'D'};
       reprod  = {'O'};
 

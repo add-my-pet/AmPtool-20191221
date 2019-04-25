@@ -333,12 +333,12 @@ function links = get_link(taxon, open)
       id_EoL = '492903';      
       id_molluscabase = '140430';
       
-    case 'Xylophaga_atlantica'
-      id_CoL = '9d70e14ce54714518caa46b9a3f12755';
-      id_WoRMS = '156497';
-      id_Taxo = '39930'; % present at genus level only 2019/04/16      
-      id_EoL = '46470872';      
-      id_molluscabase = '156497';
+%     case 'Xylophaga_atlantica'
+%       id_CoL = '9d70e14ce54714518caa46b9a3f12755';
+%       id_WoRMS = '156497';
+%       id_Taxo = '39930'; % present at genus level only 2019/04/16      
+%       id_EoL = '46470872';      
+%       id_molluscabase = '156497';
       
     case 'Panopea_abbreviata'
       id_CoL = '312cd47922d448cf8a1c72fd83a01ad7';
@@ -4508,6 +4508,13 @@ function links = get_link(taxon, open)
       id_EoL = '214641';
       id_fishbase = taxon_fish;
        
+    case 'Liopsetta_pinnifasciata'
+      id_CoL = 'c063a57c9a418e9e4b799b4a63d54986';
+      id_WoRMS = '275845';
+      id_Taxo = '178922';        
+      id_EoL = '46570131';
+      id_fishbase = taxon_fish;
+       
     case 'Oreochromis_niloticus'
       id_CoL = '9ddda31044c5b5e86eca800592b8473f';
       id_WoRMS = '293639';
@@ -5849,6 +5856,20 @@ function links = get_link(taxon, open)
       id_WoRMS = '282726';
       id_Taxo = '153452';        
       id_EoL = '212214';
+      id_fishbase = taxon_fish;
+       
+   case 'Batrachocottus_baicalensis'
+      id_CoL = '488ab9e6f9c58699ca5ba9a4c18d6e7b';
+      id_WoRMS = ''; % not present 2019/04/24
+      id_Taxo = '163953';    
+      id_EoL = '222893';
+      id_fishbase = taxon_fish;
+       
+   case 'Paracottus_knerii'
+      id_CoL = '41a6208e1d243598c85991a432ab6b90';
+      id_WoRMS = ''; % not present 2019/04/25
+      id_Taxo = '182732';    
+      id_EoL = '216614';
       id_fishbase = taxon_fish;
        
    case 'Cottus_volki'
