@@ -1,4 +1,4 @@
 Myzostomida
-Phyllodocida
-Scolecida
-Echiuroidea
+Aciculata
+Sedentaria
+Echiura

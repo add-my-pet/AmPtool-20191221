@@ -243,6 +243,13 @@ function links = get_link(taxon, open)
       id_EoL = '2967081';
       id_ADW = 'Myzostomum_cirriferum';
 
+    case 'Ophryotrocha_labronica'
+      id_CoL = '14b58611f7c0fd55a042f1699bc36ebe'; 
+      id_WoRMS = '130027';
+      id_Taxo = '498641'; 
+      id_EoL = '467939';
+      id_ADW = ''; % not present 2019/04/29
+
     case 'Neanthes_arenaceodentata'
       id_CoL = '36d20e9543e6c676d401c4a73d140d5e';
       id_WoRMS = '334084';
@@ -461,6 +468,13 @@ function links = get_link(taxon, open)
       id_EoL = '492162';      
       id_molluscabase = '141919';
       
+    case 'Callista_chione'
+      id_CoL = '2d5caed4cc6a83c4a004babd7553dbfd';
+      id_WoRMS = '141906';
+      id_Taxo = '39609';        
+      id_EoL = '46469308';      
+      id_molluscabase = '141906';
+      
     case 'Mytilopsis_sallei'
       id_CoL = '5e451e2ac36ade42130a9909b0979122';
       id_WoRMS = '397147';
@@ -654,6 +668,20 @@ function links = get_link(taxon, open)
       id_EoL = '468594';       
       id_molluscabase = '207899';
       
+    case 'Pinctada_imbricata'
+      id_CoL = '84ec11414833568c6250ced62ea180c2'; 
+      id_WoRMS = '564659'; 
+      id_Taxo = '39256'; % present at genus level only 2019/04/27
+      id_EoL = '46467329';       
+      id_molluscabase = '207901';
+      
+    case 'Pteria_sterna'
+      id_CoL = '5fbe1e63094147d3eda28d2c20e59ef3'; 
+      id_WoRMS = '464505'; 
+      id_Taxo = '39260'; % present at genus level only 2019/04/27
+      id_EoL = '46467351';       
+      id_molluscabase = '464505';
+      
     case 'Patella_vulgata'
       id_CoL = 'b6d47c01f8b1aac2e8d612029dec8807';
       id_WoRMS = '140685';
@@ -736,6 +764,14 @@ function links = get_link(taxon, open)
       id_Taxo = '35203';        
       id_EoL = '619396';       
       id_molluscabase = '140262';
+      
+    case 'Heleobia_australis'
+      id_CoL = 'e304fd883226e4245a26453d85771abf';
+      id_WoRMS = '532899';
+      id_Taxo = '145878'; % present at genus level only 2019/04/28        
+      id_EoL = '4860343';       
+      id_molluscabase = '532899';
+      id_ADW = ''; % not presetn 2019/04/28
       
     case 'Crepidula_fornicata'
       id_CoL = 'cb8d13d370be3253d988a29585db934d';
@@ -891,6 +927,13 @@ function links = get_link(taxon, open)
       id_Taxo = '157825';        
       id_EoL = '489601';       
       id_molluscabase = '410361';
+      
+    case 'Rossia_macrosoma'
+      id_CoL = '774da2001a667bf11ede3e1cf197b0ce';
+      id_WoRMS = '141449';
+      id_Taxo = '40216';        
+      id_EoL = '450463';       
+      id_molluscabase = '141449';
       
     case 'Doryteuthis_pealeii'
       id_CoL = '71883eecc1e2f28199a9a79d82085fbf';
@@ -1144,12 +1187,20 @@ function links = get_link(taxon, open)
       id_Taxo = '206162'; % only present at genus level 2017/09/26          
       id_EoL = '1020941';
        
+    case 'Gastrosaccus_roscoffensis'
+      id_CoL = '4540d0daf178a034243dcbb63840bd62';
+      id_WoRMS = '120018';
+      id_Taxo = '144240';  % only present at genus level 2019/04/27              
+      id_EoL = '1018151';
+      id_Wiki = 'Mysidae';
+       
     case 'Leptomysis_lingvura'
       id_CoL = 'd9266defb43c8336539b6b24151e1ee1';
       id_WoRMS = '120054';
       id_Taxo = '33032';  % only present at genus level 2017/09/28              
-      id_EoL = '1018151';
+      id_EoL = '342717';
       id_Wiki = 'Mysidae';
+      id_ADW = ''; % not present 2019/04/27
        
     case 'Americamysis_bahia'
       id_CoL = '0b592a7d53255a98c000aa7588064b40';
@@ -2781,6 +2832,13 @@ function links = get_link(taxon, open)
       id_EoL = '46562453';
       id_fishbase = taxon_fish;
        
+    case 'Opisthonema_libertate'
+      id_CoL = 'b243589047c8374850bb9c4f07e86f35';
+      id_WoRMS = '275504';
+      id_Taxo = '182008';        
+      id_EoL = '46562456';
+      id_fishbase = taxon_fish;
+       
     case 'Hilsa_kelee'
       id_CoL = 'dd507919120885df774ffda7f8c3469d';
       id_WoRMS = '212278';
@@ -4146,6 +4204,13 @@ function links = get_link(taxon, open)
       id_EoL = '46577319';
       id_fishbase = taxon_fish;
       
+    case 'Scomberomorus_sierra'
+      id_CoL = '7b5318cdf1ee212aee0aedb96c621053';
+      id_WoRMS = '273821';
+      id_Taxo = '187079';        
+      id_EoL = '46577330';
+      id_fishbase = taxon_fish;
+      
     case 'Trichiurus_nanhaiensis'
       id_CoL = '555222cee2c6984ba598f0c688c28475';
       id_WoRMS = '274024';
@@ -4415,6 +4480,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '275809';
       id_Taxo = '46919';        
       id_EoL = '217375';
+      id_fishbase = taxon_fish;
+       
+    case 'Syacium_gunteri'
+      id_CoL = '012b304670962bfa32c37f92e1b5662f';
+      id_WoRMS = '275839';
+      id_Taxo = '188418';        
+      id_EoL = '46570531';
       id_fishbase = taxon_fish;
        
     case 'Hippoglossus_hippoglossus'
@@ -4943,6 +5015,13 @@ function links = get_link(taxon, open)
       id_EoL = '224729';
       id_fishbase = taxon_fish;
        
+    case 'Morone_americana'
+      id_CoL = '05e97f693d6eaadb217bc3cf095d0a01';
+      id_WoRMS = '151177';
+      id_Taxo = '180398';        
+      id_EoL = '46578727';
+      id_fishbase = taxon_fish;
+       
     case 'Platax_orbicularis'
       id_CoL = 'f28ff72a2191ac0ee807ce87547e057b';
       id_WoRMS = '218711';
@@ -5001,6 +5080,13 @@ function links = get_link(taxon, open)
       id_EoL = '46578976';
       id_fishbase = taxon_fish;
        
+    case 'Cynoscion_othonopterus'
+      id_CoL = '6a9bd783302b8ff4ea514a73ca80d923';
+      id_WoRMS = '276084';
+      id_Taxo = '690720';    
+      id_EoL = '46578988';
+      id_fishbase = taxon_fish;
+       
     case 'Atractoscion_nobilis'
       id_CoL = '0fb458c98184e0325f005638b22fe2c3';
       id_WoRMS = '234781';
@@ -5013,6 +5099,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '159333';
       id_Taxo = '184254';      
       id_EoL = '46579058';
+      id_fishbase = taxon_fish;
+       
+    case 'Stellifer_lanceolatus'
+      id_CoL = '83b0f55aa983c2e1d2fdc880eba6e7ba';
+      id_WoRMS = '159337';
+      id_Taxo = '188137';      
+      id_EoL = '46579062';
       id_fishbase = taxon_fish;
        
     case 'Acanthurus_lineatus'
@@ -5183,6 +5276,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '218482';
       id_Taxo = '106186'; 
       id_EoL = '46580739';
+      id_fishbase = taxon_fish;
+       
+    case 'Caulolatilus_affinis'
+      id_CoL = 'eeccbebf9cae12227abbaef27701fa0a';
+      id_WoRMS = '367211';
+      id_Taxo = '166655'; 
+      id_EoL = '46580671';
       id_fishbase = taxon_fish;
        
     case 'Lobotes_surinamensis'
