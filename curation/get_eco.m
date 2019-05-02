@@ -258,6 +258,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Hh'};
       reprod  = {'O'};
 
+    case 'Lineus_viridis'
+      climate = {'MC'};
+      ecozone = {'MAE'}; % 
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Magellania_fragilis'
       climate = {'ME'};
       ecozone = {'MS'};
@@ -529,6 +539,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       reprod  = {'O'};
 
     case 'Donax_trunculus'
+      climate = {'MC'};
+      ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMb','jiMi'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjPp','jiD'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Abra_segmentum'
       climate = {'MC'};
       ecozone = {'MAE','MAm'};
       habitat = {'0jMp','jiMb','jiMi'};
@@ -1765,6 +1785,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Fbf'};
       migrate = {};
       food    = {'biD','biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Hyperia_galba'
+      climate = {'MC'};
+      ecozone = {'MANW'};
+      habitat = {'0iMp'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'biCij'};
       gender  = {'D'};
       reprod  = {'O'};
 
@@ -5678,6 +5708,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Knipowitschia_caucasica'
+      climate = {'MC'};
+      ecozone = {'MAm'};
+      habitat = {'0iMc','0iMm','jiFr','jiFm'};
+      embryo  = {'Mnm'};
+      migrate = {'Ma'};
+      food    = {'biCi','biPz'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Boleophthalmus_pectinirostris'
       climate = {'MA'};
       ecozone = {'MPW'};
@@ -7286,6 +7326,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mp'};
       migrate = {};
       food    = {'bjPz','biCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Conodon_nobilis'
+      climate = {'MB'};
+      ecozone = {'MAW'};
+      habitat = {'0jMp','jiMd'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjCi','biCvf'};
       gender  = {'D'};
       reprod  = {'O'};
 

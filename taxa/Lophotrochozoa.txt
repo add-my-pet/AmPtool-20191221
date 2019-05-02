@@ -1,2 +1,5 @@
+Mollusca
+Gastrotricha
 Lophophorata
-Neotrochozoa
+Annelida
+Parenchymia

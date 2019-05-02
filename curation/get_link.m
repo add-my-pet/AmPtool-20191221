@@ -215,6 +215,12 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present 2019/03/21
       id_Wiki = 'Hexabothriidae';
 
+    case 'Lineus_viridis'
+      id_CoL = '6855b93aab0f8ca308099b55523c6755'; 
+      id_WoRMS = '122543';
+      id_Taxo = '114569'; 
+      id_EoL = '49880478'; 
+
     case 'Magellania_fragilis'
       id_CoL = '397256b281a713c08dd827ce925a4418';
       id_WoRMS = '235668';
@@ -413,6 +419,14 @@ function links = get_link(taxon, open)
       id_EoL = '46474538';      
       id_molluscabase = '139602';
       id_ADW = ''; % not present at 2018/12/19
+      
+    case 'Abra_segmentum'
+      id_CoL = '2e10b6e3daf1c051312d0874f801e77e';
+      id_WoRMS = '141438'; 
+      id_Taxo = '39550'; % present at genus level only 2019/05/01      
+      id_EoL = '46474777';      
+      id_molluscabase = '141438';
+      id_ADW = ''; % not present at 2019/05/01
       
     case 'Macoma_balthica'
       id_CoL = '7752e8e469ee3f69471f23a73bb94786';
@@ -1308,6 +1322,12 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2019/03/07 
       id_Taxo = '132618';   
       id_EoL = '342551';
+      
+    case 'Hyperia_galba' 
+      id_CoL = 'c9c5aa67008b4bc665f447fe04091b21';
+      id_WoRMS = '103251';
+      id_Taxo = '34341';   
+      id_EoL = '46521640';
       
     case 'Euphausia_superba'
       id_CoL = '9b5816e13fe1783d6d65f7075aba514f';
@@ -4048,6 +4068,13 @@ function links = get_link(taxon, open)
       id_EoL = '46575276';
       id_fishbase = taxon_fish;
       
+    case 'Knipowitschia_caucasica'
+      id_CoL = '4c9479ebf54429020a6942a1e91436ab';
+      id_WoRMS = '126899'; 
+      id_Taxo = '177762';     
+      id_EoL = '46576381';
+      id_fishbase = taxon_fish;
+      
     case 'Boleophthalmus_pectinirostris'
       id_CoL = '9ce392a55b69c4e9421f8c2b99628ff5';
       id_WoRMS = '279926';
@@ -5021,6 +5048,7 @@ function links = get_link(taxon, open)
       id_Taxo = '180398';        
       id_EoL = '46578727';
       id_fishbase = taxon_fish;
+      id_ADW = ''; % not present 2019/04/29
        
     case 'Platax_orbicularis'
       id_CoL = 'f28ff72a2191ac0ee807ce87547e057b';
@@ -5198,6 +5226,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '218566';
       id_Taxo = '184494';        
       id_EoL = '46578439';
+      id_fishbase = taxon_fish;
+       
+    case 'Conodon_nobilis'
+      id_CoL = '18a3c8551b90518c351eb1bc4577f562';
+      id_WoRMS = '280386';
+      id_Taxo = '171646';        
+      id_EoL = '46578514';
       id_fishbase = taxon_fish;
        
     case 'Rhomboplites_aurorubens'
