@@ -1,5 +1,4 @@
 Mollusca
 Gastrotricha
 Lophophorata
-Annelida
-Parenchymia
+Vermes

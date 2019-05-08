@@ -4,3 +4,4 @@ Octopus_vulgaris
 Octopus_mimus
 Octopus_joubini
 Octopus_tetricus
+Octopus_tehuelchus

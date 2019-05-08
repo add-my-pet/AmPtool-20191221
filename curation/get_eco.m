@@ -288,6 +288,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Hh'};
       reprod  = {'Ob'};
 
+    case 'Phoronis_psammophila'
+      climate = {'MB','MC'};
+      ecozone = {'MC'};
+      habitat = {'0jMp','jiMb'};
+      embryo  = {'Ms'};
+      migrate = {};
+      food    = {'biP'};
+      gender  = {'Hh'};
+      reprod  = {'Ob'};
+
     case 'Flustra_foliacea'
       climate = {'MC'};
       ecozone = {'MAN'};
@@ -531,6 +541,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Spisula_solidissima'
       climate = {'MC'};
       ecozone = {'MAE'};
+      habitat = {'0jMp','jiMb','jiMi'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biPp'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Amarilladesma_mactroides'
+      climate = {'MC'};
+      ecozone = {'MASE'};
       habitat = {'0jMp','jiMb','jiMi'};
       embryo  = {'Mp'};
       migrate = {};
@@ -871,6 +891,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Septifer_virgatus'
       climate = {'MB'};
       ecozone = {'MPW'}; 
+      habitat = {'0jMp','jiMb'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biPp'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Lithophaga_lithophaga'
+      climate = {'MA','MB'};
+      ecozone = {'MANE'}; 
       habitat = {'0jMp','jiMb'};
       embryo  = {'Mp'};
       migrate = {};
@@ -1368,6 +1398,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Octopus_tehuelchus'
+      climate = {'MB'};
+      ecozone = {'MASW'};
+      habitat = {'0jMc','jiMb'};
+      embryo  = {'Mc'};      
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Ferosagitta_hispida'
       climate = {'MA','MB','MC'};
       ecozone = {'MA'};
@@ -1511,6 +1551,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Amphibalanus_amphitrite'
       climate = {'MA','MB','MC'};
       ecozone = {'MC'};
+      habitat = {'0jMp','jiMi'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biP'};
+      gender  = {'Hh'};
+      reprod  = {'O'};
+
+    case 'Austrominius_modestus'
+      climate = {'MC'};
+      ecozone = {'MA','MPSW'};
       habitat = {'0jMp','jiMi'};
       embryo  = {'Mp'};
       migrate = {};
@@ -1715,6 +1765,26 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mbf'};
       migrate = {};
       food    = {'biPp','biD'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Monocorophium_insidiosum'
+      climate = {'MC'};
+      ecozone = {'MANW'}; 
+      habitat = {'0iMi'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'biPp','biD','biHa'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Jassa_falcata'
+      climate = {'MC'};
+      ecozone = {'MANW'}; 
+      habitat = {'0iMi'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'biPp','biD','biHl'};
       gender  = {'D'};
       reprod  = {'O'};
 
@@ -2105,6 +2175,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       embryo  = {'Mbf'};
       migrate = {};
       food    = {'bjP','biD','jiCi','jiS'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Neohelice_granulata'
+      climate = {'MB'};
+      ecozone = {'MASW'};
+      habitat = {'0bMr','bjMp','jiMr'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'bjP','biD','jiHa'};
       gender  = {'D'};
       reprod  = {'O'};
 
@@ -6471,6 +6551,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Liopsetta_pinnifasciata'
       climate = {'MC'};
       ecozone = {'MPN'};
+      habitat = {'0jFe','jiMcd'};
+      embryo  = {'Mp'};
+      migrate = {'Mdc'};
+      food    = {'bjPz','jiCi'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Eopsetta_jordani'
+      climate = {'MC','ME'};
+      ecozone = {'MPNE'};
       habitat = {'0jFe','jiMcd'};
       embryo  = {'Mp'};
       migrate = {'Mdc'};

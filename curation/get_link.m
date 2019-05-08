@@ -236,6 +236,12 @@ function links = get_link(taxon, open)
       id_Wiki = 'Phoronidea';
       id_EoL = '512282';
       
+    case 'Phoronis_psammophila'
+      id_CoL = 'e14d12c2ea2adcca4e8ab7e86155231f';
+      id_WoRMS = '128552';
+      id_Taxo = '40610'; 
+      id_EoL = '46555625';
+      
     case 'Flustra_foliacea'
       id_CoL = 'fd374d545f72678ced74b5f86d54deba';
       id_WoRMS = '111367';
@@ -411,6 +417,15 @@ function links = get_link(taxon, open)
       id_Taxo = '39754';        
       id_EoL = '448794';
       id_molluscabase = '156996';
+      
+    case 'Amarilladesma_mactroides'
+      id_CoL = 'a0d68e0bfec2bf8f152dd538955363fe';
+      id_WoRMS = '505790';  
+      id_Taxo = '39565'; % present as  Mesodesma 2019/05/05        
+      id_EoL = '46472135';
+      id_molluscabase = '505790';
+      id_Wiki = 'Mesodesma';
+      id_ADW = ''; % not present 2019/05/05     
       
     case 'Donax_trunculus'
       id_CoL = 'af623992e61fc9ab63a2248b744325a7';
@@ -675,6 +690,14 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present at 2017/08/09
       id_molluscabase = '367774';
       
+    case 'Lithophaga_lithophaga'
+      id_CoL = '630ea1eb4432e53fd0d4b4b281de900d'; 
+      id_WoRMS = '140459'; 
+      id_Taxo = '39205'; 
+      id_EoL = '46467081';
+      id_molluscabase = '140459';
+      id_ADW = ''; % not present 2019/05/06
+
     case 'Pinctada_margaritifera'
       id_CoL = '4c8d85c6f008d3ce9c479af1a0f99e4f'; 
       id_WoRMS = '207899'; 
@@ -1036,6 +1059,13 @@ function links = get_link(taxon, open)
       id_EoL = '491760';       
       id_molluscabase = '342036';
       
+    case 'Octopus_tehuelchus'
+      id_CoL = '6950c54b4521049766040f891a73f5b6';
+      id_WoRMS = '342032';
+      id_Taxo = '158297';        
+      id_EoL = '399285';       
+      id_molluscabase = '342032';
+      
     case 'Ferosagitta_hispida'
       id_CoL = '5fa5c1982af0297dfe25875928c2570c';
       id_WoRMS = '105454'; 
@@ -1139,6 +1169,13 @@ function links = get_link(taxon, open)
       id_Taxo = '1383615';  % only present at subfamily level 2018/03/10    
       id_EoL = '1039496';
       id_ADW = 'Balanus_amphitrite';
+       
+    case 'Austrominius_modestus'
+      id_CoL = 'ec26be8376438e2f496a60d2976f7354'; % present as Elminius modestus 2019/05/05
+      id_WoRMS = '712167';
+      id_Taxo = '84935';   % present as Elminius modestus 2019/05/05 
+      id_EoL = '46768952'; % present as Elminius modestus 2019/05/05 
+      id_ADW = 'Elminius modestus';
        
     case 'Argulus_coregoni'
       id_CoL = 'd632ab75e743ee0dd2ed9f25a08dd0ca';
@@ -1273,6 +1310,18 @@ function links = get_link(taxon, open)
       id_WoRMS = '102101';
       id_Taxo = '34324';        
       id_EoL = '343480';
+       
+    case 'Monocorophium_insidiosum'
+      id_CoL = 'c2e5634f369f4e09d83aedc9b056c5c2';
+      id_WoRMS = '148592';
+      id_Taxo = '1371349'; % present at gens level only 2019/05/08            
+      id_EoL = '46528510';
+       
+    case 'Jassa_falcata'
+      id_CoL = 'e31b5852d20bd937c78d0702c44f6cf5';
+      id_WoRMS = '102431';
+      id_Taxo = '215404'; % present at gens level only 2019/05/08      
+      id_EoL = '46529514';
        
     case 'Gammarus_fossarum'
       id_CoL = '';   % not present 2017/06/15
@@ -1529,6 +1578,13 @@ function links = get_link(taxon, open)
       id_Taxo = ''; % not present at 2017/08/23      
       id_EoL = '342578';
       id_Wiki = 'Dissodactylus';
+      
+    case 'Neohelice_granulata'
+      id_CoL = 'a6546d01482b97934ac06e477936fa80';
+      id_WoRMS = '444742';
+      id_Taxo = ''; % not present at 2019/05/08      
+      id_EoL = '46511701';
+      id_ADW = '';  % not present at 2019/05/08   
       
     case 'Cancer_pagurus'
       id_CoL = 'f3183ce46e4cc2b2d00c3b4c026b9481';
@@ -4612,6 +4668,13 @@ function links = get_link(taxon, open)
       id_WoRMS = '275845';
       id_Taxo = '178922';        
       id_EoL = '46570131';
+      id_fishbase = taxon_fish;
+       
+    case 'Eopsetta_jordani'
+      id_CoL = '32b003f6327e031ba2d9ee633b9eac55';
+      id_WoRMS = '280690';
+      id_Taxo = '173833';        
+      id_EoL = '46570151';
       id_fishbase = taxon_fish;
        
     case 'Oreochromis_niloticus'
