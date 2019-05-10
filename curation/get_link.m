@@ -439,9 +439,16 @@ function links = get_link(taxon, open)
       id_CoL = '2e10b6e3daf1c051312d0874f801e77e';
       id_WoRMS = '141438'; 
       id_Taxo = '39550'; % present at genus level only 2019/05/01      
-      id_EoL = '46474777';      
+      id_EoL = '46474989';      
       id_molluscabase = '141438';
       id_ADW = ''; % not present at 2019/05/01
+      
+    case 'Tagelus_plebeius'
+      id_CoL = 'd9706ccea583450ad0dbdca3565dcd73';
+      id_WoRMS = '157001'; 
+      id_Taxo = '195314'; 
+      id_EoL = '157001';      
+      id_molluscabase = '141438';
       
     case 'Macoma_balthica'
       id_CoL = '7752e8e469ee3f69471f23a73bb94786';
@@ -1163,6 +1170,14 @@ function links = get_link(taxon, open)
       id_Taxo = '76206'; 
       id_EoL = '335092';
        
+    case 'Notobalanus_flosculus'
+      id_CoL = ''; % not present 2019/05/09
+      id_WoRMS = '733530';
+      id_Taxo = '1330572';  % only present atgenus level and indicated as extinct 2019/05/09    
+      id_EoL = ''; % not present 2019/05/09
+      id_ADW = 'Notobalanus';
+      id_Wiki = 'Archaeobalanidae';
+       
     case 'Amphibalanus_amphitrite'
       id_CoL = '4d32e73ac272ffb524ab0186a71a2cdc';
       id_WoRMS = '421137';
@@ -1377,6 +1392,12 @@ function links = get_link(taxon, open)
       id_WoRMS = '103251';
       id_Taxo = '34341';   
       id_EoL = '46521640';
+      
+    case 'Hyperoche_medusarum' 
+      id_CoL = '402a6d6ffc298fd05da2d03221a5ce5d';
+      id_WoRMS = '103256';
+      id_Taxo = '215096'; % at genus level only 2019/05/09 
+      id_EoL = '46521650';
       
     case 'Euphausia_superba'
       id_CoL = '9b5816e13fe1783d6d65f7075aba514f';
@@ -6175,6 +6196,27 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Desmognathus_quadramaculatus'
+      id_CoL = '5e9b1e4aefab8f6f8641ae6afd819587';
+      id_Taxo = '47401';
+      id_EoL = '330497';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Desmognathus_monticola'
+      id_CoL = 'c9724bb632bb29b70eec15d805b34662';
+      id_Taxo = '47398';
+      id_EoL = '1019222';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Desmognathus_ocoee'
+      id_CoL = 'b0dee13497a122df21712095fe3dc835';
+      id_Taxo = '142920';
+      id_EoL = '1018737';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
     case 'Amphiuma_means'
       id_CoL = '0d414109bff9293787d947877ee0de85';
       id_Taxo = '47352';        
@@ -6569,6 +6611,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2017/06/18
       id_ReptileDB = taxon_rep;
        
+    case 'Acanthodactylus_erythrurus'
+      id_CoL = 'cde6ef445001d596c2349c9861c421f9';
+      id_Taxo = '49547';    
+      id_EoL = '1057273';
+      id_AnAge = ''; % not present 2019/05/10
+      id_ReptileDB = taxon_rep;
+       
     case 'Takydromus_hsuehshanensis'
       id_CoL = '0a29f929f99e543ced935005d9f39302';
       id_Taxo = '642687';    
@@ -6950,6 +6999,15 @@ function links = get_link(taxon, open)
       id_EoL = '456478';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
+       
+    case 'Gopherus_morafkai'
+      id_CoL = '142d882b549f28fa5878d3e358eaa9b2';
+      id_WoRMS = ''; % not present 2019/05/10
+      id_Taxo = '2740380'; 
+      id_EoL = '20740311';
+      id_AnAge = ''; % not present 2019/05/10
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present 2019/05/10
        
     case 'Gopherus_polyphemus'
       id_CoL = '2c470b11270cf44f3d69dd022e6ac6e9';
