@@ -6168,6 +6168,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Andrias_davidianus'
+      id_CoL = '46a0bab951d059c947c0c5bebddcf0df';
+      id_Taxo = '47246';        
+      id_EoL = '1018725';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
     case 'Cryptobranchus_alleganiensis'
       id_CoL = '0b437ecc1a60d46a1627791f64c9b9db';
       id_Taxo = '47250';        
@@ -6214,6 +6221,13 @@ function links = get_link(taxon, open)
       id_CoL = 'b0dee13497a122df21712095fe3dc835';
       id_Taxo = '142920';
       id_EoL = '1018737';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Eurycea_lucifuga'
+      id_CoL = '4687b49e0ad37a3c112e978112a34df2';
+      id_Taxo = '47414';
+      id_EoL = '1019113';
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
@@ -6424,6 +6438,13 @@ function links = get_link(taxon, open)
       id_Taxo = '47623';        
       id_EoL = '333000';
       id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Rana_sierrae'
+      id_CoL = '8524496f3c4cc3723c35970dfaa1f4da';
+      id_Taxo = '1396956';        
+      id_EoL = '2920193';
+      id_AnAge = ''; % not present 2019/05/11
       id_amphweb = taxon_amph;
        
     case 'Pelophylax_ridibundus'
@@ -6768,6 +6789,27 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
+    case 'Crotalus_oreganus'
+      id_CoL = 'd629953c9bd410c357a61740334a4b3e';
+      id_Taxo = '337016';        
+      id_EoL = '289213';
+      id_AnAge = 'Crotalus_viridis';
+      id_ReptileDB = taxon_rep;
+       
+    case 'Crotalus_pricei'
+      id_CoL = '15a9763eb61d840d160e8b20edb5286f';
+      id_Taxo = '50387';        
+      id_EoL = '1056759';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Sistrurus_miliarius'
+      id_CoL = '5b3a52ebbed5d680778a364e7513c5a1';
+      id_Taxo = '93130';        
+      id_EoL = '790628';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
     case 'Bitis_gabonica'
       id_CoL = '39e0b014fc85615f45f535de5dc7bc39';
       id_Taxo = '50312';        
@@ -6901,6 +6943,15 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
+    case ''
+      id_CoL = '467195d1b10b59c1605cba463e2a7dd1';
+      id_WoRMS = ''; % not present at 2019/05/11
+      id_Taxo = '48368';        
+      id_EoL = '457729';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present at 2019/05/11
+       
     case 'Dermochelys_coriacea'
       id_CoL = 'dd8153b49c7daf4582b11583525bc26c';
       id_WoRMS = '137209';
@@ -6991,6 +7042,15 @@ function links = get_link(taxon, open)
       id_EoL = '1056912';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
+       
+    case 'Actinemys_marmorata'
+      id_CoL = '78118c44ff624eaf5c9c2834d564cf8e';
+      id_WoRMS = ''; % not present 2019/05/11
+      id_Taxo = '367865';  % present as Emys marmorata 2019/05/11
+      id_EoL = '51380155';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      id_ADW = 'Emys_marmorata';
        
     case 'Gopherus_agassizii'
       id_CoL = 'c5e9526e98a713152334a74e1311d2a1';
@@ -7112,6 +7172,13 @@ function links = get_link(taxon, open)
       id_CoL = '2169464fbc24236e32ec1d7b81a59a45';
       id_Taxo = '50619';        
       id_EoL = '46325161';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Paleosuchus_palpebrosus'
+      id_CoL = '6a980d65999b7235f339d2da32af1ac5';
+      id_Taxo = '50624';        
+      id_EoL = '791224';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
