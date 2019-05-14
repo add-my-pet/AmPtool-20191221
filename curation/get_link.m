@@ -5657,6 +5657,13 @@ function links = get_link(taxon, open)
       id_EoL = '46578882';
       id_fishbase = taxon_fish;
        
+    case 'Stereolepis_gigas'
+      id_CoL = 'fbb7e220478f25a9da089c6b9ff862c1';
+      id_WoRMS = '282884';
+      id_Taxo = '45099';        
+      id_EoL = '209697';
+      id_fishbase = taxon_fish;
+ 
     case 'Scorpis_aequipinnis'
       id_CoL = '669e2d4a2ee936eceae367af494af269';
       id_WoRMS = '282728';
@@ -6419,6 +6426,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present at 2018/07/31
       id_amphweb = taxon_amph;
       
+    case 'Anaxyrus_americanus'
+      id_CoL = 'e3417c75fb210b94e7f62a7fff77a4df';
+      id_Taxo = '988885';        
+      id_EoL = '1298789';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+      
     case 'Rhaebo_blombergi'
       id_CoL = '60781d72757fa86f6e4933a66bb69223';
       id_Taxo = '989058';        
@@ -6509,6 +6523,13 @@ function links = get_link(taxon, open)
       id_Taxo = '844080';
       id_EoL = '332267';
       id_AnAge = ''; % not present 2018/11/02
+      id_amphweb = taxon_amph;
+       
+    case 'Eleutherodactylus_coqui'
+      id_CoL = '3eed98d62f7aa64451501dac4485a81e';
+      id_Taxo = '88107';
+      id_EoL = '330433';
+      id_AnAge = ''; % not present 2019/05/13
       id_amphweb = taxon_amph;
        
     case 'Sphenodon_punctatus'
@@ -6844,6 +6865,14 @@ function links = get_link(taxon, open)
       id_Taxo = '48191';
       id_EoL = '791177';
       id_AnAge = taxon; 
+      id_ReptileDB = taxon_rep;
+       
+    case 'Podocnemis_lewyana'
+      id_CoL = '5ee1c610d04b086ffd81ab4b9f581b73';
+      id_WoRMS = ''; % not present 2019/05/13
+      id_Taxo = '48184';
+      id_EoL = '790995';
+      id_AnAge = ''; % not present 2019/05/13
       id_ReptileDB = taxon_rep;
        
     case 'Podocnemis_unifilis'
