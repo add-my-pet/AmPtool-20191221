@@ -6739,6 +6739,49 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present at 2018/07/26
       id_ReptileDB = taxon_rep;  
        
+    case 'Anolis_nebulosus'
+      id_CoL = '427d39f0225550e671a564246481827c';
+      id_Taxo = '249837';        
+      id_EoL = '791314';
+      id_AnAge = ''; % not present at 2019/05/15
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present at 2019/05/15
+       
+    case 'Gambelia_sila'
+      id_CoL = '91666ceb65f1abe2016640bbdb7c6968';
+      id_Taxo = '389176';        
+      id_EoL = '794628';
+      id_AnAge = ''; % not present at 2019/05/15
+      id_ReptileDB = taxon_rep;
+       
+    case 'Gambelia_wislizenii'
+      id_CoL = '7921cbbba74d28eae0cad8ce45ef88a4';
+      id_Taxo = '389179';        
+      id_EoL = '794585';
+      id_AnAge = ''; % not present at 2019/05/15
+      id_ReptileDB = taxon_rep;
+       
+    case 'Basiliscus_basiliscus'
+      id_CoL = '66efca89eb233d3add91a36275d257e6';
+      id_Taxo = '49095';        
+      id_EoL = '795614';
+      id_AnAge = ''; % not present at 2019/05/15
+      id_ReptileDB = taxon_rep;
+       
+    case 'Tropidurus_itambere'
+      id_CoL = 'd8269af19888c5d703871dbfe19c4355';
+      id_Taxo = '644047';        
+      id_EoL = '790368';
+      id_AnAge = ''; % not present at 2019/05/15
+      id_ReptileDB = taxon_rep;
+       
+    case 'Phymaturus_patagonicus'
+      id_CoL = 'eb1d52cf1e7f259701caacf819b3d51b';
+      id_Taxo = '643955';        
+      id_EoL = '47044867';
+      id_AnAge = ''; % not present at 2019/05/15
+      id_ReptileDB = taxon_rep;
+       
     case 'Python_regius'
       id_CoL = '6d0035229236a4c7583a934a4b310b15';
       id_Taxo = '49851';        

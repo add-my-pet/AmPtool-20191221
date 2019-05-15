@@ -9419,6 +9419,66 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Anolis_nebulosus'
+      climate = {'Aw'};
+      ecozone = {'THn'};
+      habitat = {'0iTf','0iTh'};
+      embryo  = {'Tns'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Gambelia_sila'
+      climate = {'Csa'};
+      ecozone = {'THn'};
+      habitat = {'0iTa'};
+      embryo  = {'Tns'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Gambelia_wislizenii'
+      climate = {'Csa'};
+      ecozone = {'THn'};
+      habitat = {'0iTa'};
+      embryo  = {'Tns'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Basiliscus_basiliscus'
+      climate = {'Af','Am'};
+      ecozone = {'THn'};
+      habitat = {'0iTa'};
+      embryo  = {'Tns'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Tropidurus_itambere'
+      climate = {'Am'};
+      ecozone = {'THn'};
+      habitat = {'0iTa'};
+      embryo  = {'Tns'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Phymaturus_patagonicus'
+      climate = {'BWk'};
+      ecozone = {'TN'};
+      habitat = {'0iTs'};
+      embryo  = {'Tv'};
+      migrate = {};
+      food    = {'biHl'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Python_regius'
       climate = {'BSh','Aw'};
       ecozone = {'TPa'};
