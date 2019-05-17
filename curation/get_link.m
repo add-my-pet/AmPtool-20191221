@@ -5520,6 +5520,13 @@ function links = get_link(taxon, open)
       id_EoL = '220571';
       id_fishbase = taxon_fish;
        
+    case 'Acanthopagrus_schlegelii'
+      id_CoL = 'db8d678d939a38c8c3679e190f73ee97';
+      id_WoRMS = '293535';
+      id_Taxo = ''; % no access 2019/05/17        
+      id_EoL = '1156465';
+      id_fishbase = taxon_fish;
+       
     case 'Spicara_smaris'
       id_CoL = '53c2f9408b4c34eda0a739e9a9430f93';
       id_WoRMS = '126830';
@@ -6539,6 +6546,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
+    case 'Eublepharis_macularius'
+      id_CoL = '3914e73d5db7e7f90f3494b48f93ac36';
+      id_Taxo = '48868';
+      id_EoL = '790141';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      
     case 'Heteronotia_binoei'
       id_CoL = '9d3714402a1d195c7d861c0b1f840bd8';
       id_Taxo = '90870';
@@ -6583,6 +6597,15 @@ function links = get_link(taxon, open)
       id_AnAge = 'Heteronotia_binoei';
       id_ReptileDB = 'genus=Heteronotia&species=binoei';
       id_ADW = 'Heteronotia_binoei'; 
+      
+    case 'Homonota_williamsii'
+      id_CoL = 'b9c119f957eb1f13b66692d13de14b2e';
+      id_Taxo = '4683719';
+      id_Wiki = 'Homonota';
+      id_EoL = '51380185';
+      id_AnAge = ''; % not present 2019/05/16
+      id_ReptileDB = taxon_rep;
+      id_ADW = 'Homonota_darwinii'; 
       
     case 'Eulamprus_quoyii'
       id_CoL = 'b7368b27759d92dfd69b19ba70fe7f0e';
@@ -6631,6 +6654,53 @@ function links = get_link(taxon, open)
       id_ReptileDB = taxon_rep;
       id_ADW = ''; % not present at 2017/08/09 
       
+    case 'Chalcides_chalcides'
+      id_CoL = '1c6c93425711910eb388ad9c63256c82';
+      id_Taxo = '49398';        
+      id_EoL = '47364720';
+      id_AnAge = ''; % not present 2019/05/16
+      id_ReptileDB = taxon_rep;
+      
+    case 'Anadia_bogotensis'
+      id_CoL = 'bbbbe16debfda36c8c9b81228d15e7ab';
+      id_Taxo = '642314';        
+      id_EoL = '453204';
+      id_AnAge = ''; % not present 2019/05/16
+      id_ReptileDB = taxon_rep;
+      
+    case 'Aspidoscelis_exsanguis'
+      id_CoL = 'abce2ef9695f102f94d8f67ca7eea1e7';
+      id_Taxo = '744767';        
+      id_EoL = '1056817';
+      id_AnAge = ''; % not present 2019/05/17
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present 2019/05/17
+      
+    case 'Aspidoscelis_neomexicana'
+      id_CoL = '9cb9a81e9d8b38c1abb2439f134135ce';
+      id_Taxo = ''; % no access 2019/05/17      
+      id_EoL = '1056798';
+      id_AnAge = ''; % not present 2019/05/17
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present 2019/05/17
+      
+    case 'Aspidoscelis_uniparens'
+      id_CoL = 'ab7cd2628ce406642ea14143face44a6';
+      id_Taxo = ''; % no access 2019/05/17      
+      id_EoL = '454775';
+      id_AnAge = ''; % not present 2019/05/17
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present 2019/05/17
+      
+    case 'Aspidoscelis_marmorata'
+      id_CoL = 'd18bdb33d22823c499b9ac011e5dacf5';
+      id_Taxo = ''; % no access 2019/05/17      
+      id_EoL = '1056803';
+      id_Wiki = 'Aspidoscelis_marmoratus';
+      id_AnAge = ''; % not present 2019/05/17
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present 2019/05/17
+      
     case 'Amphisbaena_alba'
       id_CoL = 'e9c5fca6f18472b4bdb1059cc9b179d0';
       id_Taxo = '50424';        
@@ -6674,6 +6744,14 @@ function links = get_link(taxon, open)
       id_EoL = '790179';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
+       
+    case 'Xenosaurus_grandis'
+      id_CoL = '578b899cf3f629dc4d4cfe9c8c96498c';
+      id_Taxo = ''; % no access 2019/05/17       
+      id_EoL = '790698';
+      id_AnAge = ''; % not present 2019/05/17 
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present 2019/05/17  
        
     case 'Anguis_fragilis'
       id_CoL = '9d72c2c8f700a5af8c9c3265f68859c7';
@@ -6838,6 +6916,14 @@ function links = get_link(taxon, open)
       id_EoL = '289378';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
+       
+    case 'Vipera_latastei'
+      id_CoL = '1a0d21aa5d108032c4c7b22edf648399';
+      id_Taxo = ''; % no access 2019/05/17        
+      id_EoL = '289374';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present 2019/05/17  
        
     case 'Daboia_russelii'
       id_CoL = '9c471f69c409e3bea6eb2a44e8b8a645';
