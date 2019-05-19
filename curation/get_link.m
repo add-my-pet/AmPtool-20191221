@@ -3228,6 +3228,20 @@ function links = get_link(taxon, open)
       id_EoL = '28754994';
       id_fishbase = taxon_fish;
        
+    case 'Rhinichthys_atratulus'
+      id_CoL = '31d21ac91f8cabccc7738eb1957e9e8e';
+      id_WoRMS = '';  % not present 2019/05/18
+      id_Taxo = ''; % no access  2019/05/18 
+      id_EoL = '212618';
+      id_fishbase = taxon_fish;
+       
+    case 'Rhinichthys_cataractae'
+      id_CoL = 'c3d8c26d2ba197d8f1c82b3291a67700';
+      id_WoRMS = '';  % not present 2019/05/18
+      id_Taxo = '';  % no access  2019/05/18    
+      id_EoL = '216467';
+      id_fishbase = taxon_fish;
+       
     case 'Cobitis_taenia'
       id_CoL = 'fabc08e8e5ea108ffa723983765f1eb5';
       id_WoRMS = '154373'; 
@@ -3284,6 +3298,13 @@ function links = get_link(taxon, open)
       id_EoL = '206595';
       id_fishbase = taxon_fish;
        
+    case 'Apteronotus_leptorhynchus'
+      id_CoL = 'f92cb7c920d7cdb108000b9a29abc64e';
+      id_WoRMS = ''; % not present 2019/05/18
+      id_Taxo = '';  % no access 2019/05/18
+      id_EoL = '223831';
+      id_fishbase = taxon_fish;
+       
     case 'Silurus_glanis'
       id_CoL = '0fca3a9e29d6704c3a68823c84b98198';
       id_WoRMS = '154677';
@@ -3331,6 +3352,13 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2017/07/10
       id_Taxo = '44004'; 
       id_EoL = '204762';
+      id_fishbase = taxon_fish;
+       
+    case 'Noturus_phaeus'
+      id_CoL = 'f03752eb51c8e57d880c643bed598382';
+      id_WoRMS = ''; % not present 2019/05/18
+      id_Taxo = ''; % no access 2019/05/18
+      id_EoL = '208077';
       id_fishbase = taxon_fish;
        
     case 'Corydoras_aeneus'
@@ -5801,6 +5829,20 @@ function links = get_link(taxon, open)
       id_EoL = '994525';
       id_fishbase = taxon_fish;
 
+    case 'Etheostoma_rubrum'
+      id_CoL = 'cd940413d451f1edd315917a336613ac';
+      id_WoRMS = ''; % not present 2019/05/19
+      id_Taxo = ''; % no acces 2019/05/19        
+      id_EoL = '207266';
+      id_fishbase = taxon_fish;
+
+    case 'Etheostoma_cragini'
+      id_CoL = 'babfcc28335eaed4e5b556437d7b272c';
+      id_WoRMS = ''; % not present 2019/05/19
+      id_Taxo = ''; % no acces 2019/05/19        
+      id_EoL = '207236';
+      id_fishbase = taxon_fish;
+
     case 'Lethrinus_lentjan'
       id_CoL = '3203631074908d9a527ba77431fa9ccb';
       id_WoRMS = '212061';
@@ -6661,6 +6703,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/05/16
       id_ReptileDB = taxon_rep;
       
+    case 'Oligosoma_suteri'
+      id_CoL = '8a2079b7190adea07d2a5e09ffcf5add';
+      id_Taxo = ''; % no access 2019/05/18        
+      id_EoL = '791270';
+      id_AnAge = ''; % not present 2019/05/18
+      id_ReptileDB = taxon_rep;
+      
     case 'Anadia_bogotensis'
       id_CoL = 'bbbbe16debfda36c8c9b81228d15e7ab';
       id_Taxo = '642314';        
@@ -6745,6 +6794,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
+    case 'Varanus_bengalensis'
+      id_CoL = 'c75f9c3235a0c91d33f4b62c24822edd';
+      id_Taxo = ''; % access 2019/05/18       
+      id_EoL = '790199';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      
     case 'Xenosaurus_grandis'
       id_CoL = '578b899cf3f629dc4d4cfe9c8c96498c';
       id_Taxo = ''; % no access 2019/05/17       
@@ -6960,6 +7016,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
+    case 'Agkistrodon_piscivorus'
+      id_CoL = 'bb251c9b65cb26aefd0003a5124ae1ec';
+      id_Taxo = '93130';        
+      id_EoL = '46559649';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
     case 'Bitis_gabonica'
       id_CoL = '39e0b014fc85615f45f535de5dc7bc39';
       id_Taxo = '50312';        
@@ -7101,7 +7164,7 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
-    case ''
+    case 'Kinosternon_sonoriense'
       id_CoL = '467195d1b10b59c1605cba463e2a7dd1';
       id_WoRMS = ''; % not present at 2019/05/11
       id_Taxo = '48368';        

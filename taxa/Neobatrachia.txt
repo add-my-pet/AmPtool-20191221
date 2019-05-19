@@ -1,9 +1,4 @@
-Myobatrachidae
-Bufonidae
-Ranidae
-Pyxicephalidae
-Hylidae
-Hyperoliidae
-Rhacophoridae
-Eleutherodactylidae
+Bufonoidea
+Hyloidea
+Ranoidea
 

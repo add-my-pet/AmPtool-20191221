@@ -35,7 +35,14 @@ body = fileread(fnNm);
 ind = [strfind(body,' case '), strfind(body,' otherwise')]; n_ind = length(ind) - 1;
 head = body(1:ind(1)-1); tail = body(ind(end):end);
 for i = 1:n_ind
-  case_i = body(ind(i):ind(i+1)-1); nm_i = strfind(case_i,''''); nm_i = case_i(nm_i(1)+1:nm_i(2)-1);
+  case_i = body(ind(i):ind(i+1)-1); 
+  nm_i = strfind(case_i,''''); 
+  if isempty(nm_i)
+    fprintf('Warning from sort_entries: case is not properly specified \n');
+    case_i
+    return
+  end
+  nm_i = case_i(nm_i(1)+1:nm_i(2)-1);
   txt.(nm_i) = case_i;
 end
 nm = fieldnames(txt); % species-names as they occur in fnNm
