@@ -778,6 +778,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Adamussium_colbecki'
+      climate = {'ME'};
+      ecozone = {'MS'};
+      habitat = {'0jMp','jiMb'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biPp'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Magallana_gigas'
       climate = {'MC'};
       ecozone = {'MPE','MPSE','MAN'}; % original in pacific east cost
@@ -951,6 +961,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Patella_vulgata'
       climate = {'MC'};
       ecozone = {'MANE'};
+      habitat = {'0jMp','jiMb','jiMi'};
+      embryo  = {'Mp'};      
+      migrate = {};
+      food    = {'bjPp','jiHa'};
+      gender  = {'Hsm'};
+      reprod  = {'O'};
+
+    case 'Nacella_concinna'
+      climate = {'ME'};
+      ecozone = {'MS'};
       habitat = {'0jMp','jiMb','jiMi'};
       embryo  = {'Mp'};      
       migrate = {};
@@ -8382,6 +8402,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Scorpaena_maderensis'
       climate = {'MB'};
       ecozone = {'MAE','MAm'};
+      habitat = {'0jMp','jiMdb'};
+      embryo  = {'Mv'};
+      migrate = {};
+      food    = {'bjPz','jiCi','jiCvf'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Pontinus_clemensi'
+      climate = {'MB'};
+      ecozone = {'MPE'};
       habitat = {'0jMp','jiMdb'};
       embryo  = {'Mv'};
       migrate = {};
