@@ -2385,6 +2385,14 @@ function links = get_link(taxon, open)
       id_EoL = '211731';
       id_fishbase = taxon_fish;
        
+    case 'Tetronarce_californica'
+      id_CoL = '5c2ebf8114e705ea76804cbe91788937';
+      id_WoRMS = '845703';
+      id_Taxo = '42038'; % present as Torpedo californica
+      id_EoL = '46560374';
+      id_fishbase = taxon_fish;
+      id_ADW = 'Torpedo_californica';
+       
     case 'Squatina_californica'
       id_CoL = '68e9753aed082e09ac4d4b4c348e920b';
       id_WoRMS = '271667';
@@ -6176,6 +6184,13 @@ function links = get_link(taxon, open)
       id_EoL = '212111';
       id_fishbase = taxon_fish;
        
+   case 'Cottus_leiopomus'
+      id_CoL = '503ea72fcb271d11bc3092df6a3289a6';
+      id_WoRMS = ''; % not present 2019/05/24
+      id_Taxo = '172073';      
+      id_EoL = '210365';
+      id_fishbase = taxon_fish;
+       
     case 'Gymnocanthus_herzensteini'
       id_CoL = 'be3425fe9e3cc17c29aeda000b0ac5bd';
       id_WoRMS = '274373';
@@ -6279,6 +6294,13 @@ function links = get_link(taxon, open)
       id_Taxo = '47446';
       id_EoL = '333692';
       id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Plethodon_kentucki'
+      id_CoL = 'e865046b8f400eba0d7032dd4c9f4e98';
+      id_Taxo = '143013';
+      id_EoL = '331206';
+      id_AnAge = ''; % not present 2019/05/23
       id_amphweb = taxon_amph;
        
     case 'Desmognathus_quadramaculatus'
@@ -6532,6 +6554,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/05/11
       id_amphweb = taxon_amph;
        
+    case 'Rana_muscosa'
+      id_CoL = 'e865046b8f400eba0d7032dd4c9f4e98';
+      id_Taxo = '145954';        
+      id_EoL = '331206';
+      id_AnAge = ''; % not present 2019/05/23
+      id_amphweb = taxon_amph;
+       
     case 'Pelophylax_ridibundus'
       id_CoL = '48ee82c4a8e4451d6efa47ab666fcc33';
       id_Taxo = '996613';        
@@ -6668,6 +6697,13 @@ function links = get_link(taxon, open)
       id_AnAge = 'Heteronotia_binoei';
       id_ReptileDB = 'genus=Heteronotia&species=binoei';
       id_ADW = 'Heteronotia_binoei'; 
+      
+    case 'Sphaerodactylus_vincenti'
+      id_CoL = 'd592ddca71bcac494b16c4f4eab5f9e6';
+      id_Taxo = '641973';
+      id_EoL = '790589';
+      id_AnAge = ''; % not present 2019/05/22
+      id_ReptileDB = taxon_rep;
       
     case 'Homonota_williamsii'
       id_CoL = 'b9c119f957eb1f13b66692d13de14b2e';
@@ -7301,6 +7337,14 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
       id_ADW = 'Emys_marmorata';
+       
+    case 'Glyptemys_insculpta'
+      id_CoL = '9e5e9efd10dfb9e61bee4e02be6b1fe3';
+      id_WoRMS = ''; % not present 2019/05/22
+      id_Taxo = '640663';
+      id_EoL = '1056845';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
        
     case 'Gopherus_agassizii'
       id_CoL = 'c5e9526e98a713152334a74e1311d2a1';
