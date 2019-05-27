@@ -3279,6 +3279,13 @@ function links = get_link(taxon, open)
       id_EoL = '213690';
       id_fishbase = taxon_fish;
 
+    case 'Catostomus_catostomus'
+      id_CoL = '113a0189ae5820370171a199874109ac';
+      id_WoRMS = '158706';
+      id_Taxo = '43912';
+      id_EoL = '211083';
+      id_fishbase = taxon_fish;
+
     case 'Hydrocynus_vittatus'
       id_CoL = 'ed61d5b61ce91a6d34fbca8211ce5a9c';
       id_WoRMS = ''; % not present 2017/06/16
@@ -4756,6 +4763,13 @@ function links = get_link(taxon, open)
       id_EoL = '356343';
       id_fishbase = taxon_fish;
        
+    case 'Amphilophus_citrinellus'
+      id_CoL = '754eb93ce03aba02ea96e71c02abfca5';
+      id_WoRMS = ''; % not present 2019/05/25
+      id_Taxo = '160723';        
+      id_EoL = '608445';
+      id_fishbase = taxon_fish;
+       
     case 'Oryzias_latipes'
       id_CoL = '481dc2e4f470b63f53970ca5815f9c4e';
       id_WoRMS = '281941';
@@ -5021,6 +5035,13 @@ function links = get_link(taxon, open)
       id_EoL = '46571524';
       id_fishbase = taxon_fish;
      
+    case 'Hyperprosopon_argenteum'
+      id_CoL = 'f07fca381a2786399b3a5462dded3e09';
+      id_WoRMS = '281098';
+      id_Taxo = '177026';        
+      id_EoL = '177026';
+      id_fishbase = taxon_fish;
+       
     case 'Pseudochromis_flavivertex'
       id_CoL = 'b697a0538b3401dbaae2a64b561eb983';
       id_WoRMS = '218331';
@@ -6324,10 +6345,24 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Aneides_flavipunctatus'
+      id_CoL = '849b9f75d2d1db060adbf6446f0415a4';
+      id_Taxo = '47440';
+      id_EoL = '1048232';
+      id_AnAge = ''; % not present 2019/05/27
+      id_amphweb = taxon_amph;
+       
     case 'Eurycea_lucifuga'
       id_CoL = '4687b49e0ad37a3c112e978112a34df2';
       id_Taxo = '47414';
       id_EoL = '1019113';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Gyrinophilus_palleucus'
+      id_CoL = 'cc1cb05c2adf4e16d24b5cb2cd2c3090';
+      id_Taxo = '47420';
+      id_EoL = '1038942';
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
@@ -6560,6 +6595,20 @@ function links = get_link(taxon, open)
       id_EoL = '331206';
       id_AnAge = ''; % not present 2019/05/23
       id_amphweb = taxon_amph;
+       
+    case 'Lithobates_sphenocephalus'
+      id_CoL = '678105f67ea91e5968fc7d5191ed7fc0';
+      id_Taxo = '996583';        
+      id_EoL = '51613152';
+      id_AnAge = ''; % not present 2019/05/26
+      id_amphweb = 'Rana+sphenocephalus';
+       
+    case 'Lithobates_clamitans'
+      id_CoL = 'b6fe7e3004bb7660fe96f0a8c1d633db';
+      id_Taxo = '996554';        
+      id_EoL = '51380118';
+      id_AnAge = taxon;
+      id_amphweb = 'Rana_clamitans';
        
     case 'Pelophylax_ridibundus'
       id_CoL = '48ee82c4a8e4451d6efa47ab666fcc33';
@@ -7113,6 +7162,13 @@ function links = get_link(taxon, open)
       id_CoL = '67b9b76c276b95d99f4883fad92e690f';
       id_Taxo = '50075';        
       id_EoL = '1055211';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Thamnophis_radix'
+      id_CoL = '4ca4eced19df149b20210827ba054f5f';
+      id_Taxo = '50080';        
+      id_EoL = '1055205';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        

@@ -4,6 +4,7 @@ Cyprinodontiformes
 Atheriniformes
 Pomacentriformes
 Mugiliformes
+Embiotociformes
 Pseudochromiformes
 Gobiesociformes
 Blenniiformes
