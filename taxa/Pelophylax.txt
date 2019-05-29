@@ -1,3 +1,5 @@
 Pelophylax_ridibundus
 Pelophylax_lessonae
 Pelophylax_esculentus
+Pelophylax_saharicus
+Pelophylax_nigromaculatus

@@ -8839,6 +8839,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Bolitoglossa_mexicana'
+      climate = {'Am','Af'};
+      ecozone = {'TN'};
+      habitat = {'jiTf'};
+      embryo  = {'Tns'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Plethodon_cinereus'
       climate = {'Cfb','Dfa','Dwa'};
       ecozone = {'THn'};
@@ -9239,6 +9249,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Rana_macrocnemis'
+    climate = {'BWh','BSk','Dsa'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTf','jiTg'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Lithobates_sphenocephalus'
       climate = {'Cfa'};
       ecozone = {'THn'};
@@ -9289,6 +9309,26 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Pelophylax_saharicus'
+      climate = {'BWh','Csa'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTf','jiTi'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Pelophylax_nigromaculatus'
+      climate = {'Cfa','Cfb'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTf','jiTi'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Pyxicephalus_adspersus'
       climate = {'BSh','BWh','Cwb','Cwb'};
       ecozone = {'TPa'};
@@ -9297,6 +9337,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       migrate = {};
       food    = {'biCi'};
       gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Mannophryne_trinitatis'
+      climate = {'Am'};
+      ecozone = {'TN'};
+      habitat = {'0jFp','jiTf'};
+      embryo  = {'Fnm'};
+      migrate = {};
+      food    = {'bjH','jiCi'};
+      gender  = {'Dg'};
       reprod  = {'O'};
 
     case 'Hyla_arborea'
@@ -9350,10 +9400,30 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       reprod  = {'O'};
 
     case 'Pleurodema_thaul'
-    climate = {'BWk','Csb','Cfb'};
+      climate = {'BWk','Csb','Cfb'};
       ecozone = {'THn'};
       habitat = {'0iTf','0iTg'};
       embryo  = {'Fh'};
+      migrate = {};
+      food    = {'0iCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Engystomops_pustulosus'
+      climate = {'Am','Af'};
+      ecozone = {'TN'};
+      habitat = {'0jFp','jiTf'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'0iCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Leptodactylus_fuscus'
+      climate = {'Am','Af','Cfa'};
+      ecozone = {'TN'};
+      habitat = {'0jFp','jiTf'};
+      embryo  = {'Tntm'};
       migrate = {};
       food    = {'0iCi'};
       gender  = {'Dg'};
@@ -10419,6 +10489,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Melanochelys_tricarinata'
+      climate = {'Am','Cwa'};
+      ecozone = {'TPi'};
+      habitat = {'0bTd','biFm','biFp'};
+      embryo  = {'Tt'};
+      migrate = {};
+      food    = {'biCi','biH'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Deinosuchus_rugosus'
       climate = {'Aw'};
       ecozone = {'THn'};
@@ -10483,6 +10563,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'Am','Cwa','Cwb'};
       ecozone = {'TPa'};
       habitat = {'0bTd','biFm','biFl','biFp','biFr'};
+      embryo  = {'Tl'};
+      migrate = {};
+      food    = {'bpCi','biCv'};
+      gender  = {'Dtfm'};
+      reprod  = {'O'};
+
+    case 'Crocodylus_porosus'
+      climate = {'MA','Am','Aw'};
+      ecozone = {'TPa','TA'};
+      habitat = {'0bTd','biFm','biFr','biMc'};
       embryo  = {'Tl'};
       migrate = {};
       food    = {'bpCi','biCv'};

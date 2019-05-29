@@ -6310,6 +6310,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
 
+    case 'Bolitoglossa_mexicana'
+      id_CoL = 'd6bcd481031d4eac6e92a8612745b001';
+      id_Taxo = '47462';
+      id_EoL = '130100';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
     case 'Plethodon_cinereus'
       id_CoL = 'a2743c12f96b3492a8352ada6b54703d';
       id_Taxo = '47446';
@@ -6596,6 +6603,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/05/23
       id_amphweb = taxon_amph;
        
+    case 'Rana_macrocnemis'
+      id_CoL = '09f79266a8b883fa4eaf183552955c6d';
+      id_Taxo = '89710';        
+      id_EoL = '329317';
+      id_AnAge = ''; % not present 2019/05/23
+      id_amphweb = taxon_amph;
+       
     case 'Lithobates_sphenocephalus'
       id_CoL = '678105f67ea91e5968fc7d5191ed7fc0';
       id_Taxo = '996583';        
@@ -6631,10 +6645,31 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2017/10/29
       id_amphweb = taxon_amph;
        
+    case 'Pelophylax_saharicus'
+      id_CoL = '1ee10acffa9154c7c73b04752953183c';
+      id_Taxo = '996614';        
+      id_EoL = '1019680';
+      id_AnAge = ''; % not present 2019/05/29
+      id_amphweb = taxon_amph;
+       
     case 'Pyxicephalus_adspersus'
       id_CoL = '82c1ed4b7da83deee8b6617f3b4b05c3';
       id_Taxo = '47618';        
       id_EoL = '330829';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Pelophylax_nigromaculatus'
+      id_CoL = '935e432a5f111d2c32e2fce0f6a1f161';
+      id_Taxo = '996609';        
+      id_EoL = '331357';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Mannophryne_trinitatis'
+      id_CoL = '17f6a51cc259aa34b6ee2d10b990f444';
+      id_Taxo = '47985';        
+      id_EoL = '311650';
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
@@ -6679,6 +6714,20 @@ function links = get_link(taxon, open)
       id_Taxo = '141057';
       id_EoL = '319983';
       id_AnAge = ''; % not present 2019/05/19
+      id_amphweb = taxon_amph;
+       
+    case 'Engystomops_pustulosus'
+      id_CoL = '6754a55502e1da57950630a7f8fbb402';
+      id_Taxo = '994912';
+      id_EoL = '331284';
+      id_AnAge = ''; % not present 2019/05/28
+      id_amphweb = taxon_amph;
+       
+    case 'Leptodactylus_fuscus'
+      id_CoL = 'a94dda88b75934df1f2bf8b6ef302fd0';
+      id_Taxo = '140887';
+      id_EoL = '1025412';
+      id_AnAge = ''; % not present 2019/05/28
       id_amphweb = taxon_amph;
        
     case 'Eleutherodactylus_coqui'
@@ -7504,6 +7553,15 @@ function links = get_link(taxon, open)
       id_ReptileDB = taxon_rep;
       id_ADW = '';  % not present 2018/08/03
 
+    case 'Melanochelys_tricarinata'
+      id_CoL = '4156d1ec541a86477a334df31483b9ce';
+      id_WoRMS = ''; % not present 2019/05/29
+      id_Taxo = '460333'; 
+      id_EoL = '1056096';
+      id_AnAge = taxon; 
+      id_ReptileDB = taxon_rep;
+      id_ADW = '';  % not present 2019/05/29
+
     case 'Deinosuchus_rugosus'
       id_CoL = ''; % not present 2010/06/16
       id_Taxo = '50639'; % present as genus 2010/06/16      
@@ -7550,6 +7608,13 @@ function links = get_link(taxon, open)
       id_CoL = '1a3211cb8764f54db424f9a4646c0075';
       id_Taxo = '50633';        
       id_EoL = '795278';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Crocodylus_porosus'
+      id_CoL = '77055811fbb2ddebe665dd8d77c394e1';
+      id_Taxo = '50636';        
+      id_EoL = '46559654';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
