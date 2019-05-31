@@ -5292,6 +5292,13 @@ function links = get_link(taxon, open)
       id_EoL = '46579062';
       id_fishbase = taxon_fish;
        
+    case 'Larimichthys_polyactis'
+      id_CoL = 'ad2cefbece6db85c4debc88b4b497808';
+      id_WoRMS = '281273';
+      id_Taxo = '178199';      
+      id_EoL = '46579145';
+      id_fishbase = taxon_fish;
+       
     case 'Acanthurus_lineatus'
       id_CoL = '72076057c0ddd13f26566ef47ca0f806';
       id_WoRMS = '159582';
@@ -6359,6 +6366,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/05/27
       id_amphweb = taxon_amph;
        
+    case 'Speleomantes_ambrosii'
+      id_CoL = '48af6f0e4df733720ba0b31e6fee1e96';
+      id_Taxo = '696042';
+      id_EoL = '330914'; % Hydromantes ambrosii
+      id_AnAge = ''; % not present 2019/05/30
+      id_amphweb = 'Hydromantes+ambrosii';
+       
     case 'Eurycea_lucifuga'
       id_CoL = '4687b49e0ad37a3c112e978112a34df2';
       id_Taxo = '47414';
@@ -6392,6 +6406,13 @@ function links = get_link(taxon, open)
       id_CoL = 'bf23a5a83215eb7cd6a5eaae8c5f587b';
       id_Taxo = '93027';        
       id_EoL = '1019571';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Ambystoma_macrodactylum'
+      id_CoL = 'cdaf1c4c6ff8b21c10d3c8c6a85d6e36';
+      id_Taxo = '47374';        
+      id_EoL = '1019449';
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
@@ -6950,6 +6971,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2017/07/17
       id_ReptileDB = taxon_rep;
        
+    case 'Gallotia_galloti'
+      id_CoL = '7cc21994a3a81bea79a427e804b57632';
+      id_Taxo = '642475';    
+      id_EoL = '1056890';
+      id_AnAge = ''; % not present 2019/05/30
+      id_ReptileDB = taxon_rep;
+       
     case 'Varanus_komodoensis'
       id_CoL = '9734ef854130b3011fb9ec9be37afed1';
       id_Taxo = '170215';        
@@ -6995,9 +7023,16 @@ function links = get_link(taxon, open)
       
      case 'Ctenophorus_adelaidensis'
       id_CoL = '25df45b7c28e2d75903c4bd456ac62f6';
-      id_Taxo = ''; % website down        2018/11/28
+      id_Taxo = '3809096';
       id_EoL = '460054';
       id_AnAge = ''; % not present 2018/11/28
+      id_ReptileDB = taxon_rep;
+       
+     case 'Calotes_versicolor'
+      id_CoL = '0f771811e8a0e002a11594711981ae4f';
+      id_Taxo = '49169';
+      id_EoL = '1056997';
+      id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
     case 'Cyclura_pinguis'
@@ -7205,6 +7240,13 @@ function links = get_link(taxon, open)
       id_Taxo = '50029';        
       id_EoL = '791395';
       id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Natrix_maura'
+      id_CoL = '3690704eb2079ec7cad2a3dbf23c35f7';
+      id_Taxo = '50028';        
+      id_EoL = '458673';
+      id_AnAge = ''; % not present 2019/05/30
       id_ReptileDB = taxon_rep;
        
     case 'Thamnophis_gigas'
@@ -7451,6 +7493,14 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
+    case 'Terrapene_carolina'
+      id_CoL = '48b801c4a49497a4fdbe8b9bdb7ec903';
+      id_WoRMS = ''; % not present 2019/05/31
+      id_Taxo = '48641';
+      id_EoL = '1055222';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
     case 'Gopherus_agassizii'
       id_CoL = 'c5e9526e98a713152334a74e1311d2a1';
       id_WoRMS = ''; % not present 2017/10/10
@@ -7519,6 +7569,15 @@ function links = get_link(taxon, open)
       id_AnAge = 'Geochelone_pardalis';
       id_ReptileDB = taxon_rep;
       id_ADW = 'Psammobates_pardalis';
+
+    case 'Centrochelys_sulcata'
+      id_CoL = '5bf08ca8b8249e5b20d910870445c139';
+      id_WoRMS = ''; % not present 2019/05/20
+      id_Taxo = '3818344'; 
+      id_EoL = '52310991';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      id_ADW = 'Geochelone_sulcata';
 
     case 'Mauremys_japonica'
       id_CoL = 'ea5748c10a4bfa12e5ecdc6b36c7d993';
