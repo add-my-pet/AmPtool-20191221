@@ -6324,6 +6324,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Bolitoglossa_subpalmata'
+      id_CoL = 'Bolitoglossa_subpalmata';
+      id_Taxo = '47463';
+      id_EoL = '331315';
+      id_AnAge = ''; % not present 2019/06/01
+      id_amphweb = taxon_amph;
+       
     case 'Plethodon_cinereus'
       id_CoL = 'a2743c12f96b3492a8352ada6b54703d';
       id_Taxo = '47446';
@@ -6456,6 +6463,13 @@ function links = get_link(taxon, open)
       id_Taxo = '149407';        
       id_EoL = '330971';
       id_AnAge = ''; % not present at 2018/10/03
+      id_amphweb = taxon_amph;
+       
+    case 'Triturus_cristatus'
+      id_CoL = '740625d0e1bea07c7b133aca1fb4f8e7';
+      id_Taxo = '47327';        
+      id_EoL = '1018157';
+      id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
     case 'Proteus_anguinus'
@@ -6629,6 +6643,13 @@ function links = get_link(taxon, open)
       id_Taxo = '89710';        
       id_EoL = '329317';
       id_AnAge = ''; % not present 2019/05/23
+      id_amphweb = taxon_amph;
+       
+    case 'Rana_iberica'
+      id_CoL = '777a66cf4bf9a780e497fed033e67eb0';
+      id_Taxo = '47641';        
+      id_EoL = '1019689';
+      id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
     case 'Lithobates_sphenocephalus'
@@ -6816,6 +6837,20 @@ function links = get_link(taxon, open)
       id_AnAge = 'Heteronotia_binoei';
       id_ReptileDB = 'genus=Heteronotia&species=binoei';
       id_ADW = 'Heteronotia_binoei'; 
+      
+    case 'Christinus_marmoratus'
+      id_CoL = '8b3d51c90de07f208d0245ff92cdf65a';
+      id_Taxo = '90809';
+      id_EoL = '795383';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      
+    case 'Cyrtopodion_scabrum'
+      id_CoL = '0fffa0c4fbd68ebe8ea49b2f34e46afa';
+      id_Taxo = '344782';
+      id_EoL = '795121';
+      id_AnAge = ''; % not present 2019/06/02
+      id_ReptileDB = taxon_rep;
       
     case 'Sphaerodactylus_vincenti'
       id_CoL = 'd592ddca71bcac494b16c4f4eab5f9e6';

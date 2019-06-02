@@ -8859,6 +8859,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Bolitoglossa_subpalmata'
+      climate = {'Am','Af'};
+      ecozone = {'TN'};
+      habitat = {'jiTf'};
+      embryo  = {'Tns'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Plethodon_cinereus'
       climate = {'Cfb','Dfa','Dwa'};
       ecozone = {'THn'};
@@ -9049,7 +9059,17 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
-    case 'Proteus_anguinus'
+    case 'Triturus_cristatus'
+    climate = {'Cfb','Dfb'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTh','jiFm'};
+      embryo  = {'Fh'};
+      migrate = {'TT'};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+     case 'Proteus_anguinus'
       climate = {'Cfb','Dfb'};
       ecozone = {'THp'};
       habitat = {'0iFcc'};
@@ -9280,7 +9300,17 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       reprod  = {'O'};
 
     case 'Rana_macrocnemis'
-    climate = {'BWh','BSk','Dsa'};
+      climate = {'BWh','BSk','Dsa'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTf','jiTg'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Rana_iberica'
+    climate = {'BSk','Csb'};
       ecozone = {'THp'};
       habitat = {'0jFp','jiTf','jiTg'};
       embryo  = {'Fpf'};
@@ -9532,6 +9562,36 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Heteronotia_binoei_SM6'
       climate = {'BWh','BSh'};
       ecozone = {'TA'};
+      habitat = {'0iTa','0iTd'};
+      embryo  = {'Tt'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Christinus_marmoratus'
+      climate = {'BWh','BSh'};
+      ecozone = {'TA'};
+      habitat = {'0iTa','0iTd'};
+      embryo  = {'Tt'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Cyrtopodion_scabrum'
+      climate = {'BWh','BSh','Dsa'};
+      ecozone = {'THp'};
+      habitat = {'0iTa','0iTd'};
+      embryo  = {'Tt'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Gekko_hokouensis'
+      climate = {'Cwa','Cfa'};
+      ecozone = {'THp'};
       habitat = {'0iTa','0iTd'};
       embryo  = {'Tt'};
       migrate = {};
