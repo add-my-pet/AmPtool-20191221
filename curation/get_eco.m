@@ -9389,6 +9389,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Rana_amurensis'
+    climate = {'BSk','BWk','Dw'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTf','jiTg'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Hylarana_guentheri'
       climate = {'Am'};
       ecozone = {'TPi'};
@@ -9799,6 +9809,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Darevskia_valentini'
+      climate = {'BWh','BSh','Dsa'};
+      ecozone = {'THp'};
+      habitat = {'0iTa','0iTd','0iTs','0iTh'};
+      embryo  = {'Tt'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Acanthodactylus_erythrurus'
       climate = {'BSk','Csa'};
       ecozone = {'THp'};
@@ -9840,6 +9860,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       reprod  = {'O','Apa'};
 
     case 'Varanus_bengalensis'
+      climate = {'Af'};
+      ecozone = {'TPi'};
+      habitat = {'0iTh','0iTf'};
+      embryo  = {'Tt'};
+      migrate = {};
+      food    = {'bpCvr','biCvm','biSv'};
+      gender  = {'Dg'};
+      reprod  = {'O','Apa'};
+
+    case 'Varanus_juxtindicus'
       climate = {'Af'};
       ecozone = {'TPi'};
       habitat = {'0iTh','0iTf'};
@@ -10014,6 +10044,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       ecozone = {'TN'};
       habitat = {'0iTs'};
       embryo  = {'Tv'};
+      migrate = {};
+      food    = {'biHl'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Liolaemus_pictus'
+      climate = {'BWk'};
+      ecozone = {'TN'};
+      habitat = {'0iTs'};
+      embryo  = {'Tt'};
       migrate = {};
       food    = {'biHl'};
       gender  = {'Dg'};
@@ -10231,9 +10271,19 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
 
     case 'Thamnophis_radix'
       climate = {'Dfa','Dfb'};
-      ecozone = {'THn'};
+      ecozone = {'THp'};
       habitat = {'biFm'};
       embryo  = {'Tv'};
+      migrate = {};
+      food    = {'biCva'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Hierophis_viridiflavus'
+    climate = {'BSk','Cfb','Dfb'};
+      ecozone = {'THn'};
+      habitat = {'biFm'};
+      embryo  = {'Tt'};
       migrate = {};
       food    = {'biCva'};
       gender  = {'Dg'};

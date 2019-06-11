@@ -6702,6 +6702,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Rana_amurensis'
+      id_CoL = 'fa53e6f51d14fbb216d086b8694de482';
+      id_Taxo = '145403';        
+      id_EoL = '313551';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
     case 'Hylarana_guentheri'
       id_CoL = 'af370d54a5da7a33fb0bcc3fb9de4a56';
       id_Taxo = '996541';        
@@ -7012,6 +7019,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2017/06/18
       id_ReptileDB = taxon_rep;
        
+    case 'Darevskia_valentini'
+      id_CoL = '05fc8d8cafdaf600e6a9dad70eecfbe8';
+      id_Taxo = '642542';    
+      id_EoL = '47045622';
+      id_AnAge = ''; % not present 2019/06/11
+      id_ReptileDB = taxon_rep;
+       
     case 'Acanthodactylus_erythrurus'
       id_CoL = 'cde6ef445001d596c2349c9861c421f9';
       id_Taxo = '49547';    
@@ -7046,6 +7060,13 @@ function links = get_link(taxon, open)
       id_Taxo = '49747';     
       id_EoL = '790199';
       id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      
+    case 'Varanus_juxtindicus'
+      id_CoL = 'f44637b226902c1150c3035e9b03a307';
+      id_Taxo = '644080';     
+      id_EoL = '790076';
+      id_AnAge = ''; % not present 2019/06/11
       id_ReptileDB = taxon_rep;
       
     case 'Xenosaurus_grandis'
@@ -7168,6 +7189,13 @@ function links = get_link(taxon, open)
       id_Taxo = '643955';        
       id_EoL = '47044867';
       id_AnAge = ''; % not present at 2019/05/15
+      id_ReptileDB = taxon_rep;
+       
+    case 'Liolaemus_pictus'
+      id_CoL = 'ad0a337f7f74bc3e171f37d289c38214';
+      id_Taxo = '643898';        
+      id_EoL = '791732';
+      id_AnAge = ''; % not present at 2019/06/11
       id_ReptileDB = taxon_rep;
        
     case 'Tropidurus_itambere'
@@ -7324,6 +7352,13 @@ function links = get_link(taxon, open)
       id_Taxo = '50080';        
       id_EoL = '1055205';
       id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Hierophis_viridiflavus'
+      id_CoL = '30feb6622966c187ba1f386d3c51f561';
+      id_Taxo = '644702';        
+      id_EoL = '795303';
+      id_AnAge = ''; % not present 2019/06/11
       id_ReptileDB = taxon_rep;
        
     case 'Pelomedusa_subrufa'

@@ -4,3 +4,4 @@ Rana_sierrae
 Rana_muscosa
 Rana_macrocnemis
 Rana_iberica
+Rana_amurensis
