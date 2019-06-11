@@ -6702,6 +6702,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Hylarana_guentheri'
+      id_CoL = 'af370d54a5da7a33fb0bcc3fb9de4a56';
+      id_Taxo = '996541';        
+      id_EoL = '46396216';
+      id_AnAge = ''; % not present 2019/06/10
+      id_amphweb = 'Sylvirana+guentheri';
+       
     case 'Lithobates_sphenocephalus'
       id_CoL = '678105f67ea91e5968fc7d5191ed7fc0';
       id_Taxo = '996583';        

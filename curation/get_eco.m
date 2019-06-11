@@ -9380,8 +9380,18 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       reprod  = {'O'};
 
     case 'Rana_iberica'
-    climate = {'BSk','Csb'};
+      climate = {'BSk','Csb'};
       ecozone = {'THp'};
+      habitat = {'0jFp','jiTf','jiTg'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Hylarana_guentheri'
+      climate = {'Am'};
+      ecozone = {'TPi'};
       habitat = {'0jFp','jiTf','jiTg'};
       embryo  = {'Fpf'};
       migrate = {};
