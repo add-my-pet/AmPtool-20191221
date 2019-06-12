@@ -6458,10 +6458,24 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present at 2018/10/03
       id_amphweb = taxon_amph;
        
+    case 'Ommatotriton_vittatus'
+      id_CoL = 'da17328157a12c7ab81def1b5556e919';
+      id_Taxo = '985981';        
+      id_EoL = '1019471';
+      id_AnAge = ''; % not present 2019/06/12
+      id_amphweb = taxon_amph;
+       
     case 'Triturus_cristatus'
       id_CoL = '740625d0e1bea07c7b133aca1fb4f8e7';
       id_Taxo = '47327';        
       id_EoL = '1018157';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Ichthyosaura_alpestris'
+      id_CoL = 'e1e18083b0a78d9c97af5abad41d0cee';
+      id_Taxo = '1397948';        
+      id_EoL = '330758';
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
@@ -6763,6 +6777,13 @@ function links = get_link(taxon, open)
       id_Taxo = '996609';        
       id_EoL = '331357';
       id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Pelophylax_bedriagae'
+      id_CoL = 'f3c887c1df1fa8286d0df019ca2f98bd';
+      id_Taxo = '996595';        
+      id_EoL = '1019741';
+      id_AnAge = ''; % not present 2019/06/12
       id_amphweb = taxon_amph;
        
     case 'Pyxicephalus_adspersus'
@@ -7288,6 +7309,13 @@ function links = get_link(taxon, open)
       id_CoL = 'bb251c9b65cb26aefd0003a5124ae1ec';
       id_Taxo = '93130';        
       id_EoL = '46559649';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Gloydius_blomhoffii'
+      id_CoL = '85eb97b5f8c7a54dbd8c5b96bfcfb9e4';
+      id_Taxo = '4200567';        
+      id_EoL = '2818108';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        

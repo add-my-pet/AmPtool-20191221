@@ -9049,8 +9049,28 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Ommatotriton_vittatus'
+      climate = {'Csa','Dsa','Dfb'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTh','jiFm'};
+      embryo  = {'Fh'};
+      migrate = {'TT'};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Triturus_cristatus'
-    climate = {'Cfb','Dfb'};
+      climate = {'Cfb','Dfb'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTh','jiFm'};
+      embryo  = {'Fh'};
+      migrate = {'TT'};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Ichthyosaura_alpestris'
+      climate = {'Cfb','Dfb'};
       ecozone = {'THp'};
       habitat = {'0jFp','jiTh','jiFm'};
       embryo  = {'Fh'};
@@ -9471,6 +9491,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
 
     case 'Pelophylax_nigromaculatus'
       climate = {'Cfa','Cfb'};
+      ecozone = {'THp'};
+      habitat = {'0jFp','jiTf','jiTi'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Pelophylax_bedriagae'
+      climate = {'BWh','BSk','Csa'};
       ecozone = {'THp'};
       habitat = {'0jFp','jiTf','jiTi'};
       embryo  = {'Fpf'};
@@ -10188,8 +10218,18 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       food    = {'biCv'};
       gender  = {'Dg'};
       reprod  = {'O'};
+ 
+    case 'Gloydius_blomhoffii'
+    climate = {'Cwa','Cfa','Dfa','Dwa'};
+      ecozone = {'THp'};
+      habitat = {'0iTf'};
+      embryo  = {'Tv'};
+      migrate = {};
+      food    = {'biCv'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
 
-    case 'Crotalus_horridus'
+   case 'Crotalus_horridus'
       climate = {'Cfa'};
       ecozone = {'THn'};
       habitat = {'0iTf'};

@@ -3,3 +3,4 @@ Pelophylax_lessonae
 Pelophylax_esculentus
 Pelophylax_saharicus
 Pelophylax_nigromaculatus
+Pelophylax_bedriagae
