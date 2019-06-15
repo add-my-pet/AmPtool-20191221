@@ -38,7 +38,7 @@ for i = 1:n_ind
   case_i = body(ind(i):ind(i+1)-1); 
   nm_i = strfind(case_i,''''); 
   if isempty(nm_i)
-    fprintf(['Warning from sort_entries: case is not properly specified; ', fnNm, ' was not written \n');
+    fprintf(['Warning from sort_entries: case is not properly specified; ', fnNm, ' was not written \n']);
     case_i
     return
   end

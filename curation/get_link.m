@@ -6437,6 +6437,27 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present at 2017/10/17
       id_amphweb = taxon_amph;
        
+    case 'Lyciasalamandra_atifi'
+      id_CoL = 'e77caa1e597285c4f06419a0f230a6bb';
+      id_Taxo = '985987';        
+      id_EoL = '4359457';
+      id_AnAge = ''; % not present at 2019/06/15
+      id_amphweb = taxon_amph;
+       
+    case 'Lyciasalamandra_billae'
+      id_CoL = '3c3dffb2e401705c92e667b36c6c4fc1';
+      id_Taxo = '985988';        
+      id_EoL = '4359456';
+      id_AnAge = ''; % not present at 2019/06/15
+      id_amphweb = taxon_amph;
+       
+    case 'Lyciasalamandra_luschani'
+      id_CoL = '4ee384c3cffa08dc254c6fc22af4d110';
+      id_Taxo = '985992';        
+      id_EoL = '2919410';
+      id_AnAge = ''; % not present at 2019/196/15
+      id_amphweb = taxon_amph;
+       
     case 'Lissotriton_vulgaris'
       id_CoL = '8eb8ecd651629c0276ce18bb308d38e8';
       id_Taxo = '985978';        
@@ -6639,6 +6660,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present
       id_amphweb = taxon_amph;
        
+    case 'Pseudis_paradoxa'
+      id_CoL = '121bc6c8a2c7fbbc331a678cfbc950f5';
+      id_Taxo = '93041';        
+      id_EoL = '1039263';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
     case 'Pleurodema_thaul'
       id_CoL = '157ebae14b5943fb2d932a1ab3fcf708';
       id_Taxo = '141057';
@@ -6672,6 +6700,13 @@ function links = get_link(taxon, open)
       id_Taxo = '142310';        
       id_EoL = '333037';
       id_AnAge = ''; % not present 2019/06/10
+      id_amphweb = taxon_amph;
+       
+    case 'Dermatonotus_muelleri'
+      id_CoL = 'd470f50e74f07a1c800462560715d5de';
+      id_Taxo = '142308';        
+      id_EoL = '1018796';
+      id_AnAge = ''; % not present 2019/06/14
       id_amphweb = taxon_amph;
        
     case 'Rana_temporaria'
@@ -6721,6 +6756,13 @@ function links = get_link(taxon, open)
       id_Taxo = '145403';        
       id_EoL = '313551';
       id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Rana_tagoi'
+      id_CoL = '119401cafe52faed60564be31627fcb5';
+      id_Taxo = '146014';        
+      id_EoL = '332961';
+      id_AnAge = ''; % not present 2019/06/13
       id_amphweb = taxon_amph;
        
     case 'Hylarana_guentheri'
@@ -6784,6 +6826,20 @@ function links = get_link(taxon, open)
       id_Taxo = '996595';        
       id_EoL = '1019741';
       id_AnAge = ''; % not present 2019/06/12
+      id_amphweb = taxon_amph;
+       
+    case 'Euphlyctis_cyanophlyctis'
+      id_CoL = '28348dbf60e9cbbb1e63380a23c31a35';
+      id_Taxo = '143433';        
+      id_EoL = '1025205';
+      id_AnAge = ''; % not present 2019/06/14
+      id_amphweb = taxon_amph;
+       
+    case 'Nanorana_taihangnica'
+      id_CoL = '0a54925486f414a99c73ea91e4e45c1f';
+      id_Taxo = '989266';        
+      id_EoL = '1039355';
+      id_AnAge = ''; % not present 2019/06/15
       id_amphweb = taxon_amph;
        
     case 'Pyxicephalus_adspersus'
@@ -7347,11 +7403,11 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
-    case 'Coronella_austriaca'
-      id_CoL = '7449215b10f0b0e3d3b66b04beff2d3d';
-      id_Taxo = '49966';        
-      id_EoL = '1287053';
-      id_AnAge = ''; % not present 2017/06/18
+    case 'Bothrops_insularis'
+      id_CoL = '92cc382eadbde7f2bca19b09b2370813';
+      id_Taxo = '50371';        
+      id_EoL = '48729544';
+      id_AnAge = ''; % not present 2-19/06/19
       id_ReptileDB = taxon_rep;
        
     case 'Natrix_natrix'
@@ -7382,10 +7438,38 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
+    case 'Coronella_austriaca'
+      id_CoL = '7449215b10f0b0e3d3b66b04beff2d3d';
+      id_Taxo = '49966';        
+      id_EoL = '1287053';
+      id_AnAge = ''; % not present 2017/06/18
+      id_ReptileDB = taxon_rep;
+       
+    case 'Orthriophis_taeniurus'
+      id_CoL = 'fc18d6bba7950e35f1b0d8c551dbcf30';
+      id_Taxo = '3815763';        
+      id_EoL = '794893';
+      id_AnAge = 'Elaphe_taeniura';
+      id_ReptileDB = taxon_rep;
+       
+    case 'Elaphe_climacophora'
+      id_CoL = 'f10e014728639ac5439144f156c4180d';
+      id_Taxo = '49982';        
+      id_EoL = '794923';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
     case 'Hierophis_viridiflavus'
       id_CoL = '30feb6622966c187ba1f386d3c51f561';
       id_Taxo = '644702';        
       id_EoL = '795303';
+      id_AnAge = ''; % not present 2019/06/11
+      id_ReptileDB = taxon_rep;
+       
+    case 'Rhabdophis_tigrinus'
+      id_CoL = '191627fe466cd74aeb8fe659077f3ddf';
+      id_Taxo = '49950';        
+      id_EoL = '1055425';
       id_AnAge = ''; % not present 2019/06/11
       id_ReptileDB = taxon_rep;
        
