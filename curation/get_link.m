@@ -1138,6 +1138,14 @@ function links = get_link(taxon, open)
       id_Wiki = 'Vaejovidae';
       id_EoL = '3195557';
        
+    case 'Grosphus_hirtus'
+      id_CoL = '6417071edd0036318656314ef1da6e34';
+      id_WoRMS = ''; % not present 2017/06/15
+      id_Taxo = '87030';  % only as genus 2019/06/17      
+      id_Wiki = 'Buthidae';
+      id_EoL = '3195162';
+      id_ADW = ''; % not present 2017/06/15
+       
     case 'Rhizoglyphus_robini'
       id_CoL = 'a08d34f3fc91edcfd634888b64706f28';
       id_WoRMS = ''; % not present 2017/06/15
@@ -6660,6 +6668,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present
       id_amphweb = taxon_amph;
        
+    case 'Hyla_annectans'
+      id_CoL = '6417071edd0036318656314ef1da6e34';
+      id_Taxo = '47846';        
+      id_EoL = '320005';
+      id_AnAge = ''; % not present
+      id_amphweb = taxon_amph;
+       
     case 'Pseudis_paradoxa'
       id_CoL = '121bc6c8a2c7fbbc331a678cfbc950f5';
       id_Taxo = '93041';        
@@ -7471,6 +7486,48 @@ function links = get_link(taxon, open)
       id_Taxo = '49950';        
       id_EoL = '1055425';
       id_AnAge = ''; % not present 2019/06/11
+      id_ReptileDB = taxon_rep;
+       
+    case 'Tantilla_melanocephala'
+      id_CoL = 'b6fa8010a28f926219efa1fda0bff586';
+      id_Taxo = '604878';        
+      id_EoL = '2816562';
+      id_AnAge = ''; % not present 2019/06/17
+      id_ReptileDB = taxon_rep;
+       
+    case 'Naja_kaouthia'
+      id_CoL = '5c74e5fc6f03c6049840102ac3b50fd4';
+      id_Taxo = '645759';        
+      id_EoL = '1055811';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Acanthophis_antarcticus'
+      id_CoL = '4997b83bfecf6ccbb3d284460f3f106a';
+      id_Taxo = '50195';        
+      id_EoL = '452875';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Emydocephalus_ijimae'
+      id_CoL = '1b0cc8cdeab4a5b1d52e337003d0dfc5';
+      id_Taxo = '645788';        
+      id_EoL = '46559567';
+      id_AnAge = ''; % not present 2019/06/16
+      id_ReptileDB = taxon_rep;
+       
+    case 'Micrurus_fulvius'
+      id_CoL = '2e4d84eb68de25a2209239f9ccc6229f';
+      id_Taxo = '50230';        
+      id_EoL = '962855';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Micrurus_corallinus'
+      id_CoL = '8c4b414eaee1505cdfa36e43f9e49b36';
+      id_Taxo = '50227';        
+      id_EoL = '962867';
+      id_AnAge = ''; % not present 2019/06/17
       id_ReptileDB = taxon_rep;
        
     case 'Pelomedusa_subrufa'
