@@ -8849,6 +8849,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Pachyhynobius_shangchengensis'
+      climate = {'Cfa'};
+      ecozone = {'THp'};
+      habitat = {'0jFc'};
+      embryo  = {'Fc'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Bolitoglossa_mexicana'
       climate = {'Am','Af'};
       ecozone = {'TN'};
@@ -9589,6 +9599,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Conraua_goliath'
+      climate = {'Am'};
+      ecozone = {'TPa'};
+      habitat = {'0jFr'};
+      embryo  = {'Fh'};
+      migrate = {};
+      food    = {'bjHl','jiCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Euphlyctis_cyanophlyctis'
       climate = {'Am','BSh','BWh'};
       ecozone = {'TPa'};
@@ -9853,6 +9873,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'Cfb'};
       ecozone = {'TAz'};
       habitat = {'0iTd'};
+      embryo  = {'Tt'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Plestiodon_chinensis'
+      climate = {'Cfa'};
+      ecozone = {'THp'};
+      habitat = {'0iTg','0iTh'};
       embryo  = {'Tt'};
       migrate = {};
       food    = {'biCi'};
@@ -14192,6 +14222,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Merops_bulocki'
       climate = {'BSh'};
       ecozone = {'TPa'};
+      habitat = {'0iTf'};
+      embryo  = {'Tnwfm','Tntfm'};
+      migrate = {};
+      food    = {'biCii'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Merops_orientalis'
+    climate = {'Am','BSh','BWh'};
+      ecozone = {'TPi'};
       habitat = {'0iTf'};
       embryo  = {'Tnwfm','Tntfm'};
       migrate = {};

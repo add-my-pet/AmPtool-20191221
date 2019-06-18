@@ -6318,6 +6318,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
 
+    case 'Pachyhynobius_shangchengensis'
+      id_CoL = '277204ffdd0123413fa3ab22fc6a2b5c';
+      id_Taxo = '138795';        
+      id_EoL = '332108';
+      id_AnAge = ''; % not present 2019/06/18
+      id_amphweb = taxon_amph;
+
     case 'Bolitoglossa_mexicana'
       id_CoL = 'd6bcd481031d4eac6e92a8612745b001';
       id_Taxo = '47462';
@@ -6843,6 +6850,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/06/12
       id_amphweb = taxon_amph;
        
+    case 'Conraua_goliath'
+      id_CoL = '5ee508a8bc9753c62ed591a3df2be091';
+      id_Taxo = '93036';        
+      id_EoL = '332046';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
     case 'Euphlyctis_cyanophlyctis'
       id_CoL = '28348dbf60e9cbbb1e63380a23c31a35';
       id_Taxo = '143433';        
@@ -7043,6 +7057,13 @@ function links = get_link(taxon, open)
       id_ReptileDB = taxon_rep;
       
     case 'Oligosoma_suteri'
+      id_CoL = '8a2079b7190adea07d2a5e09ffcf5add';
+      id_Taxo = '643424';       
+      id_EoL = '791270';
+      id_AnAge = ''; % not present 2019/05/18
+      id_ReptileDB = taxon_rep;
+      
+    case 'Plestiodon_chinensis'
       id_CoL = '8a2079b7190adea07d2a5e09ffcf5add';
       id_Taxo = '643424';       
       id_EoL = '791270';
@@ -10706,6 +10727,14 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2018/10/16       
       id_avibase = 'E6DC5DA11534CBD6';
       id_birdlife = 'red-throated-bee-eater-merops-bulocki';
+      
+    case 'Merops_orientalis'
+      id_CoL = '7e43d7a1e5eb64f155fe5719c05dc6c5';
+      id_Taxo = '55307';        
+      id_EoL = '45513612';
+      id_AnAge = ''; % not present 2019/06/18       
+      id_avibase = '0562A30F1285DB6E';
+      id_birdlife = 'asian-green-bee-eater-merops-orientalis';
       
     case 'Ramphastos_toco'
       id_CoL = '5cf6207f05c77e03bcbcd85733db072f';
