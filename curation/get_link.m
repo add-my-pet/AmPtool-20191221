@@ -6780,6 +6780,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/06/10
       id_amphweb = taxon_amph;
        
+    case 'Dyscophus_guineti'
+      id_CoL = '6cdbf22b03a6a68eb85128c190016d8f';
+      id_Taxo = '142311';        
+      id_EoL = '333039';
+      id_AnAge = ''; % not present 2019/06/26
+      id_amphweb = taxon_amph;
+       
     case 'Dermatonotus_muelleri'
       id_CoL = 'd470f50e74f07a1c800462560715d5de';
       id_Taxo = '142308';        
@@ -6849,6 +6856,13 @@ function links = get_link(taxon, open)
       id_EoL = '46396216';
       id_AnAge = ''; % not present 2019/06/10
       id_amphweb = 'Sylvirana+guentheri';
+       
+    case 'Hylarana_erythraea'
+      id_CoL = 'c6276c186849ade329b13c51c444c65a';
+      id_Taxo = '996540';        
+      id_EoL = '313505';
+      id_AnAge = ''; % not present 2019/06/26
+      id_amphweb = taxon_amph;
        
     case 'Lithobates_sphenocephalus'
       id_CoL = '678105f67ea91e5968fc7d5191ed7fc0';

@@ -9491,11 +9491,21 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
 
     case 'Dyscophus_antongilii'
       climate = {'Cfb','Dfb','Dfc'};
-      ecozone = {'THp'};
-      habitat = {'0jFp','jiTf','jiTg','jiTi'};
+      ecozone = {'TPam'};
+      habitat = {'0jFp','jiTf','jiTh'};
       embryo  = {'Fpf'};
       migrate = {};
       food    = {'bjO','jiCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Dyscophus_guineti'
+      climate = {'Cfb','Dfb','Dfc'};
+      ecozone = {'TPam'};
+      habitat = {'0jFp','jiTf'};
+      embryo  = {'Fc'};
+      migrate = {};
+      food    = {'bjHl','jiCi'};
       gender  = {'Dg'};
       reprod  = {'O'};
 
@@ -9503,9 +9513,9 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'Am','BSh','Cfa'};
       ecozone = {'THp'};
       habitat = {'0jFp','jiTf','jiTg','jiTi'};
-      embryo  = {'Fpf'};
+      embryo  = {'Fc'};
       migrate = {};
-      food    = {'bjO','jiCi'};
+      food    = {'bjHl','jiCi'};
       gender  = {'Dg'};
       reprod  = {'O'};
 
@@ -9593,6 +9603,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'Am'};
       ecozone = {'TPi'};
       habitat = {'0jFp','jiTf','jiTg'};
+      embryo  = {'Fpf'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Hylarana_erythraea'
+      climate = {'Af'};
+      ecozone = {'TPi'};
+      habitat = {'0jFp','jiTf'};
       embryo  = {'Fpf'};
       migrate = {};
       food    = {'biCi'};
