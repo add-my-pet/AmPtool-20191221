@@ -2,5 +2,6 @@ Ranidae
 Conrauidae
 Dicroglossidae
 Pyxicephalidae
+Mantellidae
 Rhacophoridae
 Hyperoliidae

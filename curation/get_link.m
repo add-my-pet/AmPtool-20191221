@@ -6278,9 +6278,37 @@ function links = get_link(taxon, open)
        
     case 'Ichthyophis_kohtaoensis'
       id_CoL = '897f721335748e93117c84bae4a39427';
+      id_Taxo = '48023';        
+      id_EoL = '320007';
+      id_AnAge = ''; % not present 2019/06/20
+      id_amphweb = taxon_amph;
+       
+    case 'Typhlonectes_compressicauda'
+      id_CoL = 'c41ea3564094b0902ea72c062951c02c';
+      id_Taxo = '48026';        
+      id_EoL = '1019672';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Dermophis_mexicanus'
+      id_CoL = '5c34f1ac45fe68bdd710d9f77ac837ff';
+      id_Taxo = '137530';        
+      id_EoL = '49916416';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Siphonops_annulatus'
+      id_CoL = '1bef31e75d0b919c46c97d965d902a60';
       id_Taxo = '48031';        
       id_EoL = '330408';
-      id_AnAge = taxon;
+      id_AnAge = ''; % not present 2019/06/21
+      id_amphweb = taxon_amph;
+       
+    case 'Boulengerula_taitana'
+      id_CoL = '1c5198aa3319023ca5af35dd04909553';
+      id_Taxo = '137482';        
+      id_EoL = '1019807';
+      id_AnAge = ''; % not present 2019/06/21
       id_amphweb = taxon_amph;
        
     case 'Andrias_japonicus'
@@ -6301,6 +6329,13 @@ function links = get_link(taxon, open)
       id_CoL = '0b437ecc1a60d46a1627791f64c9b9db';
       id_Taxo = '47250';        
       id_EoL = '331124';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Salamandrella_keyserlingii'
+      id_CoL = '20c31718eaa8ce5adbaede0094426319';
+      id_Taxo = '47231'; 
+      id_EoL = '332597';
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
@@ -6653,6 +6688,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2017/06/18
       id_amphweb = taxon_amph;
        
+     case 'Limnodynastes_peronii'
+      id_CoL = 'a1aa4f559690fcdb724e85e1e978d4bf';
+      id_Taxo = '87775';        
+      id_EoL = '1048150';
+      id_AnAge = ''; % not present 2019/06/26
+      id_amphweb = taxon_amph;
+       
     case 'Mannophryne_trinitatis'
       id_CoL = '17f6a51cc259aa34b6ee2d10b990f444';
       id_Taxo = '47985';        
@@ -6708,6 +6750,20 @@ function links = get_link(taxon, open)
       id_Taxo = '140887';
       id_EoL = '1025412';
       id_AnAge = ''; % not present 2019/05/28
+      id_amphweb = taxon_amph;
+       
+    case 'Ceratophrys_stolzmanni'
+      id_CoL = 'a81657ccabd0bc4e7c9c3f294273fe56';
+      id_Taxo = '139184';
+      id_EoL = '1018971';
+      id_AnAge = ''; % not present 2019/06/19
+      id_amphweb = taxon_amph;
+       
+    case 'Ceratophrys_cranwelli'
+      id_CoL = '8d3927487228051a6d232c2ff3449be4';
+      id_Taxo = '139182';
+      id_EoL = '337390';
+      id_AnAge = ''; % not present 2019/06/19
       id_amphweb = taxon_amph;
        
     case 'Eleutherodactylus_coqui'
@@ -6876,6 +6932,13 @@ function links = get_link(taxon, open)
       id_Taxo = '47618';        
       id_EoL = '330829';
       id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Mantidactylus_grandidieri'
+      id_CoL = '1bef31e75d0b919c46c97d965d902a60';
+      id_Taxo = '141253';        
+      id_EoL = '331205';
+      id_AnAge = ''; % not present 2019/06/20
       id_amphweb = taxon_amph;
        
     case 'Rhacophorus_moltrechti'
@@ -7070,6 +7133,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/05/18
       id_ReptileDB = taxon_rep;
       
+    case 'Gerrhosaurus_validus'
+      id_CoL = 'c6267e1153a0d527e3fed7d610596e82'; % accepted as Matobosaurus validus 2019/06/25
+      id_Taxo = '4684060'; % accepted as Matobosaurus validus 2019/06/25
+      id_EoL = '794201';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+      
     case 'Anadia_bogotensis'
       id_CoL = 'bbbbe16debfda36c8c9b81228d15e7ab';
       id_Taxo = '642314';        
@@ -7180,6 +7250,13 @@ function links = get_link(taxon, open)
       id_Taxo = '644080';     
       id_EoL = '790076';
       id_AnAge = ''; % not present 2019/06/11
+      id_ReptileDB = taxon_rep;
+      
+    case 'Heloderma_suspectum'
+      id_CoL = '80df2f600b4582deda7be0756203a9f7';
+      id_Taxo = '49723';     
+      id_EoL = '456548';
+      id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
       
     case 'Xenosaurus_grandis'
@@ -7309,6 +7386,13 @@ function links = get_link(taxon, open)
       id_Taxo = '643898';        
       id_EoL = '791732';
       id_AnAge = ''; % not present at 2019/06/11
+      id_ReptileDB = taxon_rep;
+       
+    case 'Oplurus_cuvieri'
+      id_CoL = '1cf4adeabf42135f439b1deb3cd3dc98';
+      id_Taxo = '642705';        
+      id_EoL = '791248';
+      id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        
     case 'Tropidurus_itambere'
@@ -7443,8 +7527,16 @@ function links = get_link(taxon, open)
       id_CoL = '92cc382eadbde7f2bca19b09b2370813';
       id_Taxo = '50371';        
       id_EoL = '48729544';
-      id_AnAge = ''; % not present 2-19/06/19
+      id_AnAge = ''; % not present 2019/06/19
       id_ReptileDB = taxon_rep;
+       
+    case 'Cerberus_rynchops'
+      id_CoL = '330e9e1d8c7b336eea71b25ec8c3b401';
+      id_Taxo = '307748';        
+      id_EoL = '46559514';
+      id_AnAge = ''; % not present 2019/06/24
+      id_ReptileDB = taxon_rep;
+      id_WoRMS = '344028';
        
     case 'Natrix_natrix'
       id_CoL = '27ec70b00734b68213ff0972f7360650';
@@ -7514,6 +7606,27 @@ function links = get_link(taxon, open)
       id_Taxo = '604878';        
       id_EoL = '2816562';
       id_AnAge = ''; % not present 2019/06/17
+      id_ReptileDB = taxon_rep;
+       
+    case 'Boaedon_fuliginosus'
+      id_CoL = '8e73389709e593470a20143ebd05e18a';
+      id_Taxo = '50099';        
+      id_EoL = '47045966';
+      id_AnAge = ''; % not present 2019/06/23
+      id_ReptileDB = taxon_rep;
+       
+    case 'Psammophis_sibilans'
+      id_CoL = 'af61a862fe80398f9f0d633095b27284';
+      id_Taxo = '644979';        
+      id_EoL = '459775';
+      id_AnAge = ''; % not present 2019/06/24
+      id_ReptileDB = taxon_rep;
+       
+    case 'Psammophylax_rhombeatus'
+      id_CoL = '4f9f19e9de427c60c389f341a807b9a0';
+      id_Taxo = '644983';        
+      id_EoL = '1055560';
+      id_AnAge = ''; % not present 2019/06/26
       id_ReptileDB = taxon_rep;
        
     case 'Naja_kaouthia'
@@ -7828,6 +7941,22 @@ function links = get_link(taxon, open)
       id_Taxo = '607890'; 
       id_EoL = '1055221';
       id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Astrochelys_yniphora'
+      id_CoL = '2e6d0cb138e5f15803e6e2ebedaecf7a';
+      id_WoRMS = ''; % not present 2019/06/25
+      id_Taxo = '1685693'; 
+      id_EoL = '794291';
+      id_AnAge = ''; % not present 2019/0625
+      id_ReptileDB = taxon_rep;
+       
+    case 'Psammobates_geometricus'
+      id_CoL = '32994814c158dabc5aedcd72c8f27be3';
+      id_WoRMS = ''; % not present 2019/06/25
+      id_Taxo = '548956'; 
+      id_EoL = '790924';
+      id_AnAge = ''; % not present 2019/0625
       id_ReptileDB = taxon_rep;
        
     case 'Aldabrachelys_gigantea'
