@@ -6473,6 +6473,13 @@ function links = get_link(taxon, open)
       id_AnAge = 'Dicamptodon_ensatus';
       id_amphweb = taxon_amph;
       
+    case 'Mertensiella_caucasica'
+      id_CoL = '0e6d218324beb6520457ab59d48234aa';
+      id_Taxo = '47288';        
+      id_EoL = '1039216';
+      id_AnAge = ''; % not present 2019/06/27
+      id_amphweb = taxon_amph;
+       
     case 'Salamandra_salamandra'
       id_CoL = '2da5d094f1f3b4d8bd13a461c5054291';
       id_Taxo = '47311';        
@@ -6506,6 +6513,13 @@ function links = get_link(taxon, open)
       id_Taxo = '985992';        
       id_EoL = '2919410';
       id_AnAge = ''; % not present at 2019/196/15
+      id_amphweb = taxon_amph;
+       
+    case 'Pleurodeles_waltl'
+      id_CoL = 'ce96f223cfa0574d5f877f36cd6a1bfd';
+      id_Taxo = '47306';        
+      id_EoL = '330419';
+      id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
     case 'Lissotriton_vulgaris'
@@ -7492,6 +7506,13 @@ function links = get_link(taxon, open)
       id_CoL = '39e0b014fc85615f45f535de5dc7bc39';
       id_Taxo = '50312';        
       id_EoL = '1057054';
+      id_AnAge = taxon;
+      id_ReptileDB = taxon_rep;
+       
+    case 'Bitis_arietans'
+      id_CoL = '6e3c7d3b39dcf26fbed91a557dcf2eba';
+      id_Taxo = '50307';        
+      id_EoL = '1057058';
       id_AnAge = taxon;
       id_ReptileDB = taxon_rep;
        

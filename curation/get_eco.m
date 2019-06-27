@@ -9069,6 +9069,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Mertensiella_caucasica'
+      climate = {'Csb'};
+      ecozone = {'THp'};
+      habitat = {'0jFc'};
+      embryo  = {'Fs'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Salamandra_salamandra'
       climate = {'Csb','Cfb','Dfb'};
       ecozone = {'THp'};
@@ -9114,6 +9124,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       ecozone = {'THp'};
       habitat = {'biTh','biTf'};
       embryo  = {'Tv'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Pleurodeles_waltl'
+      climate = {'Csa','Csb'};
+      ecozone = {'THp'};
+      habitat = {'biFc','jiTh'};
+      embryo  = {'Fh'};
       migrate = {};
       food    = {'biCi'};
       gender  = {'Dg'};
@@ -10473,6 +10493,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'A','Cw'};
       ecozone = {'TPa'};
       habitat = {'0iTf'};
+      embryo  = {'Tv'};
+      migrate = {};
+      food    = {'biCv'};
+      gender  = {'Dg'};
+      reprod  = {'O','Apa'};
+
+    case 'Bitis_arietans'
+      climate = {'A','Cw'};
+      ecozone = {'TPa'};
+      habitat = {'0iTf','0iTh','0iTg','0iTa'};
       embryo  = {'Tv'};
       migrate = {};
       food    = {'biCv'};
