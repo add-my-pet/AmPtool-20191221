@@ -6339,6 +6339,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Hynobius_kimurae'
+      id_CoL = '94f3c37abf7d4e3971df953bcef738b3';
+      id_Taxo = '159234'; 
+      id_EoL = '1019482';
+      id_AnAge = ''; % not present 2019/06/29
+      id_amphweb = taxon_amph;
+       
     case 'Hynobius_nebulosus'
       id_CoL = '574b291971ce90bf962848d15095707e';
       id_Taxo = '47235'; 
@@ -6423,6 +6430,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/05/30
       id_amphweb = 'Hydromantes+ambrosii';
        
+    case 'Speleomantes_imperialis'
+      id_CoL = '7f5f9c2fd9c1f9384e861fd765d72e50';
+      id_Taxo = '696045';
+      id_EoL = '330915'; % Hydromantes imperialis
+      id_AnAge = ''; % not present 2019/06/28
+      id_amphweb = 'Hydromantes+imperialis';
+       
     case 'Eurycea_lucifuga'
       id_CoL = '4687b49e0ad37a3c112e978112a34df2';
       id_Taxo = '47414';
@@ -6473,10 +6487,24 @@ function links = get_link(taxon, open)
       id_AnAge = 'Dicamptodon_ensatus';
       id_amphweb = taxon_amph;
       
+    case 'Salamandrina_perspicillata'
+      id_CoL = '921ec47169be828f6aae91778a9029dd';
+      id_Taxo = '985982';        
+      id_EoL = '2920481';
+      id_AnAge = ''; % not present 2019/06/28
+      id_amphweb = taxon_amph;
+       
     case 'Mertensiella_caucasica'
       id_CoL = '0e6d218324beb6520457ab59d48234aa';
       id_Taxo = '47288';        
       id_EoL = '1039216';
+      id_AnAge = ''; % not present 2019/06/27
+      id_amphweb = taxon_amph;
+       
+    case 'Chioglossa_lusitanica'
+      id_CoL = '82b93837811d845bbde92ddc6aa4a08c';
+      id_Taxo = '47274';        
+      id_EoL = '289670';
       id_AnAge = ''; % not present 2019/06/27
       id_amphweb = taxon_amph;
        
@@ -6522,6 +6550,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Tylototriton_verrucosus'
+      id_CoL = '7778d0604e42bbc667d4a8de942eb2cb';
+      id_Taxo = '47349';        
+      id_EoL = '332461';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
     case 'Lissotriton_vulgaris'
       id_CoL = '8eb8ecd651629c0276ce18bb308d38e8';
       id_Taxo = '985978';        
@@ -6550,11 +6585,25 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/06/12
       id_amphweb = taxon_amph;
        
+    case 'Calotriton_arnoldi'
+      id_CoL = '4f624361df787538e27c36ab14951599';
+      id_Taxo = '985972';        
+      id_EoL = '4358097';
+      id_AnAge = ''; % not present 2019/06/28
+      id_amphweb = taxon_amph;
+       
     case 'Triturus_cristatus'
       id_CoL = '740625d0e1bea07c7b133aca1fb4f8e7';
       id_Taxo = '47327';        
       id_EoL = '1018157';
       id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Triturus_karelinii'
+      id_CoL = 'e30ac814729c9a517be1a4a1a957a3b6';
+      id_Taxo = '151425';        
+      id_EoL = '1048229';
+      id_AnAge = ''; % not present 2019/06/28
       id_amphweb = taxon_amph;
        
     case 'Ichthyosaura_alpestris'
