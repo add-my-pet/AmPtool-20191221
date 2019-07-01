@@ -8799,6 +8799,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Boulengerula_taitana'
+      climate = {'BSh'};
+      ecozone = {'TPa'};
+      habitat = {'0iTf'};
+      embryo  = {'Tnsf'};
+      migrate = {'TW'};
+      food    = {'bjTva','jiCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Typhlonectes_compressicauda'
       climate = {'A'};
       ecozone = {'TN'};
@@ -8822,16 +8832,6 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Siphonops_annulatus'
       climate = {'A'};
       ecozone = {'TN'};
-      habitat = {'0iTf'};
-      embryo  = {'Tnsf'};
-      migrate = {'TW'};
-      food    = {'bjTva','jiCi'};
-      gender  = {'Dg'};
-      reprod  = {'O'};
-
-    case 'Boulengerula_taitana'
-      climate = {'BSh'};
-      ecozone = {'TPa'};
       habitat = {'0iTf'};
       embryo  = {'Tnsf'};
       migrate = {'TW'};
@@ -8869,36 +8869,6 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
-    case 'Hynobius_nebulosus'
-      climate = {'Cfb'};
-      ecozone = {'THp'};
-      habitat = {'0jFc','jiTf'};
-      embryo  = {'Fc'};
-      migrate = {'TT'};
-      food    = {'biCi'};
-      gender  = {'Dg'};
-      reprod  = {'O'};
-
-    case 'Hynobius_kimurae'
-      climate = {'Cfa','Dfa'};
-      ecozone = {'THp'};
-      habitat = {'0jFc','jiTf'};
-      embryo  = {'Fc'};
-      migrate = {'TT'};
-      food    = {'biCi'};
-      gender  = {'Dg'};
-      reprod  = {'O'};
-
-    case 'Salamandrella_keyserlingii'
-      climate = {'BWk','BSk','Dfb','Dfc','Dsc','Dwa','Dwc'};
-      ecozone = {'THp'};
-      habitat = {'0jFc','jiTf'};
-      embryo  = {'Fc'};
-      migrate = {'TT'};
-      food    = {'biCi'};
-      gender  = {'Dg'};
-      reprod  = {'O'};
-
     case 'Onychodactylus_japonicus'
       climate = {'Cfb','Dfa'};
       ecozone = {'THp'};
@@ -8915,6 +8885,36 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       habitat = {'0jFc'};
       embryo  = {'Fc'};
       migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Salamandrella_keyserlingii'
+      climate = {'BWk','BSk','Dfb','Dfc','Dsc','Dwa','Dwc'};
+      ecozone = {'THp'};
+      habitat = {'0jFc','jiTf'};
+      embryo  = {'Fc'};
+      migrate = {'TT'};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Hynobius_nebulosus'
+      climate = {'Cfb'};
+      ecozone = {'THp'};
+      habitat = {'0jFc','jiTf'};
+      embryo  = {'Fc'};
+      migrate = {'TT'};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Hynobius_kimurae'
+      climate = {'Cfa','Dfa'};
+      ecozone = {'THp'};
+      habitat = {'0jFc','jiTf'};
+      embryo  = {'Fc'};
+      migrate = {'TT'};
       food    = {'biCi'};
       gender  = {'Dg'};
       reprod  = {'O'};
@@ -9178,8 +9178,18 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       food    = {'biCi'};
       gender  = {'Dg'};
       reprod  = {'O'};
+ 
+    case 'Echinotriton_andersoni'
+      climate = {'Cwa'};
+      ecozone = {'THp'};
+      habitat = {'biFc','jiTf'};
+      embryo  = {'Fh'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
 
-    case 'Tylototriton_verrucosus'
+   case 'Tylototriton_verrucosus'
       climate = {'Cwa'};
       ecozone = {'THp'};
       habitat = {'biFc','jiTf'};
@@ -9263,6 +9273,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'Cfb','Dfb'};
       ecozone = {'THp'};
       habitat = {'0jFp','jiTh','jiFm'};
+      embryo  = {'Fh'};
+      migrate = {'TT'};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Paramesotriton_hongkongensis'
+      climate = {'Cwa'};
+      ecozone = {'TPi'};
+      habitat = {'0iFp','jiFr'};
       embryo  = {'Fh'};
       migrate = {'TT'};
       food    = {'biCi'};
@@ -10322,6 +10342,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Anolis_nebulosus'
       climate = {'Aw'};
       ecozone = {'THn'};
+      habitat = {'0iTf','0iTh'};
+      embryo  = {'Tns'};
+      migrate = {};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
+    case 'Anolis_gundlachi'
+      climate = {'Aw'};
+      ecozone = {'TN'};
       habitat = {'0iTf','0iTh'};
       embryo  = {'Tns'};
       migrate = {};

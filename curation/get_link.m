@@ -6283,6 +6283,13 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/06/20
       id_amphweb = taxon_amph;
        
+    case 'Boulengerula_taitana'
+      id_CoL = '1c5198aa3319023ca5af35dd04909553';
+      id_Taxo = '137482';        
+      id_EoL = '1019807';
+      id_AnAge = ''; % not present 2019/06/21
+      id_amphweb = taxon_amph;
+       
     case 'Typhlonectes_compressicauda'
       id_CoL = 'c41ea3564094b0902ea72c062951c02c';
       id_Taxo = '48026';        
@@ -6301,13 +6308,6 @@ function links = get_link(taxon, open)
       id_CoL = '1bef31e75d0b919c46c97d965d902a60';
       id_Taxo = '48031';        
       id_EoL = '330408';
-      id_AnAge = ''; % not present 2019/06/21
-      id_amphweb = taxon_amph;
-       
-    case 'Boulengerula_taitana'
-      id_CoL = '1c5198aa3319023ca5af35dd04909553';
-      id_Taxo = '137482';        
-      id_EoL = '1019807';
       id_AnAge = ''; % not present 2019/06/21
       id_amphweb = taxon_amph;
        
@@ -6332,27 +6332,6 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
-    case 'Salamandrella_keyserlingii'
-      id_CoL = '20c31718eaa8ce5adbaede0094426319';
-      id_Taxo = '47231'; 
-      id_EoL = '332597';
-      id_AnAge = taxon;
-      id_amphweb = taxon_amph;
-       
-    case 'Hynobius_kimurae'
-      id_CoL = '94f3c37abf7d4e3971df953bcef738b3';
-      id_Taxo = '159234'; 
-      id_EoL = '1019482';
-      id_AnAge = ''; % not present 2019/06/29
-      id_amphweb = taxon_amph;
-       
-    case 'Hynobius_nebulosus'
-      id_CoL = '574b291971ce90bf962848d15095707e';
-      id_Taxo = '47235'; 
-      id_EoL = '1048033';
-      id_AnAge = taxon;
-      id_amphweb = taxon_amph;
-       
     case 'Onychodactylus_japonicus'
       id_CoL = '279f59ed123931657ef0d6b8d92f429d';
       id_Taxo = '47239';        
@@ -6367,6 +6346,27 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present 2019/06/18
       id_amphweb = taxon_amph;
 
+    case 'Salamandrella_keyserlingii'
+      id_CoL = '20c31718eaa8ce5adbaede0094426319';
+      id_Taxo = '47231'; 
+      id_EoL = '332597';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Hynobius_nebulosus'
+      id_CoL = '574b291971ce90bf962848d15095707e';
+      id_Taxo = '47235'; 
+      id_EoL = '1048033';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Hynobius_kimurae'
+      id_CoL = '94f3c37abf7d4e3971df953bcef738b3';
+      id_Taxo = '159234'; 
+      id_EoL = '1019482';
+      id_AnAge = ''; % not present 2019/06/29
+      id_amphweb = taxon_amph;
+       
     case 'Bolitoglossa_mexicana'
       id_CoL = 'd6bcd481031d4eac6e92a8612745b001';
       id_Taxo = '47462';
@@ -6550,6 +6550,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Echinotriton_andersoni'
+      id_CoL = '6b250f2f9a15c5b7b0e13d7d0ad0be37';
+      id_Taxo = '47348';        
+      id_EoL = '1048286';
+      id_AnAge = ''; % not present 2019/06/30
+      id_amphweb = taxon_amph;
+       
     case 'Tylototriton_verrucosus'
       id_CoL = '7778d0604e42bbc667d4a8de942eb2cb';
       id_Taxo = '47349';        
@@ -6611,6 +6618,13 @@ function links = get_link(taxon, open)
       id_Taxo = '1397948';        
       id_EoL = '330758';
       id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
+    case 'Paramesotriton_hongkongensis'
+      id_CoL = 'cce19de8bb6c9d8ebb931024e031cee0';
+      id_Taxo = '151417';        
+      id_EoL = '4357897';
+      id_AnAge = ''; % not present 2019/06/30
       id_amphweb = taxon_amph;
        
     case 'Proteus_anguinus'
@@ -7386,6 +7400,14 @@ function links = get_link(taxon, open)
       id_AnAge = ''; % not present at 2019/05/15
       id_ReptileDB = taxon_rep;
       id_ADW = ''; % not present at 2019/05/15
+       
+    case 'Anolis_gundlachi'
+      id_CoL = '348a472d53e9983a278cb58fb416daff';
+      id_Taxo = '249822';        
+      id_EoL = '13798';
+      id_AnAge = ''; % not present at 2019/06/30
+      id_ReptileDB = taxon_rep;
+      id_ADW = ''; % not present at 2019/06/30
        
     case 'Basiliscus_basiliscus'
       id_CoL = '66efca89eb233d3add91a36275d257e6';

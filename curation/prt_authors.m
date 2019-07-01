@@ -176,7 +176,7 @@ fprintf(fid_authors, '            <div class = "author_dropdown">\n');
 fprintf(fid_authors,['              <button onclick="entries(''', fam{i}, ''')" class="author_dropbtn"><a href="#">', num2str(nr), ' ', author{i}, '</a></button>\n']);
 fprintf(fid_authors,['              <div id="', fam{i}, '" class="author_dropdown-content">\n']);
 
-    for k = 1:nr % scan all dates/entries for current author
+    for k = 1:min(nr,100) % scan all dates/entries for current author
 fprintf(fid_authors,['                 <a target="_top" href="entries_web/', txt_entry{k}, '/', txt_entry{k}, '_res.html">', txt_date{k}, ' ', txt_entry{k}, '</a>\n']);
     end
  
