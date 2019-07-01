@@ -1881,6 +1881,12 @@ function links = get_link(taxon, open)
       id_Taxo = '18150';
       id_EoL = '494417';
        
+    case 'Chortoicetes_terminifera'
+      id_CoL = '20dafda7cdde3b842a35f7e700c1ec94';
+      id_WoRMS = ''; % not present 2019/07/01
+      id_Taxo = '769000';
+      id_EoL = '494057';
+       
     case 'Extatosoma_tiaratum'
       id_CoL = '65ef43e152fec002f9559d6f7074c43f';
       id_WoRMS = ''; % not present 2019/04/17
@@ -1948,6 +1954,12 @@ function links = get_link(taxon, open)
       id_WoRMS = ''; % not present 2017/06/15
       id_Taxo = '114444';
       id_EoL = '506145';
+       
+    case 'Heteronympha_merope'
+      id_CoL = '4fe3275b4d430f4ff9424e4b72845ff2';
+      id_WoRMS = ''; % not present 2019/07/01
+      id_Taxo = '1109256'; % present at genus level only 2019/07/01
+      id_EoL = '138167';
        
     case 'Venturia_canescens'
       id_CoL = '25a05f2c5c8f5146d4b515c36d06e089';

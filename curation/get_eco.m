@@ -2618,6 +2618,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Chortoicetes_terminifera'
+      climate = {'BSh'};
+      ecozone = {'TA'};
+      habitat = {'0iTg','0iTs','0iTa','0iTd'};
+      embryo  = {'Th'};
+      migrate = {'Ms'};
+      food    = {'biH'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
     case 'Extatosoma_tiaratum'
       climate = {'Cfa','Cfb'};
       ecozone = {'TA'};
@@ -2722,6 +2732,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       climate = {'Cfa','Dfa','Dfb'};
       ecozone = {'THn'};
       habitat = {'0iTf'};
+      embryo  = {'Th'};
+      migrate = {};
+      food    = {'bjHl','eiHn'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Heteronympha_merope'
+      climate = {'BWh', 'BSh', 'Csa'};
+      ecozone = {'TA'};
+      habitat = {'0iTd','0iTa','0iTh'};
       embryo  = {'Th'};
       migrate = {};
       food    = {'bjHl','eiHn'};
