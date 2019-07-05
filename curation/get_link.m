@@ -6576,6 +6576,13 @@ function links = get_link(taxon, open)
       id_AnAge = taxon;
       id_amphweb = taxon_amph;
        
+    case 'Notophthalmus_viridescens'
+      id_CoL = '7ae8731b79f69dd359e43bca9f6442f0';
+      id_Taxo = '47298';        
+      id_EoL = '1025186';
+      id_AnAge = taxon;
+      id_amphweb = taxon_amph;
+       
     case 'Lissotriton_vulgaris'
       id_CoL = '8eb8ecd651629c0276ce18bb308d38e8';
       id_Taxo = '985978';        

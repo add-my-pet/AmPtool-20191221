@@ -9219,6 +9219,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Dg'};
       reprod  = {'O'};
 
+    case 'Notophthalmus_viridescens'
+      climate = {'Cfa','Dfa'};
+      ecozone = {'THn'};
+      habitat = {'0jFp','jpTg','jpTf','jpTh','piFp'};
+      embryo  = {'Fh'};
+      migrate = {'TT'};
+      food    = {'biCi'};
+      gender  = {'Dg'};
+      reprod  = {'O'};
+
     case 'Lissotriton_vulgaris'
       climate = {'Cfb','Dfb'};
       ecozone = {'THp'};

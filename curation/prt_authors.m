@@ -114,12 +114,13 @@ fprintf(fid_authors, '    }\n\n');
 fprintf(fid_authors, '    #author_nm li a {\n');
 fprintf(fid_authors, '      border: 1px solid #ddd;\n');
 fprintf(fid_authors, '      margin-top: -1px; /* Prevent double borders */\n');
-fprintf(fid_authors, '      background-color: #f6f6f6;\n');
+fprintf(fid_authors, '      background-color: #FFFFFF;\n');
+fprintf(fid_authors, '      border-color: #FFFFFF;\n');
 fprintf(fid_authors, '      padding: 12px;\n');
 fprintf(fid_authors, '      text-decoration: none;\n');
 fprintf(fid_authors, '      font-size: 16px;\n');
 fprintf(fid_authors, '      color: black;\n');
-fprintf(fid_authors, '      display: block\n');
+fprintf(fid_authors, '      display: block;\n');
 fprintf(fid_authors, '    }\n\n');
 
 fprintf(fid_authors, '  </style>\n');
@@ -176,7 +177,7 @@ fprintf(fid_authors, '            <div class = "author_dropdown">\n');
 fprintf(fid_authors,['              <button onclick="entries(''', fam{i}, ''')" class="author_dropbtn"><a href="#">', num2str(nr), ' ', author{i}, '</a></button>\n']);
 fprintf(fid_authors,['              <div id="', fam{i}, '" class="author_dropdown-content">\n']);
 
-    for k = 1:min(nr,100) % scan all dates/entries for current author
+    for k = 1:nr % scan all dates/entries for current author
 fprintf(fid_authors,['                 <a target="_top" href="entries_web/', txt_entry{k}, '/', txt_entry{k}, '_res.html">', txt_date{k}, ' ', txt_entry{k}, '</a>\n']);
     end
  
@@ -208,19 +209,6 @@ fprintf(fid_authors, '        function entries(fam) {\n');
 fprintf(fid_authors,['          document.getElementById(fam).classList.toggle("show");\n']);
 fprintf(fid_authors, '        }\n\n');
 
-fprintf(fid_authors, '        // Close the dropdown if the user clicks outside of it\n');
-fprintf(fid_authors, '        window.onclick = function(event) {\n');
-fprintf(fid_authors, '          if (!event.target.matches(''.author_dropbtn'')) {\n');
-fprintf(fid_authors, '            var dropdowns = document.getElementsByClassName("author_dropdown-content");\n');
-fprintf(fid_authors, '            var i;\n');
-fprintf(fid_authors, '            for (i = 0; i < dropdowns.length; i++) {\n');
-fprintf(fid_authors, '              var openDropdown = dropdowns[i];\n');
-fprintf(fid_authors, '              if (openDropdown.classList.contains(''show'')) {\n');
-fprintf(fid_authors, '                openDropdown.classList.remove(''show'');\n');
-fprintf(fid_authors, '              }\n');
-fprintf(fid_authors, '            }\n');
-fprintf(fid_authors, '          }\n');
-fprintf(fid_authors, '        }\n');
 fprintf(fid_authors, '      </script>\n\n');
 
 fprintf(fid_authors, '    </div> <!-- end of content -->\n\n');

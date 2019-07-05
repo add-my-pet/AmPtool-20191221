@@ -164,13 +164,13 @@ fprintf(fid_about, '      </div>\n\n');
 fprintf(fid_about, '      <div class="sidelement2">\n');
 fprintf(fid_about, '        <img src="img/about/pie_model.png" width="350px"> \n');
 fprintf(fid_about, '        <div class = "caption"><font color = "magenta">\n');
-fprintf(fid_about, '          A <a href="http://www.debtheory.org/wiki/index.php?title=Typified_models" TARGET="_blank">variety of related models</a> \n');
+fprintf(fid_about, '          A <a href="http://www.debtheory.org/wiki/index.php?title=Typified_models" target="_blank">variety of related models</a> \n');
 fprintf(fid_about, '          captures animal life-cycle diversity and quantifies properties in <a href="pars.html" target="_blank">parameters</a>.</font>\n');
 fprintf(fid_about, '        </div>\n');
 fprintf(fid_about, '      </div>\n\n');
 
 fprintf(fid_about, '      <h2 class="clear"></h2>\n');
-fprintf(fid_about, '      Although <a href = "http://www.debtheory.org/wiki/" teget = "_blank">Dynamic Energy Budget (DEB) theory</a> applies to all organisms, \n');
+fprintf(fid_about, '      Although <a href = "http://www.debtheory.org/wiki/" target = "_blank">Dynamic Energy Budget (DEB) theory</a> applies to all organisms, \n');
 fprintf(fid_about, '        the AmP collection only deals with <a href="phyla.html">animals</a>. \n');
 fprintf(fid_about, '      The reason is that animals eat other organisms, which don''t vary that much in chemical composition. \n');
 fprintf(fid_about, '      Given the habitat, their environment can be characterized by the variables food availability and temperature as a first rough approximation. \n');
@@ -203,14 +203,14 @@ fprintf(fid_about, '      <h2 class="clear">Data completeness and mean relative 
 fprintf(fid_about, '      <div class="sidelement2">\n');
 fprintf(fid_about, '        <img src="img/about/COMPLETE.png" width="350px">\n');
 fprintf(fid_about, '        <div class = "caption">   \n');
-fprintf(fid_about, '          Survivor function of <a href="http://www.debtheory.org/wiki/index.php?title=Completeness" TARGET="_blank">data completeness</a>.\n');
+fprintf(fid_about, '          <a href="" title="A survivor function gives the fraction that exceeds the value of the argument">Survivor function</a> of <a href="http://www.debtheory.org/wiki/index.php?title=Completeness" target="_blank">data completeness</a>.\n');
 fprintf(fid_about, '        </div>\n');
 fprintf(fid_about, '      </div>\n\n');
 
 fprintf(fid_about, '      <div class="sidelement2">\n');
 fprintf(fid_about, '        <img src="img/about/MRE.png" width="350px">\n');
 fprintf(fid_about, '        <div class = "caption">   \n');
-fprintf(fid_about, '          Survivor functions of the <a href="http://www.debtheory.org/wiki/index.php?title=AmP_estimation_procedure#Data_quality_and_availability" TARGET="_blank">Mean Relative Error (MRE) and Symmetric Mean Squared Error (SMSE)</a>.\n');
+fprintf(fid_about, '          Survivor functions of the <a href="http://www.debtheory.org/wiki/index.php?title=AmP_estimation_procedure#Data_quality_and_availability" target="_blank">Mean Relative Error (MRE) and Symmetric Mean Squared Error (SMSE)</a>.\n');
 fprintf(fid_about, '        </div>\n');
 fprintf(fid_about, '      </div>\n\n');
 
