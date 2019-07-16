@@ -38,6 +38,20 @@ function [par, metaPar, txtPar, metaData] = allStat2par(my_pet)
 
   % par, txtPar
   parFields = ['T_ref'; get_parfields(allStat.(my_pet).model, 1)']; % include chemical parameters and T_ref
+  % add male parameters, if present
+  if isfield(allStat.(my_pet), 'z_m')
+    parFields = [parFields;'z_m'];
+  end
+  if isfield(allStat.(my_pet), 'E_Hbm')
+    parFields = [parFields;'E_Hbm'];
+  end
+  if isfield(allStat.(my_pet), 'E_Hjm')
+    parFields = [parFields;'E_Hjm'];
+  end
+  if isfield(allStat.(my_pet), 'E_Hpm')
+    parFields = [parFields;'E_Hpm'];
+  end
+  %
   n_parFields = length(parFields);
   for i = 1:n_parFields
     par.(parFields{i}) = allStat.(my_pet).(parFields{i});

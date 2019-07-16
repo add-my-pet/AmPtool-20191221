@@ -3,7 +3,7 @@
 
 %%
 function  prt_my_pet_toolbar(species, species_en, date_acc, destinationFolder)
-% created 2018/04/27 Bas Kooijman 
+% created 2018/04/27 Bas Kooijman, modified 2019/07/12 
 
 %% Syntax
 % <../prt_my_pet_toolbar.m *prt_my_pet_toolbar*> (species, species_en, date_acc, destinationFolder)
@@ -37,32 +37,33 @@ else
 end
 
 fprintf(oid, '  <h1 class="alignleft2">\n');
-fprintf(oid,['    &nbsp; <a onclick="OpenListAtTaxon(''', species, ''')" title="click to go to species_list">', species,'</a> &nbsp;\n']);
-fprintf(oid,['    (<a onclick="OpenTreeAtTaxon(''', genus, ''')" title="click to go to species_tree">', species_en, '</a>): &nbsp;\n']);
+fprintf(oid, '    &nbsp; <a onclick="OpenListAtTaxon(''%s'')" title="click to go to species_list">%s</a> &nbsp;\n', species, species);
+fprintf(oid, '    (<a onclick="OpenTreeAtTaxon(''%s'')" title="click to go to species_tree">%s</a>): &nbsp;\n', genus, species_en);
 fprintf(oid, '  </h1>\n\n');
 
 fprintf(oid, '  <div id="navwrapper">\n');
 fprintf(oid, '    <div class = "dropdown"><button onclick="showDropdown(''species'')" class="dropbtn">Results</button>\n');
 fprintf(oid, '      <div id="species" class="dropdown-content">\n');
-fprintf(oid,['        <a href="', species, '_par.html">Parameters</a>\n']);
-fprintf(oid,['        <a href="', species, '_stat.html">Implied properties</a>\n']);    
-fprintf(oid,['        <a href="', species, '_res.html">Predictions & Data</a>\n']);
-fprintf(oid,['        <a href="', species, '_bib.bib">Bibliography</a>\n']);
-fprintf(oid,['        <a href="', species, '_cit.html">Citation</a>\n']);
+fprintf(oid, '        <a href="%s_par.html">Parameters</a>\n', species);
+fprintf(oid, '        <a href="%s_stat.html">Implied properties</a>\n', species);    
+fprintf(oid, '        <a href="%s_pop.html">Population properties</a>\n', species);    
+fprintf(oid, '        <a href="%s_res.html">Predictions & Data</a>\n', species);
+fprintf(oid, '        <a href="%s_bib.bib">Bibliography</a>\n', species);
+fprintf(oid, '        <a href="%s_cit.html">Citation</a>\n', species);
 fprintf(oid, '      </div>\n');
 fprintf(oid, '    </div>\n\n');
 
 zip = get_zip(species); n_zip = size(zip, 1); % see if there are any obsolete zip's in the archive
 fprintf(oid, '    <div class = "dropdown"><button onclick="showDropdown(''code'')" class="dropbtn">Code</button>\n');
 fprintf(oid, '      <div id="code" class="dropdown-content">\n');
-fprintf(oid,['        <a href="../../entries/',species,'/mydata_',species,'.m" target="_blank">mydata</a>\n']);
-fprintf(oid,['        <a href="../../entries/',species,'/pars_init_',species,'.m" target="_blank">pars_init</a>\n']);
-fprintf(oid,['        <a href="../../entries/',species,'/predict_',species,'.m" target="_blank">predict</a>\n']);
-fprintf(oid,['        <a HREF="../../entries_zip/',species,'_', datestr(datenum(date_acc), 'yyyymmdd'), '.zip" TARGET="_top" onMouseOver="window.status=Close submenu; return true;">\n']);
-fprintf(oid,['          <IMG SRC="../../img/zipicon.png" WIDTH="30px"  BORDER="0" >', datestr(datenum(date_acc), 'yyyymmdd'), '</a>\n']);
+fprintf(oid, '        <a href="../../entries/%s/mydata_%s.m" target="_blank">mydata</a>\n', species, species);
+fprintf(oid, '        <a href="../../entries/%s/pars_init_%s.m" target="_blank">pars_init</a>\n', species, species);
+fprintf(oid, '        <a href="../../entries/%s/predict_%s.m" target="_blank">predict</a>\n', species, species);
+fprintf(oid, '        <a HREF="../../entries_zip/%s_%s.zip" TARGET="_top" onMouseOver="window.status=Close submenu; return true;">\n', species, datestr(datenum(date_acc), 'yyyymmdd'));
+fprintf(oid, '          <IMG SRC="../../img/zipicon.png" WIDTH="30px"  BORDER="0">%s</a>\n', datestr(datenum(date_acc), 'yyyymmdd'));
 for i = 1:n_zip % work from bottom to top to get oldest zip's on bottom
-fprintf(oid,['        <a HREF="../../entries_archive/', zip{n_zip-i+1,1}, '" TARGET="_top" onMouseOver="window.status=Close submenu; return true;">\n']);
-fprintf(oid,['          <IMG SRC="../../img/zipicon.png" WIDTH="30px"  BORDER="0" >', zip{n_zip-i+1,2}, '</a>\n']);
+fprintf(oid, '        <a HREF="../../entries_archive/%s "TARGET="_top" onMouseOver="window.status=Close submenu; return true;">\n', datestr(datenum(date_acc), 'yyyymmdd'));
+fprintf(oid, '          <IMG SRC="../../img/zipicon.png" WIDTH="30px"  BORDER="0">%z</a>\n', zip{n_zip-i+1,2});
 end
 fprintf(oid, '      </div>\n');
 fprintf(oid, '    </div>\n\n');
@@ -71,7 +72,7 @@ links = get_link(species); n_link = size(links,1);
 fprintf(oid, '    <div class = "dropdown"><button onclick="showDropdown(''link'')" class="dropbtn">Links</button>\n');
 fprintf(oid, '      <div id="link" class="dropdown-content">\n');
 for i = 1:n_link
-fprintf(oid,['        <a href="', links{i,1}, '" target="_blank">', links{i,2}, '</a>\n']);
+fprintf(oid, '        <a href="%s" target="_blank">%s</a>\n', links{i,1}, links{i,2});
 end
 fprintf(oid, '      </div>\n');
 fprintf(oid, '    </div>\n\n');
