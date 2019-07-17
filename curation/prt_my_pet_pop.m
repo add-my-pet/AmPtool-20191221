@@ -78,8 +78,8 @@ if iscell(species)
     f = 1;
   end
 else  % use allStat.mat as parameter source 
-  load allEco
-  [par, metaPar, txtPar, metaData] = allStat2par(species); gender = allEco.(species).gender; gender = gender{1};
+  gender = read_eco({species}, 'gender'); gender = gender{1};
+  [par, metaPar, txtPar, metaData] = allStat2par(species); 
   allStatInfo = dir(which('allStat.mat')); datePrintNm = strsplit(allStatInfo.date, ' '); 
   datePrintNm = ['allStat version: ', datestr(datePrintNm(1), 'yyyy/mm/dd')];
   if ~exist('f', 'var') || isempty(f)
