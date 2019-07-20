@@ -78,7 +78,7 @@ if iscell(species)
     f = 1;
   end
 else  % use allStat.mat as parameter source 
-  gender = read_eco({species}, 'gender'); gender = gender{1};
+  gender = read_eco({species}, 'gender'); gender = gender{1}; gender = gender{1};
   [par, metaPar, txtPar, metaData] = allStat2par(species); 
   allStatInfo = dir(which('allStat.mat')); datePrintNm = strsplit(allStatInfo.date, ' '); 
   datePrintNm = ['allStat version: ', datestr(datePrintNm(1), 'yyyy/mm/dd')];
@@ -309,17 +309,17 @@ end
 
 end
 
-% save figure, produced by popStatistics_st
-saveas (Hfig_surv,['pop_', species, '_01.png']);
-saveas (Hfig_stab,['pop_', species, '_02.png']);
-close all
-
 % close table
 fprintf(oid, '      </TABLE>\n\n');
 
+% save figure, produced by popStatistics_st
+saveas (Hfig_surv,[species, '_pop_01.png']);
+saveas (Hfig_stab,[species, '_pop_02.png']);
+close all
+
 % graphics
 fprintf(oid, '      <div class="fig">\n'); % survival probability
-fprintf(oid, '        <img src="pop_%s_01.png" width="450px"> \n', species);
+fprintf(oid, '        <img src="%s_pop_01.png" width="450px"> \n', species);
 fprintf(oid, '        <div id="caption">\n');
 fprintf(oid, '          Ln survival probability as function of age, \n');
 fprintf(oid, '          with (dashed) and without (solid) thinning at max (red) and min (blue) scaled functional response for females.\n');
@@ -327,7 +327,7 @@ fprintf(oid, '        </div>\n');
 fprintf(oid, '      </div>\n\n');
 
 fprintf(oid, '      <div class="fig">\n'); % stable age distribution
-fprintf(oid, '        <img src="pop_%s_02.png" width="450px"> \n', species);
+fprintf(oid, '        <img src="%s_pop_02.png" width="450px"> \n', species);
 fprintf(oid, '        <div id="caption">\n');
 fprintf(oid, '          Ln survivor function of the stable age distribution as function of age, \n');
 fprintf(oid, '          with (dashed) and without (solid) thinning at max (red) and min (blue) scaled functional response for females.\n');
