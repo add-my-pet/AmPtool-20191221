@@ -229,7 +229,7 @@ fprintf(oid, '    <div id="contentFull">\n');
 end
 
 % title
-fprintf(oid,'    <h1 align="center">%s: Implied population properties</h1>\n', species);
+fprintf(oid,'    <h1 align="center">%s: Population traits</h1>\n', species);
 fprintf(oid,'    <h3 align="center">at T = %g &deg;C with background hazards for embryo, juv, adult: %g, %g, %g 1/d</h3>\n', K2C(T), par.h_B0b, par.h_Bbp, par.h_Bpi);
 			
 % search boxes above the table
