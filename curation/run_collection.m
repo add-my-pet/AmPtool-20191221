@@ -3,16 +3,16 @@
 
 %%
 function run_collection(varargin)
-% created 2016/11/13 Bas Kooijman and Starrlight Augustine; modified 2017/04/26, 2018/02/13, 2018/03/28, 2018/04/13 Bas Kooijman
+% created 2016/11/13 Bas Kooijman and Starrlight Augustine; modified 2017/04/26, 2018/02/13, 2018/03/28, 2018/04/13, 2019/07/21 Bas Kooijman
 
 %% Syntax
 % <../run_collection.m *run_collection*> (varargin)
 
 %% Description
-% Writes html and bib pages in entries_web and zip file in entries_zip.
+% Writes html and bib pages and popStat.mat in entries_web and zip file in entries_zip.
 % Deletes .cache, .wn, .asv, .bib,  .bbl', .html files from entries.
 % Calls function bib2html, which writes and deletes the .aux file as source for Bibtex, runs Bibtex, which writes a bbl-file, which is also deleted.
-% Writes my_pet_toolbar.html, which is included by my_pet_res.html, my_pet_par.html and my_pet_stat.html.
+% Writes my_pet_toolbar.html, which is included by my_pet_res.html, my_pet_par.html, my_pet_stat.html and my_pet_pop.html.
 %
 % Input:
 %
@@ -24,6 +24,7 @@ function run_collection(varargin)
 % * 1 zip-file is written in ../entries_zip
 
 %% Remarks
+% make sure that get_eco gives non-empty values for all species in varargin.
 % run_collection_intro to generate about and access files for the collection
 
 %% Example of use
@@ -67,6 +68,9 @@ for i = 1:nargin
   doi = 'xxxxxx';
   cd(WD)  % goto original path    
 
+  % get gender, which is used in prt_my_pet_pop
+  [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = get_eco(varargin{i});
+  
   % print files
   prt_my_pet_toolbar(metaData.species,metaData.species_en,metaData.date_acc, destinationFolder) % my_pet_toolbar.html
   prt_my_pet_bib(metaData.species, metaData.biblist, destinationFolder)                         % my_pet_bib.bib 
@@ -75,6 +79,7 @@ for i = 1:nargin
   prt_my_pet_res(data, prdData, auxData, metaData, txtData, metaPar, destinationFolder)         % my_pet_res.html
   prt_my_pet_par(metaData, metaPar, par, txtPar, destinationFolder)                             % my_pet_par.html
   prt_my_pet_stat(metaData, metaPar, par, destinationFolder)                                    % my_pet_stat.html, including pie-png's
+  prt_my_pet_pop({metaData, metaPar, par, gender}, [], [], '0.5', [], destinationFolder, 1);    % my_pet_pop.html, including fig's
 end
     
 close all

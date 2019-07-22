@@ -9,8 +9,8 @@ function prt_my_pet_pop(species, T, f, h_B, destinationFolder, AmP)
 % <../prt_my_pet_pop.m *prt_my_pet_pop*> (species, T, f, destinationFolder) 
 
 %% Description
-% Writes my_pet_pop.html with a list implied population properties for selected species. 
-% This function just composes the thml page; all statistics are computed in popStatistics_st.
+% Writes my_pet_pop.html with a list of population traits for selected species. 
+% This function just composes the html page; all statistics are computed in popStatistics_st.
 % The parameters of species are obtained either from allStat.mat (and the gender-code from allEco.mat), or from a cell-string {par, metaPar, metaData, gender-code}.
 % The first 3 cells are output structures of <http://www.debtheory.org/wiki/index.php?title=Mydata_file *mydata_my_pet*> and
 % <http://www.debtheory.org/wiki/index.php?title=Pars_init_file *pars_init_my_pet*>, as part of the parameter estimation process.
@@ -24,7 +24,7 @@ function prt_my_pet_pop(species, T, f, h_B, destinationFolder, AmP)
 %
 % Input:
 %
-% * species: character-string with name of entry or cellstring with structures: {par, metaPar, metaData, gender}
+% * species: character-string with name of entry or cellstring with structures: {metaData, metaPar, par, gender}
 % * T: optional scalar with temperature in Kelvin (default: T_typical if metaData is specified or 20 C is character string is specified)
 % * f: optional scalar scaled functional response (default: 1) or character string representing a fraction
 % * h_B: optional vector with background hazards of length equal to the number of stages (depending on the model) 
@@ -33,7 +33,8 @@ function prt_my_pet_pop(species, T, f, h_B, destinationFolder, AmP)
 %
 % Output:
 %
-% * no Malab output, but a html-file is written with report-table and opens automatically in the system browser
+% * no Malab output, but write files my_pet_pop.html, my_pet_pop_01.png, my_pet_pop_02.png and popStat.mat. 
+%   The html-file opens automatically in the system browser if AmP=0 (default)
 %
 %% Remarks
 % If species is specified by string (rather than by data), its parameters are obtained from allStat.mat and the gender code is read from allEco.mat.
@@ -64,7 +65,7 @@ end
 % get parameters (2 possible routes for getting pars)
 n_fVal = 3; % 3 values for f
 if iscell(species) 
-  par = species{1}; metaPar = species{2}; metaData = species{3}; 
+  metaData = species{1}; metaPar = species{2}; par = species{3};  
   if length(species) == 3
     gender = 'D';
   else
@@ -122,8 +123,14 @@ end
  
 % species: get statistics
 [stat, txtStat, Hfig_surv, Hfig_stab] = popStatistics_st(model, par, T, f);
+% save statistics in structure popStat
+popStat.(species) = stat; popStat.(species).label = txtStat; 
+popStat.(species).model = model; popStat.(species).par = par; popStat.(species).T = T; 
+save([destinationFolder, 'popStat.mat'], 'popStat');
+%
 stat = rmfield(stat, {'T', 'c_T'}); 
-fldsStat = fieldnames(stat); % fieldnames of all statistics
+fldsStat = fieldnames(stat.f1.thin1.f); % fieldnames of all statistics
+fldsStat(ismember(fldsStat,'tS')) = []; fldsStat(ismember(fldsStat,'tSs')) = [];
 
 % write table
 oid = fopen(fileName, 'w+'); % open file for writing, delete existing content
@@ -240,7 +247,7 @@ fprintf(oid, '        <input type="text" id="InputLabel"  onkeyup="FunctionLabel
 fprintf(oid, '        <input type="text" id="InputShort"  onkeyup="FunctionShort()"  placeholder="Short/Medium" title="Type S or M">\n');
 fprintf(oid, '      </div>\n\n');
 
-% open table
+% open table, number of columns depends on n_fVal (2 or 3) and male (0 or 1)
 fprintf(oid, '      <TABLE id="Table">\n');
 
 if n_fVal == 2 && male == 0 % 2 values for scaled functional response, males the same as females
@@ -252,8 +259,8 @@ fprintf(oid,['        <TR id="head1"> <TH>symbol</TH> <TH>units</TH> ', repmat('
 for i = 1:length(fldsStat)
 fprintf(oid, '        <TR id="%s"> <TD>%s</TD> <TD>%s</TD>\n', fldsStat{i}, fldsStat{i}, txtStat.units.(fldsStat{i}));
 fprintf(oid, '          <TD>%g</TD> <TD>%g</TD> <TD>%g</TD> <TD>%g</TD>  <TD>%s</TD>\n', ...
-    stat.(fldsStat{i}).f0.thin0.f, stat.(fldsStat{i}).f0.thin1.f, ...
-    stat.(fldsStat{i}).f1.thin0.f, stat.(fldsStat{i}).f1.thin1.f, ...
+    stat.f0.thin0.f.(fldsStat{i}), stat.f0.thin1.f.(fldsStat{i}), ...
+    stat.f1.thin0.f.(fldsStat{i}), stat.f1.thin1.f.(fldsStat{i}), ...
     txtStat.label.(fldsStat{i}));
 fprintf(oid, '        </TR>\n');
 end 
@@ -267,9 +274,9 @@ fprintf(oid,['        <TR id="head1"> <TH>symbol</TH> <TH>units</TH> ', repmat('
 for i = 1:length(fldsStat)
 fprintf(oid, '        <TR id="%s"> <TD>%s</TD> <TD>%s</TD>\n', fldsStat{i}, fldsStat{i}, txtStat.units.(fldsStat{i}));
 fprintf(oid, '          <TD>%g</TD> <TD>%g</TD> <TD>%g</TD> <TD>%g</TD>  <TD>%g</TD> <TD>%g</TD>  <TD>%s</TD>\n', ...
-    stat.(fldsStat{i}).f0.thin0.f, stat.(fldsStat{i}).f0.thin1.f, ...
-    stat.(fldsStat{i}).f.thin0.f,  stat.(fldsStat{i}).f.thin1.f, ...
-    stat.(fldsStat{i}).f1.thin0.f, stat.(fldsStat{i}).f1.thin1.f, ...
+    stat.f0.thin0.f.(fldsStat{i}), stat.f0.thin1.f.(fldsStat{i}), ...
+    stat.ff.thin0.f.(fldsStat{i}), stat.ff.thin1.f.(fldsStat{i}), ...
+    stat.f1.thin0.f.(fldsStat{i}), stat.f1.thin1.f.(fldsStat{i}), ...
     txtStat.label.(fldsStat{i}));
 fprintf(oid, '        </TR>\n');
 end 
@@ -284,8 +291,8 @@ fprintf(oid,['        <TR id="head2"> <TH></TH> <TH></TH>  ', repmat('<TH>female
 for i = 1:length(fldsStat)
 fprintf(oid, '        <TR id="%s"> <TD>%s</TD> <TD>%s</TD>\n', fldsStat{i}, fldsStat{i}, txtStat.units.(fldsStat{i}));
 fprintf(oid, '          <TD>%g</TD> <TD>%g</TD> <TD>%g</TD> <TD>%g</TD>  <TD>%g</TD> <TD>%g</TD> <TD>%g</TD> <TD>%g</TD>  <TD>%s</TD>\n', ...
-    stat.(fldsStat{i}).f0.thin0.f, stat.(fldsStat{i}).f0.thin0.m, stat.(fldsStat{i}).f0.thin1.f, stat.(fldsStat{i}).f0.thin1.m, ...
-    stat.(fldsStat{i}).f1.thin0.f, stat.(fldsStat{i}).f1.thin0.m, stat.(fldsStat{i}).f1.thin1.f, stat.(fldsStat{i}).f1.thin1.m, ...
+    stat.f0.thin0.f.(fldsStat{i}), stat.f0.thin0.(fldsStat{i}).m, stat.f0.thin1.f.(fldsStat{i}), stat.f0.thin1.m.(fldsStat{i}), ...
+    stat.f1.thin0.f.(fldsStat{i}), stat.f1.thin0.m.(fldsStat{i}), stat.f1.thin1.f.(fldsStat{i}), stat.f1.thin1.m.(fldsStat{i}), ...
     txtStat.label.(fldsStat{i}));
 fprintf(oid, '        </TR>\n');
 end 
@@ -300,9 +307,9 @@ fprintf(oid,['        <TR id="head2"> <TH></TH> <TH></TH>  ', repmat('<TH>female
 for i = 1:length(fldsStat)
 fprintf(oid, '        <TR id="%s"> <TD>%s</TD> <TD>%s</TD>\n', fldsStat{i}, fldsStat{i}, txtStat.units.(fldsStat{i}));
 fprintf(oid,['          ', repmat('<TD>%g</TD> ', 1, 12), '  <TD>%s</TD>\n'], ...
-    stat.(fldsStat{i}).f0.thin0.f, stat.(fldsStat{i}).f0.thin0.m, stat.(fldsStat{i}).f0.thin1.f, stat.(fldsStat{i}).f0.thin1.m, ...
-    stat.(fldsStat{i}).f.thin0.f,  stat.(fldsStat{i}).f.thin0.m,  stat.(fldsStat{i}).f.thin1.f,  stat.(fldsStat{i}).f.thin1.m, ...
-    stat.(fldsStat{i}).f1.thin0.f, stat.(fldsStat{i}).f1.thin0.m, stat.(fldsStat{i}).f1.thin1.f, stat.(fldsStat{i}).f1.thin1.m, ...
+    stat.f0.thin0.f.(fldsStat{i}), stat.f0.thin0.m.(fldsStat{i}), stat.f0.thin1.f.(fldsStat{i}), stat.f0.thin1.m.(fldsStat{i}), ...
+    stat.ff.thin0.f.(fldsStat{i}), stat.ff.thin0.m.(fldsStat{i}), stat.ff.thin1.f.(fldsStat{i}), stat.ff.thin1.m.(fldsStat{i}), ...
+    stat.f1.thin0.f.(fldsStat{i}), stat.f1.thin0.m.(fldsStat{i}), stat.f1.thin1.f.(fldsStat{i}), stat.f1.thin1.m.(fldsStat{i}), ...
     txtStat.label.(fldsStat{i}));
 fprintf(oid, '        </TR>\n');
 end 
@@ -313,8 +320,8 @@ end
 fprintf(oid, '      </TABLE>\n\n');
 
 % save figure, produced by popStatistics_st
-saveas (Hfig_surv,[species, '_pop_01.png']);
-saveas (Hfig_stab,[species, '_pop_02.png']);
+saveas (Hfig_surv,[destinationFolder, species, '_pop_01.png']);
+saveas (Hfig_stab,[destinationFolder, species, '_pop_02.png']);
 close all
 
 % graphics
@@ -339,10 +346,18 @@ fprintf(oid, '      <div>\n');
 fprintf(oid, '        <h2>Remarks</h2>\n');
 fprintf(oid, '        <ul>\n');
 if ~isempty(strfind(gender, 'D'))
-  if male
-    fprintf(oid, '          <li>Gender-code %s applies. Sex ratio is assumed to be 1:1. Parameters of male and female differ.</li>\n', gender);
-  else
-    fprintf(oid, '          <li>Gender-code %s applies. Sex ratio is assumed to be 1:1. Parameters of male and female are the same.</li>\n', gender);
+  if male % male differs from female
+    if AmP
+      fprintf(oid, '          <li><a href="../../AmPeco.html#G">Gender-code</a> %s applies. Sex ratio is assumed to be 1:1. Parameters of male and female differ.</li>\n', gender);
+    else
+      fprintf(oid, '          <li>Gender-code %s applies. Sex ratio is assumed to be 1:1. Parameters of male and female differ.</li>\n', gender);
+    end
+  else % no difference between male and female
+    if AmP
+      fprintf(oid, '          <li><a href="../../AmPeco.html#G">Gender-code</a> %s applies. Sex ratio is assumed to be 1:1. Parameters of male and female are the same.</li>\n', gender);
+    else 
+      fprintf(oid, '          <li>Gender-code %s applies. Sex ratio is assumed to be 1:1. Parameters of male and female are the same.</li>\n', gender);
+    end
   end
 else
 fprintf(oid, '          <li>Concerns population of females only</li>\n');
