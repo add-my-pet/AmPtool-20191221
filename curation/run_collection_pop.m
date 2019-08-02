@@ -1,8 +1,8 @@
-%% run_collection
+%% run_collection_pop
 % generates files for AmP website 
 
 %%
-function run_collection(varargin)
+function run_collection_pop(varargin)
 % created 2016/11/13 Bas Kooijman and Starrlight Augustine; modified 2017/04/26, 2018/02/13, 2018/03/28, 2018/04/13, 2019/07/21 Bas Kooijman
 
 %% Syntax
@@ -49,45 +49,50 @@ cd(path(1:ind(end)));
 
 for i = 1:nargin 
   destinationFolder = ['../../entries_web/', varargin{i},'/']; % target for html and png files
-  mkdir(destinationFolder);
   fprintf(' %g : %s \n', i, varargin{i}) % report progress to screen 
   
   cd(['../../entries/', varargin{i}]) % goto entry i in dir entries
 
-  feval(['run_', varargin{i}]); close all;
+  %feval(['run_', varargin{i}]); close all;
   load(['results_', varargin{i}, '.mat']) % load results_my_pet.mat 
-  [data, auxData, metaData, txtData] = feval(['mydata_',metaData.species]); % run mydata_* to create data files
-  prdData = feval(['predict_',metaData.species], par, data, auxData); % run predict_* to compute predictions
-  prdData = predict_pseudodata(par, data, prdData); % appends new field to prdData with predictions for the pseudo data:  
-  delete('*.cache', '*.wn', '*.asv', '*.bib', '*.bbl', '*.html') % delete unwanted and bib files
+  %[data, auxData, metaData, txtData] = feval(['mydata_',metaData.species]); % run mydata_* to create data files
+  %prdData = feval(['predict_',metaData.species], par, data, auxData); % run predict_* to compute predictions
+  %prdData = predict_pseudodata(par, data, prdData); % appends new field to prdData with predictions for the pseudo data:  
+  %delete('*.cache', '*.wn', '*.asv', '*.bib', '*.bbl', '*.html') % delete unwanted and bib files
   cd(WD) % goto orginal path, but print to destinationFolder
 
-  cd('../../entries_zip');
-  filenm = zip_my_pet(varargin{i}, '../entries'); % zip the entry en save
+  %cd('../../entries_zip');
+  %filenm = zip_my_pet(varargin{i}, '../entries'); % zip the entry en save
   % !Rscript zip2DataOne.r
-  doi = 'xxxxxx';
-  cd(WD)  % goto original path    
+  %doi = 'xxxxxx';
+  %cd(WD)  % goto original path    
+
+  % get reprodCode, which is used in prt_my_pet_pop
+  [~, ~, ~, ~, ~, ~, ~, reprodCode] = get_eco(varargin{i});
+  
+  if strcmp(metaPar.model,'abj')
+  mkdir(destinationFolder);
   
   % print files
   prt_my_pet_toolbar(metaData.species,metaData.species_en,metaData.date_acc, destinationFolder) % my_pet_toolbar.html
-  prt_my_pet_bib(metaData.species, metaData.biblist, destinationFolder)                         % my_pet_bib.bib 
-  bib2html([metaData.species, '_bib'], destinationFolder)                                       % my_pet_bib.html 
-  prt_my_pet_cit(metaData, doi, destinationFolder)                                              % citation.html
-  prt_my_pet_res(data, prdData, auxData, metaData, txtData, metaPar, destinationFolder)         % my_pet_res.html
-  prt_my_pet_par(metaData, metaPar, par, txtPar, destinationFolder)                             % my_pet_par.html
-  prt_my_pet_stat(metaData, metaPar, par, destinationFolder)                                    % my_pet_stat.html, including pie-png's
+  %prt_my_pet_bib(metaData.species, metaData.biblist, destinationFolder)                         % my_pet_bib.bib 
+  %bib2html([metaData.species, '_bib'], destinationFolder)                                       % my_pet_bib.html 
+  %prt_my_pet_cit(metaData, doi, destinationFolder)                                              % citation.html
+  %prt_my_pet_res(data, prdData, auxData, metaData, txtData, metaPar, destinationFolder)         % my_pet_res.html
+  %prt_my_pet_par(metaData, metaPar, par, txtPar, destinationFolder)                             % my_pet_par.html
+  %prt_my_pet_stat(metaData, metaPar, par, destinationFolder)                                    % my_pet_stat.html, including pie-png's
   
-  % get reprodCode, which is used in prt_my_pet_pop
-  [~, ~, ~, ~, ~, ~, ~, reprodCode] = get_eco(varargin{i});
-  if any(ismember({'z_m','E_Hbm','E_Hxm','E_Hjm','E_Hpm'},fieldnames(par)))
+  if any(ismember({'z_m','E_Hbm','E_Hsm','E_Hxm','E_Hjm','E_Hpm'},fieldnames(par)))
     male = 1; % male and females parameters differ
   else
     male = 0; % male and females parameters are the same
   end
+
   if male
     prt_my_pet_pop({metaData, metaPar, par, reprodCode{1}}, [], [], [], destinationFolder, 1);    % my_pet_pop.html, including fig's
   else
     prt_my_pet_pop({metaData, metaPar, par, reprodCode{1}}, [], '0.5', [], destinationFolder, 1); % my_pet_pop.html, including fig's
+  end
   end
 end
     
