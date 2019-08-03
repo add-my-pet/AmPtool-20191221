@@ -70,7 +70,7 @@ for i = 1:nargin
   % get reprodCode, which is used in prt_my_pet_pop
   [~, ~, ~, ~, ~, ~, ~, reprodCode] = get_eco(varargin{i});
   
-  if strcmp(metaPar.model,'abj')
+  if strcmp(metaPar.model,'stx')
   mkdir(destinationFolder);
   
   % print files
