@@ -33,7 +33,7 @@ function prt_my_pet_pop(species, T, f, h_B, destinationFolder, AmP)
 %
 % Output:
 %
-% * no Malab output, but write files my_pet_pop.html, my_pet_pop_01.png, my_pet_pop_02.png and popStat.mat. 
+% * no Malab output, but write files my_pet_pop.html, my_pet_pop_01.png, my_pet_pop_02.png and my_pet_pop.mat. 
 %   The html-file opens automatically in the system browser if AmP=0 (default)
 %
 %% Remarks
@@ -156,7 +156,7 @@ end
 % save statistics in structure popStat
 popStat.(species) = stat; popStat.(species).label = txtStat; 
 popStat.(species).model = model; popStat.(species).par = par; popStat.(species).T = T; 
-save([destinationFolder, 'popStat.mat'], 'popStat');
+save([destinationFolder, species, '_pop.mat'], 'popStat');
 %
 stat = rmfield(stat, {'T', 'c_T'}); 
 fldsStat = fieldnames(stat.f1.thin1.f); % fieldnames of all statistics

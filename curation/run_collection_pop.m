@@ -70,11 +70,11 @@ for i = 1:nargin
   % get reprodCode, which is used in prt_my_pet_pop
   [~, ~, ~, ~, ~, ~, ~, reprodCode] = get_eco(varargin{i});
   
-  if strcmp(metaPar.model,'stx')
+%  if strcmp(metaPar.model,'hex')
   mkdir(destinationFolder);
   
   % print files
-  prt_my_pet_toolbar(metaData.species,metaData.species_en,metaData.date_acc, destinationFolder) % my_pet_toolbar.html
+  %prt_my_pet_toolbar(metaData.species,metaData.species_en,metaData.date_acc, destinationFolder) % my_pet_toolbar.html
   %prt_my_pet_bib(metaData.species, metaData.biblist, destinationFolder)                         % my_pet_bib.bib 
   %bib2html([metaData.species, '_bib'], destinationFolder)                                       % my_pet_bib.html 
   %prt_my_pet_cit(metaData, doi, destinationFolder)                                              % citation.html
@@ -94,6 +94,6 @@ for i = 1:nargin
     prt_my_pet_pop({metaData, metaPar, par, reprodCode{1}}, [], '0.5', [], destinationFolder, 1); % my_pet_pop.html, including fig's
   end
   end
-end
+%end
     
 close all
