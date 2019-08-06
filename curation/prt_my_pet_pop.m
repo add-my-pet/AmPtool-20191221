@@ -62,7 +62,11 @@ if ~exist('AmP', 'var')
   AmP = 0;
 end
 
-if exist('f', 'var') || ~isempty(f)
+if ~exist('destinationFolder', 'var')
+  destinationFolder = [];
+end
+
+if exist('T', 'var') && exist('f', 'var') && ~isempty(f)
   n_fVal = 3; % 3 values for f
 else
   n_fVal = 2; % 2 values for f: f_min and f_max 
