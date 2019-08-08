@@ -44,5 +44,5 @@ function popStatLoc = write_popStat(varargin)
     popStatLoc.(spec{1}) = popStat.(spec{1});
   end
   delete('popStat.mat');
-  save('../popStat.mat','popStatLoc')
+  save('../popStat.mat','popStat')
 

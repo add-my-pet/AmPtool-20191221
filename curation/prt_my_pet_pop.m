@@ -84,7 +84,7 @@ if iscell(species)
   species = metaData.species;
   datePrintNm = ['date: ',datestr(date, 'yyyy/mm/dd')];
   n_fVal = 3; % 3 f- values: min, f and max
-  if ~exist('f', 'var') || isempty(f)
+  if ~exist('f', 'var') || isempty(f) || (~ischar(f) && f == 1)
     n_fVal = 2; % 2 f- values: min and max
     f = 1;
   end

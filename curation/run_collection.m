@@ -78,17 +78,13 @@ for i = 1:nargin
   prt_my_pet_stat(metaData, metaPar, par, destinationFolder)                                    % my_pet_stat.html, including pie-png's
   
   % get reprodCode, which is used in prt_my_pet_pop
+  close all
   [~, ~, ~, ~, ~, ~, ~, reprodCode] = get_eco(varargin{i});
   if any(ismember({'z_m','E_Hbm','E_Hxm','E_Hjm','E_Hpm'},fieldnames(par)))
-    male = 1; % male and females parameters differ
-  else
-    male = 0; % male and females parameters are the same
-  end
-  if male
     prt_my_pet_pop({metaData, metaPar, par, reprodCode{1}}, [], [], [], destinationFolder, 1);    % my_pet_pop.html, including fig's
   else
     prt_my_pet_pop({metaData, metaPar, par, reprodCode{1}}, [], '0.5', [], destinationFolder, 1); % my_pet_pop.html, including fig's
   end
+  close all
 end
     
-close all

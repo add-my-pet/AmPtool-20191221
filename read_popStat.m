@@ -31,7 +31,7 @@ function [var, entries, units, label] = read_popStat(varargin)
   global popStat
   
   if ~exist('popStat','var') || length(popStat) == 0
-    load('popStat')        % get all parameters and statistics in structure popStat
+    load  popStat        % get all parameters and statistics in structure popStat
   end
   
   entries = fieldnames(popStat); n = length(entries);
