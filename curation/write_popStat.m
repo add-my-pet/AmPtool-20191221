@@ -2,7 +2,7 @@
 % writes a structure with all population stats for all entries
 
 %%
-function popStatLoc = write_popStat(varargin)
+function popStat = write_popStat(varargin)
 % created 2019/08/02 by Bas Kooijman
 
 %% Syntax
@@ -43,6 +43,6 @@ function popStatLoc = write_popStat(varargin)
     spec = fieldnames(popStat); 
     popStatLoc.(spec{1}) = popStat.(spec{1});
   end
-  delete('popStat.mat');
+  popStat = popStatLoc;
   save('../popStat.mat','popStat')
 

@@ -2,7 +2,7 @@
 % read statistics and/or parameters in popStat.mat
 
 %%
-function [var, entries, units, label] = read_popStat(varargin)
+function [var, entries, units, label] = read_popStat(popStat, varargin)
 % created 2019/08/04 by Bas Kooijman
 
 %% Syntax
@@ -28,11 +28,11 @@ function [var, entries, units, label] = read_popStat(varargin)
 %% Example of use
 % [r, nm] = read_popStat('f1.thin0.f.r','c_T'); 
   
-  global popStat
+%  global popStat
   
-  if ~exist('popStat','var') || length(popStat) == 0
-    load  popStat        % get all parameters and statistics in structure popStat
-  end
+%   if ~exist('popStat','var') || length(popStat) == 0
+%     load  popStat        % get all parameters and statistics in structure popStat
+%   end
   
   entries = fieldnames(popStat); n = length(entries);
   if iscell(varargin{1})    
