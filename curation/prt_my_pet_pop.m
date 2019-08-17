@@ -45,7 +45,7 @@ function prt_my_pet_pop(species, T, f, h_B, destinationFolder, AmP)
 %% Example of use
 %
 % * If results_My_Pet.mat exists in current directory (where "My_Pet" is replaced by the name of some species, but don't replace "my_pet"):
-%   load('results_My_Pet.mat'); prt_report_my_pet({par, metaPar, txtPar, metaData}, [], T, f, destinationFolder)
+%   load('results_My_Pet.mat'); prt_my_pet_pop({metaData, metaPar, par}, [], T, f, destinationFolder)
 % * prt_my_pet_pop('Rana_temporaria')
 % * prt_my_pet_pop('Rana_temporaria', C2K(22))
 % * prt_my_pet_pop('Rana_temporaria', [], 0.9)

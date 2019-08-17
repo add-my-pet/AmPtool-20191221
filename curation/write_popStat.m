@@ -42,6 +42,7 @@ function popStat = write_popStat(varargin)
     load popStat
     spec = fieldnames(popStat); 
     popStatLoc.(spec{1}) = popStat.(spec{1});
+    fprintf('%g: %s\n', i, spec{1});
   end
   popStat = popStatLoc;
   save('../popStat.mat','popStat')
