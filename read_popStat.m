@@ -41,12 +41,16 @@ function [var, entries, units, label] = read_popStat(popStat, varargin)
   nargin = length(varargin);    
   var = cell(n,nargin);
   
+  %entries = {'Terrapene_carolina'}; n=1; nargin=1; var=cell(1,1);
+  
   for i = 1:n
     for j = 1:nargin
       str = split(varargin{j},'.'); n_str = length(str);
       if n_str == 4 
-        if isfield(popStat.(entries{i}),(str{1})) && isfield(popStat.(entries{i}).(str{1}),(str{2})) && ...
-           isfield(popStat.(entries{i}).(str{1}).(str{2}),(str{3})) && isfield(popStat.(entries{i}).(str{1}).(str{2}).(str{3}),(str{4}))
+        if isfield(popStat.(entries{i}),(str{1})) && ...
+           isfield(popStat.(entries{i}).(str{1}),(str{2})) && ...
+           isfield(popStat.(entries{i}).(str{1}).(str{2}),(str{3})) && ...
+           isfield(popStat.(entries{i}).(str{1}).(str{2}).(str{3}),(str{4}))
           var{i,j} = popStat.(entries{i}).(str{1}).(str{2}).(str{3}).(str{4});
         else
           var{i,j} = []; 
@@ -61,12 +65,15 @@ function [var, entries, units, label] = read_popStat(popStat, varargin)
     end
   end
   
+  i = ~cellfun('isempty',var); var = var(i); entries = entries(i); 
+  var = cell2mat(var);
+  
   % convert cell array to numerical array if possible
-  num = 0;
-  for j = 1:nargin
-    num = num +  isnumeric(var{1,j});
-  end
-  if num == nargin
-    var = cell2mat(var);
-  end
+%   num = 0;
+%   for j = 1:nargin
+%     num = num +  isnumeric(var{1,j});
+%   end
+%   if num == nargin
+%     var = cell2mat(var);
+%   end
   

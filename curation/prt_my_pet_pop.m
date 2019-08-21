@@ -24,7 +24,7 @@ function prt_my_pet_pop(species, T, f, h_B, destinationFolder, AmP)
 %
 % Input:
 %
-% * species: character-string with name of entry or cellstring with structures: {metaData, metaPar, par, reprod-code}
+% * species: character-string with name of entry or cellstring with structures: {metaData, metaPar, par, reprod-code, gender-code}
 % * T: optional scalar with temperature in Kelvin (default: T_typical if metaData is specified or 20 C is character string is specified)
 % * f: optional scalar scaled functional response (default: 1) or character string representing a fraction
 % * h_B: optional vector with background hazards of length equal to the number of stages (depending on the model) 
@@ -78,8 +78,13 @@ if iscell(species)
   metaData = species{1}; metaPar = species{2}; par = species{3};  
   if length(species) == 3
     reprodCode = 'O';
+    genderCode = 'D';
+  elseif length(species) == 4
+    reprodCode = species{4}; 
+    genderCode = 'D';
   else
     reprodCode = species{4}; 
+    genderCode = species{5};
   end
   species = metaData.species;
   datePrintNm = ['date: ',datestr(date, 'yyyy/mm/dd')];
@@ -90,12 +95,14 @@ if iscell(species)
   end
 else  % use allStat.mat as parameter source 
   reprodCode = read_eco({species}, 'reprod'); reprodCode = reprodCode{1}; reprodCode = reprodCode{1};
+  genderCode = read_eco({species}, 'gender'); genderCode = genderCode{1}; genderCode = genderCode{1};
   [par, metaPar, txtPar, metaData] = allStat2par(species); 
   allStatInfo = dir(which('allStat.mat')); datePrintNm = strsplit(allStatInfo.date, ' '); 
   datePrintNm = ['allStat version: ', datestr(datePrintNm(1), 'yyyy/mm/dd')];
 end
 
 par.reprodCode = read_eco({species},'reprod'); par.reprodCode = par.reprodCode{1};
+par.genderCode = read_eco({species},'gender'); par.genderCode = par.genderCode{1};
 if any(ismember({'z_m','E_Hpm'},fieldnames(par)))
   male = 1; % male and females parameters differ
 else
