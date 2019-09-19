@@ -103,7 +103,7 @@ function prt_species_tree_taxa_js(taxa)
     % taxon 
     fprintf(fid_tv, '<div class="TreeSearch"> <!-- taxon -->\n');
     fprintf(fid_tv, '  <input id="TaxonDropdownInput" class="TreeSearch_dropbtn" onclick="showDropdown(''TaxonDropdown'')" onkeyup="InputTreeSearch(''TaxonDropdown'')" \n');
-    fprintf(fid_tv, '    placeholder="Search for taxon.." type="text" title="Type part of name and click on list"></input>\n');
+    fprintf(fid_tv, '    placeholder="Taxon.." type="text" title="Type part of name and click on list"></input>\n');
     fprintf(fid_tv, '  <div id="TaxonDropdown" class="TreeSearch-content">\n');
     fprintf(fid_tv, '    <ul id="TaxonDropdownSearchlist" class="TreeSearch">\n');
  
@@ -120,7 +120,7 @@ function prt_species_tree_taxa_js(taxa)
     % genus
     fprintf(fid_tv, '<div class="TreeSearch"> <!-- genus -->\n');
     fprintf(fid_tv, '  <input id="GenusDropdownInput" class="TreeSearch_dropbtn" onclick="showDropdown(''GenusDropdown'')" onkeyup="InputTreeSearch(''GenusDropdown'')" \n');
-    fprintf(fid_tv, '    placeholder="Search for genus.." type="text" title="Type part of name and click on list"></input>\n');
+    fprintf(fid_tv, '    placeholder="Genus.." type="text" title="Type part of name and click on list"></input>\n');
     fprintf(fid_tv, '  <div id="GenusDropdown" class="TreeSearch-content">\n');
     fprintf(fid_tv, '    <ul id="GenusDropdownSearchlist" class="TreeSearch">\n');
  
@@ -137,7 +137,7 @@ function prt_species_tree_taxa_js(taxa)
     % family
     fprintf(fid_tv, '<div class="TreeSearch"> <!-- family -->\n');
     fprintf(fid_tv, '  <input id="FamilyDropdownInput" class="TreeSearch_dropbtn" onclick="showDropdown(''FamilyDropdown'')" onkeyup="InputTreeSearch(''FamilyDropdown'')" \n');
-    fprintf(fid_tv, '    placeholder="Search for family.." type="text" title="Type part of name and click on list"></input>\n');
+    fprintf(fid_tv, '    placeholder="Family.." type="text" title="Type part of name and click on list"></input>\n');
     fprintf(fid_tv, '  <div id="FamilyDropdown" class="TreeSearch-content">\n');
     fprintf(fid_tv, '    <ul id="FamilyDropdownSearchlist" class="TreeSearch">\n');
  
@@ -154,7 +154,7 @@ function prt_species_tree_taxa_js(taxa)
     % order
     fprintf(fid_tv, '<div class="TreeSearch"> <!-- order -->\n');
     fprintf(fid_tv, '  <input id="OrderDropdownInput" class="TreeSearch_dropbtn" onclick="showDropdown(''OrderDropdown'')" onkeyup="InputTreeSearch(''OrderDropdown'')" \n');
-    fprintf(fid_tv, '    placeholder="Search for order.." type="text" title="Type part of name and click on list"></input>\n');
+    fprintf(fid_tv, '    placeholder="Order.." type="text" title="Type part of name and click on list"></input>\n');
     fprintf(fid_tv, '  <div id="OrderDropdown" class="TreeSearch-content">\n');
     fprintf(fid_tv, '    <ul id="OrderDropdownSearchlist" class="TreeSearch">\n');
  
@@ -172,7 +172,7 @@ function prt_species_tree_taxa_js(taxa)
     if strcmp(taxa{i},'Animalia') || strcmp(taxa{i},'Mollusca') || strcmp(taxa{i},'Tetrapoda')
     fprintf(fid_tv, '<div class="TreeSearch"> <!-- class -->\n');
     fprintf(fid_tv, '  <input id="ClassDropdownInput" class="TreeSearch_dropbtn" onclick="showDropdown(''ClassDropdown'')" onkeyup="InputTreeSearch(''ClassDropdown'')" \n');
-    fprintf(fid_tv, '    placeholder="Search for class.." type="text" title="Type part of name and click on list"></input>\n');
+    fprintf(fid_tv, '    placeholder="Class.." type="text" title="Type part of name and click on list"></input>\n');
     fprintf(fid_tv, '  <div id="ClassDropdown" class="TreeSearch-content">\n');
     fprintf(fid_tv, '    <ul id="ClassDropdownSearchlist" class="TreeSearch">\n');
  

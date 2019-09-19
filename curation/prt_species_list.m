@@ -142,12 +142,12 @@ fprintf(fid_Spec, '    <div id="contentFull">\n\n');
 fprintf(fid_Spec, '      <H2><a href="" title="Goto entries by clicking on entry names">Species list: taxonomic view</a></H2>\n\n');
 
 fprintf(fid_Spec, '      <div>\n');
-fprintf(fid_Spec, '        <input type="text" id="InputPhylum" onkeyup="FunctionPhylum()" placeholder="Search for phylum ..">\n');
-fprintf(fid_Spec, '        <input type="text" id="InputClass"  onkeyup="FunctionClass()"  placeholder="Search for class ..">\n');
-fprintf(fid_Spec, '        <input type="text" id="InputOrder"  onkeyup="FunctionOrder()"  placeholder="Search for order ..">\n');
-fprintf(fid_Spec, '        <input type="text" id="InputFamily" onkeyup="FunctionFamily()" placeholder="Search for family ..">\n');
-fprintf(fid_Spec, '        <input type="text" id="InputSname"  onkeyup="FunctionSname()"  placeholder="Search for species ..">\n');
-fprintf(fid_Spec, '        <input type="text" id="InputCname"  onkeyup="FunctionCname()"  placeholder="Search for common name ..">\n');
+fprintf(fid_Spec, '        <input type="text" id="InputPhylum" onkeyup="FunctionPhylum()" placeholder="Phylum ..">\n');
+fprintf(fid_Spec, '        <input type="text" id="InputClass"  onkeyup="FunctionClass()"  placeholder="Class ..">\n');
+fprintf(fid_Spec, '        <input type="text" id="InputOrder"  onkeyup="FunctionOrder()"  placeholder="Order ..">\n');
+fprintf(fid_Spec, '        <input type="text" id="InputFamily" onkeyup="FunctionFamily()" placeholder="Family ..">\n');
+fprintf(fid_Spec, '        <input type="text" id="InputSname"  onkeyup="FunctionSname()"  placeholder="Species ..">\n');
+fprintf(fid_Spec, '        <input type="text" id="InputCname"  onkeyup="FunctionCname()"  placeholder="Common name ..">\n');
 fprintf(fid_Spec, '      </div>\n\n');
 
 fprintf(fid_Spec, '      <table id="speciesTable">\n'); % open species table
