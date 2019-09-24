@@ -728,6 +728,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'Hsm'};
       reprod  = {'O'};
 
+    case 'Pinna_nobilis'
+      climate = {'MB'};
+      ecozone = {'MAm'}; 
+      habitat = {'0jMp','jiMr'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'biPp'};
+      gender  = {'Hsm'};
+      reprod  = {'O'};
+
     case 'Patella_vulgata'
       climate = {'MC'};
       ecozone = {'MANE'};
@@ -1981,6 +1991,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
     case 'Penaeus_semisulcatus'
       climate = {'MA','MB'};
       ecozone = {'MPE','MI','MAm'};
+      habitat = {'0bMb','bjMpe','jiMb'};
+      embryo  = {'Mbf'};
+      migrate = {};
+      food    = {'bjP','jiD','jiS'};
+      gender  = {'D'};
+      reprod  = {'O'};
+
+    case 'Fenneropenaeus_chinensis'
+      climate = {'MB','MC'};
+      ecozone = {'MPE'};
       habitat = {'0bMb','bjMpe','jiMb'};
       embryo  = {'Mbf'};
       migrate = {};

@@ -574,7 +574,14 @@ function links = get_link(taxon, open)
       id_EoL = '46467351';       
       id_molluscabase = '464505';
       
-    case 'Patella_vulgata'
+     case 'Pinna_nobilis'
+      id_CoL = '32002f1b8cce671983b5436a0731f307'; 
+      id_WoRMS = '140780'; 
+      id_Taxo = '39322';
+      id_EoL = '46467273';       
+      id_molluscabase = '140780';
+      
+   case 'Patella_vulgata'
       id_CoL = 'b6d47c01f8b1aac2e8d612029dec8807';
       id_WoRMS = '140685';
       id_Taxo = '34642';        
@@ -1458,6 +1465,12 @@ function links = get_link(taxon, open)
       id_WoRMS = '107112';
       id_Taxo = '33814'; % only present at genus level at 2019/01/21       
       id_EoL = '46502055';
+
+    case 'Fenneropenaeus_chinensis'
+      id_CoL = '3caa876f05331c18daffb180ffc4957f';
+      id_WoRMS = '246390';
+      id_Taxo = '222476'; % only present at genus level at 2019/01/21       
+      id_EoL = '344332';
 
     case 'Haliporoides_sibogae'
       id_CoL = '9a6257efddb14f2617b7237d54e5eba0';

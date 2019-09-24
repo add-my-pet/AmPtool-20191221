@@ -3,7 +3,7 @@
 
 %%
 function prt_my_pet_bib(species, biblist, destinationFolder)
-% created 2015/07/17 by Starrlight ; modified 2016/11/03 Starrlight, 2017/05/18 Bas Kooijman, 2018/08/17 Bas Kooijman
+% created 2015/07/17 by Starrlight ; modified 2016/11/03 Starrlight, 2017/05/18, 2018/08/17 Bas Kooijman
 
 %% Syntax
 % <../prt_my_pet_bib.m *prt_my_pet_bib*> (species, biblist, destinationFolder) 

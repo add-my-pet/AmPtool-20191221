@@ -16,7 +16,7 @@ function bib2bbl(my_pet_bib)
 % * my_pet_bib: bib-file name without extension
 
 %% Remarks
-% assumes that Bibtex can be ran onder dos and operations occurs in current directory
+% assumes that Bibtex can be ran under dos and operations occurs in current directory
 % The intended use is 
 % 
 % * convert biblist in results_my_pet.mat to bib by prt_my_pet_bib

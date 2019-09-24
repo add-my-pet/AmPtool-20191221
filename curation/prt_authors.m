@@ -76,7 +76,6 @@ fprintf(fid_authors, '    }\n\n');
 fprintf(fid_authors, '    .author_dropdown-content {\n');
 fprintf(fid_authors, '      display: none;\n');
 fprintf(fid_authors, '      position: absolute;\n');
-fprintf(fid_authors, '      background-color: #f9f9f9;\n');
 fprintf(fid_authors, '      min-width: 380px;\n');
 fprintf(fid_authors, '      overflow: auto;\n');
 fprintf(fid_authors, '      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n');
