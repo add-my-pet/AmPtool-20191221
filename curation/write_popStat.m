@@ -40,9 +40,49 @@ function popStat = write_popStat(varargin)
   for i = 1:n_spec
     eval(['!powershell wget ', [path, varargin{i}, '/', varargin{i}, ], '_pop.mat -O popStat.mat'])
     load popStat
-    spec = fieldnames(popStat); 
-    popStatLoc.(spec{1}) = popStat.(spec{1});
-    fprintf('%g: %s\n', i, spec{1});
+    spec = fieldnames(popStat); spec = spec{1};
+    
+    % remove graphics
+    if isfield(popStat.(spec).f0.thin1.f, 'tS')
+        popStat.(spec).f0.thin1.f = rmfield(popStat.(spec).f0.thin1.f, 'tS');
+    end
+    if isfield(popStat.(spec).f0.thin1.f, 'tSs')
+        popStat.(spec).f0.thin1.f = rmfield(popStat.(spec).f0.thin1.f, 'tSs');
+    end
+    if isfield(popStat.(spec), 'ff') && isfield(popStat.(spec).ff.thin1.f, 'tS')
+        popStat.(spec).ff.thin1.f = rmfield(popStat.(spec).ff.thin1.f, 'tS');
+    end
+    if isfield(popStat.(spec), 'ff') && isfield(popStat.(spec).ff.thin1.f, 'tSs')
+        popStat.(spec).ff.thin1.f = rmfield(popStat.(spec).ff.thin1.f, 'tSs');
+    end
+    if isfield(popStat.(spec).f1.thin1.f, 'tS')
+        popStat.(spec).f1.thin1.f = rmfield(popStat.(spec).f1.thin1.f, 'tS');
+    end
+    if isfield(popStat.(spec).f1.thin1.f, 'tSs')
+        popStat.(spec).f1.thin1.f = rmfield(popStat.(spec).f1.thin1.f, 'tSs');
+    end
+
+    if isfield(popStat.(spec).f0.thin0.f, 'tS')
+        popStat.(spec).f0.thin0.f = rmfield(popStat.(spec).f0.thin0.f, 'tS');
+    end
+    if isfield(popStat.(spec).f0.thin0.f, 'tSs')
+        popStat.(spec).f0.thin0.f = rmfield(popStat.(spec).f0.thin0.f, 'tSs');
+    end
+    if isfield(popStat.(spec), 'ff') && isfield(popStat.(spec).ff.thin0.f, 'tS')
+        popStat.(spec).ff.thin0.f = rmfield(popStat.(spec).ff.thin0.f, 'tS');
+    end
+    if isfield(popStat.(spec), 'ff') && isfield(popStat.(spec).ff.thin0.f, 'tSs')
+        popStat.(spec).ff.thin0.f = rmfield(popStat.(spec).ff.thin0.f, 'tSs');
+    end
+    if isfield(popStat.(spec).f1.thin0.f, 'tS')
+        popStat.(spec).f1.thin0.f = rmfield(popStat.(spec).f1.thin0.f, 'tS');
+    end
+    if isfield(popStat.(spec).f1.thin0.f, 'tSs')
+        popStat.(spec).f1.thin0.f = rmfield(popStat.(spec).f1.thin0.f, 'tSs');
+    end
+
+    popStatLoc.(spec) = popStat.(spec);
+    fprintf('%g: %s\n', i, spec);
   end
   popStat = popStatLoc;
   save('../popStat.mat','popStat')
