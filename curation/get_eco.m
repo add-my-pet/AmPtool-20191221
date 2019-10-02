@@ -1288,6 +1288,16 @@ function [climate, ecozone, habitat, embryo, migrate, food, gender, reprod] = ge
       gender  = {'D'};
       reprod  = {'O'};
 
+    case 'Hediste_diversicolor'
+      climate = {'MC'};
+      ecozone = {'MAN'};
+      habitat = {'0jMc','jiMb'};
+      embryo  = {'Mp'};
+      migrate = {};
+      food    = {'bjP','jiCi'}; 
+      gender  = {'D'};
+      reprod  = {'O'}; 
+
     case 'Neanthes_arenaceodentata'
       climate = {'MC'};
       ecozone = {'MANE'};

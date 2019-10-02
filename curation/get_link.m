@@ -983,6 +983,12 @@ function links = get_link(taxon, open)
       id_EoL = '467939';
       id_ADW = ''; % not present 2019/04/29
 
+    case 'Hediste_diversicolor'
+      id_CoL = '5329cd04e4ce262f3118e37339ce8871';
+      id_WoRMS = '152302';
+      id_Taxo = '15136'; 
+      id_EoL = '406336';
+      
     case 'Neanthes_arenaceodentata'
       id_CoL = '36d20e9543e6c676d401c4a73d140d5e';
       id_WoRMS = '334084';
