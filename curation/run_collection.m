@@ -74,7 +74,6 @@ for i = 1:nargin
   bib2html([metaData.species, '_bib'], destinationFolder)                                       % my_pet_bib.html 
   prt_my_pet_cit(metaData, doi, destinationFolder)                                              % citation.html
   prt_my_pet_res(data, prdData, auxData, metaData, txtData, metaPar, destinationFolder)         % my_pet_res.html
-  prt_my_pet_par(metaData, metaPar, par, txtPar, destinationFolder)                             % my_pet_par.html
   prt_my_pet_stat(metaData, metaPar, par, destinationFolder)                                    % my_pet_stat.html, including pie-png's
   
   % get reprodCode, which is used in prt_my_pet_pop
