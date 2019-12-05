@@ -62,8 +62,8 @@ fprintf(oid, '        <a href="../../entries/%s/predict_%s.m" target="_blank">pr
 fprintf(oid, '        <a HREF="../../entries_zip/%s_%s.zip" TARGET="_top" onMouseOver="window.status=Close submenu; return true;">\n', species, datestr(datenum(date_acc), 'yyyymmdd'));
 fprintf(oid, '          <IMG SRC="../../img/zipicon.png" WIDTH="30px"  BORDER="0">%s</a>\n', datestr(datenum(date_acc), 'yyyymmdd'));
 for i = 1:n_zip % work from bottom to top to get oldest zip's on bottom
-fprintf(oid, '        <a HREF="../../entries_archive/%s "TARGET="_top" onMouseOver="window.status=Close submenu; return true;">\n', datestr(datenum(date_acc), 'yyyymmdd'));
-fprintf(oid, '          <IMG SRC="../../img/zipicon.png" WIDTH="30px"  BORDER="0">%z</a>\n', zip{n_zip-i+1,2});
+fprintf(oid, '        <a HREF="../../entries_archive/%s_%s.zip" TARGET="_top" onMouseOver="window.status=Close submenu; return true;">\n', species, zip{n_zip-i+1,2});
+fprintf(oid, '          <IMG SRC="../../img/zipicon.png" WIDTH="30px"  BORDER="0">%s</a>\n', zip{n_zip-i+1,2});
 end
 fprintf(oid, '      </div>\n');
 fprintf(oid, '    </div>\n\n');

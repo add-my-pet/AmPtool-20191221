@@ -82,7 +82,7 @@ function links = get_link(taxon, open)
       id_EoL = '1006246';
       
     case 'Pelagia_noctiluca'
-      id_CoL = 'd46fd9939cd7273ba4caa7f6a44c1e44';
+      id_CoL = '8f7ed35020d936d5a101ba43281c223f';
       id_WoRMS = '135305';
       id_Taxo = '11851';
       id_EoL = '203481';
