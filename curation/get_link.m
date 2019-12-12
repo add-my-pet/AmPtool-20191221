@@ -1017,7 +1017,7 @@ function links = get_link(taxon, open)
       id_Wiki = 'Echiura';
       
     case 'Dendrobaena_octaedra'
-      id_CoL = '';   % not present 2017/06/15 
+      id_CoL = 'd9f299fc5388e61d8ebe58f55ee7dfcd'; 
       id_WoRMS = ''; % not present 2017/06/15 
       id_Taxo = '2907467';   
       id_Wiki = 'Annelida';
@@ -1025,8 +1025,8 @@ function links = get_link(taxon, open)
       id_ADW = ''; % not present at 2017/08/09
       
     case 'Lumbricus_terrestris'
-      id_CoL = '';   % not present 2017/06/15 
-      id_WoRMS = ''; % not present 2017/06/15 
+      id_CoL = '7d5b92e98b0d25fc021e22ccea749717'; 
+      id_WoRMS = ''; % not present at 2017/08/09
       id_Taxo = '15563';  
       id_EoL = '3126801';
       id_ADW = ''; % not present at 2017/08/09

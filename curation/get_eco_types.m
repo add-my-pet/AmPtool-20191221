@@ -27,7 +27,7 @@ function get_eco_types(localPath)
 global eco_types
 
 if exist('localPath','var')
-  url = fileread([local, 'AmPeco.html']);
+  url = fileread([localPath, 'AmPeco.html']);
 else
   url = urlread('https://www.bio.vu.nl/thb/deb/deblab/add_my_pet/AmPeco.html');
 end

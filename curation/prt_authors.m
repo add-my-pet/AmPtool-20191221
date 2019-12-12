@@ -20,7 +20,7 @@ function prt_authors
 % prt_authors
 
   % get basic data
-  [adad entries] = read_allStat('author', 'date_subm', 'author_mod', 'date_mod'); 
+  [adad, entries] = read_allStat('author', 'date_subm', 'author_mod', 'date_mod'); 
   ne = length(entries);   
   % authors
   authors = adad(:,[1 3]);                % (ne,>0)-cell array with all authors
@@ -29,7 +29,7 @@ function prt_authors
     author1 = authors{i,1}; author2 = authors{i,2}; % submit-, mod-authors
     author = [author; author1(:); author2(:)];
   end
-  [author fam] = sort_fam(unique([author{:}])); % alphabetically arranged list of all authors
+  [author, fam] = sort_fam(unique([author{:}])); % alphabetically arranged list of all authors
   na = length(author);   
   % dates
   dates = adad(:,[2 4]);                  % (ne,>0)-cell array with all dates
