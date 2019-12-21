@@ -39,7 +39,7 @@ function allEco = write_allEco
   curation = curation(1:end - 15);         
   cd(curation)                     % goto taxa
 
-  save('../allEco.mat', 'allEco')
+  save('../../mat/allEco.mat', 'allEco')
   
   cd(WD);
   

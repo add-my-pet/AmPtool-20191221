@@ -2,7 +2,7 @@
 % returns structure with values of core primary parameters for a given DEB model from allStat
 
 %%
-function [par model] = read_pars(nm)
+function [par, model] = read_pars(nm)
 % created 2016/10/21 by Bas Kooijman
  
   %% Syntax 
@@ -24,7 +24,7 @@ function [par model] = read_pars(nm)
   % Assumes that allStat is available as global
 
   %% Example of use
-  % [par model] = read_pars('Daphnia_magna')
+  % [par, model] = read_pars('Daphnia_magna')
   
   global allStat
   
